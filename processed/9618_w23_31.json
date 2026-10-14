@@ -1,0 +1,497 @@
+{
+  "paper": "9618_w23_31",
+  "qp": "papers/9618/paper_3/2023/oct_nov/9618_w23_qp_31.pdf",
+  "ms": "papers/9618/paper_3/2023/oct_nov/9618_w23_ms_31.pdf",
+  "sha256": {
+    "qp": "2b5b47e9c874f51d813e84c9665a7d9745b4a1985bc2af3c8edad42a989d52bd",
+    "ms": "ec32615c2ae6f85bbb77cbfce4e94f13afc70e5798043577c71431a75a5d906e"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Real numbers are stored in a computer using floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and exponent.\nWrite the normalised floating-point representation of +65.25 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "One mark for working (Max 1)\n• conversion of 65.25 to binary seen e.g. 1000001.01 = 65.25 //\n64 + 1 + 0.25 / ¼\nOne mark per mark point (Max 2)\n• correct mantissa\n• correct exponent\nMantissa Exponent\n0 1 0 0 0 0 0 1 0 1 0 0 0 1 1 1",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Real numbers are stored in a computer using floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and exponent.\nExplain the problem that will occur in storing the normalised floating-point representation of\n+65.20 in this system.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 the decimal fraction 0.20 cannot be represented exactly (the closest\nis 0.25 / 0.1875)\nMP2 therefore, there will be a loss of precision due to a rounding\nerror/truncation",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Draw one line to connect each protocol to its most appropriate use.\nProtocol Use\nto provide peer-to-peer file sharing\nHTTP\nwhen retrieving email messages from a\nmail server over a TCP/IP connection\nBitTorrent\nwhen transmitting hypertext documents\nSMTP\nto map MAC addresses onto IP addresses\nIMAP\nwhen sending email messages towards\nthe intended destination\n[4]",
+      "mark_scheme": "One mark for each correct line connecting a protocol to its most appropriate\ndescription (Max 4).\nProtocol Use\nto provide peer-to-peer file sharing\nHTTP\nwhen retrieving email messages from a\nmail server over a TCP/IP connection\nBitTorrent\nwhen transmitting hypertext\ndocuments\nSMTP\nto map MAC addresses onto IP\naddresses\nIMAP\nwhen sending email messages\ntowards the intended destination",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocol",
+        "TCP/IP"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Outline the purpose of the Link layer in the TCP / IP protocol suite.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 To ensure correct network protocols are followed\nMP2 To enable the upper layers to access the physical medium //\nenables connection/ communication with the internet / network layer\nMP3 To be responsible for transporting data within the network/local\nsegments\nMP4 To format the data into frames for transmission\nMP5 Maps IP addresses to MAC/Physical addresses.",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocols"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "Describe what is meant by enumerated and pointer data types.\nEnumerated\nPointer\n[4]",
+      "mark_scheme": "One mark per mark point – enumerated type (Max 2)\nMP1 A user-defined non-composite (data type) (only award once)\nMP2 …with a list of all possible values\nMP3 …that is ordered.\nOne mark per mark point – pointer type (Max 2)\nMP4 A user-defined non-composite (data type) (only award once)\nMP5 …that stores addresses/memory locations only\nMP6 …and indicates the type of data stored in the memory location.",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "enumerated type",
+        "pointer type"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Describe sequential and random methods of file organisation.\nSequential file organisation\nRandom file organisation\n[4]",
+      "mark_scheme": "One mark per mark point – sequential (Max 2)\nMP1 Records (in the file) are ordered\nMP2 …based on the key field\nMP3 A new version (of the file) has to be created to update the file\nOne mark per mark point – random (Max 2)\nMP4 Records are stored in no particular order within the file // There is no\nsequencing in the placement of the records\nMP5 There is a relationship between the key of the record and its location\nwithin the file // a hashing algorithm is used to find the location of the\nrecord\nMP6 Updates to the file can be carried out directly.",
+      "marks": 4,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record",
+        "hashing algorithm"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Outline the process of sequential access for serial and sequential files.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Start at the beginning of the file\nMP2 …check records linearly\nMP3 …until the desired record is found // … processing / updating records\nas required //… EOF found.",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "Describe the features of SISD and MIMD computer architectures.\nSISD\nMIMD\n[4]",
+      "mark_scheme": "One mark per mark point – SISD (Max 2)\nMP1 Single Instruction, Single Data (architecture). // Data is taken from a\nsingle source and a single instruction is performed on the data.\nMP2 Contains one processor, a control unit and a memory unit.\nMP3 …that executes instructions sequentially.\nOne mark per mark point – MIMD (Max 2)\nMP4 Multiple Instruction, Multiple Data (architecture). // At any time, any\nprocessor can execute different instructions on different sets of data.\nMP5 Contains many processors\nMP6 …that operate asynchronously / independently.",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "SISD",
+        "MIMD"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "This diagram represents a logic circuit.\nA\nB\nZ\nC\nD\nComplete the truth table for the given logic circuit.\nWorking space\nA B C D Z\n0 0 0 0\n0 0 0 1\n0 0 1 0\n0 0 1 1\n0 1 0 0\n0 1 0 1\n0 1 1 0\n0 1 1 1\n1 0 0 0\n1 0 0 1\n1 0 1 0\n1 0 1 1\n1 1 0 0\n1 1 0 1\n1 1 1 0\n1 1 1 1\n[3]",
+      "mark_scheme": "One mark for every shaded block of rows for column Z correct (Max 3)\nA B C D Z\n0 0 0 0 1\n0 0 0 1 0\n0 0 1 0 1\n0 0 1 1 0\n0 1 0 0 1\n0 1 0 1 0\n0 1 1 0 1\n0 1 1 1 0\n1 0 0 0 1\n1 0 0 1 0\n1 0 1 0 1\n1 0 1 1 0\n1 1 0 0 1\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "This diagram represents a logic circuit.\nA\nB\nZ\nC\nD\nSimplify the given Boolean expression using Boolean algebra.\nShow your working.\nY = A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D\n[3]",
+      "mark_scheme": "One mark for correct working from points (Max 2), for example:\n(Y =) A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D\n(Y =) A.D.(B.C + B.C + B.C + B.C)\n(Y =) A.D.(B.(C + C) + B.(C + C))\n(Y =) A.D.(B.(1) + B.(1))\n(Y =) A.D.(B + B)\n(Y =) A.D.(1)\nOne mark for correct answer\n(Y =) A.D",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "A student buys a new computer.\nState one benefit to the student of a user interface and give an example.\nBenefit\nExample\n[2]",
+      "mark_scheme": "One mark for a benefit (Max 1) e.g.\nMP1 The user interface hides the complexities of the computer\nhardware/operating system from the user\nMP2 It provides appropriate access systems for users with differing needs\nMP3 Complex commands involving memory locations/buses/computer\nhardware/ are avoided\nOne mark for a valid example (Max 1) e.g.\nClicking on icon rather than writing code\nUsing a graphical user interface / icons for navigation",
+      "marks": 2,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Two of the process states are the running state and the ready state.\nIdentify one other process state.\n[1]",
+      "mark_scheme": "Blocked (state)",
+      "marks": 1,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "Outline conditions under which a process could change from the running state to the ready\nstate.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 When the time slice of the running process expires (round robin).\nMP2 …and there is a process with a higher priority in the ready queue, the\nrunning process is pre-empted\nMP3 When an interrupt arrives at the CPU, (the process running on the\nCPU gets pre-empted).",
+      "marks": 2,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "round robin",
+        "interrupt"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "A pseudocode algorithm finds a customer account record in a random file and outputs it. The\nrecords are stored using the user-defined data type .\nTAccount\nTYPE TAccount\nDECLARE AccountNumber : INTEGER\nDECLARE LastName : STRING\nDECLARE FirstName : STRING\nDECLARE Address : STRING\nDECLARE ContactNumber : STRING\nENDTYPE\nComplete the file handling pseudocode.\nThe function takes the customer account number as a parameter, calculates and\nHash()\nreturns the hash value.\nDECLARE Customer : TAccount\nDECLARE Location : INTEGER\nDECLARE AccountFile : STRING\n\"AccountRecords.dat\"\nAccountFile\nOUTPUT \"Please enter an account number\"\nINPUT Customer.AccountNumber\n)\nLocation Hash(\n,\nSEEK Location\nAccountFile,\nOUTPUT Customer // output customer record\nCLOSEFILE AccountFile\n[5]",
+      "mark_scheme": "One mark for each correctly completed line (Max 5)\nDECLARE Customer : TAccount\nDECLARE Location : INTEGER\nDECLARE AccountFile : STRING\nAccountFile  \"AccountRecords.dat\"\nOPENFILE AccountFile FOR RANDOM\nOUTPUT \"Please enter an account number\"\nINPUT Customer.AccountNumber\nLocation  Hash(Customer.AccountNumber)\nSEEK AccountFile, Location\nGETRECORD AccountFile, Customer\nOUTPUT Customer\nCLOSEFILE AccountFile",
+      "marks": 5,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Define the term exception handling.\n[1]",
+      "mark_scheme": "One mark for correct definition\n(Exception handling is the process of) responding to an unexpected event\nwhen the program is running so it does not halt unexpectedly",
+      "marks": 1,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [
+        "Exception",
+        "Exception handling"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "8(c)",
+      "question_text": "State two possible causes of an exception.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2), for example:\n• Programming errors\n• User errors\n• Hardware failure\n• Runtime errors",
+      "marks": 2,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "9(a)(i)",
+      "question_text": "Write the infix expression for this Reverse Polish Notation (RPN) expression:\n5 2 – 5 4 + * 9 /\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\n• (5 – 2)\n• * (5 + 4) / 9\nFinal correct expression\n(5 – 2) * (5 + 4) / 9",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "9(a)(ii)",
+      "question_text": "Show how the contents of the following stack will change as the RPN expression in\npart (a)(i) is evaluated.\n[4]",
+      "mark_scheme": "One mark per ring (Max 4)\n4\n2 5 5 9 9\n5 5 3 3 3 3 27 27 3\nOR\n5 2 3 5 4 9 27 9 3\n5 3 5 3 27\n3",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Explain how a stack can be used to evaluate RPN expressions.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Evaluate the RPN expression from left to right\nMP2 Push each element of the RPN expression onto the stack in order\nuntil an operator is reached\nMP3 Pop the last two elements from the stack and apply the operator\nMP4 Push the result of the operation onto the stack\nMP5 Repeat the process until the whole expression is evaluated.",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "stack",
+        "RPN"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "A stack is to be set up using the information in the table.\nIdentifier Data type Description\npoints to the bottom of the stack\nBasePointer INTEGER\npoints to the top of the stack\nTopPointer INTEGER\n1D array to implement the stack\nStack REAL\nA constant, with identifier , limits the size of the stack to 25 items.\nCapacity\nWrite the pseudocode for the required declarations.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Correct constant declaration\nMP2 Two correct variable declarations\nMP3 Correct array declaration\nExample answer:\nCONSTANT Capacity = 25\nDECLARE BasePointer : INTEGER\nDECLARE TopPointer : INTEGER\nDECLARE Stack : ARRAY[1:25] OF REAL",
+      "marks": 3,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "A stack is to be set up using the information in the table.\nIdentifier Data type Description\npoints to the bottom of the stack\nBasePointer INTEGER\npoints to the top of the stack\nTopPointer INTEGER\n1D array to implement the stack\nStack REAL\nA constant, with identifier , limits the size of the stack to 25 items.\nCapacity\nComplete the pseudocode function to pop an item from .\nPop() Stack\n// popping an item from the stack\nFUNCTION Pop()\nDECLARE Item : REAL\nItem 0\nBasePointer THEN\nItem\nTopPointer\nELSE\nOUTPUT \"The stack is empty – error\"\nENDIF\nENDFUNCTION\n[5]",
+      "mark_scheme": "One mark for each correctly completed line (Max 5)\n// popping an item from the stack\nFUNCTION Pop() RETURNS REAL\nDECLARE Item : REAL\nItem  0\nIF TopPointer >= BasePointer THEN\nItem  Stack[TopPointer]\nTopPointer  TopPointer – 1\nELSE\nOUTPUT \"The stack is empty – error\"\nENDIF\nRETURN Item\nENDFUNCTION",
+      "marks": 5,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "10(c)",
+      "question_text": "A stack is to be set up using the information in the table.\nIdentifier Data type Description\npoints to the bottom of the stack\nBasePointer INTEGER\npoints to the top of the stack\nTopPointer INTEGER\n1D array to implement the stack\nStack REAL\nA constant, with identifier , limits the size of the stack to 25 items.\nCapacity\nCompare and contrast the queue and stack Abstract Data Types (ADT).\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 A queue is a first in first out / FIFO data structure and a stack is a first\nin last out / FILO / LIFO data structure // Data is removed from a\nqueue in the order it is received and removed from a stack in the\nreverse order to which it is received\nMP2 Both ADTs can vary in size / are of indeterminate length\nMP3 Data is popped and pushed (onto/from a stack) at the same end but\nit is enqueued and dequeued (to/from a queue) at different/opposite\nends // a queue has two accessible ends and a stack has only one\nMP4 A stack has only one moveable pointer whereas a queue has two.",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "stack",
+        "queue"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "A declarative programming language is used to represent subjects that students can choose to\nstudy.\nStudents must choose two subjects.\n01 subject(mathematics).\n02 subject(physics).\n03 subject(chemistry).\n04 subject(computer_science).\n05 subject(geography).\n06 subject(history).\n07 subject(english).\n08 subject(biology).\n09 student(tomaz).\n10 student(josephine).\n11 student(elspeth).\n12 student(nico).\n13 student(teresa).\n14 student(pietre).\n15 choice1(tomaz, mathematics).\n16 choice1(teresa, chemistry).\n17 choice1(pietre, mathematics).\n18 choice1(nico, mathematics).\n19 choice1(elspeth, chemistry).\n20 choice2(tomaz, computer_science).\n21 choice2(nico, geography).\nThese clauses have the meanings:\nClause Meaning\nMathematics is a subject.\n01\nTomaz is a student.\n09\nTomaz has chosen mathematics as his first choice.\n15\nTomaz has chosen computer science as his second choice.\n20\nAnthony is a student who would like to study history and geography.\nWrite additional clauses to represent this information.\n22\n23\n24\n[3]",
+      "mark_scheme": "One mark for each correctly completed clause (Max 3)\n(22) student(anthony).\n(23) choice1(anthony, history).\n(24) choice2(anthony, geography).",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12,
+        13
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "A declarative programming language is used to represent subjects that students can choose to\nstudy.\nStudents must choose two subjects.\n01 subject(mathematics).\n02 subject(physics).\n03 subject(chemistry).\n04 subject(computer_science).\n05 subject(geography).\n06 subject(history).\n07 subject(english).\n08 subject(biology).\n09 student(tomaz).\n10 student(josephine).\n11 student(elspeth).\n12 student(nico).\n13 student(teresa).\n14 student(pietre).\n15 choice1(tomaz, mathematics).\n16 choice1(teresa, chemistry).\n17 choice1(pietre, mathematics).\n18 choice1(nico, mathematics).\n19 choice1(elspeth, chemistry).\n20 choice2(tomaz, computer_science).\n21 choice2(nico, geography).\nThese clauses have the meanings:\nClause Meaning\nMathematics is a subject.\n01\nTomaz is a student.\n09\nTomaz has chosen mathematics as his first choice.\n15\nTomaz has chosen computer science as his second choice.\n20\nUsing the variable , the goal:\nX\nchoice1(X, chemistry)\nreturns\nX = teresa, elspeth\nWrite the result returned by the goal:\nchoice1(X, mathematics)\n[1]\nX =",
+      "mark_scheme": "X = tomaz, pietre, nico",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12,
+        13
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "11(c)",
+      "question_text": "A declarative programming language is used to represent subjects that students can choose to\nstudy.\nStudents must choose two subjects.\n01 subject(mathematics).\n02 subject(physics).\n03 subject(chemistry).\n04 subject(computer_science).\n05 subject(geography).\n06 subject(history).\n07 subject(english).\n08 subject(biology).\n09 student(tomaz).\n10 student(josephine).\n11 student(elspeth).\n12 student(nico).\n13 student(teresa).\n14 student(pietre).\n15 choice1(tomaz, mathematics).\n16 choice1(teresa, chemistry).\n17 choice1(pietre, mathematics).\n18 choice1(nico, mathematics).\n19 choice1(elspeth, chemistry).\n20 choice2(tomaz, computer_science).\n21 choice2(nico, geography).\nThese clauses have the meanings:\nClause Meaning\nMathematics is a subject.\n01\nTomaz is a student.\n09\nTomaz has chosen mathematics as his first choice.\n15\nTomaz has chosen computer science as his second choice.\n20\nStudents must choose two different subjects such that:\nN may choose S, if N is a student and S is a subject and N has not chosen S as the first\nchoice.\nWrite this as a rule.\nmay_choose_subject(N, S)\nIF\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\n• student(N)\n• subject(S)\n• choice1(N, S)\n• all logical operators correct with no additional code (see example\nanswers)\nExample answers:\nmay_choose_subject(N, S)\nIF student(N) AND subject(S) AND NOT choice1(N, S)\nmay_choose_subject(N, S)\nIF NOT choice1(N, S), student(N), subject(S)",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12,
+        13
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "12",
+      "question_text": "Artificial neural networks have played a significant role in the development of machine learning.\nExplain what is meant by the term artificial neural network.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 An artificial neural network is the component of artificial intelligence\nthat is meant to simulate the functioning of a biological brain.\nMP2 Artificial neural networks are a key component of machine learning.\nMP3 They can solve problems that would prove impossible or difficult for\nhumans // Artificial neural networks have self-learning capabilities\nthat enable them to produce better results as more data becomes\navailable\nMP4 Artificial neural networks can be layered (input, hidden and output\nlayers) // Artificial neural networks have many interconnected layers,\nsome / many of which are hidden\nMP5 Weights are assigned between nodes\nMP6 Weights are adjusted through training to give a more accurate result\nMP7 More complex learning capabilities / more accurate results are\navailable with larger numbers of hidden layers",
+      "marks": 4,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "artificial neural network"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        14
+      ],
+      "ms_pages": [
+        9
+      ]
+    }
+  ],
+  "marks": 75
+}

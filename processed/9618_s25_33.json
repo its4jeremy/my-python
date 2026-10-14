@@ -1,0 +1,494 @@
+{
+  "paper": "9618_s25_33",
+  "qp": "papers/9618/paper_3/2025/may_jun/9618_s25_qp_33.pdf",
+  "ms": "papers/9618/paper_3/2025/may_jun/9618_s25_ms_33.pdf",
+  "sha256": {
+    "qp": "137f265e230d601b039f2be2fa996b93b3ae703e8c6e23b6387b5400d0c3a086",
+    "ms": "782567026e38be6b10f2e44a60e49526f4e8e2ea434efc5c1d27e9ce7055627c"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "A programmer is writing a program to manage a video library . They require a user-defined data\ntype.\nWrite pseudocode statements to declare the composite data type VideoLibrary to hold\ndata about each video in the collection. This data includes:\n• identity code (any combination of letters and numbers)\n• title\n• year released\n• date purchased\n• format (for example DVD, Blu-ray, 4K, MP4)\n• running time (minutes)\nUse the most appropriate data type in each case.\n[4]",
+      "mark_scheme": "One mark per mark point\nMP1 TYPE VideoLibrary and ENDTYPE correct\nMP2 Declare used correctly for every field in the response\nMP3 All Three STRING fields correct (shaded)\nMP4 Remaining Three fields correct (unshaded)\nExample answer\nTYPE VideoLibrary\nDECLARE VideoID : STRING\nDECLARE Title : STRING\nDECLARE ReleaseYear : INTEGER\nDECLARE PurchaseDate : DATE\nDECLARE VideoFormat : STRING\nDECLARE RunningTime : INTEGER\nENDTYPE",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "A programmer is writing a program to manage a video library . They require a user-defined data\ntype.\nIdentify one field in VideoLibrary that could be an efficient enumerated data type and give\na reason for your choice.\nField\nReason\n[2]",
+      "mark_scheme": "One mark for identification of field and one mark for reason\nVideoFormat\nThis field can have a fixed range of possible values",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Numbers are stored in a computer using binary floating-point representation with:\n• 8 bits for the mantissa\n• 8 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nGive the largest normalised positive two’ s complement binary number that can be stored in\nthis system and state its denary equivalent.\nThe denary answer should be expressed in terms of powers of 2.\nMantissa Exponent\nDenary\n[2]",
+      "mark_scheme": "One mark for two’s complement version and one mark for denary version\nMantissa Exponent\n0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1\n127  2120 // 0.9921875 x 2127 // 127/128 x 2127",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Mantissa",
+        "Exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Numbers are stored in a computer using binary floating-point representation with:\n• 8 bits for the mantissa\n• 8 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised binary floating-point representation of –3.59375 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[4]",
+      "mark_scheme": "One mark per mark point for working (Max 2)\n• number converted to binary e.g., positive binary version of 3.59375 = (0)11.10011\n• negative two’s complement version -\nbits flipped and 1 added = 100.01101\n• -4 + 1/4 + 1/8 + 1/32 // -4 + 025 +0.125 + 0.03125 // -(64 + 32 + 16 + 2 + 1)/32\n• -22 + 2-2 + 2-3 + 2-5\n• 22 (- 20 + 2-4 + 2-5 + 2-7)\nOne mark per mark point\n• correct mantissa\n• correct exponent, with working seen.\nMantissa Exponent\n1 0 0 0 1 1 0 1 0 0 0 0 0 0 1 0",
+      "marks": 4,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 0\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 1\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 1\n1 0 1 1 1\n1 1 0 0 1\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0\nWrite the Boolean logic expression that correspo nds to the given truth table as the\nsum-of-products.\nZ =\n[2]",
+      "mark_scheme": "Two marks for all six correct terms\nOne mark for any four correct terms\nZ = A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "3(b)(i)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 0\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 1\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 1\n1 0 1 1 1\n1 1 0 0 1\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0\nComplete the Karnaugh map (K-map) for the given truth table.\nAB\n00 01 11 10\nCD\n[2]",
+      "mark_scheme": "Two marks if no errors present\nOne mark if one error present\nAB\nCD 00 01 11 10\n00 0 1 1 0\n01 0 0 0 0\n11 1 0 0 1\n10 1 0 0 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "3(b)(ii)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 0\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 1\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 1\n1 0 1 1 1\n1 1 0 0 1\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0\nDraw loop(s) around appropriate group(s) in the K-map to produce an optimal\nsum-of-products. [2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)\nAB\nCD 00 01 11 10\n00 0 1 1 0\n01 0 0 0 0\n11 1 0 0 1\n10 1 0 0 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "3(b)(iii)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 0\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 1\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 1\n1 0 1 1 1\n1 1 0 0 1\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0\nWrite the Boolean logic expression from your answer to part (b)(ii) as the simplified\nsum-of-products.\nZ =\n[2]",
+      "mark_scheme": "One mark for each mark point\n• One correct Boolean term\n• Boolean terms and operator correct and no other terms present\nZ = B.C + B.C.D // B.C.D + B.C",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "The Internet layer and Link layer are two layers of the TCP/IP protocol suite.\nDescribe the purpose of the Internet layer and the purpose of the Link layer.\nPurpose of Internet layer\nPurpose of Link layer\n[5]",
+      "mark_scheme": "One mark per mark point (Max 5)\nOne mark per mark point for purpose of Internet Layer (Max 3)\nMP1 To identify the intended network and host.\nMP2 To add header containing IP addresses. // To address packets with their source and destination IP Addresses.\nMP3 To prepare packets for delivery by formatting them into datagrams.\nMP4 To route datagrams through the optimum route over a network.\nOne mark per mark point for purpose of Link Layer (Max 3)\nMP5 To prepare the next hop by managing the link between two directly connected devices. // To identify and move\ntraffic across local segments.\nMP6 To format datagrams into frames for transmission.\nMP7 To identify network protocols in the packet header. // To ensure correct network protocols are/is followed.\nMP8 To deliver frames to the receiving network. // To receive frames from the sending network. // To map IP addresses\nto MAC physical addresses.\nMP9 To provide error checking/error correction/recovery/reconstruction\nMP10 including resend requests.",
+      "marks": 5,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocols"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Describe the function of a router in packet switching.\n[4]",
+      "mark_scheme": "One mark for each correct marking point (Max 4)\nMP1 The router reads the IP address of the destination from the packet header.\nMP2 A router uses a routing table to find information …\nMP3 … about e.g., available hops / netmask / gateway used / adjacent routers / the status of the routers along the\nroute.\nMP4 The router determines the next hop / optimum route. // The router sends the packet on its next hop.\nMP5 The router manages the hop counter // The hop counter is reduced by 1 every time the packet passes a router.",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "Complete the table by filling in the missing object-oriented programming (OOP) terms and\ndescriptions.\nOOP term Description\nA method that accesses the value of a property.\nA method that changes the value of a property.\nObject\nMethod\n[4]",
+      "mark_scheme": "One mark per correct answer (Max 4)\nOOP Term Purpose\nGetter A method that accesses the value of a property\nSetter A method that changes the value of a property\nObject An instantiation / instance of a class\nMethod A programmed function / procedure / subroutine\n/ subprogram defined as part of a class",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Getter",
+        "Setter",
+        "instance"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "The management and scheduling of processes are tasks carried out by an operating system.\nDescribe one reason why scheduling is necessary in process management.\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\n• Process scheduling is required to ensure that all processes are executed in a timely manner\n• … and enables multitasking/multiprogramming/multiprocessing\n• … to minimise CPU idle time\n• … to ensure that no process is starved of resources. // … to ensure fair access to resources.\n• … ensures jobs/processes are completed in order of priority.",
+      "marks": 2,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "multitasking",
+        "scheduling"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "The management and scheduling of processes are tasks carried out by an operating system.\nExplain the function of the round robin scheduling routine and give a benefit of this routine.\nFunction\nBenefit\n[4]",
+      "mark_scheme": "One mark for each mark point (Max 3)\nMP1 Processes are queued as they arrive.\nMP2 It is a pre-emptive scheduling routine.\nMP3 A fixed time quantum is given to each process. // Each process has an equal time slice.\nMP4 When a time slice ends, the status of the process is saved/queued so it can continue from where it left off in its\nnext time slice.\nMP5 and the next process is executed for its time slice; its previous state is reinstated/restored, if applicable.\nMP6 If a process completes within its time slice, the next process is executed for its time slice.\nOne mark for benefit (Max 1)\nMP7 Reduces average response time by limiting each process to a fixed amount of time.\nMP8 No issue with starvation of resources.",
+      "marks": 4,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "scheduling"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "7",
+      "question_text": "Secure Socket Layer (SSL) and Transport Layer Security (TLS) are two protocols.\nExplain how SSL/TLS is used when client-server communication is initiated.\n[4]",
+      "mark_scheme": "One mark for each correct marking point (Max 4)\nMP1 An SSL/TLS connection is initiated by an application/client.\nMP2 Every new session begins with a handshake as defined by the SSL/TLS protocols.\nMP3 The client requests the digital certificate from the server // The server sends the digital certificate to the client.\nMP4 The client verifies the server’s digital certificate\nMP5 … and obtains the server’s public key.\nMP6 The encryption algorithms are agreed. // The symmetric session keys are generated/defined.\nMP7 A secure session is established between client and server.",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "digital certificate",
+        "TLS"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "Explain the process of syntax analysis during program compilation.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 It is the second stage of compilation // It’s the compilation stage after lexical analysis.\nMP2 It takes input from the lexical analyser in the form of token streams.\nMP3 The source code is analysed / parsed against the rules of the language to detect any errors in the code.\nMP4 The output from this phase is a parse tree.\nMP5 Syntax errors are reported.",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "lexical analysis"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Several syntax diagrams are shown.\nupper digit\nJ 0\nK 1\nL 2\nV 3\nX 4\nZ 5\nlower 6\na\ne\ni\np\nu\ny\nlower lower\npasscode\nupper digit digit digit\nState why JJ90 is not a valid passcode for the given syntax diagrams.\n[1]",
+      "mark_scheme": "The second character must come from either lower or digit. It can’t be upper.",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Several syntax diagrams are shown.\nupper digit\nJ 0\nK 1\nL 2\nV 3\nX 4\nZ 5\nlower 6\na\ne\ni\np\nu\ny\nlower lower\npasscode\nupper digit digit digit\nComplete the Backus-Naur Form (BNF) for <upper> and <passcode>.\n<upper> ::=\n<passcode> ::=\n[3]",
+      "mark_scheme": "Max 3\nOne mark\nMP1 <upper> ::= J | K | L | V | X | Z\nEither: fully written out answer\nMP2 Any two correct options for <passcode>\nMP3 Remaining two options correct for <passcode>\nExample answer\n<passcode> ::=\n<upper><lower><lower><digit>|\n<upper><lower><digit><digit>|\n<upper><digit><digit><digit>|\n<upper><digit><lower><digit>\nOr: answer with interim expression\nMP4 <passcode> ::= <upper><middle><middle><digit>\nMP5 <middle> ::= <lower>|<digit>",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "9(c)",
+      "question_text": "Several syntax diagrams are shown.\nupper digit\nJ 0\nK 1\nL 2\nV 3\nX 4\nZ 5\nlower 6\na\ne\ni\np\nu\ny\nlower lower\npasscode\nupper digit digit digit\nA character can be an upper, a lower or a digit.\nThe rules for passcode have been changed so that the third character may also be selected\nfrom upper and the final character may be repeated one or more times.\nComplete the syntax diagram for passcode to show these changes.\nlower lower\npasscode\nupper digit digit digit\n[2]",
+      "mark_scheme": "One mark per mark point\nMP1 Box for upper in correct place with correct connections\nMP2 Correct repetition arrow for final digit\nlower lower\npasscode\nupper digit digit digit\nupper",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "State the purpose of the A* and Dijkstra’s algorithms.\n[1]",
+      "mark_scheme": "To find the path between two points on a graph using the algorithm.",
+      "marks": 1,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Outline the difference between the A* and Dijkstra’s algorithms.\n[2]",
+      "mark_scheme": "One mark per point (Max 2)\nMP1 A* tries to find a better path (between two points) by using a heuristic function // A* finds the adjacent route with the\nshortest path and continues this until the destination is reached\nMP2 … Dijkstra’s just explores all possible routes.\nMP3 The heuristic function on the A* algorithm gives priority to nodes that are supposed to be better than others / less\ncostly than others.\nMP4 Dijkstra’s algorithm cannot work with negative values/weights //A* algorithm can work with negative\nvalues/weights.",
+      "marks": 2,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "heuristic",
+        "Dijkstra’s algorithm",
+        "A* algorithm"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(c)",
+      "question_text": "Explain how unsupervised learning takes place in machine learning.\n[3]",
+      "mark_scheme": "One mark for each mark point (Max 3)\nMP1 Unsupervised learning uses algorithms to analyse / cluster\nMP2 … unlabelled data sets\nMP3 They discover hidden patterns / data groupings / clusters without the need for human intervention.\nMP4 It is able to discover similarities and differences in data / information.",
+      "marks": 3,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Unsupervised learning"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "11",
+      "question_text": "The pseudocode algorithm below allows a user to input a new stock item. The random file is\nsearched for the next empty location in the file and the new item is inserted there.\nA suitable message is displayed if the file is full.\nComplete this pseudocode.\nDECLARE Location : INTEGER\nDECLARE NewStock : STRING\nDECLARE CurrentStock : STRING\nDECLARE Stored : BOOLEAN\nDECLA←RE Max : INTEGER\nMax ←100000\nStored ← FALSE\nLocation 1\nOUTPUT \"Enter the new item you wish to store: \"\nINPUT NewStock\nWHILE NOT Stored AND Location <= Max\nGETRECORD \"StockList.dat\",\nIF CurrentStock = \"\" THEN\n← \"StockList.dat\", NewStock\nStored TRUE\nELSE ←\nLocation Location + 1\nENDIF\nENDWHILE\nTHEN\nOUTPUT \"The new item has not been stored as the file was full.\"\nENDIF\nCLOSEFILE \"StockList.dat\"\n[5]",
+      "mark_scheme": "One mark for each correctly completed line\nDECLARE Location : INTEGER\nDECLARE NewStock : STRING\nDECLARE CurrentStock : STRING\nDECLARE Stored : BOOLEAN\nDECLARE Max : INTEGER\nMax  100000\nStored  FALSE\nLocation  1\nOPENFILE \"StockList.dat\" FOR RANDOM\nOUTPUT \"Enter the new item you wish to store\"\nINPUT NewStock\nWHILE NOT Stored AND Location <= Max\nSEEK \"StockList.dat\", Location\nGETRECORD \"StockList.dat\", CurrentStock\nIF CurrentStock = \"\" THEN\nPUTRECORD \"StockList.dat\", NewStock\nStored  TRUE\nELSE\nLocation  Location + 1\nENDIF\nENDWHILE\nIF Stored = FALSE THEN\nOUTPUT \"The new stock item has not been stored as the file was full\"\nENDIF\nCLOSEFILE \"StockList.dat\"",
+      "marks": 5,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "12(a)",
+      "question_text": "An array is an Abstract Data Type (ADT).\nIdentify two other ADTs.\n1\n2\n[1]",
+      "mark_scheme": "One mark for any two correct ADTs (Max 1)\n• Binary tree\n• Graph\n• Linked list\n• Queue\n• Stack",
+      "marks": 1,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Stack",
+        "Queue",
+        "Linked list",
+        "Binary tree"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        14
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "12(b)",
+      "question_text": "A 1D array DataArray holds up to 1000 elements of type integer and needs to be sorted in\nascending order.\nW rite the pseudocode for an insertion sort to sort the array into ascending order.\nUse the identifiers from the table in your algorithm.\nY ou do not need to declare any arrays or variables for this algorithm. You may assume this\nhas already been done.\nIdentifier Data type Description\nIndex INTEGER counter for outer loop\nPosition INTEGER counter for inner loop – insertion position\nDataArray INTEGER 1D array to store up to 1000 integers\nValue INTEGER value to insert\nThe first line has been written for you.\n←\nFOR Index 2 to 1000\n[4]",
+      "mark_scheme": "One mark for each marking point (Max 4)\nMP1 Temporary assignment of the element being ‘inserted’ before inner loop\nMP2 Appropriate inner loop\nMP3 Check if current DataArray content is > Value\nMP4 Moving data to adjacent element as required\nMP5 Appropriate updating of Position variable\nMP6 Re-insertion of the element outside the inner loop\nExample algorithm\nFOR Index  2 to 1000\nValue  DataArray[Index]\nPosition  Index – 1\nIF DataArray[Position] > Value THEN\nWHILE Position >= 1 AND DataArray[Position] > Value\nDataArray[Position + 1]  DataArray[Position]\nPosition  Position – 1\nENDWHILE\nDataArray[Position + 1]  Value\nENDIF\nNEXT Index",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        14
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "12(c)",
+      "question_text": "Describe two ways in which the performance of a sort routine is af fected by the data to be\nsorted.\n1\n2\n[2]",
+      "mark_scheme": "One mark for each marking point\nMP1 The performance of a sorting routine should improve if the data is already partially sorted // The performance of a\nsorting routine is likely to be worse if the data is completely out of order\nMP2 The sort may take longer if the number of items to be sorted is larger // The sort may take less time if the number\nof items to be sorted is fewer.",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        15
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "13",
+      "question_text": "The recursive procedure Delete() is defined as follows:\nPROCEDURE Delete(Index, Target)\nIF Numbers[Index] > 0 THEN\nIF Numbers[Index] >←= Target THEN\nNumbers[Index] Numbers[Index + 1]\nENDIF ←\nIndex Index + 1\nCALL Delete(Index, Target)\nENDIF\nENDPROCEDURE\nAn array Numbers is used to store a sorted data set of non-zero positive integers.\nUnused cells contain zero.\nThe contents of the array at the start of the algorithm are:\nNumbers\n[1] [2] [3] [4] [5] [6] [7] [8] [9] [10]\n2 3 7 11 15 17 19 23 0 0\nComplete the trace table for the algorithm for the procedure call:\nCALL Delete(1, 15)\nNumbers\nIndex Target [1] [2] [3] [4] [5] [6] [7] [8] [9] [10]\n2 3 7 11 15 17 19 23 0 0\n[4]",
+      "mark_scheme": "One mark for each marking point\nMP1 Correct Index and Target columns\nMP2 Correct Numbers[5] column\nMP3 Correct Numbers[6] and Numbers[7] columns\nMP4 Correct Numbers[8] column and no incorrect data added to any other of columns [1, 2, 3, 4, 9, 10]\nNumbers\nIndex Target [1] [2] [3] [4] [5] [6] [7] [8] [9] [10]\n1 15 2 3 7 11 15 17 19 23 0 0\n2\n3\n4\n5 17\n6 19\n7 23\n8 0\n9",
+      "marks": 4,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        16
+      ],
+      "ms_pages": [
+        16
+      ]
+    }
+  ],
+  "marks": 75
+}

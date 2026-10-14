@@ -2,10 +2,13 @@
 import json
 import re
 import sqlite3
+import math
+import unicodedata
 from pathlib import Path
 
-from flask import Flask, abort, g, render_template, request
+from flask import Flask, abort, g, render_template, request, send_file, url_for
 from markupsafe import Markup, escape
+from glossary import ENTRIES, annotate
 
 ROOT = Path(__file__).resolve().parent
 SECTIONS = {
@@ -57,6 +60,13 @@ def create_app(database_path: str | Path | None = None) -> Flask:
     app = Flask(__name__)
     app.config['DATABASE'] = str(database_path or ROOT / 'pastpapers.db')
 
+    catalog = json.loads((ROOT/'source_catalog.json').read_text(encoding='utf-8'))
+    metadata = {}
+    for path in (ROOT/'processed').glob('*.json'):
+        package = json.loads(path.read_text(encoding='utf-8'))
+        for item in package['questions']:
+            metadata[(package['paper'], item['question_number'])] = item
+
     def db() -> sqlite3.Connection:
         if 'db' not in g:
             path = Path(app.config['DATABASE']).resolve()
@@ -89,36 +99,107 @@ def create_app(database_path: str | Path | None = None) -> Flask:
             sql += " AND question_text LIKE ? ESCAPE '\\'"
             literal = query.replace('\\', '\\\\').replace('%', '\\%').replace('_', '\\_')
             params.append('%' + literal + '%')
-        rows = [dict(row) for row in db().execute(sql + ' ORDER BY id', params)]
+        year = request.args.get('year', '').strip()
+        if year:
+            sql += ' AND year = ?'
+            params.append(year)
+        rows = [dict(row) for row in db().execute(sql + ' ORDER BY CAST(year AS INTEGER) DESC, season, paper_number, id', params)]
         for row in rows:
             row['key_phrases'] = parse_list(row['key_phrases'])
             row['common_mistakes'] = parse_list(row['common_mistakes'])
-            row['highlighted_scheme'] = highlight(row['mark_scheme'], row['key_phrases'])
-        return rows
+            row['highlighted_scheme'] = annotate(row['mark_scheme'], row['key_phrases'], row['syllabus_section'], f"scheme-{row['id']}")
+            row['annotated_question'] = annotate(row['question_text'], [], row['syllabus_section'], f"question-{row['id']}")
+            season = {'October/November': 'w', 'May/June': 's', 'February/March': 'm'}.get(row['season'])
+            paper_id = f"{row['paper_code']}_{season}{str(row['year'])[-2:]}_{row['paper_number']}"
+            row['paper_id'] = paper_id
+            item = metadata.get((paper_id, row['question_number']), {})
+            row['sources'] = []
+            if item and paper_id in catalog:
+                row['sources'] = [dict(paper=paper_id, number=row['question_number'],
+                    qp_pages=item['qp_pages'], ms_pages=item['ms_pages'])]
+            row['layouts'] = {kind: [dict(page=p, image=catalog[paper_id][kind]['pages'][str(p)])
+                for p in item.get(kind+'_pages', [])] for kind in ('qp', 'ms')} if paper_id in catalog else {'qp': [], 'ms': []}
+        # Merge only when text AND the original visual pages agree. Diagrams that
+        # differ are kept separate even if extracted text happens to be identical.
+        grouped = {}
+        for row in rows:
+            normalize = lambda text: ' '.join(unicodedata.normalize('NFKC', text or '').split())
+            visuals = tuple(layout['image'] for kind in ('qp','ms') for layout in row['layouts'][kind])
+            key = (row['syllabus_section'], row['marks'], normalize(row['question_text']),
+                   normalize(row['mark_scheme']), visuals or (row['id'],))
+            if key in grouped:
+                grouped[key]['sources'].extend(row['sources'])
+            else:
+                grouped[key] = row
+        return list(grouped.values())
 
     @app.route('/')
     def home() -> str:
-        return render_template('home.html', total=len(questions()))
+        rows = questions()
+        years = [str(r[0]) for r in db().execute('SELECT DISTINCT year FROM questions ORDER BY year DESC')]
+        total_occurrences = db().execute('SELECT COUNT(*) FROM questions').fetchone()[0]
+        return render_template('home.html', total=len(rows), occurrences=total_occurrences,
+                               papers=len(catalog), years=years)
 
     @app.route('/topics')
     def topics() -> str:
         rows = questions()
         counts = {section: sum(q['syllabus_section'] == section for q in rows) for section in SECTIONS}
-        return render_template('topics.html', sections=SECTIONS, counts=counts, total=len(rows))
+        return render_template('topics.html', sections=SECTIONS, counts=counts, total=len(rows),
+                               year=request.args.get('year',''), years=available_years())
+
+    def available_years() -> list[str]:
+        return [str(row[0]) for row in db().execute('SELECT DISTINCT year FROM questions ORDER BY year DESC')]
+
+    def question_page(title: str, section: str | None, query: str, rows: list[dict]) -> str:
+        try:
+            page = max(1, int(request.args.get('page', 1)))
+        except ValueError:
+            page = 1
+        pages = max(1, math.ceil(len(rows)/20))
+        page = min(page, pages)
+        links = {key: value for key, value in request.args.items() if key != 'page'}
+        endpoint = 'topic' if section else 'search'
+        if section:
+            links['section'] = section
+        return render_template('questions.html', title=title, section=section,
+            questions=rows[(page-1)*20:page*20], query=query, total=len(rows), page=page, pages=pages,
+            prev_url=url_for(endpoint, **links, page=page-1) if page>1 else None,
+            next_url=url_for(endpoint, **links, page=page+1) if page<pages else None,
+            year=request.args.get('year',''), years=available_years())
+
+    @app.route('/sources/<paper>/<kind>')
+    def source_pdf(paper: str, kind: str):
+        if paper not in catalog or kind not in ('qp', 'ms'):
+            abort(404)
+        return send_file(ROOT/catalog[paper][kind]['path'], mimetype='application/pdf')
+
+    @app.route('/references/<name>')
+    def reference_pdf(name: str):
+        names = {'syllabus': '9618 2026 syllabus.pdf',
+                 'pseudocode': '697401-2026-pseudocode-guide-for-teachers.pdf'}
+        if name not in names:
+            abort(404)
+        return send_file(ROOT/names[name], mimetype='application/pdf')
+
+    @app.route('/glossary')
+    def glossary_page() -> str:
+        query = request.args.get('q', '').strip()
+        entries = [entry for entry in ENTRIES if query.lower() in
+                   (' '.join([entry['term'],entry['definition']]+entry['aliases'])).lower()]
+        return render_template('glossary.html', entries=sorted(entries,key=lambda e:e['term'].lower()), query=query)
 
     @app.route('/topics/<section>')
     def topic(section: str) -> str:
         if section not in SECTIONS:
             abort(404)
         query = request.args.get('q', '').strip()
-        return render_template('questions.html', title=SECTIONS[section], section=section,
-                               questions=questions(section, query), query=query)
+        return question_page(SECTIONS[section], section, query, questions(section, query))
 
     @app.route('/search')
     def search() -> str:
         query = request.args.get('q', '').strip()
-        return render_template('questions.html', title='Search questions', section=None,
-                               questions=questions(query=query) if query else [], query=query)
+        return question_page('Search questions', None, query, questions(query=query) if query else [])
 
     @app.errorhandler(400)
     @app.errorhandler(404)

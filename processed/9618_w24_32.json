@@ -1,0 +1,512 @@
+{
+  "paper": "9618_w24_32",
+  "qp": "papers/9618/paper_3/2024/oct_nov/9618_w24_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2024/oct_nov/9618_w24_ms_32.pdf",
+  "sha256": {
+    "qp": "94438657867c9301845ef932a8cbc09abb70b41cbf675764c030db8c0b529be8",
+    "ms": "5cda9c53cbe573c36fd3bbb999c8e2756a16c35b713a6dfcb217c6fd0554955a"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Describe how packet switching is used to transmit messages across a network.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 The data to be transmitted is divided into equal sized packets\nMP2 A packet header is attached to each packet containing key information\nMP3 … such as source/destination IP addresses, packet number, etc\nMP4 Packets are transmitted independently\nMP5 … and may travel though different routes/paths to the destination\nMP6 Routes are determined using a routing table//Packets take the optimum route depending on congestion\nMP7 The packets usually arrive out of order\nMP8 The packets are reassembled in the correct order at the destination // The packets are re-ordered using the\nsequence number/the header\nMP9 If packets are missing/corrupted a re-transmission request is sent / packets are re-sent.",
+      "marks": 3,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "State two benefits and two drawbacks of packet switching as a method of transmitting\nmessages across a network.\nBenefit 1\nBenefit 2\nDrawback 1\nDrawback 2\n[4]",
+      "mark_scheme": "One mark for each benefit (Max 2)\nMP1 Packets are more likely to arrive because they can be re-routed if a problem occurs with one of the routes//Packets\nare more likely to arrive because if a packet is lost, it can be re-transmitted\nMP2 Bandwidth can be shared allowing packets from different messages to share the same path\nMP3 Considered secure as the packets generally travel via different routes\nMP4 High data transmission rate is possible\nOne mark for each drawback (Max 2)\nMP5 Time delay because packets need to be re-ordered/reassembled at the destination//Time delay caused by missing\npackets needing to be re-sent//Time delay because it has to share the bandwidth of the circuit / channel with\nother packets\nMP6 Requires a complex algorithm to function\nMP7 Needs lots of RAM to handle large amounts of data.",
+      "marks": 4,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Describe serial file organisation as a method of storing data records in a file.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Records are stored one after the other as they are collected // records are stored in chronological order\nMP2 New records are appended to the end of the file.",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "State one example of a use for serial file organisation.\n[1]",
+      "mark_scheme": "One mark for a use (Max 1)\nMP1 Creating unsorted / temporary transaction files\nMP2 Creating data logging files",
+      "marks": 1,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Describe the user‑defined data type record.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 A user-defined record data type is a composite data type\nMP2 It uses other data types in its definition to form a single new data type\nMP3 The data types referenced may be primitive data types from a programming language or they may be other user-\ndefined data types.\nMP4 Includes related items\nMP5 Includes a fixed number of items.",
+      "marks": 3,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "composite data type",
+        "record"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "A programmer defines a record, Order, to store the following data:\n• account number\n• order number\n• order price\n• order date.\nW rite pseudocode statements to define this record.\n[4]",
+      "mark_scheme": "One mark for TYPE Order and ENDTYPE correct\nOne mark for correct use of DECLARE in all declarations seen\nOne mark for the two shaded declarations\nOne mark for the two unshaded declarations\nExample answer\nTYPE Order\nDECLARE AccountNumber : INTEGER\nDECLARE OrderNumber : INTEGER\nDECLARE OrderPrice : REAL\nDECLARE OrderDate : DATE\nENDTYPE",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Numbers are stored in a computer using binary floating‑point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the denary value of the given normalised binary floating‑point number.\nShow your working.\nMantissa Exponent\n0 1 0 0 0 1 1 1 0 1 1 1 0 1 1 1\nWorking\nAnswer\n[2]",
+      "mark_scheme": "One mark for working\n• application of exponent to mantissa to go from 0.10001110111 to 01000111.0111 //\nmoving the binary point 7 places //\nmultiplying by 27/128 in the fractions method //\n64 + 4 + 2 +1 + .25+ .125 + .0625 seen\nOne mark for correct answer\n• 71.4375\n// 717/\n16",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Numbers are stored in a computer using binary floating‑point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised binary floating‑point representation of – 49.1875 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[4]",
+      "mark_scheme": "One mark per mark point (Max 2)\n• correct mantissa – exact answer only\n• correct exponent – exact answer only\nMantissa Exponent\n1 0 0 1 1 1 0 1 1 0 1 0 0 1 1 0\nOne mark per mark point for working (Max 2)\n• number converted to binary e.g., positive binary version of 49.1875 = 0110001.0011 //\ntwo’s complement version bits flipped and 1 added = 1001110.1101 //\n–64 + 8 + 4 + 2 + .5 + .25 + .0625 //\n–64 + 14.8125\n• use of the exponent e.g. moving the binary point 6 places /  26.",
+      "marks": 4,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Name and describe two protocols used by the Application Layer of the TCP/IP protocol suite.\nProtocol 1\nDescription\nProtocol 2\nDescription\n[4]",
+      "mark_scheme": "One mark for each correct name (Max 2)\nOne mark for each correct corresponding expansion (Max 2)\nMP1 HTTP/HTTPS\nMP2 For sending and receiving / transferring web pages / hypertext\nMP3 FTP\nMP4 For sending and receiving files over a network / between devices\nMP5 POP3\nMP6 Pull protocol / for receiving / downloading emails\nMP7 IMAP\nMP8 Pull protocol / for receiving / downloading emails\nMP9 SMTP\nMP10 Push protocol / for sending / uploading emails\nMP11 BitTorrent\nMP12 Peer-to-peer file sharing over a network",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocol"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Explain the purpose and function of the Application Layer in the TCP/IP protocol suite.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 The application layer provides access to all the programs that exchange data // Interacts directly with user.\nMP2 … used by, for example, web browsers, server software.\nMP3 Communicates/enables data transfer to/from Transport layer // It allows applications to access the services used in\nother TCP/IP layers.\nMP4 It defines the protocols that any application uses to allow the exchange of data.",
+      "marks": 3,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocols",
+        "TCP/IP"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "The truth table for a logic circuit is shown.\nINPUT OUTPUT\nA B C D X\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 1\n0 1 1 0 1\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 1\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 0\nWrite the Boolean logic expression that correspo nds to the given truth table as the\nsum‑of‑products.\nX =\n[3]",
+      "mark_scheme": "Three marks for all eight correct products and no additional products\nTwo marks for five, six or seven correct products\nOne mark for three or four correct products\n(X =) A.B.C.D+A.B.C.D+A.B.C.D.+ A.B.C.D+A.B.C.D+A.B.C.D+A.B.C.D+A.B.C.D",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "The truth table for a logic circuit is shown.\nINPUT OUTPUT\nA B C D X\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 1\n0 1 1 0 1\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 1\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 0\nComplete the Karnaugh map (K‑map) for the given truth table.\nAB\nCD\n00 01 11 10\n[2]",
+      "mark_scheme": "Two marks if no errors present\nOne mark if one error present\nAB\nCD 00 01 11 10\n00 0 0 0 0\n01 1 1 1 1\n11 0 0 0 0\n10 1 1 1 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(c)",
+      "question_text": "The truth table for a logic circuit is shown.\nINPUT OUTPUT\nA B C D X\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 1\n0 1 1 0 1\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 1\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 0\nDraw loop(s) around appropriate group(s) in the K‑map to produce an optimal sum‑of‑products.\n[2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)\nAB\nCD 00 01 11 10\n00 0 0 0 0\n01 1 1 1 1\n11 0 0 0 0\n10 1 1 1 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(d)",
+      "question_text": "The truth table for a logic circuit is shown.\nINPUT OUTPUT\nA B C D X\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 1\n0 1 1 0 1\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 1\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 0\nWrite the Boolean logic expression from your answer to part (c) as the simplified\nsum‑of‑products.\nX =\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\nMP1 Any correct relevant Boolean term\nMP2 Boolean terms with correct operator + and no other terms present\n(X =) C.D+C.D // C.D.+ C.D",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Several syntax diagrams are shown.\nodd even\n1 0\n3 2\n5 4\n7 6\n9 8\nsymbol letter\n% A\n£ B\n# C\n@ D\n$ E\nnumber\nodd odd\neven\nState why each number is invalid for the given syntax diagrams.\n21\nReason\n123\nReason\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 21 - a number must begin with an odd digit, 2 is even\nMP2 123 - a number can only be one or two digits in length not three",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Several syntax diagrams are shown.\nodd even\n1 0\n3 2\n5 4\n7 6\n9 8\nsymbol letter\n% A\n£ B\n# C\n@ D\n$ E\nnumber\nodd odd\neven\nComplete the Backus‑Naur Form (BNF) for the given syntax diagrams.\n<symbol> ::=\n<number> ::=\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 <symbol> ::= % | £ | # | @ | $\nMP2 <number> ::= <odd>|<odd><even>|<odd><odd>",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(c)(i)",
+      "question_text": "Several syntax diagrams are shown.\nodd even\n1 0\n3 2\n5 4\n7 6\n9 8\nsymbol letter\n% A\n£ B\n# C\n@ D\n$ E\nnumber\nodd odd\neven\nA new syntax rule, code, is required. It must begin with a letter , followed by one or two\nnumbers, and end with a symbol.\nDraw a syntax diagram for code.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 letter, number and symbol all included in correct order: letter first, followed by number, finishing with symbol\nMP2 provision for one or two numbers including relevant connectors\nMP3 all other connections and label correct and no additional data\nExample answer\ncode\nletter number number symbol",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(c)(ii)",
+      "question_text": "Several syntax diagrams are shown.\nodd even\n1 0\n3 2\n5 4\n7 6\n9 8\nsymbol letter\n% A\n£ B\n# C\n@ D\n$ E\nnumber\nodd odd\neven\nA new syntax rule, code, is required. It must begin with a letter , followed by one or two\nnumbers, and end with a symbol.\nWrite the BNF for code.\n[2]",
+      "mark_scheme": "One mark per correct line (Max 2)\n<code> ::= <letter><number><symbol>|\n<letter><number><number><symbol>\nOR\n<code> ::= <letter><number><number><symbol>|\n<letter><number><symbol>\nAlternative Answer\nOne mark per correct line (Max 2)\n<digits> ::= <number>|<number><number>\n<code> ::= <letter><digits><symbol>",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "Complex Instruction Set Computer (CISC) is a type of processor.\nIdentify four features of a CISC processor.\n1\n2\n3\n4\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 many instruction formats possible\nMP2 large instruction set\nMP3 many addressing modes available\nMP4 uses variable length/multi-operation instructions\nMP5 multi-clock cycle instructions\nMP6 complex decoding of instructions\nMP7 uses complex circuits\nMP8 makes frequent use of cache memory\nMP9 uses programmable control unit // uses micro-programmed control unit // uses hardwired control unit\nMP10 hardware needs to be able to handle more complex instructions convert into sub-instructions // Design emphasis is\non the hardware.",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "The kernel is the central component of an Operating System (OS).\nOutline how the kernel of an OS acts as an interrupt handler .\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 the kernel receives a signal when an interrupt is generated\nMP2 the kernel checks the priority and reviews the status/priority of the current interrupts\nMP3 system enters kernel mode if the type of interrupt is of higher priority than the current process\nMP4 the kernel consults the interrupt dispatch table / IDT\nMP5 … and saves the state of the interrupted process / contents of the registers on the kernel stack\nMP6 the kernel restores the process state e.g. contents of registers once the interrupt is serviced",
+      "marks": 2,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "interrupt"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(b)(i)",
+      "question_text": "State what is meant by the term multi‑tasking in an Operating System.\n[1]",
+      "mark_scheme": "One mark per mark point (Max 1)\nMP1 multi-tasking allows computers to carry out / seem to carry out more than one process at a time",
+      "marks": 1,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "multi-tasking"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(b)(ii)",
+      "question_text": "Describe how multi‑tasking is implemented in an Operating System.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 processor time/common hardware and resources is/are shared between tasks\nMP2 scheduling is used to decide on the processes to be carried out to ensure multi-tasking operates correctly / efficiently\n/ without clashes\nMP3 one task of a higher priority can interrupt another task that is currently running",
+      "marks": 2,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "multi-tasking",
+        "scheduling",
+        "interrupt"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "Objects and classes form the basic structure of Object‑Oriented Programming (OOP).\nOutline the structure of a class.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Attributes/properties …\nMP2 … with their data types // … are variables bound to the class\nMP3 Methods …\nMP4 … that are subroutines / functions / procedures that act upon the attributes\nMP5 Getters/setters …\nMP6 … are methods that can fetch / update the contents of attributes\nMP7 A constructor …\nMP8 … that is used to create instances / objects of this class.",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Getters",
+        "setters",
+        "instances"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Objects and classes form the basic structure of Object‑Oriented Programming (OOP).\nGive three differences between an object and a class.\n1\n2\n3\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 A class is only defined once but many objects can be created from that class // A class is a template / blueprint from\nwhich objects are created // An object is an instance of a class\nMP2 No memory is allocated when a class is defined, but objects are allocated memory space whenever they are created\nMP3 A class cannot be manipulated as it is not available in the memory, but objects can be manipulated\nMP4 A class is defined but an object is declared / created / instantiated.\nMP5 A class can use inheritance. An object cannot.",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "inheritance",
+        "instance"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "This binary tree shows an ordered list of integers.\n4 36\n1 16 64\n9 49\nA linked list of nodes is used to store the data. Each node consists of a left pointer , the data\nand a right pointer.\n−1 is used to represent a null pointer .\nComplete this linked list to represent the given binary tree organisation.\nRootPtr\nLeftPtr Data RightPtr\n–1 1 –1\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Five additional nodes with correct data values\nMP2 Correct null pointers in all nodes (7) – no extra null pointers where the arrow points to the next node\nMP3 Correct arrows to represent pointers joining parent nodes to child nodes – must come from the correct left or right\npointer not the middle\nMP4 All nodes in correct order and no additional data in left/right pointer boxes.\nRootPtr\nLeftPtr Data RightPtr\n25\n4 -1 36\n-1 1 -1 16 -1 64 -1\n-1 9 -1 -1 49 -1",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "null pointers"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "This binary tree shows an ordered list of integers.\n4 36\n1 16 64\n9 49\nA 2D array is used to store the nodes of the linked list in part (a).\nComplete the diagram using your answer for part (a).\nRootPtr Index LeftPtr Data RightPtr\n0 0 25\n1 4\n2 36\n3 1\n4 16\n5 64\nFreePtr 6 9\n7 49\n[4]",
+      "mark_scheme": "First eight rows of table (Max 3)\nThree marks for all eight correct rows\nTwo marks for six or seven correct rows\nOne mark for three, four or five correct rows\nLast row of table and FreePtr (Max 1)\nOne mark for correct FreePtr with last row of table completely blank\nRootPt RightP\nIndex LeftPtr Data\nr tr\n0 0 1 25 2\n1 3 4 4\n2 -1 36 5\n3 -1 1 -1\n4 6 16 -1\n5 7 64 -1\nFreePt\n6 -1 9 -1\nr\n8 7 -1 49 -1\n8",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12,
+        13
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "11(c)",
+      "question_text": "This binary tree shows an ordered list of integers.\n4 36\n1 16 64\n9 49\nThe linked list in part (a) is implemented using a 1D array of records. Each record contains a\nleft pointer, data and a right pointer.\nThe following pseudocode represents a function that searches for an element in the array of\nrecords LinkList. It returns the index of the record if the element is found, or it returns a\nnull pointer if the element is not found.\nComplete the pseudocode for the function.\nFUNCTION SearchList(Item : INTEGER)\nNullPtr −1\nRootPtr\nWHILE NowPtr <> NullPtr\nIF LinkList[NowPtr].Data < Item THEN\nNowPtr LinkList[NowPtr].RightPtr\nELSE\nIF  THEN\nNowPtr\nELSE\nRETURN NowPtr\nENDIF\nENDIF\nENDWHILE\nRETURN NullPtr\nENDFUNCTION\n[4]",
+      "mark_scheme": "One mark for any correct row (Max 4)\nFUNCTION SearchList(Item : INTEGER) RETURNS INTEGER\nNullPtr  -1\nNowPtr  RootPtr\nWHILE NowPtr <> NullPtr\nIF LinkList[NowPtr].Data < Item THEN\nNowPtr  LinkList[NowPtr].RightPtr\nELSE\nIF LinkList[NowPtr].Data > Item THEN\nNowPtr  LinkList[NowPtr].LeftPtr\nELSE\nRETURN NowPtr\nENDIF\nENDIF\nENDWHILE\nRETURN NullPtr\nENDFUNCTION",
+      "marks": 4,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12,
+        13
+      ],
+      "ms_pages": [
+        15
+      ]
+    }
+  ],
+  "marks": 75
+}

@@ -1,0 +1,429 @@
+{
+  "paper": "9618_w25_33",
+  "qp": "papers/9618/paper_3/2025/oct_nov/9618_w25_qp_33.pdf",
+  "ms": "papers/9618/paper_3/2025/oct_nov/9618_w25_ms_33.pdf",
+  "sha256": {
+    "qp": "d461e7c9984784b235f782b49b8d6ff56bc88128f6f404c5951bda198e747f1d",
+    "ms": "39a489962e8a5e216843286b37fd642742c81ba9a19897b8c760fd5445da2c61"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)(i)",
+      "question_text": "An enumerated data type, Spectrum, is required to hold the names of colours.\nWrite the pseudocode statement for the type declaration of Spectrum to hold the\nnames of the colours available:\nRed, Orange, Yellow, Green, Blue, Indigo, Violet.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 TYPE Spectrum =\nMP2 (Red, Orange, Yellow, Green, Blue, Indigo, Violet)\nExample answer\nTYPE Spectrum = (Red, Orange, Yellow, Green, Blue,\nIndigo, Violet)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(a)(ii)",
+      "question_text": "An enumerated data type, Spectrum, is required to hold the names of colours.\nIdentify two characteristics of the list of values given in an enumerated data type\ndeclaration.\n1\n2\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 the list is ordered/ordinal\nMP2 the list contains all possible values\nMP3 no duplicate values in list\nMP4 all values are the same data type",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "ColourData is a composite data type to store definitions of colours.\nW rite pseudocode statements to declare ColourData to hold the following fields:\nField Example data\nColourCode XYZ12345\nColour Red\nWavelength 650\nFrequency 4.62\nPrimaryColour Yes\nUse the most appropriate data type in each case, including the enumerated data type\nSpectrum from part a(i).\n[4]",
+      "mark_scheme": "One mark for TYPE ColourData and ENDTYPE correct\nOne mark for correct use of DECLARE in all declarations\nOne mark for correct use of Spectrum in declaration\nOne mark for remaining four declarations correct (STRING, INTEGER,\nREAL, BOOLEAN)\nExample answer\nTYPE ColourData\nDECLARE ColourCode : STRING\nDECLARE Colour : Spectrum\nDECLARE Wavelength : INTEGER\nDECLARE Frequency : REAL\nDECLARE PrimaryColour : BOOLEAN\nENDTYPE",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Numbers are stored in a computer system using binary floating‑point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent\n• 2 bytes in total.\nOutline the effect of changing the number of bits used to store the mantissa to 10 bits, in this\nsystem.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 the precision of the number stored in the mantissa will be reduced\nMP2 the number of bits available for the exponent will increase to 6\nMP3 … this will increase the range of numbers that can be stored.",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Numbers are stored in a computer system using binary floating‑point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent\n• 2 bytes in total.\nDescribe one example of a situation that could cause an overflow to occur and the\nconsequences of such an overflow.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 a process involving a calculation / the multiplication of two large\nnumbers could take place\nMP2 the result might be outside of the range of values possible to store\nin the given system\nMP3 … leading to the most significant bits of the mantissa/exponent\nbeing lost (which is an overflow).",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent",
+        "overflow"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "Describe how packet switching is used to pass messages across a network. Do not include\nchecking for completeness and resending packets in your answer.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 the message is divided into small chunks called packets\nMP2 each packet is given a header with important data including source\nand destination IP addresses\nMP3 each packet is sent independently // packets can be sent through\ndifferent routes\nMP4 packets are sent through the optimum route // packets can be re-\nrouted if a route is unavailable\nMP5 packets are reassembled at the destination into the whole message",
+      "marks": 4,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "Identify and describe three protocols that are used in the Application Layer of the TCP/IP protocol\nsuite.\nProtocol 1\nDescription\nProtocol 2\nDescription\nProtocol 3\nDescription\n[6]",
+      "mark_scheme": "One mark for a correct protocol and one mark for a correct corresponding\ndescription (Max 6)\nThree from:\nHTTP/S [1] a protocol/secure protocol used to transfer hypermedia\ndocuments / web pages / (data) files between networked devices [1]\nFTP [1] a protocol to download, upload and transfer files from one location to\nanother on a network [1]\nPOP3 [1] a protocol used to retrieve/receive emails from a mail server to a\ncomputer [1]\nIMAP [1] allows users to access/read their emails from any device without\nremoving the message from the mail server // synchronises emails on any\ndevice [1]\nSMTP [1] a protocol used to send emails between mail servers // a protocol\nused to send emails from a computer to a mail server [1]\nBitTorrent [1] a communication protocol used for peer-to-peer file sharing [1]",
+      "marks": 6,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocol"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "State the purpose of multi‑tasking.\n[1]",
+      "mark_scheme": "To enable multiple programs/processes to be executed at the same time",
+      "marks": 1,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Explain how an operating system ensures that multi‑tasking operates efficiently.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 the operating system monitors the state of each task/process\nMP2 using scheduling to ensure hardware resources are used efficiently\nMP3 … and making sure that tasks/processes do not clash.",
+      "marks": 3,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "scheduling"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(a)(i)",
+      "question_text": "The Karnaugh map (K‑map) represents a logic circuit with four inputs.\nAB\nCD 00 01 11 10\n00 0 0 0 0\n01 1 1 1 0\n11 0 1 1 1\n10 0 0 1 1\nDraw loop(s) around appropriate group(s) in the K‑map to produce an optimal\nsum‑of‑products. [3]",
+      "mark_scheme": "One mark for each correct loop (Max 3)\nAB\nCD 00 01 11 10\n00\n0 0 0 0\n01 1 1 1 0\n11 0 1 1 1\n10 0 0 1 1",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "6(a)(ii)",
+      "question_text": "The Karnaugh map (K‑map) represents a logic circuit with four inputs.\nAB\nCD 00 01 11 10\n00 0 0 0 0\n01 1 1 1 0\n11 0 1 1 1\n10 0 0 1 1\nWrite the Boolean expression from your answer to part a(i) as a simplified sum‑of‑products.\nDo not carry out any further simplification.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 One correct Boolean term with an OR sign\nMP2 All three correct Boolean terms connected by OR signs and no\nother terms present.\nA.C.D + B.D + A.C",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Simplify the following expression using De Morgan’s laws and Boolean algebra.\nShow all the stages in your simplification.\nX = A+B+C+B+C\n[3]",
+      "mark_scheme": "One mark for correct use of De Morgan’s laws\nOne mark for correct use of any other Boolean algebra law\nX = A+B+C + B+C\n(X=) A.B.C + B.C ………………………………….(De Morgan’s)\n(X=) A.B.C + B.C ………………………………….(Double negation)\n(X=) C.(A.B + B) …………………………………..(Distributive)\nOne mark for correct answer\n(X=) C.(A + B) ……………………………………..(Redundancy)",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "De Morgan’s laws"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Outline the process of optimisation during the compilation of a program.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 To identify and remove redundant code / To simplify expressions /\nTo reorder the code\nMP2 … so that storage size/memory use/power consumption/program\nexecution time/CPU time is minimized.",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Write the Reverse Polish Notation (RPN) for the given infix expression:\n((6 + 12) / (16 – 10)) * 18\n[3]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 6 12 +\nMP2 16 10 – /\nMP3 18 *\nFinal correct expression\n6 12 + 16 10 – / 18 *",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "The RPN expression\nc a – b d + * b c + /\nis to be evaluated, where:\na = 4, b = 12, c = 24 and d = 6.\nShow the changing contents of the stack as the RPN expression is evaluated.\n[4]",
+      "mark_scheme": "One mark per ring (Max 3)\nOne mark for the interim total (360) and the final total (10).\n6 24\n4 12 12 18 12 12 36\n24 24 20 20 20 20 360 360 360 360 10",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "Calculate the shortest distance between the Start node and each of the nodes in the graph using\nDijkstra’s algorithm.\nShow your working on the graph or in the working space. Write your answers in the table provided.\nV\n4 9\nT\n3 X\nW\n6\nY\nStart\nZ\nWorking\nAnswers:\nT V W X Y Z\n[5]",
+      "mark_scheme": "One mark per mark point - working (Max 3)\nMay be seen on diagram or in working section\nMP1 Initialisation – setting Start to 0\nMP2 … and the rest of the towns to \nMP3 Evidence to show values at nodes being updated\nMP4 Evidence to show ‘visited node(s)’\nMP5 Evidence to show a correct calculation of at least one route\nMP6 Evidence to show more than one route has been calculated for at\nleast one town\nCorrect Answers (Max 2)\nTwo marks for all six correct values\nOne mark for four or five correct values.\nT V W X Y Z\n6 10 13 18 21 28",
+      "marks": 5,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "9",
+      "question_text": "A company requires a digital certificate to ensure the authenticity of its online communications.\nOutline the process followed to acquire a digital certificate.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 the company generates a public and private key pair locally using a\nweb browser and an RSA key generator tool, which may be part of\nthe CA’s web page\nMP2 the company requests a digital certificate from a Certificate\nAuthority (CA)\nMP3 the CA responds with its public key and digital certificate,\nMP4 … signed with its private key\nMP5 the company gathers authentication information e.g. its public key\nMP6 … and sends it to the CA signed with the company’s private key and\nencrypted with the CA’s public key\nMP7 the CA verifies the received information and generates/issues the\ndigital certificate.",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key",
+        "digital certificate"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "A stack, StackArray, is to be implemented using pseudocode, to store a maximum of 100 string\nitems in an appropriate array. Declarations are required so that the stack has a beginning, an end\nand a maximum size. An array is also required to store the data.\nWrite pseudocode to declare the variables, constant and array required to implement the\nstack.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Correct declaration of constant Maximum\nMP2 Both correctly declared integers\nMP3 Correct array declaration\nExample answer\nCONSTANT Maximum = 100\nDECLARE Base : INTEGER\nDECLARE Top : INTEGER\nDECLARE StackArray : ARRAY[1:100] OF STRING",
+      "marks": 3,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "A stack, StackArray, is to be implemented using pseudocode, to store a maximum of 100 string\nitems in an appropriate array. Declarations are required so that the stack has a beginning, an end\nand a maximum size. An array is also required to store the data.\nWrite pseudocode for a procedure to initialise the top and bottom pointers of the stack to\nappropriate values.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Correct procedure definition structure\nMP2 Base pointer with appropriate value (0 or 1)\nMP3 Top pointer with appropriate value (–1, 0, 1)\nExample answer\nPROCEDURE InitialiseStack()\nBase  0\nTop  0\nENDPROCEDURE",
+      "marks": 3,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "11",
+      "question_text": "Describe when the use of recursion would be beneficial and give an example.\nDescription\nExample\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Recursion is beneficial for problems that can be broken down into\nsmaller, repetitive problems\nMP2 … especially for problems that have many possible branches / are\ntoo complex for an iterative approach\nMP3 An example e.g. solving mathematical series, sorting a pile of\ndocuments, etc.",
+      "marks": 3,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "Recursion"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "12(a)",
+      "question_text": "An exception can occur when running a program.\nExplain what is meant by an exception.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 An exception is an unplanned / unexpected event that occurs\nwhen a program is running\nMP2 … due to an error in programming/logic that wasn’t detected during\nprogram construction/compilation\nMP3 The effect of an exception can be that the program halts\nunexpectedly.",
+      "marks": 3,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [
+        "exception"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "12(b)",
+      "question_text": "An exception can occur when running a program.\nIdentify one example of an exception and give one reason why the ex ception may cause a\nproblem.\nExample\nReason\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 One mark for an example of an exception (see list in guidance)\nMP2 One mark for the reason for the given exception\nExample answer\nDivision by zero\nThe processor will not be able to evaluate this answer because a number\ndivided by zero is infinity, so the program will crash.",
+      "marks": 2,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [
+        "exception"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "13",
+      "question_text": "The table shows assembly language instructions for a processor that has one register , the\nAccumulator (ACC).\nInstruction\nLabel Opcode Operand Explanation\nLDM #n Load the number n to the ACC\nLoad the contents of the location at the given\nLDD <address>\naddress to the ACC\nThe address to be used is at the given address.\nLDI <address> Load the contents of this second address to\nthe ACC\nAdd the contents of the given address to the\nADD <address>\nACC\nADD #n Add the number n to the ACC\nSubtract the contents of the given address\nSUB <address>\nfrom the ACC\nSUB #n Subtract the number n from the ACC\nStore the contents of the ACC at the given\nSTO <address>\naddress\nGives a symbolic address <label> to the\n<label>: <data>\nmemory location with the contents <data>\n# denotes a denary number, e.g. #123\n<label> can be used in place of <address>\nThe current contents of memory are:\nAddress Contents\n563 125\n899 63\nWrite assembly language code, using only the given instruction set to:\n• store the denary value 250 as labelled variable X\n• store the value stored in location 563 as labelled variable Y\n• add the value stored in variable X to the value stored in variable Y\n• subtract the value stored in location 899 from the current value in the Accumulator\n• store the result in variable Total.\nShow the initialisation and values of the variables X, Y and Total in the table provided.\nLabel Content\n[7]",
+      "mark_scheme": "One mark per mark point (Max 7)\nMP1 LDM #250 seen\nMP2 Correct use of LDD 563\nMP3 Correct use of ADD with labelled address X\nMP4 Correct use of SUB with address 899\nMP5 At least one correct use of STO\nOpcode Operand\nLDM #250\nSTO X\nLDD 563\nSTO Y\nADD X\nSUB 899\nSTO Total\nMP6 Correct setting up of at least one labelled address and its value\nMP7 Correct setting up of remaining two labelled addresses and their\nvalues\nLabel Contents\nX: 250\nY: 125\nTotal: 312",
+      "marks": 7,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        15,
+        16
+      ]
+    }
+  ],
+  "marks": 75
+}

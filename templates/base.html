@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{% block title %}Pastpaper AI{% endblock %} · Pastpaper AI</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"><script src="{{ url_for('static', filename='filters.js') }}" defer></script></head>
-<body><header class="site-header"><a class="brand" href="{{ url_for('home') }}">pastpaper<span>ai</span></a><nav aria-label="Main navigation"><a href="{{ url_for('topics') }}">Topics</a><a href="{{ url_for('search') }}">Search</a></nav></header>
-<main>{% block content %}{% endblock %}</main><footer>Cambridge A-level Computer Science · 9618 Paper 3<br>AI-processed study material. Check answers against the original mark scheme.</footer></body>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{% block title %}Pastpaper AI{% endblock %} · Pastpaper AI</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"><script src="{{ url_for('static', filename='filters.js') }}" defer></script><script src="{{ url_for('static', filename='glossary.js') }}" defer></script></head>
+<body><header class="site-header"><a class="brand" href="{{ url_for('home') }}">pastpaper<span>ai</span></a><nav aria-label="Main navigation"><a href="{{ url_for('topics') }}">Topics</a><a href="{{ url_for('glossary_page') }}">Glossary</a><a href="{{ url_for('search') }}">Search</a></nav></header>
+<main>{% block content %}{% endblock %}</main><footer>Cambridge International AS &amp; A Level Computer Science · 9618 Paper 3<br><a href="{{ url_for('reference_pdf', name='syllabus') }}">2026 syllabus</a> · <a href="{{ url_for('reference_pdf', name='pseudocode') }}">Pseudocode guide</a><br>Question cards cite their original question paper and mark scheme.</footer></body>
 </html>

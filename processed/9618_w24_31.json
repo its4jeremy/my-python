@@ -1,0 +1,477 @@
+{
+  "paper": "9618_w24_31",
+  "qp": "papers/9618/paper_3/2024/oct_nov/9618_w24_qp_31.pdf",
+  "ms": "papers/9618/paper_3/2024/oct_nov/9618_w24_ms_31.pdf",
+  "sha256": {
+    "qp": "2679dc897568988e4a63a1679900e353a0e8484a5589d5a8944be3c6c50d3c19",
+    "ms": "ce0106f1b96bffceaa06249893d6b24d40e9d06a98656d136e29e03e78c8d0d7"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Numbers are stored in a computer using binary floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised binary floating-point representation of +201.125 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "One mark per mark point (Max 1)\n• correct answer\n• statement regarding number losing precision/rounding error\nOne mark per mark point for working (Max 2)\n• number converted to binary 201.125 = 11001001.001\n// 128 + 64 + 8 + 1 + 0.125 / 1/ seen\n8\n• use of the exponent e.g. moving the binary point 8 places /  28.\nMantissa Exponent\n0 1 1 0 0 1 0 0 1 0 0 0 1 0 0 0",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Numbers are stored in a computer using binary floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the denary value of the given normalised binary floating-point number.\nShow your working.\nMantissa Exponent\n1 0 1 0 1 1 0 0 1 1 0 0 0 1 0 1\nWorking\nAnswer\n[3]",
+      "mark_scheme": "One mark per mark point (Max 2)\n• application of exponent to go from 1.010110011 to 101011.0011 // x 25 // movement of binary point 5 places seen\n• –32 + 8 + 2 + 1 + .125 + .0625 // –32 + 8 + 2 + 1 + 1/ + 1/ seen\n8 16\n// –1 + ¼ + 1/ + 1/ + 1/ + 1/ // –1 + 179/ // –333/\n16 32 256 512 512 512\nOne mark for correct answer (Max 1)\n• –20.8125 //\n–2013/\n16",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "Reduced Instruction Set Computers (RISC) is a type of processor.\nIdentify four features of a RISC processor.\n1\n2\n3\n4\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 low number of instruction formats //low number of instruction sets\nMP2 uses single-clock cycle instructions\nMP3 uses fixed length instructions\nMP4 uses many general-purpose registers\nMP5 works well with pipelining\nMP6 hard-wired control unit\nMP7 makes extensive use of RAM\nMP8 uses a low number of addressing modes\nMP9 the design emphasis is on the software.",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "pipelining"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Describe circuit switching as a method of data transmission.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 A dedicated circuit / channel is required\nMP2 The circuit is established before the transmission begins\nMP3 The circuit lasts for the whole of the transmission // The circuit is closed at the end of the transmission\nMP4 Data travels in a continuous stream along the same route\nMP5 Transmission is usually bidirectional.",
+      "marks": 3,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "State one benefit and one drawback of circuit switching as a method of data transmission.\nBenefit\nDrawback\n[2]",
+      "mark_scheme": "One mark for a benefit (Max 1)\nMP1 No need for data to be reassembled // data / frames arrive in the same order in which they were sent\nMP2 Suitable for real time transmission // fast data transfer rate\nMP3 The whole of the bandwidth is available\nOne mark for a drawback (Max 1)\nMP4 No other transmission can use the same circuit when it is in use // Bandwidth can be wasted as it cannot be used by\nother messages\nMP5 Not secure // Can be intercepted as all data travelling along the same route\nMP6 If there is a problem with the route the transmission ends // No other route is available without first doing the setup\nMP7 The circuit is always there whether or not it’s being used\nMP8 Can take time to set up before transmission starts.",
+      "marks": 2,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "The TCP/IP protocol may be viewed as a stack that contains four layers: Application, Transport,\nInternet, Link.\nDescribe how the layers of the TCP/IP protocol stack interact with each other.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Each layer can only accept input from the next higher layer or the next lower layer\nMP2 There is an interface between the adjacent layers which is the only interaction between layers\nMP3 Data is added to the headers as the frames/packets pass through the layers\nMP4 The interactions are carried out by installed software\nMP5 User interaction takes place at the highest/Application layer of the stack through protocols associated with that layer\nof the stack\nMP6 Direct access to hardware takes place at the lowest/Link layer of the stack.",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocols"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Explain what is meant by a hashing algorithm in the context of file access.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 A hashing algorithm is used in direct access methods on random and sequential files\nMP2 It is a mathematical formula\nMP3 … used to perform a calculation applied to the key field of the record being searched / stored\nMP4 The result of the calculation gives the address where the record should be found / stored.",
+      "marks": 3,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record",
+        "direct access",
+        "hashing algorithm"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "The use of a hashing algorithm can result in the same storage location being identified for\nmore than one record.\nOutline two methods of overcoming this issue.\n1\n2\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 The record is stored in the next free memory space after the one identified by the hashing algorithm // Use\nlinear progression\nMP2 An overflow area is set up and the record is stored in the next free memory space in the overflow area.",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record",
+        "hashing algorithm"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "Describe the user-defined data type set.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 A set user-defined data type is a composite data type\nMP2 … which includes a list of unordered elements\nMP3 Set theory operations, such as intersection and union, can be applied to these elements\nMP4 A set data type includes the type of data/data type it uses as part of its definition\nMP5 All the elements are of the same data type.",
+      "marks": 3,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "composite data type",
+        "set"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Write pseudocode statements to declare the set data type, SymbolSet, to hold the following\nset of mathematical operators, using the variable Operators.\n+ – * / ^\n[4]",
+      "mark_scheme": "One mark for each mark point (Max 4)\nMP1 TYPE SymbolSet/Operators =\nMP2 SET OF CHAR\nMP3 DEFINE Operators/SymbolSet\nMP4 ('+', '–', '*', '/', '^')\nMP5 : SymbolSet/Operators\nExample answers\nTYPE SymbolSet = SET OF CHAR\nDEFINE Operators ('+', '–', '*', '/', '^') : SymbolSet\nTYPE Operators = SET OF CHAR\nDEFINE SymbolSet ('+', '–', '*', '/', '^') : Operators",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "SET"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "The truth table for a logic circuit is shown.\nINPUT OUTPUT\nA B C D T\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 1\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 1\nWrite the Boolean logic expression that correspo nds to the given truth table as the\nsum-of-products.\nT =\n[3]",
+      "mark_scheme": "One mark for every two correct products (Max 3)\n(T =) A.B.C.D+A.B.C.D+A.B.C.D+ A.B.C.D+A.B.C.D+A.B.C.D",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "The truth table for a logic circuit is shown.\nINPUT OUTPUT\nA B C D T\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 1\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 1\nComplete the Karnaugh map (K-map) for the given truth table.\nAB\nCD\n00 01 11 10\n[2]",
+      "mark_scheme": "Two marks if no errors present\nOne mark if one error present\nAB\nCD 00 01 11 10\n00 0 0 0 0\n01 1 0 1 1\n11 1 0 1 1\n10 0 0 0 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "The truth table for a logic circuit is shown.\nINPUT OUTPUT\nA B C D T\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 1\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 1\nDraw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.\n[2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)\nAB\nCD 00 01 11 10\n00 0 0 0 0\n01 1 0 1 1\n11 1 0 1 1\n10 0 0 0 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(d)(i)",
+      "question_text": "The truth table for a logic circuit is shown.\nINPUT OUTPUT\nA B C D T\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 1\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 1\nWrite the Boolean logic expression from your answer to part (c) as the simplified\nsum-of-products.\nT =\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\n• Any correct Boolean term\n• Boolean terms and operator correct and no other terms present\n(T =) A.D+B.D // B.D.+ A.D",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "7(d)(ii)",
+      "question_text": "The truth table for a logic circuit is shown.\nINPUT OUTPUT\nA B C D T\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 1\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 1\nUse Boolean algebra to write your answer to part (d)(i) in its simplest form.\nT =  [1]",
+      "mark_scheme": "One mark for simplest form (Max 1)\n(T =) D.(A.B)",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Describe the process of segmentation for memory management.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 In segmented memory, the logical / virtual address space is broken into varying sized blocks called segments /\nsections.\nMP2 Each segment has a name and size.\nMP3 During execution segments from logical / virtual memory are loaded into physical memory.\nMP4 The address is specified by the user\nMP5 … it contains the segment name and offset value.\nMP6 Segments are numbered\nMP7 … and this number is used as an index in the segment map table.\nMP8 The offset value determines the size of the segment.\nMP9 A segment map table maps logical / virtual addresses to physical addresses / contains the segment number and\noffset.",
+      "marks": 4,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "virtual memory"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Explain what is meant by disk thrashing.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Disk thrashing is a problem that may occur when virtual memory is being used.\nMP2 As the main memory fills up, more and more pages need to be swapped in and out of virtual memory.\nMP3 This swapping leads to a very high rate of hard disk access / excessive disk head movements.\nMP4 Moving a hard disk read/write head takes a relatively long time / long latency time.\nMP5 Eventually, more time is spent swapping pages than processing data thrash point, which can cause the program to\nfreeze or not run.",
+      "marks": 3,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "virtual memory"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "A veterinary surgery wants to create a class for individual pets.\nSome of the attributes required in the class are listed in the table.\nAttribute Data type Description\nPetID STRING unique ID assigned at registration\nPetType STRING type of pet assigned at registration\ntelephone number of owner assigned at\nOwnerTelephone STRING\nregistration\nDateRegistered DATE date of registration\nState one reason why the attributes would be declared as PRIVATE.\n[1]",
+      "mark_scheme": "To ensure that the attributes are only accessible using the class’s own methods/within the class.",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "A veterinary surgery wants to create a class for individual pets.\nSome of the attributes required in the class are listed in the table.\nAttribute Data type Description\nPetID STRING unique ID assigned at registration\nPetType STRING type of pet assigned at registration\ntelephone number of owner assigned at\nOwnerTelephone STRING\nregistration\nDateRegistered DATE date of registration\nComplete the class diagram for Pet, to include:\n• an attribute and data type for the name of the pet\n• an attribute and data type for the name of the owner\n• a method to create a Pet object and set attributes at the time of registration\n• a method to assign a pet ID\n• a method to assign the date of registration\n• a method to return the pet name\n• a method to return the owner’s telephone number.\nPet\nPetID : STRING\nPetType : STRING\nOwnerTelephone : STRING\nDateRegistered : DATE\n:\n:\n[5]",
+      "mark_scheme": "One mark per mark point (Max 5)\nMP1 Two correct attributes with sensible names and correct data types.\nMP2 Constructor present.\nMP3 Two correct setters with exact names and appropriate parameters and data types.\nMP4 Two correct getters with appropriate names.\nMP5 Name assigned to pet name getter matches the attribute.\nPet\nPetID : STRING\nPetType : STRING\nOwnerTelephone : STRING\nDateRegistered : DATE\nPetName : STRING\nOwnerName : STRING\nConstructor()\nSetPetID(APetID : STRING)\nSetDateRegistered(RegDate : DATE)\nGetPetName()\nGetOwnerTelephone()",
+      "marks": 5,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "getter",
+        "setters"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "Several syntax diagrams are shown.\nletter operator\nA +\nE –\nI *\nO /\nU digit\nY\nsymbol\n# 2\n$ 3\n? 4\n& 5\n@ 6\nlabel\nletter digit digit\nequation\nlabel = label operator label\nComplete the Backus-Naur Form (BNF) for the given syntax diagrams.\n<operator> ::=\n<label> ::=\n<equation> ::=\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\n• <operator> ::= + | – | * | /\n• <label> ::= <letter><digit>|<letter><digit><digit>\n• <equation> ::= <label> =\n• <label><operator><label>",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(b)(i)",
+      "question_text": "Several syntax diagrams are shown.\nletter operator\nA +\nE –\nI *\nO /\nU digit\nY\nsymbol\n# 2\n$ 3\n? 4\n& 5\n@ 6\nlabel\nletter digit digit\nequation\nlabel = label operator label\nA new syntax rule, password, is required. It must begin with a letter or a symbol, followed by\na digit and end with one or two symbols.\nDraw a syntax diagram for password.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 begin with either a letter or a symbol\nMP2 end with either one or two symbols\nMP3 digit and all other connections and label correct.\npassword\nletter digit symbol symbol\nsymbol",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(b)(ii)",
+      "question_text": "Several syntax diagrams are shown.\nletter operator\nA +\nE –\nI *\nO /\nU digit\nY\nsymbol\n# 2\n$ 3\n? 4\n& 5\n@ 6\nlabel\nletter digit digit\nequation\nlabel = label operator label\nA new syntax rule, password, is required. It must begin with a letter or a symbol, followed by\na digit and end with one or two symbols.\nWrite the BNF for password.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\n• <password> ::= <letter><digit><symbol>|\n• <letter><digit><symbol><symbol>|<symbol><digit><symbol>|\n<symbol><digit><symbol><symbol>\n<password> ::= <letter><digit><symbol>|\n<letter><digit><symbol><symbol>|<symbol><digit><symbol>|\n<symbol><digit><symbol><symbol>\nAlternative Answer\nOne mark per mark point (Max 2)\n• All three lines correct\n• Any two lines correct\n<first> ::= <letter>|<symbol>\n<last> ::= <symbol>|<symbol><symbol>\n<password> ::= <first><digit><last>",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "The following diagram shows an ordered binary tree.\nRed\nGreen Yellow\nBlue Orange Violet\nIndigo\nA linked list of nodes is used to store the data. Each node consists of a left pointer , the data\nand a right pointer.\n–1 is used to represent a null pointer .\nComplete this linked list to represent the given binary tree.\nRootPtr\nLeftPtr Data RightPtr\nRed\nGreen\n–1 Blue –1\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Four additional nodes with correct data values\nMP2 Correct null pointers in all added nodes (6) with no extra null pointers where the arrow points to the next node\nMP3 Correct arrows to represent pointers joining parent nodes to child nodes\nMP4 All nodes in correct order and no extra data added to pointers.\nRootPtr\nLeftPtr Data RightPtr\nRed\nGreen Yellow -1\n-1 Blue -1 Orange -1\n-1 Indigo -1\n-1 Violet -1",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "null pointers"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "The following diagram shows an ordered binary tree.\nRed\nGreen Yellow\nBlue Orange Violet\nIndigo\nA user-defined record structure is used to store the nodes of the linked list in part (a).\nComplete the diagram, using your answer for part (a).\nRootPtr Index LeftPtr Data RightPtr\n0 0 Red\n1 Green\n2 Yellow\n3 Blue\n4 Orange\n5 Indigo\nFreePtr 6 Violet\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Correct Red and Green rows\nMP2 Correct Yellow and Blue rows\nMP3 Correct Orange, Indigo and Violet rows\nMP4 Correct FreePtr with blank row 7\nRootPt RightPt\nIndex LeftPtr Data\nr r\n0 0 1 Red 2\n1 3 Green 4\n2 6 Yellow -1\n3 -1 Blue -1\n4 5 Orange -1\n5 -1 Indigo -1\nFreePt\n6 -1 Violet -1\nr\n7 7",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12,
+        13
+      ],
+      "ms_pages": [
+        16
+      ]
+    },
+    {
+      "question_number": "11(c)",
+      "question_text": "The following diagram shows an ordered binary tree.\nRed\nGreen Yellow\nBlue Orange Violet\nIndigo\nThe linked list in part (a) is implemented using a 1D array of records. Each record contains a\nleft pointer, data and a right pointer.\nThe following pseudocode represents a function that searches for an element in the array of\nrecords BinTree. It returns the index of the record if the element is found, or it returns a null\npointer if the element is not found.\nComplete the pseudocode for the function.\nFUNCTION SearchTree(Item : STRING)\nNowPtr\nWHILE NowPtr <> -1\nIF  THEN\nNowPtr BinTree[NowPtr].LeftPtr\nELSE\nIF BinTree[NowPtr].Data < Item THEN\nELSE\nRETURN NowPtr\nENDIF\nENDIF\nENDWHILE\nRETURN NowPtr\nENDFUNCTION\n[4]",
+      "mark_scheme": "One mark for any correct row (Max 4)\nFUNCTION SearchTree(Item : STRING) RETURNS INTEGER\nNowPtr  RootPtr\nWHILE NowPtr <> -1\nIF BinTree[NowPtr].Data > Item THEN\nNowPtr  BinTree[NowPtr].LeftPtr\nELSE\nIF BinTree[NowPtr].Data < Item THEN\nNowPtr  BinTree[NowPtr].RightPtr\nELSE\nRETURN NowPtr\nENDIF\nENDIF\nENDWHILE\nRETURN NowPtr\nENDFUNCTION",
+      "marks": 4,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12,
+        13
+      ],
+      "ms_pages": [
+        17
+      ]
+    }
+  ],
+  "marks": 75
+}

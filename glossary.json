@@ -1,0 +1,1630 @@
+[
+  {
+    "id": "recursion",
+    "term": "Recursion",
+    "definition": "A function or procedure solving a problem by calling itself, until a base case is reached.",
+    "aliases": [
+      "recursive"
+    ],
+    "sections": [
+      "19.2"
+    ],
+    "source": {
+      "paper": "9618_s25_31",
+      "question": "4(b)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark per mark point\nMP1 A technique used to solve problems using a function/procedure/subroutine that calls itself (general case)\nMP2 … until the terminating condition / base case is achieved, when no further recursive calls are made"
+  },
+  {
+    "id": "base-case",
+    "term": "Base case",
+    "definition": "A case that can be handled without making another recursive call. Reaching it allows the pending calls to unwind.",
+    "aliases": [
+      "base cases"
+    ],
+    "sections": [
+      "19.2"
+    ],
+    "source": {
+      "paper": "9618_w21_31",
+      "question": "10(a)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 3)\n• Must have a base case/stopping condition\n• Must have a general case\n• … which calls itself (recursively) // Defined in terms of itself\n• … which changes its state and moves towards the base case\nUnwinding can occur once the base case is reached."
+  },
+  {
+    "id": "stopping-condition",
+    "term": "Stopping condition",
+    "definition": "The test that determines when no further recursive calls should be made. It identifies when the base case has been reached.",
+    "aliases": [
+      "terminating condition",
+      "termination condition"
+    ],
+    "sections": [
+      "19.2"
+    ],
+    "source": {
+      "paper": "9618_w21_31",
+      "question": "10(a)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 3)\n• Must have a base case/stopping condition\n• Must have a general case\n• … which calls itself (recursively) // Defined in terms of itself\n• … which changes its state and moves towards the base case\nUnwinding can occur once the base case is reached."
+  },
+  {
+    "id": "general-case",
+    "term": "General case",
+    "definition": "The part of a recursive definition that calls the function or procedure again, with a changed state that moves towards the base case.",
+    "aliases": [
+      "recursive case"
+    ],
+    "sections": [
+      "19.2"
+    ],
+    "source": {
+      "paper": "9618_w21_31",
+      "question": "10(a)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 3)\n• Must have a base case/stopping condition\n• Must have a general case\n• … which calls itself (recursively) // Defined in terms of itself\n• … which changes its state and moves towards the base case\nUnwinding can occur once the base case is reached."
+  },
+  {
+    "id": "unwinding",
+    "term": "Unwinding",
+    "definition": "Completing the pending recursive calls in reverse order after the base case is reached, restoring saved state from the stack.",
+    "aliases": [],
+    "sections": [
+      "19.2"
+    ],
+    "source": {
+      "paper": "9618_w21_31",
+      "question": "10(b)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 3)\n• A stack is a LIFO data structure\n• Each recursive call is pushed onto the stack\n• …. and is then popped as the function ends\n• Enables backtracking/unwinding\n… to maintain the required order."
+  },
+  {
+    "id": "stack",
+    "term": "Stack",
+    "definition": "A last-in, first-out (LIFO) data structure. Push adds an item at the top; pop removes the most recently added item.",
+    "aliases": [
+      "stacks",
+      "LIFO"
+    ],
+    "sections": [
+      "19.1",
+      "19.2",
+      "16.2"
+    ],
+    "source": {
+      "paper": "9618_w21_31",
+      "question": "10(b)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 3)\n• A stack is a LIFO data structure\n• Each recursive call is pushed onto the stack\n• …. and is then popped as the function ends\n• Enables backtracking/unwinding\n… to maintain the required order."
+  },
+  {
+    "id": "queue",
+    "term": "Queue",
+    "definition": "A first-in, first-out (FIFO) data structure: items are removed in the order in which they were added.",
+    "aliases": [
+      "queues",
+      "FIFO"
+    ],
+    "sections": [
+      "19.1"
+    ],
+    "source": {
+      "paper": "9618_s23_32",
+      "question": "11(b)",
+      "pages": [
+        12
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\n Print jobs are expected to be actioned by the printer in the order they are\nreceived\n … because the printer queue is a queue, the first job to be sent to the\nprinter would be the first job printed.\n If the printer queue was on a stack, the first job the printer received would\nnot be printed until all the other jobs have been printed."
+  },
+  {
+    "id": "linked-list",
+    "term": "Linked list",
+    "definition": "A collection of nodes connected by pointers, rather than requiring consecutive storage locations. Each node stores data and a link to another node.",
+    "aliases": [
+      "linked lists"
+    ],
+    "sections": [
+      "19.1",
+      "19.2"
+    ],
+    "source": {
+      "paper": "9618_w22_32",
+      "question": "11(a)",
+      "pages": [
+        15
+      ]
+    },
+    "example_answer": "One mark for each point\n• Correct HeadPointer\n• Any three correct NextPointer\n• All six NextPointer correct\nHeadPointer 5\nIndex Flower NextPointer\n1 Rose 0\n2 Marigold\n3 Foxglove 4\n4 Iris 9\n5 Daisy 3\n6 Dahlia\n7 Saxifrage\n8 Lupin 1\n9 Lily 8\n10 Hydrangea"
+  },
+  {
+    "id": "binary-tree",
+    "term": "Binary tree",
+    "definition": "A tree in which each node has at most two children. An ordered binary tree places smaller values to the left and larger values to the right.",
+    "aliases": [
+      "binary trees"
+    ],
+    "sections": [
+      "19.1",
+      "19.2"
+    ],
+    "source": {
+      "paper": "9618_s25_31",
+      "question": "4(a)",
+      "pages": [
+        9
+      ]
+    },
+    "example_answer": "One mark per mark point\nMP1 Any two nodes added correctly with correct data (6, 15, 41, 66) and arrows\nMP2 Remaining two nodes added with correct data (6, 15, 41, 66) and all nodes with connecting arrows starting from\npointer boxes\nMP3 Correct null pointers (-1) added throughout\nMP4 … with no entries in other pointer boxes and all nodes correctly positioned and connected\nRoot pointer\nLeft pointer Data Right pointer\n36\n12 -1 40\n-1 3 -1 15 -1 -1 41\n-1 6 -1 -1 66 -1"
+  },
+  {
+    "id": "null-pointer",
+    "term": "Null pointer",
+    "definition": "A pointer value used to indicate that there is no linked node or valid target location. In the paper’s array implementation this may be represented by a value such as −1.",
+    "aliases": [
+      "null pointers"
+    ],
+    "sections": [
+      "19.1",
+      "19.2"
+    ],
+    "source": {
+      "paper": "9618_s25_31",
+      "question": "4(a)",
+      "pages": [
+        9
+      ]
+    },
+    "example_answer": "One mark per mark point\nMP1 Any two nodes added correctly with correct data (6, 15, 41, 66) and arrows\nMP2 Remaining two nodes added with correct data (6, 15, 41, 66) and all nodes with connecting arrows starting from\npointer boxes\nMP3 Correct null pointers (-1) added throughout\nMP4 … with no entries in other pointer boxes and all nodes correctly positioned and connected\nRoot pointer\nLeft pointer Data Right pointer\n36\n12 -1 40\n-1 3 -1 15 -1 -1 41\n-1 6 -1 -1 66 -1"
+  },
+  {
+    "id": "binary-search",
+    "term": "Binary search",
+    "definition": "A search of sorted data that compares the target with the middle item and repeatedly discards the half that cannot contain it.",
+    "aliases": [],
+    "sections": [
+      "19.1"
+    ],
+    "source": {
+      "paper": "9618_s22_32",
+      "question": "8(b)(ii)",
+      "pages": [
+        9
+      ]
+    },
+    "example_answer": "Any four from\nMP1 Find the middle item / index\nMP2 Check the value of middle item in the list to be searched\nMP3 If equal item searched for is found\nMP4 If this is not equal/greater/less than the item searched for\nMP5 … discard the half of the list that does not contain the search item\nMP6 Repeat the above steps until the item searched for is found\nMP7 … or there is only one item left in the list and it is not the item searched for // lower bound > / = upper bound"
+  },
+  {
+    "id": "linear-search",
+    "term": "Linear search",
+    "definition": "A search that checks items in sequence until the target is found or all relevant items have been checked.",
+    "aliases": [],
+    "sections": [
+      "19.1"
+    ],
+    "source": {
+      "paper": "9618_s22_32",
+      "question": "8(a)",
+      "pages": [
+        8
+      ]
+    },
+    "example_answer": "INTEGER\n9 // LENGTH(MyList) - 1\nIndex + 1\n\"Value not found\" (or any similar phrase)"
+  },
+  {
+    "id": "insertion-sort",
+    "term": "Insertion sort",
+    "definition": "A sorting algorithm that grows a sorted section by inserting each next item into its correct position within that section.",
+    "aliases": [],
+    "sections": [
+      "19.1"
+    ],
+    "source": {
+      "paper": "9618_s26_31",
+      "question": "10(a)",
+      "pages": [
+        15
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 5)\nMP1 Correct outer loop iterating through entire array starting at second\nelement\nMP2 Temporary variables both initialised to current value of arrays\nMP3 Insertion variable initialised\nMP4 Correct inner loop criteria\nMP5 Elements of both arrays inserted as appropriate\nMP6 Insertion variable decremented\nMP7 Temporary values replaced in correct place in arrays\nSample algorithm\nFOR Count  1 to 499\nTemp1  MemberID[Count]\nTemp2  Names[Count]\nInsert  Count – 1\nWHILE Insert >= 0 AND MemberID[Insert] > Temp1\nMemberID[Insert + 1]  MemberID[Insert]\nNames[Insert + 1]  Names[Insert]\nInsert  Insert – 1\nENDWHILE\nMemberID[Insert + 1]  Temp1\nNames[Insert + 1]  Temp2\nNEXT Count"
+  },
+  {
+    "id": "big-o",
+    "term": "Big O",
+    "definition": "Notation describing how an algorithm’s time or space requirement grows as the input size grows. Binary search has O(log n) worst-case time; linear search has O(n).",
+    "aliases": [
+      "Big O notation"
+    ],
+    "sections": [
+      "19.1"
+    ],
+    "source": {
+      "paper": "9618_s24_31",
+      "question": "10(c)",
+      "pages": [
+        13
+      ]
+    },
+    "example_answer": "One mark from\nMP1 Big O for a binary search is O(Log n).\n2\nMP2 Big O notation is used to indicate the time/space complexity of an algorithm.\nOne mark from\nMP3 The time taken to complete the search increases logarithmically as the number of search items increases linearly\nMP4 The time taken to complete the search increases linearly as the number of search items increases exponentially\nMP5 As the search field is repeatedly getting smaller, the number of comparisons made before the item is found, or the\nnumber of items runs out, is relatively small."
+  },
+  {
+    "id": "enumerated-data-type",
+    "term": "Enumerated data type",
+    "definition": "A user-defined non-composite type with an ordered list of all its permitted values.",
+    "aliases": [
+      "enumerated type",
+      "enumerated types"
+    ],
+    "sections": [
+      "13.1"
+    ],
+    "source": {
+      "paper": "9618_w23_31",
+      "question": "3",
+      "pages": [
+        4
+      ]
+    },
+    "example_answer": "One mark per mark point – enumerated type (Max 2)\nMP1 A user-defined non-composite (data type) (only award once)\nMP2 …with a list of all possible values\nMP3 …that is ordered.\nOne mark per mark point – pointer type (Max 2)\nMP4 A user-defined non-composite (data type) (only award once)\nMP5 …that stores addresses/memory locations only\nMP6 …and indicates the type of data stored in the memory location."
+  },
+  {
+    "id": "pointer-data-type",
+    "term": "Pointer data type",
+    "definition": "A user-defined non-composite type that stores a memory address and indicates the type of data at that address.",
+    "aliases": [
+      "pointer type"
+    ],
+    "sections": [
+      "13.1"
+    ],
+    "source": {
+      "paper": "9618_w23_31",
+      "question": "3",
+      "pages": [
+        4
+      ]
+    },
+    "example_answer": "One mark per mark point – enumerated type (Max 2)\nMP1 A user-defined non-composite (data type) (only award once)\nMP2 …with a list of all possible values\nMP3 …that is ordered.\nOne mark per mark point – pointer type (Max 2)\nMP4 A user-defined non-composite (data type) (only award once)\nMP5 …that stores addresses/memory locations only\nMP6 …and indicates the type of data stored in the memory location."
+  },
+  {
+    "id": "composite-data-type",
+    "term": "Composite data type",
+    "definition": "A type that groups multiple elements under one identifier. Those elements can have the same or different data types.",
+    "aliases": [
+      "composite type"
+    ],
+    "sections": [
+      "13.1"
+    ],
+    "source": {
+      "paper": "9618_w23_32",
+      "question": "2",
+      "pages": [
+        3
+      ]
+    },
+    "example_answer": "One mark per mark point – composite (Max 2)\nMP1 A (user defined) data type that is a collection of data that can consist\nof multiple elements\nMP2 …of different or the same data types\nMP3 …grouped under a single identifier.\nOne mark per mark point – non-composite (Max 2)\nMP4 It can be defined without referencing another data type.\nMP5 It can be a primitive type available in a programming language, or a\nuser- defined type."
+  },
+  {
+    "id": "non-composite-data-type",
+    "term": "Non-composite data type",
+    "definition": "A type whose value is not a collection of component fields or elements. Examples include primitive types and user-defined enumerated or pointer types.",
+    "aliases": [
+      "non-composite type",
+      "non‑composite data type"
+    ],
+    "sections": [
+      "13.1"
+    ],
+    "source": {
+      "paper": "9618_w23_32",
+      "question": "2",
+      "pages": [
+        3
+      ]
+    },
+    "example_answer": "One mark per mark point – composite (Max 2)\nMP1 A (user defined) data type that is a collection of data that can consist\nof multiple elements\nMP2 …of different or the same data types\nMP3 …grouped under a single identifier.\nOne mark per mark point – non-composite (Max 2)\nMP4 It can be defined without referencing another data type.\nMP5 It can be a primitive type available in a programming language, or a\nuser- defined type."
+  },
+  {
+    "id": "record",
+    "term": "Record",
+    "definition": "A composite data type that groups named fields, which may have different data types, under one identifier.",
+    "aliases": [
+      "record data type"
+    ],
+    "sections": [
+      "13.1",
+      "13.2",
+      "20.2"
+    ],
+    "source": {
+      "paper": "9618_w24_32",
+      "question": "3(a)",
+      "pages": [
+        5
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 A user-defined record data type is a composite data type\nMP2 It uses other data types in its definition to form a single new data type\nMP3 The data types referenced may be primitive data types from a programming language or they may be other user-\ndefined data types.\nMP4 Includes related items\nMP5 Includes a fixed number of items."
+  },
+  {
+    "id": "set",
+    "term": "Set",
+    "definition": "A composite data type containing distinct elements. The same element is not stored more than once.",
+    "aliases": [
+      "set data type"
+    ],
+    "sections": [
+      "13.1"
+    ],
+    "source": {
+      "paper": "9618_w24_31",
+      "question": "6(a)",
+      "pages": [
+        7
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 A set user-defined data type is a composite data type\nMP2 … which includes a list of unordered elements\nMP3 Set theory operations, such as intersection and union, can be applied to these elements\nMP4 A set data type includes the type of data/data type it uses as part of its definition\nMP5 All the elements are of the same data type."
+  },
+  {
+    "id": "serial-file-organisation",
+    "term": "Serial file organisation",
+    "definition": "Records are stored one after another in arrival order; new records are appended at the end.",
+    "aliases": [
+      "serial organisation"
+    ],
+    "sections": [
+      "13.2"
+    ],
+    "source": {
+      "paper": "9618_s26_33",
+      "question": "3(b)",
+      "pages": [
+        6
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 Records are stored in a file one after the other\nMP2 … in chronological order\nMP3 New records are appended/added at the end of the file"
+  },
+  {
+    "id": "sequential-file-organisation",
+    "term": "Sequential file organisation",
+    "definition": "Records are stored in an order based on a key field. Reading them sequentially follows that order.",
+    "aliases": [
+      "sequential organisation"
+    ],
+    "sections": [
+      "13.2"
+    ],
+    "source": {
+      "paper": "9618_s26_32",
+      "question": "4(b)",
+      "pages": [
+        7
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 Records are stored in a file one after the other / linearly\nMP2 … in a given order\nMP3 … usually based on a key field / unique identifier"
+  },
+  {
+    "id": "random-file-organisation",
+    "term": "Random file organisation",
+    "definition": "Records can be placed at available locations without a sorted order. A hashing function maps a record key to its storage location.",
+    "aliases": [
+      "random organisation"
+    ],
+    "sections": [
+      "13.2",
+      "20.2"
+    ],
+    "source": {
+      "paper": "9618_s26_31",
+      "question": "2(b)",
+      "pages": [
+        5
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 Records are stored in no particular order / any available position\nMP2 A record key is used to determine the location where the record is to be\nstored\nMP3 … which is generated using a hash function on the key field\nMP4 New records are added in an empty location"
+  },
+  {
+    "id": "sequential-access",
+    "term": "Sequential access",
+    "definition": "Reading records one after another, passing earlier records to reach a later one.",
+    "aliases": [],
+    "sections": [
+      "13.2",
+      "20.2"
+    ],
+    "source": {
+      "paper": "9618_s24_31",
+      "question": "4(a)",
+      "pages": [
+        7
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 Sequential access method searches for records one after the other\nMP2 … from the physical start of the file until the record is found/the end of file."
+  },
+  {
+    "id": "direct-access",
+    "term": "Direct access",
+    "definition": "Accessing a record at its known or calculated location without reading every preceding record.",
+    "aliases": [
+      "random access"
+    ],
+    "sections": [
+      "13.2",
+      "20.2"
+    ],
+    "source": {
+      "paper": "9618_s24_32",
+      "question": "7(a)",
+      "pages": [
+        8
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 Direct access allows a record to be found in a file without other records being read.\nMP2 Records are found by using the key field of the target record // the location of the record is found using a\nhashing algorithm."
+  },
+  {
+    "id": "hashing-algorithm",
+    "term": "Hashing algorithm",
+    "definition": "A calculation applied to a record key to obtain a hash value used to determine a storage location.",
+    "aliases": [
+      "hash function",
+      "hashing function"
+    ],
+    "sections": [
+      "13.2",
+      "20.2"
+    ],
+    "source": {
+      "paper": "9618_w24_31",
+      "question": "5(a)",
+      "pages": [
+        7
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 A hashing algorithm is used in direct access methods on random and sequential files\nMP2 It is a mathematical formula\nMP3 … used to perform a calculation applied to the key field of the record being searched / stored\nMP4 The result of the calculation gives the address where the record should be found / stored."
+  },
+  {
+    "id": "collision",
+    "term": "Collision",
+    "definition": "In file hashing, two different record keys produce the same hash value and therefore identify the same storage location.",
+    "aliases": [
+      "collisions"
+    ],
+    "sections": [
+      "13.2",
+      "20.2"
+    ],
+    "source": {
+      "paper": "9618_w23_32",
+      "question": "3(a)",
+      "pages": [
+        3
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 A collision is when the two values / data items in the key field for two\nrecords (pass through a hashing algorithm and) result in the same\nhash value\nMP2 …so the location identified (by the hashing algorithm) may already be\nin use // two records cannot occupy the same address."
+  },
+  {
+    "id": "mantissa",
+    "term": "Mantissa",
+    "definition": "The signed significant part of a floating-point representation. With a fixed total number of bits, allocating more bits to it increases potential precision.",
+    "aliases": [],
+    "sections": [
+      "13.3"
+    ],
+    "source": {
+      "paper": "9618_s24_32",
+      "question": "1(a)",
+      "pages": [
+        4
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 When the number of bits in the mantissa is raised, the precision / accuracy of the number represented increases //\nwhen the number of bits in the mantissa is lowered, the precision / accuracy of the number represented reduces.\nMP2 When the number of bits in the exponent is reduced, the range of numbers that can be represented is reduced //\nwhen the number of bits in the exponent is increased, the range of possible numbers that can be represented\nincreases.\nMP3 When the range increases the accuracy decreases // When the range decreases the accuracy increases."
+  },
+  {
+    "id": "exponent",
+    "term": "Exponent",
+    "definition": "The power of the base used to scale the mantissa. Allocating more bits to it increases the range of floating-point values that can be represented.",
+    "aliases": [],
+    "sections": [
+      "13.3"
+    ],
+    "source": {
+      "paper": "9618_s24_32",
+      "question": "1(a)",
+      "pages": [
+        4
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 When the number of bits in the mantissa is raised, the precision / accuracy of the number represented increases //\nwhen the number of bits in the mantissa is lowered, the precision / accuracy of the number represented reduces.\nMP2 When the number of bits in the exponent is reduced, the range of numbers that can be represented is reduced //\nwhen the number of bits in the exponent is increased, the range of possible numbers that can be represented\nincreases.\nMP3 When the range increases the accuracy decreases // When the range decreases the accuracy increases."
+  },
+  {
+    "id": "normalisation",
+    "term": "Normalisation",
+    "definition": "Adjusting the mantissa and exponent without changing the represented value, to maximise significant bits. A two’s-complement binary mantissa starts 01 for a positive value or 10 for a negative value.",
+    "aliases": [
+      "normalised",
+      "normalized",
+      "normalization"
+    ],
+    "sections": [
+      "13.3"
+    ],
+    "source": {
+      "paper": "9618_w21_31",
+      "question": "1(b)",
+      "pages": [
+        3
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 3)\n• To store the maximum range of numbers in the minimum number of bytes\n/ bits\n• Normalisation minimises the number of leading zeros/ones represented\n• Maximising the number of significant bits // maximising the (potential)\nprecision / accuracy of the number for the given number of bits\n• … enables very large / small numbers to be stored with accuracy.\n• Avoids the possibility of many numbers having multiple representations."
+  },
+  {
+    "id": "underflow",
+    "term": "Underflow",
+    "definition": "A non-zero calculated value is too close to zero to be represented by the available floating-point format.",
+    "aliases": [],
+    "sections": [
+      "13.3"
+    ],
+    "source": {
+      "paper": "9618_s26_32",
+      "question": "3(b)",
+      "pages": [
+        6
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 When a calculation is performed on a normalised floating-point number //\nallow a specific example\nMP2 … so that the result obtained is less than the lowest possible value that\ncan be stored in the system an underflow will occur // the exponent is too\nsmall / too negative for the number of bits in the mantissa, so the result\nbecomes zero"
+  },
+  {
+    "id": "overflow",
+    "term": "Overflow",
+    "definition": "A calculated value is outside the range that can be represented in the available number format.",
+    "aliases": [],
+    "sections": [
+      "13.3"
+    ],
+    "source": {
+      "paper": "9618_s21_31",
+      "question": "1(d)(i)",
+      "pages": [
+        3
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 3)\n• Requires 11 bits / more than 10 bits to store (accurately) / reference to\nmaximum (positive) number that can be stored = 511\n• Denary 513 in binary is 1000000001 // Normalised: 0.1000000001\n• Results in overflow"
+  },
+  {
+    "id": "protocol",
+    "term": "Protocol",
+    "definition": "An agreed set of rules or standards that allows computer systems to communicate consistently.",
+    "aliases": [
+      "protocols"
+    ],
+    "sections": [
+      "14.1"
+    ],
+    "source": {
+      "paper": "9618_w25_31",
+      "question": "3(a)",
+      "pages": [
+        7
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 Protocols set a standard for communication // Protocols establish a standard set\nof rules for communication\nMP2 Protocols enable compatibility between devices from different\nmanufacturers/platforms\nMP3 Two devices wouldn’t be able to communicate/send messages to each other if\nthey were using different protocols"
+  },
+  {
+    "id": "tcp-ip",
+    "term": "TCP/IP",
+    "definition": "A layered protocol suite for network communication. Its four layers are Application, Transport, Internet and Link.",
+    "aliases": [
+      "TCP / IP"
+    ],
+    "sections": [
+      "14.1"
+    ],
+    "source": {
+      "paper": "9618_s24_31",
+      "question": "2(a)",
+      "pages": [
+        5
+      ]
+    },
+    "example_answer": "Two marks for all protocols in correct position\nOne mark for at least two protocols in correct position\nApplication\nTransport\nInternet\nLink"
+  },
+  {
+    "id": "packet-switching",
+    "term": "Packet switching",
+    "definition": "Splitting a message into packets that can travel independently through a network and are reassembled at the destination.",
+    "aliases": [],
+    "sections": [
+      "14.2"
+    ],
+    "source": {
+      "paper": "9618_w21_31",
+      "question": "6(a)",
+      "pages": [
+        6
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 5)\n• A large message is divided up into a group of smaller chunks of the same\nsize called packets\n• The packet has a header and a payload\n• The header contains a source IP address, destination IP address (and\nsequence number)\n• Each packet is dispatched independently\n• … and may travel along different routes / paths\n• The packets may arrive out of order\n• … and are reassembled into the original message at the destination\n• If packets are missing / corrupted a re-transmission request is sent."
+  },
+  {
+    "id": "circuit-switching",
+    "term": "Circuit switching",
+    "definition": "Establishing a dedicated communication channel before transmitting data, reserving it until the communication ends.",
+    "aliases": [],
+    "sections": [
+      "14.2"
+    ],
+    "source": {
+      "paper": "9618_w24_31",
+      "question": "3(a)",
+      "pages": [
+        5
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 A dedicated circuit / channel is required\nMP2 The circuit is established before the transmission begins\nMP3 The circuit lasts for the whole of the transmission // The circuit is closed at the end of the transmission\nMP4 Data travels in a continuous stream along the same route\nMP5 Transmission is usually bidirectional."
+  },
+  {
+    "id": "risc",
+    "term": "RISC",
+    "definition": "Reduced Instruction Set Computer: a processor design using relatively simple instructions, commonly fixed-length instructions and a hard-wired control unit.",
+    "aliases": [
+      "Reduced Instruction Set Computer",
+      "Reduced Instruction Set Computers"
+    ],
+    "sections": [
+      "15.1"
+    ],
+    "source": {
+      "paper": "9618_s24_31",
+      "question": "11(a)",
+      "pages": [
+        14
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 Uses hard-wired code/control units\nMP2 Uses relatively few instructions / simple instructions\nMP3 Uses relatively few addressing modes\nMP4 Makes use of a single-cycle for each instruction\nMP5 Makes use of fixed length / fixed format instructions\nMP6 Makes use of general-purpose registers\nMP7 Pipelining is straightforward to apply\nMP8 The design emphasis is on the software\nMP9 Processor chips require few transistors."
+  },
+  {
+    "id": "cisc",
+    "term": "CISC",
+    "definition": "Complex Instruction Set Computer: a processor design with many instruction formats and addressing modes; instructions can require several clock cycles.",
+    "aliases": [
+      "Complex Instruction Set Computer",
+      "Complex Instruction Set Computers"
+    ],
+    "sections": [
+      "15.1"
+    ],
+    "source": {
+      "paper": "9618_w24_32",
+      "question": "8",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 4)\nMP1 many instruction formats possible\nMP2 large instruction set\nMP3 many addressing modes available\nMP4 uses variable length/multi-operation instructions\nMP5 multi-clock cycle instructions\nMP6 complex decoding of instructions\nMP7 uses complex circuits\nMP8 makes frequent use of cache memory\nMP9 uses programmable control unit // uses micro-programmed control unit // uses hardwired control unit\nMP10 hardware needs to be able to handle more complex instructions convert into sub-instructions // Design emphasis is\non the hardware."
+  },
+  {
+    "id": "pipelining",
+    "term": "Pipelining",
+    "definition": "Overlapping stages of different instructions, so more than one instruction is being processed at a time. It improves throughput rather than making each instruction finish in a single stage.",
+    "aliases": [],
+    "sections": [
+      "15.1",
+      "16.1"
+    ],
+    "source": {
+      "paper": "9618_w22_31",
+      "question": "10(b)",
+      "pages": [
+        12
+      ]
+    },
+    "example_answer": "One mark for each correct point (Max 4)\n• Instructions are divided into subtasks / 5 stages\n• … Instruction fetch / IF, Instruction decode / ID, operand fetch / OF, opcode/instruction execute IE, result store / write\nback result / WB\n• Each subtask is completed during one clock cycle\n• No two instructions can execute their same stage at the same clock cycle\n• The second instruction begins in the second clock cycle, while the first instruction has moved on to its second subtask.\n• The third instruction begins in the third clock cycle while the first and second instructions move on to their second and\nthird subtasks, respectively, etc."
+  },
+  {
+    "id": "virtual-machine",
+    "term": "Virtual machine",
+    "definition": "A software-created environment that emulates a computer system, using physical resources supplied by a host.",
+    "aliases": [
+      "virtual machines",
+      "VM"
+    ],
+    "sections": [
+      "15.1"
+    ],
+    "source": {
+      "paper": "9618_s26_32",
+      "question": "5",
+      "pages": [
+        7
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 4)\nMP1 A VM is a standalone environment running on a physical computer\n// A VM is not a physical machine\nMP2 It can emulate the hardware/software of another system\nMP3 VM software has all the components of a physical computer system\nMP4 The host machine provides all the physical resources e.g. RAM/ROM\nMP5 … and is controlled via a host operating system\nMP6 The hypervisor runs between the host and guest operating systems\nMP7 … and creates and runs virtual machines / allocates resources from the\nhost to the guest OS.\nMP8 A guest OS runs within the VM/host OS\nMP9 Multiple guest OS can run on the same VM\n// Multiple VMs can run on the same host OS\nMP10 The guest operating system controls/accesses the virtual\nhardware/software."
+  },
+  {
+    "id": "sisd",
+    "term": "SISD",
+    "definition": "Single Instruction, Single Data: one processor executes one instruction stream on one data stream.",
+    "aliases": [],
+    "sections": [
+      "15.1"
+    ],
+    "source": {
+      "paper": "9618_w23_31",
+      "question": "5",
+      "pages": [
+        4
+      ]
+    },
+    "example_answer": "One mark per mark point – SISD (Max 2)\nMP1 Single Instruction, Single Data (architecture). // Data is taken from a\nsingle source and a single instruction is performed on the data.\nMP2 Contains one processor, a control unit and a memory unit.\nMP3 …that executes instructions sequentially.\nOne mark per mark point – MIMD (Max 2)\nMP4 Multiple Instruction, Multiple Data (architecture). // At any time, any\nprocessor can execute different instructions on different sets of data.\nMP5 Contains many processors\nMP6 …that operate asynchronously / independently."
+  },
+  {
+    "id": "simd",
+    "term": "SIMD",
+    "definition": "Single Instruction, Multiple Data: multiple processing units apply the same instruction to different data simultaneously.",
+    "aliases": [],
+    "sections": [
+      "15.1"
+    ],
+    "source": {
+      "paper": "9618_w23_32",
+      "question": "10",
+      "pages": [
+        8
+      ]
+    },
+    "example_answer": "One mark per mark point – SIMD (Max 2)\nMP1 Single Instruction, Multiple Data (architecture) // Performs the same\noperation on multiple different data streams simultaneously.\nMP2 The instructions can be performed sequentially, taking advantage of\npipelining.\nMP3 Parallel computers with multiple processors.\nOne mark per mark point – MISD (Max 2)\nMP4 Multiple Instruction, Single Data (architecture) // Performs different\noperations on the same data stream.\nMP5 Each processor works on the same data stream independently.\nMP6 Parallel computers with multiple processors."
+  },
+  {
+    "id": "misd",
+    "term": "MISD",
+    "definition": "Multiple Instruction, Single Data: multiple instruction streams process the same data stream.",
+    "aliases": [],
+    "sections": [
+      "15.1"
+    ],
+    "source": {
+      "paper": "9618_w23_32",
+      "question": "10",
+      "pages": [
+        8
+      ]
+    },
+    "example_answer": "One mark per mark point – SIMD (Max 2)\nMP1 Single Instruction, Multiple Data (architecture) // Performs the same\noperation on multiple different data streams simultaneously.\nMP2 The instructions can be performed sequentially, taking advantage of\npipelining.\nMP3 Parallel computers with multiple processors.\nOne mark per mark point – MISD (Max 2)\nMP4 Multiple Instruction, Single Data (architecture) // Performs different\noperations on the same data stream.\nMP5 Each processor works on the same data stream independently.\nMP6 Parallel computers with multiple processors."
+  },
+  {
+    "id": "mimd",
+    "term": "MIMD",
+    "definition": "Multiple Instruction, Multiple Data: processors execute different instructions on different data streams.",
+    "aliases": [],
+    "sections": [
+      "15.1"
+    ],
+    "source": {
+      "paper": "9618_w23_31",
+      "question": "5",
+      "pages": [
+        4
+      ]
+    },
+    "example_answer": "One mark per mark point – SISD (Max 2)\nMP1 Single Instruction, Single Data (architecture). // Data is taken from a\nsingle source and a single instruction is performed on the data.\nMP2 Contains one processor, a control unit and a memory unit.\nMP3 …that executes instructions sequentially.\nOne mark per mark point – MIMD (Max 2)\nMP4 Multiple Instruction, Multiple Data (architecture). // At any time, any\nprocessor can execute different instructions on different sets of data.\nMP5 Contains many processors\nMP6 …that operate asynchronously / independently."
+  },
+  {
+    "id": "karnaugh-map",
+    "term": "Karnaugh map",
+    "definition": "A grid used to simplify a Boolean expression by grouping adjacent 1s in groups whose size is a power of two. Adjacent positions differ in only one input bit; edges wrap around.",
+    "aliases": [
+      "K-map",
+      "K‑map",
+      "Karnaugh maps"
+    ],
+    "sections": [
+      "15.2"
+    ],
+    "source": {
+      "paper": "9618_w24_31",
+      "question": "7(a)",
+      "pages": [
+        8
+      ]
+    },
+    "example_answer": "One mark for every two correct products (Max 3)\n(T =) A.B.C.D+A.B.C.D+A.B.C.D+ A.B.C.D+A.B.C.D+A.B.C.D"
+  },
+  {
+    "id": "sum-of-products",
+    "term": "Sum-of-products",
+    "definition": "A Boolean expression formed by OR-ing product terms. Each product term ANDs the required input values or their complements.",
+    "aliases": [
+      "sum of products"
+    ],
+    "sections": [
+      "15.2"
+    ],
+    "source": {
+      "paper": "9618_w21_31",
+      "question": "7(a)",
+      "pages": [
+        7
+      ]
+    },
+    "example_answer": "One mark per two correct products (Max 3)\n_ _ _ _ _ _\n(Z =) A B C D + A B C D + A B C D + A B C D +\n_\nA B C D + A B C D"
+  },
+  {
+    "id": "de-morgan-s-laws",
+    "term": "De Morgan’s laws",
+    "definition": "Rules for negating Boolean expressions: NOT(A AND B) = NOT A OR NOT B; NOT(A OR B) = NOT A AND NOT B.",
+    "aliases": [
+      "De Morgan's laws",
+      "De Morgan"
+    ],
+    "sections": [
+      "15.2"
+    ],
+    "source": {
+      "paper": "9618_w25_33",
+      "question": "6(b)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark for correct use of De Morgan’s laws\nOne mark for correct use of any other Boolean algebra law\nX = A+B+C + B+C\n(X=) A.B.C + B.C ………………………………….(De Morgan’s)\n(X=) A.B.C + B.C ………………………………….(Double negation)\n(X=) C.(A.B + B) …………………………………..(Distributive)\nOne mark for correct answer\n(X=) C.(A + B) ……………………………………..(Redundancy)"
+  },
+  {
+    "id": "multi-tasking",
+    "term": "Multi-tasking",
+    "definition": "Managing several programs so that they appear to execute at the same time, by allocating processor time between them.",
+    "aliases": [
+      "multitasking"
+    ],
+    "sections": [
+      "16.1"
+    ],
+    "source": {
+      "paper": "9618_s25_31",
+      "question": "8(a)",
+      "pages": [
+        12
+      ]
+    },
+    "example_answer": "One mark for each mark point\nMP1 Running multiple processes concurrently\nMP2 … which benefits process management by allowing more tasks to complete than would be the case if they had to\nrun one task after another."
+  },
+  {
+    "id": "scheduling",
+    "term": "Scheduling",
+    "definition": "Choosing which ready process gets processor time and when, using a scheduling routine.",
+    "aliases": [],
+    "sections": [
+      "16.1"
+    ],
+    "source": {
+      "paper": "9618_w22_32",
+      "question": "9(a)",
+      "pages": [
+        12
+      ]
+    },
+    "example_answer": "One mark for each point (Max 3)\n• Process scheduling allows more than one program/task to appear to be executed at the same time / enables multi-\ntasking / multiprogramming.\n• To allow high priority jobs to be completed first.\n• To keep the CPU busy all the time\n• … to ensure that all processes execute efficiently\n• … and to have reduced wait times for all processes / to ensure all processes have fair access to the CPU / prevent\nstarvation of some processes."
+  },
+  {
+    "id": "round-robin",
+    "term": "Round robin",
+    "definition": "A scheduling routine that gives each ready process a time slice in turn before moving on to the next process.",
+    "aliases": [
+      "round-robin"
+    ],
+    "sections": [
+      "16.1"
+    ],
+    "source": {
+      "paper": "9618_w25_31",
+      "question": "4(b)",
+      "pages": [
+        9
+      ]
+    },
+    "example_answer": "One mark for identification and one mark for a description (Max 4)\nTwo from:\nProvision of a User Interface // Provision of a Graphical User Interface [1]\nAllows the user to interact with the computer in a more intuitive way // Icons and menus\nare used to control devices by simply ‘pointing and clicking’ [1]\nUse of device drivers [1]\nMakes it easier to control peripherals such as printers within the operating system of the\ncomputer rather than on the separate device itself [1]\nDevice mapping [1]\nDifferent devices (physical and virtual) are easy to identify on the network, check their\nstatus, or use [1]\nThe user interacts only with the Application / top layer (of the TCP/IP protocol suite) [1]\nleaving the lower layers and their complexities hidden from the user [1]"
+  },
+  {
+    "id": "shortest-remaining-time",
+    "term": "Shortest remaining time",
+    "definition": "A pre-emptive routine that runs the process with the least time left. A newly ready process with a shorter remaining time can replace the current process.",
+    "aliases": [],
+    "sections": [
+      "16.1"
+    ],
+    "source": {
+      "paper": "9618_s25_31",
+      "question": "8(b)",
+      "pages": [
+        12
+      ]
+    },
+    "example_answer": "One mark for each mark point (Max 3)\nMP1 The processes are queued as they arrive\nMP2 Processes with the shortest burst time are executed first\nMP3 It is a pre-emptive scheduling function // When a process with a shorter burst time arrives the existing process is\nreplaced by the shorter process.\nMP4 The scheduler will continue to choose shorter processes over longer processes if they continue to be added to the\nqueue can cause starvation for longer jobs\nOne mark for benefit (Max 1) e.g.\nMP5 Processes with a short burst time are processed very quickly\nMP6 Waiting time is minimised"
+  },
+  {
+    "id": "virtual-memory",
+    "term": "Virtual memory",
+    "definition": "Using secondary storage to supplement RAM by moving parts of programs or data between secondary storage and main memory when needed.",
+    "aliases": [],
+    "sections": [
+      "16.1"
+    ],
+    "source": {
+      "paper": "9618_w23_32",
+      "question": "5(a)",
+      "pages": [
+        4
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 Virtual memory is used when RAM is running low\nMP2 …such as when a computer is running many processes at once.\nMP3 Virtual memory may be used for efficient use of RAM / the processor\nMP4 …such as if data / programs are not immediately needed, they can be\nmoved from RAM to virtual memory"
+  },
+  {
+    "id": "paging",
+    "term": "Paging",
+    "definition": "Dividing memory into fixed-size units. Pages of a process can be held in separate physical frames and moved between memory and secondary storage.",
+    "aliases": [],
+    "sections": [
+      "16.1"
+    ],
+    "source": {
+      "paper": "9618_w22_31",
+      "question": "8(b)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark for a correct statement about the difference between paging and segmentation e.g.\n• Paging allows the memory to be divided into fixed size blocks and\nSegmentation divides the memory into variable sized blocks.\n• The operating system divides the memory into pages, the compiler is responsible for calculating the segment size.\n• Access times for paging is faster than for segmentation."
+  },
+  {
+    "id": "segmentation",
+    "term": "Segmentation",
+    "definition": "Dividing a program into logical, variable-size sections, such as code or data, and managing the memory allocated to those sections.",
+    "aliases": [],
+    "sections": [
+      "16.1"
+    ],
+    "source": {
+      "paper": "9618_w24_31",
+      "question": "8(a)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 4)\nMP1 In segmented memory, the logical / virtual address space is broken into varying sized blocks called segments /\nsections.\nMP2 Each segment has a name and size.\nMP3 During execution segments from logical / virtual memory are loaded into physical memory.\nMP4 The address is specified by the user\nMP5 … it contains the segment name and offset value.\nMP6 Segments are numbered\nMP7 … and this number is used as an index in the segment map table.\nMP8 The offset value determines the size of the segment.\nMP9 A segment map table maps logical / virtual addresses to physical addresses / contains the segment number and\noffset."
+  },
+  {
+    "id": "interrupt",
+    "term": "Interrupt",
+    "definition": "A signal indicating that something requires the processor’s attention. The processor saves necessary state and transfers control to an interrupt service routine.",
+    "aliases": [
+      "interrupt handling"
+    ],
+    "sections": [
+      "16.1",
+      "15.1"
+    ],
+    "source": {
+      "paper": "9618_s24_31",
+      "question": "11(b)",
+      "pages": [
+        14
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 Once the processor detects an interrupt at the start/end of the fetch-execute cycle\nMP2 … the current program is temporarily stopped and the status of each register stored on the stack.\nMP3 After the interrupt has been serviced/the Interrupt Service Routine (ISR) has been executed …\nMP4 … the registers can be restored to its original status before the interrupt was detected // … the data can be\nrestored from the stack."
+  },
+  {
+    "id": "interpreter",
+    "term": "Interpreter",
+    "definition": "A translator that checks and executes source code one statement at a time, translating it again whenever it runs rather than keeping a complete executable translation.",
+    "aliases": [
+      "interpretation"
+    ],
+    "sections": [
+      "16.2"
+    ],
+    "source": {
+      "paper": "9618_s25_31",
+      "question": "6",
+      "pages": [
+        11
+      ]
+    },
+    "example_answer": "One mark for each mark point (Max 4)\nMP1 The interpreter translates the source code one line at a time\nMP2 If the line is syntax error free it is executed\nMP3 It is not stored in executable format\nMP4 If an error is found, the program halts with an error message\nMP5 Each line must be translated every time it is run, including lines running multiple times for example in loops"
+  },
+  {
+    "id": "lexical-analysis",
+    "term": "Lexical analysis",
+    "definition": "The compilation stage that converts source characters into tokens. It also handles elements such as identifiers, comments and whitespace.",
+    "aliases": [
+      "lexical analyser"
+    ],
+    "sections": [
+      "16.2"
+    ],
+    "source": {
+      "paper": "9618_w25_31",
+      "question": "8(a)",
+      "pages": [
+        12
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 To convert the high-level source code / program into a sequence of tokens\nMP2 … that can be sent to the parser for syntax analysis\nMP3 To create a symbol table\nMP4 To remove the unnecessary white space and comments from the code"
+  },
+  {
+    "id": "syntax-analysis",
+    "term": "Syntax analysis",
+    "definition": "Checking a token stream against a programming language’s grammar, constructing a parse tree and reporting syntax errors.",
+    "aliases": [
+      "syntax analyser"
+    ],
+    "sections": [
+      "16.2"
+    ],
+    "source": {
+      "paper": "9618_s25_33",
+      "question": "8",
+      "pages": [
+        11
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 4)\nMP1 It is the second stage of compilation // It’s the compilation stage after lexical analysis.\nMP2 It takes input from the lexical analyser in the form of token streams.\nMP3 The source code is analysed / parsed against the rules of the language to detect any errors in the code.\nMP4 The output from this phase is a parse tree.\nMP5 Syntax errors are reported."
+  },
+  {
+    "id": "optimisation",
+    "term": "Optimisation",
+    "definition": "Improving generated code without changing its intended result, for example by removing redundant code or simplifying expressions.",
+    "aliases": [
+      "optimization"
+    ],
+    "sections": [
+      "16.2"
+    ],
+    "source": {
+      "paper": "9618_w25_33",
+      "question": "7(a)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\nMP1 To identify and remove redundant code / To simplify expressions /\nTo reorder the code\nMP2 … so that storage size/memory use/power consumption/program\nexecution time/CPU time is minimized."
+  },
+  {
+    "id": "reverse-polish-notation",
+    "term": "Reverse Polish Notation",
+    "definition": "Postfix notation: an operator follows its operands. Expressions can be evaluated using a stack without relying on brackets or normal precedence rules.",
+    "aliases": [
+      "RPN"
+    ],
+    "sections": [
+      "16.2"
+    ],
+    "source": {
+      "paper": "9618_s21_31",
+      "question": "4(a)(i)",
+      "pages": [
+        5
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 2)\n• Reverse Polish Notation provides an unambiguous method of\nrepresenting an expression\n• … reading from left to right\n• …without the need to use brackets\n• …with no need for rules of precedence / BODMAS"
+  },
+  {
+    "id": "symmetric-encryption",
+    "term": "Symmetric encryption",
+    "definition": "Encryption and decryption using the same shared secret key. The key must be exchanged securely.",
+    "aliases": [
+      "symmetric key encryption",
+      "symmetric key cryptography"
+    ],
+    "sections": [
+      "17.1"
+    ],
+    "source": {
+      "paper": "9618_w22_32",
+      "question": "6(a)",
+      "pages": [
+        8
+      ]
+    },
+    "example_answer": "One mark for each point\n• Symmetric encryption uses a single key and asymmetric encryption uses a pair of keys.\n• The symmetric single key is used by all, whereas only one of the keys for asymmetric encryption is available to\neveryone / one of the asymmetric encryption keys needs to be kept secret."
+  },
+  {
+    "id": "asymmetric-encryption",
+    "term": "Asymmetric encryption",
+    "definition": "Using a matched public/private key pair. A message encrypted using the recipient’s public key is decrypted using that recipient’s private key.",
+    "aliases": [
+      "asymmetric key encryption",
+      "asymmetric key cryptography"
+    ],
+    "sections": [
+      "17.1"
+    ],
+    "source": {
+      "paper": "9618_s26_32",
+      "question": "8(a)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 Symmetric key encryption uses only one key but asymmetric encryption\nuses two keys // Asymmetric public and private keys are a\nmathematically linked pair, whereas symmetric uses the same key.\nMP2 Asymmetric key encryption uses one key to encrypt and the other key to\ndecrypt, whereas symmetric key encryption uses the same key for both.\nMP3 Symmetric key encryption suffers from the key distribution problem,\nwhich the matched pair of keys for asymmetric has resolved.\nMP4 Asymmetric keys must be much larger/longer to achieve the same level\nof security as symmetric key encryption.\nMP5 Asymmetric key encryption allows verification of the sender, which\nsymmetric key encryption does not."
+  },
+  {
+    "id": "public-key",
+    "term": "Public key",
+    "definition": "The shareable member of a public/private key pair. It can encrypt a message for its owner or verify a signature produced with the corresponding private key.",
+    "aliases": [
+      "public keys"
+    ],
+    "sections": [
+      "17.1"
+    ],
+    "source": {
+      "paper": "9618_s26_31",
+      "question": "8(a)(ii)",
+      "pages": [
+        13
+      ]
+    },
+    "example_answer": "A cryptographic/encryption key that can be obtained/used by anyone to send\nencrypted messages. // A key that is part of a matched pair // An encryption key\nknown to all users // A decryption key obtained/used by anyone to decrypt\nsender’s digital signature"
+  },
+  {
+    "id": "private-key",
+    "term": "Private key",
+    "definition": "The secret member of a public/private key pair, kept by its owner. It decrypts messages encrypted with the matching public key or creates digital signatures.",
+    "aliases": [
+      "private keys"
+    ],
+    "sections": [
+      "17.1"
+    ],
+    "source": {
+      "paper": "9618_s26_32",
+      "question": "8(a)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 Symmetric key encryption uses only one key but asymmetric encryption\nuses two keys // Asymmetric public and private keys are a\nmathematically linked pair, whereas symmetric uses the same key.\nMP2 Asymmetric key encryption uses one key to encrypt and the other key to\ndecrypt, whereas symmetric key encryption uses the same key for both.\nMP3 Symmetric key encryption suffers from the key distribution problem,\nwhich the matched pair of keys for asymmetric has resolved.\nMP4 Asymmetric keys must be much larger/longer to achieve the same level\nof security as symmetric key encryption.\nMP5 Asymmetric key encryption allows verification of the sender, which\nsymmetric key encryption does not."
+  },
+  {
+    "id": "cipher-text",
+    "term": "Cipher text",
+    "definition": "The encrypted form of a message, produced by applying an encryption algorithm to plain text.",
+    "aliases": [
+      "ciphertext"
+    ],
+    "sections": [
+      "17.1"
+    ],
+    "source": {
+      "paper": "9618_s26_31",
+      "question": "8(a)(i)",
+      "pages": [
+        13
+      ]
+    },
+    "example_answer": "Text encrypted from plain text using an encryption algorithm // The result of\nputting plain text through an encryption algorithm."
+  },
+  {
+    "id": "digital-certificate",
+    "term": "Digital certificate",
+    "definition": "An electronic credential containing an identity and public key, signed by a certificate authority so the key’s association with that identity can be checked.",
+    "aliases": [
+      "digital certificates"
+    ],
+    "sections": [
+      "17.1"
+    ],
+    "source": {
+      "paper": "9618_s24_31",
+      "question": "7(a)",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark per point (max 3)\nMP1 A digital certificate is an electronic/online document.\nMP2 used to authenticate/prove the identity of a website/the online identity of an individual/organisation\nMP3 typically issued by a CA\nMP4 For example: it contains information identifying a website owner/individual and a public key"
+  },
+  {
+    "id": "digital-signature",
+    "term": "Digital signature",
+    "definition": "A value created by signing a message digest with the sender’s private key. Verification with the public key helps establish authenticity and detect changes to the message.",
+    "aliases": [
+      "digital signatures"
+    ],
+    "sections": [
+      "17.1"
+    ],
+    "source": {
+      "paper": "9618_s22_32",
+      "question": "7(b)(i)",
+      "pages": [
+        8
+      ]
+    },
+    "example_answer": "MP1 The message is hashed with (the agreed hashing algorithm)…\nMP2 … to produce a message digest\nMP3 The message digest is then encrypted with the sender’s private key to form the digital signature"
+  },
+  {
+    "id": "message-digest",
+    "term": "Message digest",
+    "definition": "A hash value calculated from a message. Recalculating and comparing it helps detect a change in the message.",
+    "aliases": [],
+    "sections": [
+      "17.1"
+    ],
+    "source": {
+      "paper": "9618_s22_32",
+      "question": "7(b)(i)",
+      "pages": [
+        8
+      ]
+    },
+    "example_answer": "MP1 The message is hashed with (the agreed hashing algorithm)…\nMP2 … to produce a message digest\nMP3 The message digest is then encrypted with the sender’s private key to form the digital signature"
+  },
+  {
+    "id": "tls",
+    "term": "TLS",
+    "definition": "Transport Layer Security: a protocol for authenticated, encrypted communications. The handshake establishes the connection’s security parameters; the record protocol protects transmitted data.",
+    "aliases": [
+      "Transport Layer Security",
+      "SSL/TLS"
+    ],
+    "sections": [
+      "17.1"
+    ],
+    "source": {
+      "paper": "9618_s25_32",
+      "question": "10",
+      "pages": [
+        10
+      ]
+    },
+    "example_answer": "One mark for identifying a protocol and one mark for stating its purpose\nMP1 Handshake protocol\nMP2 To establish a secure and reliable connection between two devices,\nsystems or networks // Permits the web server and client to authenticate each\nother to make use of encryption algorithms\nMP3 Record protocol\nMP4 Provides a secure and reliable way to send and receive data over a\nnetwork // To exchange records between the client and server // Responsible\nfor securing application data end ensuring its integrity and authenticity during\ntransmission // Encrypts and authenticates data exchanged between a client\nand a server // Deals with the format for data transmission."
+  },
+  {
+    "id": "supervised-learning",
+    "term": "Supervised learning",
+    "definition": "Training a model using labelled examples, so its predicted output can be compared with the known correct output and the model adjusted.",
+    "aliases": [],
+    "sections": [
+      "18.1"
+    ],
+    "source": {
+      "paper": "9618_w22_32",
+      "question": "7",
+      "pages": [
+        9
+      ]
+    },
+    "example_answer": "One mark for each point\nSupervised learning (Max 3 of 4)\n• Supervised learning allows data to be collected, or a data output produced, from the previous experience.\n• In supervised learning, known input and associated outputs are given // uses sample data with known outputs (in\ntraining) // uses labelled input data.\n• Able to predict future outcomes based on past data.\nUnsupervised learning (Max 3 of 4)\n• Unsupervised machine learning helps all kinds of unknown patterns in data to be found.\n• Unsupervised learning only requires input data to be given.\n• Uses any data // not trained on the right output // uses unlabelled input data."
+  },
+  {
+    "id": "unsupervised-learning",
+    "term": "Unsupervised learning",
+    "definition": "Finding patterns or clusters in unlabelled data without being given the correct output for each example.",
+    "aliases": [],
+    "sections": [
+      "18.1"
+    ],
+    "source": {
+      "paper": "9618_s25_33",
+      "question": "10(c)",
+      "pages": [
+        13
+      ]
+    },
+    "example_answer": "One mark for each mark point (Max 3)\nMP1 Unsupervised learning uses algorithms to analyse / cluster\nMP2 … unlabelled data sets\nMP3 They discover hidden patterns / data groupings / clusters without the need for human intervention.\nMP4 It is able to discover similarities and differences in data / information."
+  },
+  {
+    "id": "reinforcement-learning",
+    "term": "Reinforcement learning",
+    "definition": "An agent learns from rewards or penalties received after its actions, using this feedback to improve later decisions.",
+    "aliases": [],
+    "sections": [
+      "18.1"
+    ],
+    "source": {
+      "paper": "9618_s24_32",
+      "question": "11",
+      "pages": [
+        14
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 Reinforcement learning is a machine learning technique based on feedback / rewards / punishment.\nMP2 … in which an agent learns to behave in an environment by performing the actions and seeing the results of the\nactions.\nMP3 … for each good action, the agent gets positive feedback / reward and each bad action receives negative feedback\n/ punishment.\nMP4 The agent learns automatically using feedback without any labelled data / specific instructions.\nMP5 Adjust node weightings to achieve the correct outcome. // Using feedback to improve its performance at\naccomplishing similar tasks."
+  },
+  {
+    "id": "deep-learning",
+    "term": "Deep learning",
+    "definition": "Machine learning using artificial neural networks with multiple hidden layers to learn increasingly complex patterns.",
+    "aliases": [],
+    "sections": [
+      "18.1"
+    ],
+    "source": {
+      "paper": "9618_s24_31",
+      "question": "9",
+      "pages": [
+        11
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 Deep learning learns by finding hidden patterns that are undetectable to humans.\nMP2 It structures algorithms in layers: input layer, hidden layers and output layer.\nMP3 … to create an artificial neural network to learn and make intelligent decisions on its own.\nMP4 It is trained using large quantities of unlabelled data.\nMP5 Deep learning requires/uses a large number of hidden layers.\nMP6 … the larger the number of layers, the higher the level of success."
+  },
+  {
+    "id": "artificial-neural-network",
+    "term": "Artificial neural network",
+    "definition": "A machine-learning structure of interconnected nodes, usually arranged into input, hidden and output layers. Training adjusts connection weights.",
+    "aliases": [
+      "neural network",
+      "artificial neural networks"
+    ],
+    "sections": [
+      "18.1"
+    ],
+    "source": {
+      "paper": "9618_w23_31",
+      "question": "12",
+      "pages": [
+        9
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 4)\nMP1 An artificial neural network is the component of artificial intelligence\nthat is meant to simulate the functioning of a biological brain.\nMP2 Artificial neural networks are a key component of machine learning.\nMP3 They can solve problems that would prove impossible or difficult for\nhumans // Artificial neural networks have self-learning capabilities\nthat enable them to produce better results as more data becomes\navailable\nMP4 Artificial neural networks can be layered (input, hidden and output\nlayers) // Artificial neural networks have many interconnected layers,\nsome / many of which are hidden\nMP5 Weights are assigned between nodes\nMP6 Weights are adjusted through training to give a more accurate result\nMP7 More complex learning capabilities / more accurate results are\navailable with larger numbers of hidden layers"
+  },
+  {
+    "id": "heuristic",
+    "term": "Heuristic",
+    "definition": "An estimate used to guide a search. In A*, it estimates the remaining cost from a node to the goal; its quality affects the search.",
+    "aliases": [
+      "heuristics"
+    ],
+    "sections": [
+      "18.1"
+    ],
+    "source": {
+      "paper": "9618_s26_32",
+      "question": "9(b)(i)",
+      "pages": [
+        11
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 3)\nMP1 The A* algorithm tries to find the shortest path using heuristics /\nintelligent guesses\nMP2 The A* algorithm doesn’t necessarily pass through all nodes/paths\nMP3 Dijkstra’s algorithm finds the shortest path to all nodes // Dijkstra’s\nalgorithm simply checks each vertex looking for the shortest path\nMP4 Dijkstra’s algorithm always finds the shortest path\nMP5 The A* algorithm may not find the shortest path if the heuristics are\ninaccurate."
+  },
+  {
+    "id": "dijkstra-s-algorithm",
+    "term": "Dijkstra’s algorithm",
+    "definition": "A shortest-path algorithm that repeatedly considers the unvisited node with the smallest known distance and updates its neighbours’ distances.",
+    "aliases": [
+      "Dijkstra's algorithm",
+      "Dijkstra’s",
+      "Dijkstra"
+    ],
+    "sections": [
+      "18.1"
+    ],
+    "source": {
+      "paper": "9618_s23_31",
+      "question": "2(b)",
+      "pages": [
+        4
+      ]
+    },
+    "example_answer": "One mark per mark point (Max 2)\n to find the optimal / shortest / most cost-effective route\n … between two nodes in a\n … based on distance / cost / time."
+  },
+  {
+    "id": "a-algorithm",
+    "term": "A* algorithm",
+    "definition": "A path-finding algorithm that ranks a node using f = g + h: the cost already incurred plus a heuristic estimate of the remaining cost.",
+    "aliases": [
+      "A*"
+    ],
+    "sections": [
+      "18.1"
+    ],
+    "source": {
+      "paper": "9618_s23_32",
+      "question": "10(b)",
+      "pages": [
+        11
+      ]
+    },
+    "example_answer": "One mark for each correct calculation as follows (Max 2):\n Node B (from Begin) (Line 3 in table)\n Node C (from Begin) (Line 4 in table)\n Node D (from Begin) (Line 5 in table)\nOne mark for each correct calculation as follows (Max 2):\n Node G (from C) (Line 6 in table)\n Node F and Node End (from G) (Lines 7 and 8 in table)\n Node End (from F) (Line 9 in table)\nOne mark for correct path (Max 1):\n Begin  C  G  F  End\nCost from\nStart Destination Heuristic Total\nstart node\nnode node (h) (f = g + h)\n(g)\nBegin Begin 0 12 12\nBegin A 5 8 13\nBegin B 6 7 13\nBegin C 5 7 12\nBegin D 4 11 15\nC G 5 + 2 = 7 5 12\nG F 5 + 2 + 4 = 11 1 12\nG End 5 + 2 + 7 = 14 0 14\n5 + 2 + 4 + 1 =\nF End 0 12\n12\nFinal Path Begin  C  G  F  End"
+  },
+  {
+    "id": "inheritance",
+    "term": "Inheritance",
+    "definition": "A derived class takes attributes and methods from a parent class and can extend or override them.",
+    "aliases": [],
+    "sections": [
+      "20.1"
+    ],
+    "source": {
+      "paper": "9618_s25_31",
+      "question": "11(b)(ii)",
+      "pages": [
+        14
+      ]
+    },
+    "example_answer": "One mark for each mark point (Max 2)\nMP1 Inheritance is where a derived class takes properties / behaviours attributes / methods\nMP2 … of a parent / super class / base class\nMP3 The attributes / methods / properties taken from the parent / super class / base class can also be extended /\ncopied / used / changed / overwritten / overridden in the subclass."
+  },
+  {
+    "id": "encapsulation",
+    "term": "Encapsulation",
+    "definition": "Combining an object’s data and methods in a class, controlling access so private attributes are accessed through the class’s methods.",
+    "aliases": [],
+    "sections": [
+      "20.1"
+    ],
+    "source": {
+      "paper": "9618_w22_32",
+      "question": "10(a)",
+      "pages": [
+        13
+      ]
+    },
+    "example_answer": "One mark for each correct OOP term definition\n• Encapsulation – putting properties and methods inside a class // ensures sensitive data is hidden from users by hiding\nvalues of a structured data object inside a class.\n• Getter – method that is used to return the value of a property.\n• Setter – method that is used to update the value of a property."
+  },
+  {
+    "id": "polymorphism",
+    "term": "Polymorphism",
+    "definition": "Methods with the same name can have different implementations or behaviour in derived classes.",
+    "aliases": [],
+    "sections": [
+      "20.1"
+    ],
+    "source": {
+      "paper": "9618_s25_32",
+      "question": "12(b)(ii)",
+      "pages": [
+        11
+      ]
+    },
+    "example_answer": "One mark for each mark point\nMP1 Polymorphism is when methods with the same name are redefined /\nbehave differently …\nMP2 … in derived / inherited classes / subclasses"
+  },
+  {
+    "id": "getter",
+    "term": "Getter",
+    "definition": "A method that returns the value of an object’s attribute while preserving controlled access to it.",
+    "aliases": [
+      "getters"
+    ],
+    "sections": [
+      "20.1"
+    ],
+    "source": {
+      "paper": "9618_w22_32",
+      "question": "10(a)",
+      "pages": [
+        13
+      ]
+    },
+    "example_answer": "One mark for each correct OOP term definition\n• Encapsulation – putting properties and methods inside a class // ensures sensitive data is hidden from users by hiding\nvalues of a structured data object inside a class.\n• Getter – method that is used to return the value of a property.\n• Setter – method that is used to update the value of a property."
+  },
+  {
+    "id": "setter",
+    "term": "Setter",
+    "definition": "A method that assigns a value to an object’s attribute through a controlled interface.",
+    "aliases": [
+      "setters"
+    ],
+    "sections": [
+      "20.1"
+    ],
+    "source": {
+      "paper": "9618_w22_32",
+      "question": "10(a)",
+      "pages": [
+        13
+      ]
+    },
+    "example_answer": "One mark for each correct OOP term definition\n• Encapsulation – putting properties and methods inside a class // ensures sensitive data is hidden from users by hiding\nvalues of a structured data object inside a class.\n• Getter – method that is used to return the value of a property.\n• Setter – method that is used to update the value of a property."
+  },
+  {
+    "id": "instance",
+    "term": "Instance",
+    "definition": "A particular object created from a class, with its own attribute values.",
+    "aliases": [
+      "instances"
+    ],
+    "sections": [
+      "20.1"
+    ],
+    "source": {
+      "paper": "9618_w22_31",
+      "question": "11(a)",
+      "pages": [
+        12
+      ]
+    },
+    "example_answer": "One mark for each correct OOP term definition:\n• Instance – an occurrence of an object // a specific object based on the class // an instantiation of a class.\n• Inheritance – the capability of defining a new class of objects that has all the attributes and methods from a parent\nclass.\n• Polymorphism – allows the same method to take on different behaviours depending on which class is instantiated //\nmethods can be redefined for derived classes."
+  },
+  {
+    "id": "declarative-programming",
+    "term": "Declarative programming",
+    "definition": "Specifying what result is required rather than an explicit sequence of steps; in logic programming, facts and rules are queried to satisfy goals.",
+    "aliases": [
+      "declarative language"
+    ],
+    "sections": [
+      "20.1"
+    ],
+    "source": {
+      "paper": "9618_s21_31",
+      "question": "9(b)",
+      "pages": [
+        9
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 2)\n• Instructs a program on what needs to be done instead of how to do it\n• ... using facts and rules\n• … using queries to satisfy goals.\n• Can be logical or functional\n• Logical - states a program as a set of logical relations\n• Functional – constructed by applying functions to arguments / uses a\nmathematical style"
+  },
+  {
+    "id": "imperative-programming",
+    "term": "Imperative programming",
+    "definition": "Specifying an ordered sequence of commands that changes program state, using assignments and control structures.",
+    "aliases": [
+      "imperative language",
+      "procedural programming"
+    ],
+    "sections": [
+      "20.1"
+    ],
+    "source": {
+      "paper": "9618_s21_31",
+      "question": "9(a)",
+      "pages": [
+        9
+      ]
+    },
+    "example_answer": "One mark for each correct marking point (Max 2)\n• Imperative languages use variables\n• … which are changed using (assignment) statements\n• … they rely on a method of repetition / iteration.\n• The statements provide a sequence of commands for the computer to\nperform\n• … in the order written / given\n• … each line of code changes something in the program run."
+  },
+  {
+    "id": "exception",
+    "term": "Exception",
+    "definition": "An unexpected event during execution that disrupts normal program flow, such as dividing by zero or trying to open a missing file.",
+    "aliases": [
+      "exceptions"
+    ],
+    "sections": [
+      "20.2"
+    ],
+    "source": {
+      "paper": "9618_w23_32",
+      "question": "12(a)",
+      "pages": [
+        9
+      ]
+    },
+    "example_answer": "One mark for description, for example:\nAn exception is an event that occurs during the execution of a program that\ndisrupts the normal flow of instructions / causes the program to halt execution\nOne mark for example:\n• Hardware failure // hard disk crash\n• Programming error // trying to access out-of-bounds array element // divide\nby zero error // runtime error\n• User error // typing incorrect filename / data type"
+  },
+  {
+    "id": "exception-handling",
+    "term": "Exception handling",
+    "definition": "Responding to runtime exceptions so the program can recover or report the problem instead of terminating unexpectedly.",
+    "aliases": [],
+    "sections": [
+      "20.2"
+    ],
+    "source": {
+      "paper": "9618_w23_31",
+      "question": "8(b)",
+      "pages": [
+        6
+      ]
+    },
+    "example_answer": "One mark for correct definition\n(Exception handling is the process of) responding to an unexpected event\nwhen the program is running so it does not halt unexpectedly"
+  }
+]

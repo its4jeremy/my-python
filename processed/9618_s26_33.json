@@ -1,0 +1,517 @@
+{
+  "paper": "9618_s26_33",
+  "qp": "papers/9618/paper_3/2026/may_jun/9618_s26_qp_33.pdf",
+  "ms": "papers/9618/paper_3/2026/may_jun/9618_s26_ms_33.pdf",
+  "sha256": {
+    "qp": "f23488a0b03097d8f4ea71e2bd527f412100bd339077600a35c19f67bd1f5014",
+    "ms": "fbd4b71ff8210b4f2a1c8b7e34974e9ef19d5fe6b28e14d1838a73a83aa874a7"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "User‑defined data types may be created by programmers when writing software.\nExplain the reasons why user‑defined data types are needed.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 The programmer may require a data type for their application that\ndoesn’t exist within the programming language\nMP2 … to represent a particular set/group of data / custom data structure\nMP3 … under a single identifier\nMP4 They may wish to extend those data types that are already there using\ncomposite data types\nMP5 … to make the code easier to understand / read\nMP6 To produce a data type that exactly matches a program’s\nrequirements.",
+      "marks": 3,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "set"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Write the pseudocode statement to declare a non‑composite data type, Fibonacci, that\nholds the following numbers:\n0, 1, 2, 3, 5, 8, 13, 21\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 TYPE Fibonacci =\nMP2 (0, 1, 2, 3, 5, 8, 13, 21)\nExample answer\nTYPE Fibonacci = (0, 1, 2, 3, 5, 8, 13, 21)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Do not allow quotation marks around data\nelements.\nThe order of the elements must be\ncorrect."
+      ],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "Complete the following paragraph using the most appropriate words from the given list.\nSome words are not used.\nadjacent Application BitTorrent corresponding\nInternet layer Link lower\nprotocol route Transport upper\nThe implementation of a  suite can be viewed as a stack. Each\nof the stack has its own specific functionality and can only\ncommunicate with  layers of the stack. User interaction is\nassociated with the highest level of the stack, which is the  layer.\n[4]",
+      "mark_scheme": "One mark for each correct word in the correct place (Max 4)\nprotocol\nlayer\nadjacent\nApplication\nThe implementation of a protocol suite can be viewed as a stack. Each\nlayer of the stack has its own specific functionality and can only\ncommunicate with adjacent layers of the stack. User interaction is\nassociated with the highest level of the stack, which is the Application layer.",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocol"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "State one example of where serial file organisation could be used.\n[1]",
+      "mark_scheme": "One mark for an appropriate use of serial file organisation (Max 1)\nBatch processing tasks\nCreating a transaction file for a batch\nStoring bills/payroll\nBackup\nAppropriate example where data is added chronologically",
+      "marks": 1,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "serial file organisation"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Describe how records are organised in serial files.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Records are stored in a file one after the other\nMP2 … in chronological order\nMP3 New records are appended/added at the end of the file",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "3(c)",
+      "question_text": "Outline the process that is used to find a record in a serial file.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Sequential file access is used\nMP2 Each record in the file is searched / checked, one after the other,\nMP3 … until the end of the file is reached\nMP4 … until the record is found.",
+      "marks": 3,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Describe the characteristics of massively parallel computers.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Massively parallel computers involve the linking together of many\nprocessors / computers\nMP2 … to form a more powerful ‘single machine’\nMP3 All the processors work simultaneously on the same problem\nMP4 … with each processor being responsible for its own part of the\nproblem\nMP5 … and communication being via interconnected data\npathways/networks // … and communicate via shared pools of memory.",
+      "marks": 3,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Accept\nmany/multiple/thousands/extremely large\nnumber\nfor ‘many’\nbut not some/several."
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "State one difference and one similarity between the SIMD and MISD computer architectures.\ndifference\nsimilarity\n[2]",
+      "mark_scheme": "One mark for a difference (Max 1)\nMP1 SIMD systems all execute the same instruction and MISD systems\nperform different instructions\nMP2 SIMD systems work on many data streams/elements simultaneously\nMISD systems all work on the same data source/element\nMP3 MISD systems are more complex than SISD systems // allow the\nreverse\nOne mark for a similarity (Max 1)\nMP4 SIMD and MISD are both parallel systems\nMP5 SIMD and MISD using multiple processors\nMP6 SIMD and MISD both may be pipelined\nMP7 Neither SIMD nor MISD are well suited for sequential applications\nsuch as office productivity software or compilers",
+      "marks": 2,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "SISD",
+        "SIMD",
+        "MISD"
+      ],
+      "common_mistakes": [
+        "Both SIMD and MISD must appear or be\nclearly inferred in each response for the\nmark.\nSimply expanding the acronym is NE."
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Numbers are stored in a computer system using binary floating‑point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised binary floating‑point representation of –18.5625 in this system.\nShow your working.\nmantissa exponent\nworking\n[4]",
+      "mark_scheme": "One mark per mark point for working (Max 2)\n• number converted to binary e.g., positive binary version of 18.5625 =\n010010.100100\n• two’s complement version\nbits flipped and 1 added = 101101.011100\nOne mark per mark point (Max 2)\n• correct mantissa\n• correct exponent\nMantissa Exponent\n1 0 1 1 0 1 0 1 1 1 0 0 0 1 0 1",
+      "marks": 4,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [
+        "Allow alternative methods of working."
+      ],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Numbers are stored in a computer system using binary floating‑point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nExplain the problem that would occur if the two binary floating‑point numbers representing\nthe denary numbers 91.5 and 123.25 were added together and the result stored in the\ngiven system.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 If the two numbers were added together, the value would be 214.75\nMP2 This value exceeds the highest/largest number that can be stored in\nthis system with an exponent of 7, (which is 127.9375)\nMP3 An exponent of 8 would be required to increase the range of possible\nnumbers beyond 128\nMP4 Overflow would occur",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "exponent",
+        "Overflow"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(a)(i)",
+      "question_text": "The Karnaugh map (K‑map) represents a logic circuit with four inputs.\nAB\nCD\n00 01 11 10\n00 0 1 1 0\n01 0 1 0 0\n11 0 1 0 0\n10 0 1 1 0\nDraw loop(s) around appropriate group(s) in the K‑map to produce an\noptimal sum‑of‑products. [2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)\nAB\nCD 00 01 11 10\n00 0 1 1 0\n01 0 1 0 0\n11 0 1 0 0\n10 0 1 1 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [
+        "If incorrect loops seen, max 1."
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(a)(ii)",
+      "question_text": "The Karnaugh map (K‑map) represents a logic circuit with four inputs.\nAB\nCD\n00 01 11 10\n00 0 1 1 0\n01 0 1 0 0\n11 0 1 0 0\n10 0 1 1 0\nWrite the Boolean expression from your answer to 6(a)(i) as a simplified\nsum‑of‑products. Do not carry out any further simplification.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 One correct Boolean term\nMP2 Both correct Boolean terms connected by an OR sign and no other\nterms present\nA.B + B.D",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Terms can be in either order\nAccept answers as AND if no dot e.g.\nA.B = AB"
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "6(a)(iii)",
+      "question_text": "The Karnaugh map (K‑map) represents a logic circuit with four inputs.\nAB\nCD\n00 01 11 10\n00 0 1 1 0\n01 0 1 0 0\n11 0 1 0 0\n10 0 1 1 0\nWrite the Boolean expression from your answer to 6(a)(ii) in its simplest form by using\nBoolean algebra to simplify it.\n[1]",
+      "mark_scheme": "B.(A + D) // B.(A.D)",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Terms can be in any order\nAllow answers with or without dot e.g. AB\nfor A.B"
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Simplify the following expression using De Morgan’s laws and Boolean algebra.\nShow all the stages in your simplification.\nX = A + B + C + B + C\n[3]",
+      "mark_scheme": "One mark for correct answer\n(Max 2) for correct working from points shown\nX = A + B + C + B + C\nDe Morgan’s laws\n(X =) A.B.C + B.C\nDistributive law\n(X =) B.C.(A + 1)\nAnnulment law\nCorrect answer\n(X =) B.C // B + C",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "De Morgan’s laws"
+      ],
+      "common_mistakes": [
+        "One mark for correct answer and up to\ntwo marks to show correct use of different\nlaws in the solution.\nThe top line, shaded grey, is given in the\nquestion."
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Outline the process of using a stack to evaluate an expression written using Reverse Polish\nNotation (RPN).\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 The RPN expression is read from left to right\nMP2 If the next element is a number it is pushed onto the stack\nMP3 If the next element is an operator, the last two elements are popped\nfrom the stack\nMP4 …the operator is applied to them and the result is pushed onto the\nstack\nMP5 The process repeats until the whole expression has been evaluated",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "stack",
+        "RPN"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Write the following infix expression in RPN.\n((18 – 15 + 3) * 5) / 12\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 18 15 – 3 +\nMP2 5 * 12 /\nFinal correct expression\n18 15 – 3 + 5 * 12 /",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "The RPN expression\n16 3 * 36 6 / 18 6 - * +\nis to be evaluated.\nShow the changing contents of the stack as the RPN expression is evaluated.\n[4]",
+      "mark_scheme": "One mark per ring (Max 4)\n6\n6 18 18 12\n3 36 36 6 6 6 6 72\n16 16 48 48 48 48 48 48 48 48 120",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Values in shaded areas are necessary to\naward the marks in the rings."
+      ],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Describe the purpose of quantum cryptography.\n[2]",
+      "mark_scheme": "One mark per mark point for the purpose (Max 2)\nMP1 To provide a more secure method of cryptography/encryption than\ncurrent methods // To provide a virtually unbreakable method of\nencryption // To detect eavesdropping.\nMP2 … using the laws of quantum physics rather than mathematical\nformulae to generate keys.\nMP3 To provide encryption that can be guaranteed for a longer period of\ntime than current methods.",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Outline two benefits and two drawbacks of quantum cryptography.\nbenefit 1\nbenefit 2\ndrawback 1\ndrawback 2\n[4]",
+      "mark_scheme": "One mark per benefit (Max 2)\nMP1 Better security for internet communication\nMP2 Can detect eavesdropping, enabling the receiver to request another\nkey\nMP3 Virtually unhackable due to rapidly changing quantum states\nMP4 Keys are non-duplicable // No-cloning theorem\nOne mark per drawback (Max 2)\nMP5 Currently can only be used over relatively short distances\nMP6 Very expensive to implement initially due to costs of installation /\nhardware / implementation // Requires a dedicated line and specialist\nhardware\nMP7 The technology to fully implement quantum cryptography is not\ncurrently/readily available\nMP8 Photon polarization might be impacted in the travelling medium // It is\npossible for the polarisation of the light to be altered while travelling\ndown fibre optic cables\nMP9 Due to the inherent security system generated by quantum\ncryptography, terrorists and other criminals can use the technology to\nhide their activities from government law enforcement",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Explain what is meant by regression methods in relation to machine learning.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 A supervised learning technique of machine learning\nMP2 It finds a mathematical function // It plots a best-fit line/curve //\ncalculus is used to find the error gradient\nMP3 … that maps how independent variables/cause influence a dependent\nvariable/effect between the data\nMP4 It is used for forecasting trends and predicting outcomes\nMP5 It will be trained to understand the relationship between different\ncauses and effects allow to find relationships between two sets of\ndata\nMP6 The goal is to minimise the difference between the predicted values\nand the actual values.",
+      "marks": 3,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "supervised learning"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "The A* algorithm is used to perform searches on a graph.\nCalculate the best path between the W and E nodes on the following diagram using the\nA* algorithm.\nShow your working in the table provided.\nThe first two rows have been done for you.\nN6\nh=15 12\nN1 4\nE\nN5 11\ng=6\n7 2\n18 W\nN4\nN2\n7 4\nN3\ncost of\ndestination heuristic total\ncurrent path current path\nnode (h) (f = g + h)\n(g)\nW W 0 18 18\nW N1 6 15 21\nfinal path\n[5]",
+      "mark_scheme": "One mark for each correct calculation as follows (Max 4)\nMP1 W to N2 and W to N3 (Lines 3 and 4 in table)\nMP2 W  N2 to N5 (Line 5 in table)\nMP3 W  N2  N5 to N4 (Line 6 in table)\nMP4 W  N2  N5 to N6 (Line 7 in table)\nMP5 W  N2  N5 to E (Line 8 in table)\nMP6 W  N2  N5  N6 to E (Line 9 in table)\nOne mark for correct path (Max 1)\nMP7 W  N2  N5  N6  E\nCurrent path Destination Cost of Heuristic Total\nnode current path (h) (f = g + h)\n(g)\n1 W W 0 18 18\n2 W N1 6 15 21\n3 W N2 4 14 18\n4 W N3 7 13 20\n5 WN2 N5 4+7=11 7 18\n6 WN2N5 N4 4+7+2=13 9 22\n7 WN2N5 N6 4+7+4=15 3 18\n8 WN2N5 E 4+7+11=22 0 22\n9 WN2N5 E 4+7+4+3=18 0 18\nN6\nFinal path WN2N5N6E",
+      "marks": 5,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Heuristic"
+      ],
+      "common_mistakes": [
+        "Lines 3 and 4 can be in either order.\nLines 6, 7 and 8 can be in any order.\nEverything else must be in the table\norder.\nShaded parts given in question."
+      ],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(a)(i)",
+      "question_text": "A program declares a 1D array globally as PartName[1:1000000] OF STRING, and sorts\nits contents in ascending alphabetical order. The function PartSearch performs a binary\nsearch on the array. The item to be found is passed as a parameter. If it is found, its location\nin the array is returned, otherwise, –1 is returned.\nComplete the following table to define the variables used in the function.\nidentifier data type description\nLeft\nRight\nMid\nTarget\n[2]",
+      "mark_scheme": "One mark for every two correct rows (Max 2)\nIdentifier Data type Description\nLeft INTEGER Lowest index in the search area\nRight INTEGER Highest index in the search area\nMid INTEGER Centre/middle index in the search area\nTarget STRING The item to be found",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Don’t accept mid as description for the\ncentre index, but middle is OK"
+      ],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "10(a)(ii)",
+      "question_text": "A program declares a 1D array globally as PartName[1:1000000] OF STRING, and sorts\nits contents in ascending alphabetical order. The function PartSearch performs a binary\nsearch on the array. The item to be found is passed as a parameter. If it is found, its location\nin the array is returned, otherwise, –1 is returned.\nComplete the pseudocode for the function to perform a binary search on PartName\nusing all the variables from the table in 10(a)(i).\nSome lines may be left blank.\nFUNCTION PartSearch(\nENDFUNCTION\n[5]",
+      "mark_scheme": "One mark per mark point (Max 5)\nMP1 Function header correctly completed\nMP2 Left and right indexes correctly initialised\nMP3 Appropriate loop and escape condition.\nMP4 Setting of the search index (Mid)\nMP5 Conditional statement to find item\nMP6 Conditional statement and changing of left and right indexes if item\nnot found\nMP7 Return of location if item/target found and -1 if not\nExample completed algorithm\nFUNCTION PartSearch(Target : STRING) RETURNS INTEGER\nLeft  1\nRight  1000000\nWHILE Left <= Right\nMid  (Left + Right) DIV 2) OR\nMid  DIV(Left + Right, 2)\nIF PartName[Mid] = Target THEN\nRETURN Mid\nELSE\nIF PartName[Mid] < Target THEN\nLeft  Mid + 1\nELSE\nRight  Mid – 1\nENDIF\nENDIF\nENDWHILE\nRETURN -1\nENDFUNCTION",
+      "marks": 5,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [
+        "All required identifiers (variables. Indexes\nand array) are given in the question, so\nmust be used.\nGrey shaded areas given in question.\nWatch out for incorrect RETURN /\nRETURNS in candidate responses.\nAccept == for ="
+      ],
+      "qp_pages": [
+        12,
+        13
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Describe how the time efficiency of a binary search changes as the number of items in the\nsearch list increases. Refer to Big O notation in your answer.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 The time it takes to execute a binary search increases logarithmically\nas the number of search items increases // The time increases linearly\nas the number of search items increases exponentially\nMP2 Binary search worst case Big O is O(log n)/ O(log n)\n2",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "binary search",
+        "Big O"
+      ],
+      "common_mistakes": [
+        "The Big O notation must be completely\ncorrect (including brackets)."
+      ],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        16
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "The table shows assembly language instructions for a processor that has one register, the\nAccumulator (ACC).\ninstruction\nlabel explanation\nopcode operand\nLDM #n Load the number n to ACC\nLoad the contents of the location at the given\nLDD <address>\naddress to ACC\nThe address to be used is at the given\nLDI <address> address. Load the contents of this second\naddress to ACC\nAdd the contents of the given address to\nADD <address>\nthe ACC\nADD #n Add the number n to the ACC\nSubtract the contents of the given address\nSUB <address>\nfrom the ACC\nSUB #n Subtract the number n from the ACC\nStore the contents of ACC at the\nSTO <address>\ngiven address\nGives a symbolic address <label> to the\n<label>: <data>\nmemory location with the contents <data>\n# denotes a denary number, e.g. #123\n<label> can be used in place of <address>\nThe current contents of memory are:\naddress data\n232 120\n580 26\nUse only the given instruction set to write assembly language code to:\n• store the denary value 325 in labelled variable A\n• store the value from location 232 in labelled variable B\n• subtract the value 50 from the value stored in variable B\n• store the current value in the accumulator in location 875\n• add the value stored in location 580 to the value stored in variable A\n• subtract the value stored in location 875 from the current value in the accumulator\n• store the result in variable Final.\n[5]",
+      "mark_scheme": "One mark per mark point (Max 5)\nMP1 LDM #325 and STO A\nMP2 LDD 232 and STO B\nMP3 SUB #50 and STO 875 (ignore LDD B)\nMP4 LDD A and ADD 580 // LDD 580 and ADD A\nMP5 SUB 875\nMP6 STO Final\nOpcode Operand\nLDM #325\nSTO A\nLDD 232\nSTO B\nSUB #50\nSTO 875\nLDD A\nADD 580\nSUB 875\nSTO Final",
+      "marks": 5,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        14,
+        15
+      ],
+      "ms_pages": [
+        17
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "The table shows assembly language instructions for a processor that has one register, the\nAccumulator (ACC).\ninstruction\nlabel explanation\nopcode operand\nLDM #n Load the number n to ACC\nLoad the contents of the location at the given\nLDD <address>\naddress to ACC\nThe address to be used is at the given\nLDI <address> address. Load the contents of this second\naddress to ACC\nAdd the contents of the given address to\nADD <address>\nthe ACC\nADD #n Add the number n to the ACC\nSubtract the contents of the given address\nSUB <address>\nfrom the ACC\nSUB #n Subtract the number n from the ACC\nStore the contents of ACC at the\nSTO <address>\ngiven address\nGives a symbolic address <label> to the\n<label>: <data>\nmemory location with the contents <data>\n# denotes a denary number, e.g. #123\n<label> can be used in place of <address>\nThe current contents of memory are:\naddress data\n232 120\n580 26\nShow the values of the variables A, B and Final from 11(a) in the following table, after the\ncode has been run:\nlabel data\nA:\nB:\nFinal:\n[3]",
+      "mark_scheme": "one mark for each correct contents value (Max 3)\nLabel Contents\nA: 325\nB: 120\nFinal: 281",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Accept denary values with leading #\nShaded parts given in question."
+      ],
+      "qp_pages": [
+        14,
+        15
+      ],
+      "ms_pages": [
+        18
+      ]
+    }
+  ],
+  "marks": 75
+}

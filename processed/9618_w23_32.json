@@ -1,0 +1,459 @@
+{
+  "paper": "9618_w23_32",
+  "qp": "papers/9618/paper_3/2023/oct_nov/9618_w23_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2023/oct_nov/9618_w23_ms_32.pdf",
+  "sha256": {
+    "qp": "540d9563722e2b8a7951ac37bc5ab7c695239d2d41dfd4a65de2a530c8cfc3e4",
+    "ms": "5072a92b55df99f37ee69a0c52dbd0dc3ef9ad71c773914299941f4aeea55344"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Real numbers are stored in a computer using floating point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nWrite the normalised floating‑point representation of –96.75 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "One mark per mark point (Max 1)\n• conversion of −96.75 to binary e.g., positive 96.75, flip the bits + 1 to give\n10011111.01\n// –128 + 16 + 8 + 4 + 2 + 1 + 0.25 / ¼ seen\nOne mark per mark point (Max 2)\n• correct mantissa\n• correct exponent\nMantissa Exponent\n1 0 0 1 1 1 1 1 0 1 0 0 0 1 1 1",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Explain why a binary representation is sometimes only an approximation to the real number it\nrepresents.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Real numbers (can) have a fractional part (such as 1/3 and ½) / (such\nas 0.4 and 0.25)\nMP2 The fixed length of the storage means that you can’t store very large /\nvery small numbers\nMP3 Binary numbers represent numbers based on powers of 2, with limited\nfractional representations such as 1/2, 1/4, 1/8, 1/16, etc.\nMP4 It isn’t possible to store all fractions with the level of precision provided\nby this system\nMP5 …the fractional part of the number is as close as possible within these\nconstraints.",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "Describe what is meant by composite and non‑composite data types.\nComposite\nNon‑composite\n[4]",
+      "mark_scheme": "One mark per mark point – composite (Max 2)\nMP1 A (user defined) data type that is a collection of data that can consist\nof multiple elements\nMP2 …of different or the same data types\nMP3 …grouped under a single identifier.\nOne mark per mark point – non-composite (Max 2)\nMP4 It can be defined without referencing another data type.\nMP5 It can be a primitive type available in a programming language, or a\nuser- defined type.",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "The location of a record in a random file is determined using a hashing algorithm.\nA collision may occur during the process of adding a record.\nOutline what is meant by the term collision in this context.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 A collision is when the two values / data items in the key field for two\nrecords (pass through a hashing algorithm and) result in the same\nhash value\nMP2 …so the location identified (by the hashing algorithm) may already be\nin use // two records cannot occupy the same address.",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "hashing algorithm",
+        "collision"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "The location of a record in a random file is determined using a hashing algorithm.\nA collision may occur during the process of adding a record.\nExplain how a collision can be dealt with when writing records to a random file.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 A process of collision resolution is used\nMP2 Start at the original hashed storage space\nMP3 …go through the following spaces in a linear fashion\nMP4 …and store the data item in the first available slot.\nOR\nMP5 Search the overflow area\nMP6 …go through the following spaces in a linear fashion\nMP7 …and store the data item in the first available slot.\nOR\nMP8 Each storage space holds a reference to a collection / chain of items\nMP9 …which can be searched individually.\nMP10 The data item is stored in the first available space in this chain.",
+      "marks": 3,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "collision"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "Complete the following paragraph about a protocol suite, using words from the given list.\nSome words are not used.\nBitTorrent circuit switching layered link list\npeer‑to‑peer queue stack star TCP/IP\nThe protocols in a  determine the interconnectivity\nrules for a  network model such as the\nmodel.\n[3]",
+      "mark_scheme": "One mark for each correct word (Max 3)\nThe protocols in a stack determine the interconnectivity rules for a layered\nnetwork model such as the TCP/IP model.",
+      "marks": 3,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocols",
+        "TCP/IP"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Outline the reasons why an operating system may need to use virtual memory.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Virtual memory is used when RAM is running low\nMP2 …such as when a computer is running many processes at once.\nMP3 Virtual memory may be used for efficient use of RAM / the processor\nMP4 …such as if data / programs are not immediately needed, they can be\nmoved from RAM to virtual memory",
+      "marks": 2,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "Virtual memory"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Explain the circumstances in which disk thrashing could occur.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Disk thrashing is a problem that may occur when frequent transfers\nbetween main memory and secondary memory take place // Disk\nthrashing is a problem that may occur when virtual memory is being\nused\nMP2 As main memory fills up, more pages need to be swapped in and out\nof secondary/virtual memory\nMP3 This swapping leads to a very high rate of hard disk head movements\nMP4 Eventually, more time is spent swapping the pages/data than\nprocessing the data.",
+      "marks": 3,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "virtual memory"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "The Reverse Polish Notation (RPN) expression:\na b * 2 / c d / *\nis to be evaluated where a = 20, b = 3, c = 10 and d = 5.\nShow the changing contents of the following stack as the RPN expression is evaluated.\n[4]",
+      "mark_scheme": "One mark per ring (Max 4).\n5\n3 2 10 10 2\n20 20 60 60 30 30 30 30 60\nOR\n20 3 60 2 30 10 5 2 60\n20 60 30 10 30\n30",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Explain how an expression stored in RPN can be evaluated.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 The (RPN) expression is read from left to right, one item at a time\nMP2 Each element is checked to see if it as operator or a value\nMP3 Values are pushed onto a stack until an operator is found\nMP4 The operator is applied to the last two values on the stack and the\nresult is pushed back onto the stack\nMP5 This repeats until a single value remains, which is the solution.",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "stack",
+        "RPN"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "This logic circuit represents the Boolean expression: X = A + B + C\nA\nB X\nC\nComplete this truth table for the given logic circuit.\nA B C X\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n[1]",
+      "mark_scheme": "A B C X\n0 0 0 1\n0 0 1 0\n0 1 0 0\n0 1 1 0\n1 0 0 0\n1 0 1 0\n1 1 0 0\n1 1 1 0",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Apply De Morgan’s laws to the expression: X = A + B + C\nX =  [1]",
+      "mark_scheme": "X= A.B.C",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "Simplify the following expression using Boolean algebra.\nShow all the stages in your simplification.\nT = X.Y.Z + X.Y.Z + X\n[3]",
+      "mark_scheme": "(Max 2) for correct working from points shown\n(T =) X.Y.Z + X.Y.Z + X\nDistributive law\n(T=) X.Z.(Y + Y) + X\nComplement law\n(T=) X.Z.(1) + X\nIdentity law\n(T=) X.Z + X\nRedundancy law (to get final answer)\nOne mark for correct answer\n(T=) X + Z",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "Calculate the shortest distance between the Start and each of the destinations in the diagram\nusing Dijkstra’s algorithm.\nShow your working and write your answers in the table provided.\nA B 8\nC\n8 9\nD\nE\nStart\nF\nWorking\nAnswers:\nA B C D E F\n[5]",
+      "mark_scheme": "One mark per mark point - working (Max 3)\nMay be seen on diagram or in working section\nMP1 Initialisation – setting Start to 0\nMP2 …and the rest of the towns to\nMP3 Evidence to show values at nodes being updated\nMP4 Evidence to show ‘visited node(s)’\nMP5 Evidence to show a correct calculation of at least one route\nMP6 Evidence to show more than one route has been calculated for at\nleast one town\nCorrect Answers (Max 2)\nTwo marks for all six correct values\nOne mark for four or five correct values.\nA B C D E F\n8 12 19 14 16 10",
+      "marks": 5,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "9(a)(i)",
+      "question_text": "A stack Abstract Data Type (ADT) is to be implemented using pseudocode, with procedures\nto initialise it and to push new items onto the stack.\nA 1D array stores the contents of the stack.\nStack\nStudy the pseudocode in part (a)(ii) and complete the table of identifiers by writing the\nmissing data types and descriptions.\nIdentifier Data type Description\nBasePointer\nTopPointer\nStack REAL\n[2]",
+      "mark_scheme": "Two marks for all five empty boxes correct\nOne mark for any three or four empty boxes correct\nIdentifier Data type Description\nBasePointer INTEGER Points to the bottom of the stack\nTopPointer INTEGER Points to the top of the stack\nStack REAL List of decimal numbers stored in the stack",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "9(a)(ii)",
+      "question_text": "A stack Abstract Data Type (ADT) is to be implemented using pseudocode, with procedures\nto initialise it and to push new items onto the stack.\nA 1D array stores the contents of the stack.\nStack\nComplete the pseudocode.\nCONSTANT MaxSize = 40\nDECLARE BasePointer : INTEGER\nDECLARE TopPointer : INTEGER\nDECLARE Stack : ARRAY[1:40] OF REAL\n// initialisation of stack\nPROCEDURE Initialise()\nENDPROCEDURE\n// push an item onto the stack\nPROCEDURE Push(NewItem : REAL)\nMaxSize THEN\nStack[TopPointer]\nENDIF\nENDPROCEDURE\n[5]",
+      "mark_scheme": "One mark for each correctly completed line (Max 5)\nCONSTANT MaxSize = 40\nDECLARE BasePointer : INTEGER\nDECLARE TopPointer : INTEGER\nDECLARE Stack : ARRAY[1:40] OF REAL\n// initialisation of stack\nPROCEDURE Initialise()\nBasePointer  1\nTopPointer  0\nENDPROCEDURE\n// adding an item to the stack\nPROCEDURE Push(NewItem)\nIF TopPointer < MaxSize THEN\nTopPointer  TopPointer + 1\nStack[TopPointer]  NewItem\nENDIF\nENDPROCEDURE",
+      "marks": 5,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Justify the use of a linked list instead of an array to implement a stack.\n[2]",
+      "mark_scheme": "One mark for linked list and one mark for array (Max 2)\nLinked list\nMP1 A linked list is a dynamic data structure / not restricted in size\nMP2 Has greater freedom to expand or contract by adding or removing\nnodes as necessary\nMP3 Allows more efficient editing using pointers (instead of moving the\ndata).\nArray\nMP4 An array is a static data structure1 generally fixed in size\nMP5 When the array is full, the stack cannot be extended any further.",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "stack",
+        "linked list"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "9(c)",
+      "question_text": "Explain how a compiler makes use of a stack when translating recursive programming code.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 1)\nMP1 The compiler must produce object code to\nOne mark per mark point (Max 3)\nMP2 …push return addresses / values of local variables onto a stack\nMP3 …with each recursive call // … to set up winding\nMP4 …pop return addresses / values of local variables off the stack …\nMP5 …after the base case is reached // … to implement unwinding.",
+      "marks": 4,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "recursive",
+        "base case",
+        "unwinding",
+        "stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "10",
+      "question_text": "Describe the features of the SIMD and MISD computer architectures.\nSIMD\nMISD\n[4]",
+      "mark_scheme": "One mark per mark point – SIMD (Max 2)\nMP1 Single Instruction, Multiple Data (architecture) // Performs the same\noperation on multiple different data streams simultaneously.\nMP2 The instructions can be performed sequentially, taking advantage of\npipelining.\nMP3 Parallel computers with multiple processors.\nOne mark per mark point – MISD (Max 2)\nMP4 Multiple Instruction, Single Data (architecture) // Performs different\noperations on the same data stream.\nMP5 Each processor works on the same data stream independently.\nMP6 Parallel computers with multiple processors.",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "pipelining",
+        "SIMD",
+        "MISD"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "A declarative programming language is used to represent some facts about people and their\nhobbies.\n01 hobby(music).\n02 hobby(caving).\n03 hobby(climbing).\n04 hobby(camping).\n05 hobby(baking).\n06 hobby(travelling).\n07 person(toby).\n08 person(natasha).\n09 person(fatima).\n10 person(joseph).\n11 person(elijah).\n12 person(nina).\n13 enjoys(natasha, travelling).\n14 enjoys(toby, climbing).\n15 enjoys(nina, climbing).\n16 enjoys(elijah, camping).\n17 enjoys(fatima, baking).\n18 enjoys(joseph, camping).\n19 dislikes(toby, caving).\nThese clauses have the meanings:\nClause Meaning\nMusic is a hobby\n01\nToby is a person\n07\nNatasha enjoys travelling\n13\nToby dislikes caving\n19\nCarlos is a person who enjoys the hobby of cycling but does not like music.\nWrite additional clauses to represent this information.\n20\n21\n22\n23\n[4]",
+      "mark_scheme": "One mark for each correctly completed clause (Max 4)\n20 person(carlos).\n21 hobby(cycling).\n22 enjoys(carlos, cycling).\n23 dislikes(carlos, music).",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "A declarative programming language is used to represent some facts about people and their\nhobbies.\n01 hobby(music).\n02 hobby(caving).\n03 hobby(climbing).\n04 hobby(camping).\n05 hobby(baking).\n06 hobby(travelling).\n07 person(toby).\n08 person(natasha).\n09 person(fatima).\n10 person(joseph).\n11 person(elijah).\n12 person(nina).\n13 enjoys(natasha, travelling).\n14 enjoys(toby, climbing).\n15 enjoys(nina, climbing).\n16 enjoys(elijah, camping).\n17 enjoys(fatima, baking).\n18 enjoys(joseph, camping).\n19 dislikes(toby, caving).\nThese clauses have the meanings:\nClause Meaning\nMusic is a hobby\n01\nToby is a person\n07\nNatasha enjoys travelling\n13\nToby dislikes caving\n19\nUsing the variable , the goal:\nP\nenjoys(P, camping)\nreturns\nP = elijah, joseph\nWrite the result returned by the goal:\nenjoys(P, climbing)\n[1]\nP =",
+      "mark_scheme": "P = toby, nina",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "11(c)",
+      "question_text": "A declarative programming language is used to represent some facts about people and their\nhobbies.\n01 hobby(music).\n02 hobby(caving).\n03 hobby(climbing).\n04 hobby(camping).\n05 hobby(baking).\n06 hobby(travelling).\n07 person(toby).\n08 person(natasha).\n09 person(fatima).\n10 person(joseph).\n11 person(elijah).\n12 person(nina).\n13 enjoys(natasha, travelling).\n14 enjoys(toby, climbing).\n15 enjoys(nina, climbing).\n16 enjoys(elijah, camping).\n17 enjoys(fatima, baking).\n18 enjoys(joseph, camping).\n19 dislikes(toby, caving).\nThese clauses have the meanings:\nClause Meaning\nMusic is a hobby\n01\nToby is a person\n07\nNatasha enjoys travelling\n13\nToby dislikes caving\n19\nN is a person who might enjoy H if H is a hobby and N does not dislike H.\nWrite this as a rule.\nmight_enjoy(N, H)\nIF\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\n• person(N)\n• hobby(H)\n• dislikes(N, H)\n• all logical operators correct with no additional code (see example\nanswers)\nExample answers:\nmight_enjoy(N, H)\nIF person(N) AND hobby(H) AND NOT dislikes(N, H)\nmight_enjoy(N, H)\nIF NOT dislikes(N, H), person(N), hobby(H)",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "12(a)",
+      "question_text": "Describe, with an example, what is meant by an exception.\n[2]",
+      "mark_scheme": "One mark for description, for example:\nAn exception is an event that occurs during the execution of a program that\ndisrupts the normal flow of instructions / causes the program to halt execution\nOne mark for example:\n• Hardware failure // hard disk crash\n• Programming error // trying to access out-of-bounds array element // divide\nby zero error // runtime error\n• User error // typing incorrect filename / data type",
+      "marks": 2,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [
+        "exception"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "12(b)",
+      "question_text": "A pseudocode algorithm searches for a customer record in a random file\n. A user inputs the name of the customer.\nAccountRecord.dat\nThe records are stored using the user‑defined data type .\nTAccount\nTYPE TAccount\nDECLARE AccountNumber : INTEGER\nDECLARE Name : STRING\nDECLARE Address : STRING\nDECLARE Telephone : STRING\nENDTYPE\nIf the record is found, it is output, otherwise an error message is displayed.\nComplete the file handling pseudocode.\nDECLARE Customer : TAccount\nDECLARE Location : INTEGER\nDECLARE MaxSize : INTEGER\nDECLARE FoundFlag : BOOLEAN\nDECLARE SearchCustomer : STRING\nMaxSize 1000\nOPENFILE\nLocation 1\nFALSE\nOUTPUT \"Enter the customer’s name\"\nAND Location <= MaxSize\n\"AccountRecord.dat\",\nGETRECORD \"AccountRecord.dat\", Customer\nIF SearchCustomer = Customer.Name THEN\nOUTPUT \"Customer found: \"\nOUTPUT Customer // output customer record\nFoundFlag TRUE\nENDIF\nLocation Location + 1\nENDWHILE\nIF NOT FoundFlag THEN\nOUTPUT \" \"\nENDIF\n[7]",
+      "mark_scheme": "One mark for each correctly completed blank (Max 7)\nDECLARE Customer : TAccount\nDECLARE Location : INTEGER\nDECLARE MaxSize : INTEGER\nDECLARE: FoundFlag : BOOLEAN\nDECLARE SearchCustomer : STRING\nMaxSize  1000\nOPENFILE \"AccountRecord.dat\" FOR RANDOM\nLocation  1\nFoundFlag  FALSE\nOUTPUT \"Enter the customer’s name\"\nINPUT SearchCustomer\nWHILE NOT FoundFlag AND Location <= MaxSize\nSEEK \"AccountRecord.dat\", Location\nGETRECORD \"AccountRecord.dat\", Customer\nIF SearchCustomer = Customer.Name THEN\nOUTPUT \"Customer found: \"\nOUTPUT Customer\nFoundFlag  TRUE\nENDIF\nLocation  Location + 1\nENDWHILE\nIF NOT FoundFlag THEN\nOUTPUT \"Customer does not exist.\"\nENDIF",
+      "marks": 7,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        9
+      ]
+    }
+  ],
+  "marks": 75
+}

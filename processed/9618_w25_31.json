@@ -1,0 +1,770 @@
+{
+  "paper": "9618_w25_31",
+  "qp": "9618_w25_qp_31.pdf",
+  "ms": "9618_w25_ms_31.pdf",
+  "sha256": {
+    "qp": "b80a338d4854a03cd41ace9ba1330e39fc537e8e95b29a062ebd5d81bd1bf58d",
+    "ms": "2421677e71be7a1a0a1be7ded4cb988f2eeb6687973a8d3b25705e9cefe1c655"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)(i)",
+      "question_text": "Write the pseudocode statement to set up a variable for one record of the composite data type, ClubMember.",
+      "mark_scheme": "DECLARE Member1 : ClubMember [1 mark]",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "DECLARE",
+        "ClubMember"
+      ],
+      "common_mistakes": [
+        "Using incorrect syntax like 'Member1 = ClubMember' or forgetting DECLARE keyword",
+        "Not specifying the type ClubMember"
+      ],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(a)(ii)",
+      "question_text": "Write the pseudocode statements to assign the following values to the variable set up in part (a)(i): 984632 to Code, TRUE to FeesPaid.",
+      "mark_scheme": "One mark for each correct answer (Max 2):\nMember1.Code ← 984632\nMember1.FeesPaid ← TRUE",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "Member1.Code",
+        "984632",
+        "Member1.FeesPaid",
+        "TRUE"
+      ],
+      "common_mistakes": [
+        "Not using dot notation e.g. writing just 'Code ← 984632'",
+        "Using = instead of ← assignment operator",
+        "Writing 'true' in lowercase instead of TRUE"
+      ],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(b)(i)",
+      "question_text": "Write the pseudocode statement for the type declaration of Activity to hold the names of the available activities: Badminton, Football, Golf, Snooker, Swimming, Tennis.",
+      "mark_scheme": "MP1: TYPE Activity=\nMP2: (Badminton, Football, Golf, Snooker, Swimming, Tennis)\nExample answer: TYPE Activity = (Badminton, Football, Golf, Snooker, Swimming, Tennis)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "TYPE Activity",
+        "Badminton",
+        "Football",
+        "Golf",
+        "Snooker",
+        "Swimming",
+        "Tennis"
+      ],
+      "common_mistakes": [
+        "Missing TYPE keyword",
+        "Using DECLARE instead of TYPE",
+        "Incorrect order or missing activities",
+        "Not enclosing activities in parentheses"
+      ],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(b)(ii)",
+      "question_text": "Write the new pseudocode statement required to update the declaration of Choice in the definition of ClubMember.",
+      "mark_scheme": "DECLARE Choice : Activity [1 mark]",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "DECLARE Choice",
+        "Activity"
+      ],
+      "common_mistakes": [
+        "Using a primitive type like STRING instead of Activity",
+        "Forgetting DECLARE keyword"
+      ],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Write the normalised floating-point representation of the following positive binary number using this system (12-bit mantissa, 4-bit exponent, two's complement): 0.00000001110101101",
+      "mark_scheme": "MP1: Correct mantissa: 0 1 1 1 0 1 0 1 1 0 1 0\nMP2: Correct exponent: 1 0 0 1\n(Mantissa: 011101011010, Exponent: 1001)\nThe binary point is moved 8 places right so exponent = -7 in two's complement... wait, the number is 0.00000001110101101, normalised form is 0.1110101101... moving point 8 places right gives exponent of -8? No: normalised positive mantissa starts 0.1... The number 0.00000001110101101 needs the point moved 8 places right to get 0.111010110... so exponent = -8? Actually the number is shifted: 0.00000001110101101 → 0.1110101101 (shift 7 places left... no). Correct answer per mark scheme: Mantissa: 011101011010, Exponent: 1001 (which is -7 in two's complement... 1001 = -8+1 = -7). The binary point moves 7 places. Final answer: Mantissa: 0 1 1 1 0 1 0 1 1 0 1 0 | Exponent: 1 0 0 1",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers, representation and manipulation",
+      "key_phrases": [
+        "011101011010",
+        "1001"
+      ],
+      "common_mistakes": [
+        "Not normalising correctly (mantissa not starting with 01)",
+        "Incorrect exponent calculation",
+        "Forgetting two's complement for negative exponent",
+        "Truncating or rounding mantissa incorrectly"
+      ],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Calculate the normalised binary floating-point representation of -76.1875 in this system (12-bit mantissa, 4-bit exponent, two's complement). Show your working.",
+      "mark_scheme": "MP1: Correct method to find the binary number e.g. 76.1875 = 64+8+4+0.125+0.0625 → 01001100.0011\nMP2: Additional working towards binary number e.g. -76.1875 two's complement: 10110011.1101\nMP3: Correct use of exponent - movement of binary point by 7 places // 1.011001111 01 × 2^7, exponent = 0111\nMP4: Correct answer: Mantissa: 1 0 1 1 0 0 1 1 1 1 0 1 | Exponent: 0 1 1 1",
+      "marks": 4,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers, representation and manipulation",
+      "key_phrases": [
+        "10110011",
+        "101100111101",
+        "0111",
+        "two's complement",
+        "76.1875"
+      ],
+      "common_mistakes": [
+        "Not converting to two's complement for negative number",
+        "Incorrect normalisation (not starting with 10 for negative)",
+        "Wrong exponent value",
+        "Arithmetic errors in binary conversion of 76.1875"
+      ],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Explain why protocols are essential for communication between computer systems.",
+      "mark_scheme": "MP1: Protocols set a standard for communication // Protocols establish a standard set of rules for communication\nMP2: Protocols enable compatibility between devices from different manufacturers/platforms\nMP3: Two devices wouldn't be able to communicate/send messages to each other if they were using different protocols",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "standard",
+        "rules",
+        "compatibility",
+        "different manufacturers",
+        "communicate"
+      ],
+      "common_mistakes": [
+        "Vague answers like 'protocols help computers talk to each other' without explaining why they are essential",
+        "Describing what a protocol is rather than why it is essential"
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "POP3 is an email communication protocol. Identify and describe two other communication protocols that are used when sending or receiving emails.",
+      "mark_scheme": "One mark for a protocol and one mark for a description (Max 4):\nSMTP [1] - a protocol used to send emails between mail servers // a protocol used to send emails from a computer to a mail server [1]\nIMAP [1] - allows users to access/read their emails from any device without removing the message from the mail server // synchronises emails on any device [1]",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "SMTP",
+        "send emails",
+        "mail server",
+        "IMAP",
+        "access",
+        "any device",
+        "without removing"
+      ],
+      "common_mistakes": [
+        "Naming POP3 again as one of the two protocols",
+        "Confusing SMTP with IMAP descriptions",
+        "Describing HTTP/HTTPS as an email protocol",
+        "Not providing enough detail in description"
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "3(c)",
+      "question_text": "Describe two ways in which packet switching ensures a complete message is received when passing messages across a network.",
+      "mark_scheme": "Two marks for each description (2 x 2, Max 4):\n1. Packets checked at receiving end / on arrival [1] … if packets arrive damaged or don't arrive at all, a re-send request is sent [1]\n2. Packets routed through different paths / sent individually [1] … if a route is blocked, the packet is sent through a different route to ensure it arrives [1]\n3. If the packet's hop count is exceeded [1] … the packet will be retired, which can generate a re-send request [1]",
+      "marks": 4,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching, packet switching",
+      "key_phrases": [
+        "checked",
+        "damaged",
+        "re-send request",
+        "different paths",
+        "different route",
+        "hop count"
+      ],
+      "common_mistakes": [
+        "Only giving one mark point per way without explaining the mechanism",
+        "Describing packet switching in general rather than specifically how it ensures completeness",
+        "Confusing packet switching with circuit switching"
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "A scheduling routine determines how processes are managed by the operating system. Identify two scheduling routines.",
+      "mark_scheme": "One mark per scheduling routine (Max 2) from:\n• Round robin\n• Shortest job first\n• First come first served\n• Shortest remaining time",
+      "marks": 2,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "Round robin",
+        "Shortest job first",
+        "First come first served",
+        "Shortest remaining time"
+      ],
+      "common_mistakes": [
+        "Describing what scheduling is rather than naming specific algorithms",
+        "Naming non-existent or incorrect scheduling algorithms",
+        "Writing vague answers like 'priority scheduling' without a specific named algorithm from the list"
+      ],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Describe two ways in which the complexities of the computer hardware are hidden from the user.",
+      "mark_scheme": "One mark for identification and one mark for a description (Max 4). Two from:\n1. Provision of a User Interface // Provision of a Graphical User Interface [1] - Allows the user to interact with the computer in a more intuitive way // Icons and menus are used to control devices by simply 'pointing and clicking' [1]\n2. Use of device drivers [1] - Makes it easier to control peripherals such as printers within the operating system rather than on the separate device itself [1]\n3. Device mapping [1] - Different devices (physical and virtual) are easy to identify on the network, check their status, or use [1]\n4. The user interacts only with the Application / top layer (of the TCP/IP protocol suite) [1] - leaving the lower layers and their complexities hidden from the user [1]",
+      "marks": 4,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "User Interface",
+        "Graphical User Interface",
+        "device drivers",
+        "peripherals",
+        "device mapping",
+        "application layer",
+        "hidden"
+      ],
+      "common_mistakes": [
+        "Identifying a way without describing it",
+        "Vague descriptions that don't explain how complexity is hidden",
+        "Repeating the same idea in different words for both ways"
+      ],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Identify two items commonly found within a digital certificate.",
+      "mark_scheme": "Two from:\n• Name of certificate holder // Subject\n• Serial number\n• Version number\n• Expiration date // Start date // Validity (not before/not after)\n• Certificate holder's public key // Subject public key\n• Subject digital signature\n• Certificate Issuer // Digital signature of CA",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "name of certificate holder",
+        "serial number",
+        "version number",
+        "expiration date",
+        "public key",
+        "digital signature",
+        "certificate issuer"
+      ],
+      "common_mistakes": [
+        "Stating private key instead of public key",
+        "Confusing items in a digital certificate with items in a digital signature",
+        "Being too vague e.g. just writing 'key' without specifying public key"
+      ],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Explain why a digital certificate is required to validate a digital signature.",
+      "mark_scheme": "MP1: A digital certificate provides a public key\nMP2: … which validates the private key used to create the digital signature\nMP3: It makes a digital signature virtually impossible to spoof // Provides evidence of signer identity that the document was not altered and the signatures are valid\nMP4: Non repudiation.",
+      "marks": 3,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key",
+        "validates",
+        "identity",
+        "non repudiation",
+        "impossible to spoof"
+      ],
+      "common_mistakes": [
+        "Confusing public and private key roles",
+        "Not explaining the link between the certificate and the digital signature validation process",
+        "Simply stating the certificate proves identity without explaining the mechanism"
+      ],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "Complete the truth table for the given logic circuit (with inputs A, B, C and intermediate values P, Q, R, S and output Z). Show your working.",
+      "mark_scheme": "One mark for working (all four columns P, Q, R and S correct)\nOne mark for first four rows of column Z correct\nOne mark for second four rows of column Z correct\nA B C P Q R S Z\n0 0 0 1 1 1 1 0\n0 0 1 1 0 1 0 0\n0 1 0 1 1 1 1 1\n0 1 1 1 0 1 1 1\n1 0 0 0 1 1 1 0\n1 0 1 0 0 0 1 0\n1 1 0 0 1 1 1 1\n1 1 1 0 0 1 1 1",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "P=NOT A",
+        "Q=NOT B",
+        "R",
+        "S",
+        "Z"
+      ],
+      "common_mistakes": [
+        "Errors in intermediate gate calculations propagating to final output",
+        "Misreading the logic circuit gate types",
+        "Errors in NOT gate application"
+      ],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "6(b)(i)",
+      "question_text": "Complete the Karnaugh map (K-map) for the Boolean expression: A.B.C + A.B.C + A.B.C + A.B.C",
+      "mark_scheme": "Two marks if no errors present, one mark if only one error present.\nBC:  00  01  11  10\nA=0:  0   0   1   1\nA=1:  0   1   0   1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "BC=11 A=0: 1",
+        "BC=10 A=0: 1",
+        "BC=01 A=1: 1",
+        "BC=10 A=1: 1"
+      ],
+      "common_mistakes": [
+        "Incorrect mapping of minterms to K-map cells",
+        "Confusing the ordering of BC columns (must be Gray code: 00, 01, 11, 10)",
+        "Placing 1s in wrong cells"
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "6(b)(ii)",
+      "question_text": "Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.",
+      "mark_scheme": "One mark for each correct loop (Max 2):\n- Loop grouping the two 1s where B=1, C=1 (BC=11 column: A=0 giving A.B.C and... )\n- Loop grouping the two 1s in the BC=10 column (A.C term)\n- Loop grouping A=1,BC=01 and A=0,BC=11 (B.C term)\nAccepted optimal loops producing: A.B + B.C + A.B.C or equivalent simplified expression",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "groups of 2",
+        "optimal",
+        "power of 2 groupings"
+      ],
+      "common_mistakes": [
+        "Drawing groups that are not powers of 2",
+        "Not drawing the maximum possible groups",
+        "Overlapping groups incorrectly",
+        "Missing a valid grouping that would lead to further simplification"
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "6(b)(iii)",
+      "question_text": "Write the Boolean expression from your answer to part b(ii) as a simplified sum-of-products. Do not carry out any further simplification.",
+      "mark_scheme": "One mark for each mark point (Max 2):\n• One correct Boolean term with a + / OR sign\n• All Boolean terms and operators correct and no other terms present\nAnswer: A.B + B.C + A.B.C",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "A.B",
+        "B.C",
+        "A.B.C",
+        "+"
+      ],
+      "common_mistakes": [
+        "Not following through from K-map loops correctly",
+        "Including unnecessary terms",
+        "Using incorrect Boolean notation",
+        "Further simplifying beyond what is asked"
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Identify one Artificial Intelligence (AI) algorithm to find the shortest distance between two points on a graph.",
+      "mark_scheme": "One from:\n• A* algorithm\n• Dijkstra's algorithm",
+      "marks": 1,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "A* algorithm",
+        "Dijkstra's algorithm"
+      ],
+      "common_mistakes": [
+        "Naming general search algorithms not specifically for shortest path e.g. BFS without context",
+        "Naming machine learning algorithms instead of graph search algorithms"
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Describe Deep Learning.",
+      "mark_scheme": "One mark per mark point (Max 5):\nMP1: Deep learning is a branch of machine learning\nMP2: It makes use of artificial neural networks\nMP3: … to work in a similar manner to the human/biological brain // neural networks can be trained to process data\nMP4: It is a structure consisting of many interconnected layers\nMP5: … input, hidden and output // the input layer feeds the first hidden layer, the last hidden layer feeds the output\nMP6: … gradually breaking down and analysing the data to find (hidden) patterns\nMP7: Deep learning's feature extraction/learning involves how to detect features/categories from data\nMP8: … and can involve different types of supervision\nMP9: It works well with large data sets\nMP10: Deep learning uses back propagation of errors to adjust parameters/weightings to refine its results / improve its accuracy",
+      "marks": 5,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "machine learning",
+        "artificial neural networks",
+        "layers",
+        "input",
+        "hidden",
+        "output",
+        "patterns",
+        "back propagation",
+        "large data sets",
+        "feature extraction"
+      ],
+      "common_mistakes": [
+        "Confusing deep learning with machine learning in general",
+        "Not mentioning neural networks",
+        "Not describing the layered structure",
+        "Describing only supervised learning without mentioning the neural network aspect"
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Outline the purpose of lexical analysis during the compilation of a program.",
+      "mark_scheme": "MP1: To convert the high-level source code / program into a sequence of tokens\nMP2: … that can be sent to the parser for syntax analysis\nMP3: To create a symbol table\nMP4: To remove the unnecessary white space and comments from the code",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "tokens",
+        "source code",
+        "parser",
+        "syntax analysis",
+        "symbol table",
+        "white space",
+        "comments"
+      ],
+      "common_mistakes": [
+        "Describing syntax analysis instead of lexical analysis",
+        "Vague answers like 'checks the code' without specifying tokenisation",
+        "Confusing lexical analysis with semantic analysis"
+      ],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Write the Reverse Polish Notation (RPN) for the given infix expression: (2 – 6) * (13 + 7) / 5",
+      "mark_scheme": "One mark: 2 6 – (correct)\nOne mark: 13 7 + * 5 / (correct)\nComplete answer: 2 6 – 13 7 + * 5 /",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "2 6 –",
+        "13 7 +",
+        "* 5 /"
+      ],
+      "common_mistakes": [
+        "Incorrect ordering of operands",
+        "Placing operators in wrong position",
+        "Not handling operator precedence correctly in RPN conversion"
+      ],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "8(c)",
+      "question_text": "The RPN expression: d a b + * c a - / is to be evaluated, where a=6, b=12, c=15 and d=5. Show the changing contents of the stack as the RPN expression is evaluated.",
+      "mark_scheme": "One mark per ring (Max 4):\nStack trace:\n5\n6 → 12 → 18 → 15 → 9\n5  5   5   90  90  90  10\nFinal answer: 10\nd=5 pushed, a=6 pushed, b=12 pushed, a+b=18 (pop 6,12 push 18), d*(a+b)=5*18=90 (pop 5,18 push 90), c=15 pushed, a=6 pushed, c-a=15-6=9 (pop 15,6 push 9), 90/9=10 (pop 90,9 push 10)",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "5",
+        "18",
+        "90",
+        "9",
+        "10"
+      ],
+      "common_mistakes": [
+        "Incorrect substitution of variable values",
+        "Wrong order of subtraction (a-c instead of c-a)",
+        "Arithmetic errors",
+        "Not showing stack contents changing at each step"
+      ],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "9(a)(i)",
+      "question_text": "Complete the pseudocode for the function to remove a data item from the stack.",
+      "mark_scheme": "One mark for each correctly completed line (Max 5):\nFUNCTION Pop() RETURNS STRING\nDECLARE DataItem : STRING\nDataItem ← \"\"\nIF Top > –1 // Top >= Base THEN\n  DataItem ← StackArray[Top]\n  Top ← Top – 1\nELSE\n  DataItem ← \"You cannot remove data; the stack is empty\"\nENDIF\nRETURN DataItem // StackArray[Top + 1]\nENDFUNCTION",
+      "marks": 5,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "RETURNS STRING",
+        "Top > -1",
+        "StackArray[Top]",
+        "Top ← Top – 1",
+        "RETURN DataItem"
+      ],
+      "common_mistakes": [
+        "Wrong condition for checking empty stack (e.g. Top == -1 instead of Top > -1)",
+        "Not decrementing Top after removal",
+        "Returning wrong value",
+        "Missing RETURNS STRING in function header",
+        "Accessing wrong index in array"
+      ],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "9(a)(ii)",
+      "question_text": "Write the pseudocode to output the data item removed from the stack with an appropriate message.",
+      "mark_scheme": "OUTPUT \"The data removed from the stack is \", Pop() [1 mark]",
+      "marks": 1,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "OUTPUT",
+        "Pop()"
+      ],
+      "common_mistakes": [
+        "Not calling Pop() function in the output",
+        "Storing result in a variable without outputting it with a message",
+        "Incorrect pseudocode syntax for OUTPUT"
+      ],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "A stack is used to implement recursion. State the three essential features of recursion.",
+      "mark_scheme": "MP1: A recursive algorithm must call itself / have a general case\nMP2: It must have a base case / have a stopping condition\nMP3: It must change its state and move towards the base case",
+      "marks": 3,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "call itself",
+        "general case",
+        "base case",
+        "stopping condition",
+        "change its state",
+        "move towards the base case"
+      ],
+      "common_mistakes": [
+        "Describing what recursion does rather than its essential features",
+        "Not mentioning that the algorithm must move toward the base case",
+        "Confusing base case with general case"
+      ],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "10",
+      "question_text": "Explain what is meant by exception handling. Include an example of a possible cause of an exception in your answer.",
+      "mark_scheme": "MP1: Exception handling is a process that responds to unwanted / unexpected events when a program runs\nMP2: … to prevent the program / computer from stopping unexpectedly\nMP3 (example): Programming errors\nMP4 (example): User errors\nMP5 (example): Hardware failure // losing connection to a device such as a printer",
+      "marks": 3,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [
+        "unexpected events",
+        "program runs",
+        "prevent",
+        "stopping unexpectedly",
+        "programming errors",
+        "user errors",
+        "hardware failure"
+      ],
+      "common_mistakes": [
+        "Describing error handling in general without mentioning runtime/unexpected events",
+        "Not providing a concrete example",
+        "Confusing exception handling with debugging or syntax error checking"
+      ],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "Write assembly language code, using only the given instruction set to: store the denary value 100 as a named constant, subtract the constant from the value contained in address 632, store the result in variable Answer. Show the initialisation of the constant and Answer in the table provided.",
+      "mark_scheme": "MP1: LDM #100 seen\nMP2: Correct use of STO with labelled address (constant or answer)\nMP3: Correct use of LDD 632\nMP4: Correct use of SUB with labelled address (constant)\nMP5: Storing 100 at a labelled address away from the code\nMP6: Labelling both addresses away from the code\nExample:\nLDM #100\nSTO Constant\nLDD 632\nSUB Constant\nSTO Answer\n\nLabel | Contents\nConstant: | 100\nAnswer: |",
+      "marks": 6,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "LDM #100",
+        "STO Constant",
+        "LDD 632",
+        "SUB Constant",
+        "STO Answer",
+        "Constant: 100"
+      ],
+      "common_mistakes": [
+        "Not using LDM to load the immediate value 100",
+        "Using wrong instruction to load from address 632 (should be LDD)",
+        "Not defining the constant label in the data section",
+        "Subtracting in wrong order",
+        "Not storing result with STO Answer"
+      ],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "The address 632 contains the value 45. State the value of Answer after the code described in part (a) has executed.",
+      "mark_scheme": "-55 [1 mark]\n(45 - 100 = -55)",
+      "marks": 1,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "-55"
+      ],
+      "common_mistakes": [
+        "Writing 55 instead of -55 (wrong sign)",
+        "Writing 100 - 45 = 55 instead of 45 - 100 = -55"
+      ],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        15
+      ]
+    }
+  ],
+  "marks": 75
+}

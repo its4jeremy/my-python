@@ -1,0 +1,497 @@
+{
+  "paper": "9618_w22_32",
+  "qp": "papers/9618/paper_3/2022/oct_nov/9618_w22_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2022/oct_nov/9618_w22_ms_32.pdf",
+  "sha256": {
+    "qp": "16771c5c9910deb8f5d4691fed5df35a75d582016ae2ccd5a2b97733a75519dd",
+    "ms": "0101b4e01cd790f81329b7c1e65662f5586fb729edaabcf4c62b9ad9586e0125"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Normalised floating-point numbers are stored in a computer system using two’s complement for\nboth the mantissa and the exponent with:\n• 11 bits for the mantissa\n• 5 bits for the exponent.\nWrite the largest positive two’s complement binary number that can be stored in this system.\nMantissa Exponent\n[1]",
+      "mark_scheme": "Mantissa Exponent\n0 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1",
+      "marks": 1,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Mantissa",
+        "Exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Normalised floating-point numbers are stored in a computer system using two’s complement for\nboth the mantissa and the exponent with:\n• 11 bits for the mantissa\n• 5 bits for the exponent.\nCalculate the denary value of the given binary floating-point number.\nShow your working.\nMantissa Exponent\n1 0 1 1 0 0 1 0 0 1 1 0 1 0 0 1\nWorking\nAnswer\n[3]",
+      "mark_scheme": "Two marks for working\n• correct calculation of exponent seen\n• correct application of exponent to mantissa seen\nOne mark for correct answer\nWorking:\n= 1.0110010011  29 //exponent = 9\n= 1011001001.1 (moving bp 9 places to right) // evaluate two’s complement\nFor example: –512 + 128 + 64 + 8 + 1 + 0.5\nAnswer:\n–310.5 // –3101/\n2",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(c)",
+      "question_text": "Normalised floating-point numbers are stored in a computer system using two’s complement for\nboth the mantissa and the exponent with:\n• 11 bits for the mantissa\n• 5 bits for the exponent.\nState when underflow occurs in a binary floating-point system.\n[2]",
+      "mark_scheme": "One mark per point\n• Following an arithmetic/logical operation\n• … the result is too small to be precisely represented in the available system // When the number of bits is not enough /\ntoo small for the computer’s allocated word size / to represent the binary number",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Lexical analysis and syntax analysis are stages in the compilation of a program.\nIdentify two other stages that take place during the compilation of a program.\n1\n2\n[2]",
+      "mark_scheme": "One mark per point\n• Code generation\n• Optimisation",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "Optimisation"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Lexical analysis and syntax analysis are stages in the compilation of a program.\nOutline the purpose of syntax analysis.\n[2]",
+      "mark_scheme": "One mark per point (Max 2)\n• It checks that the code matches the grammar of the language // It checks that the tokens conform with the rules of the\nprogramming language\n• Syntax errors are reported\n• A parse tree is produced.",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Explain why a protocol is used in communication between computers.\n[2]",
+      "mark_scheme": "One mark per point (Max 2)\n• Protocols set a standard for communication\n• Protocols enable communication/compatibility between devices from different manufacturers/platforms\n• If two devices were sending messages to each other but using different protocols, they would not be able to\ncommunicate properly",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "Protocols"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "The TCP/IP protocol implementation can be viewed as a stack.\nComplete the diagram for the TCP/IP protocol stack.\nTransport\nLink\n[2]",
+      "mark_scheme": "One mark for each correct answer\nApplication (Layer)\nTransport\nInternet/Network (Layer)\nLink",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(c)",
+      "question_text": "Describe the purpose of the IMAP protocol.\n[2]",
+      "mark_scheme": "One mark per point (Max 2)\n• used by email clients to retrieve email messages // a pull protocol\n• from a mail server (over a TCP/IP connection)\n• keeps the server and client in sync (by not deleting the original email). // allows a copy of the email to be downloaded\nfrom the mail server.",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocol",
+        "TCP/IP"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "A program to manage regular flight details at an airport requires some user-defined data types.\nWrite pseudocode statements to declare the enumerated data type to hold data\nAircraft\nabout the types of aircraft used for a flight.\nThese types of aircraft are: C300, C350, D242, E757, X380.\n[2]",
+      "mark_scheme": "Marks as shown in the square brackets:\nTYPE Aircraft = (C300, C350, D242, E757, X380)\nTYPE Aircraft = [1]\n(C300, C350, D242, E757, X380) [1]",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "A program to manage regular flight details at an airport requires some user-defined data types.\nWrite pseudocode statements to declare the composite data type to hold data about\nFlight\nflights to a specific destination. These include:\n• flight number, which could be any combination of letters and numbers\n• destination\n• date of departure\n• type of aircraft used.\nUse the enumerated data type you created in part (a).\n[4]",
+      "mark_scheme": "One mark for each point (Max 4)\n• TYPE Flight and ENDTYPE correct\n• DECLARE FlightNumber and DECLARE Destination as STRING\n• DECLARE DepartureDate as DATE\n• DECLARE AircraftType as Aircraft (correct data type from part 4(a))\nExample answer:\nTYPE Flight\nDECLARE FlightNumber : STRING\nDECLARE Destination : STRING\nDECLARE DepartureDate : DATE\nDECLARE AircraftType : Aircraft\nENDTYPE",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(c)(i)",
+      "question_text": "A program to manage regular flight details at an airport requires some user-defined data types.\nWrite the pseudocode statement to set up a variable for one record of the composite\ndata type .\nFlight\n[1]",
+      "mark_scheme": "Example answer:\nDECLARE Flight1 : Flight",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(c)(ii)",
+      "question_text": "A program to manage regular flight details at an airport requires some user-defined data types.\nWrite pseudocode to store the details of the following flight in the variable you set up in\npart (c)(i).\nField Data\nflight number XA782\ndestination Cambridge\ndate of departure 12/12/2022\ntype of aircraft used C350\nUse the field names you created in part (b).\n[3]",
+      "mark_scheme": "One mark for each point (Max 3)\n• Correct assignments of both string data values\n• Correct assignments of date data value\n• Correct assignments of enumerated data value\nExample answer:\nFlight1.FlightNumber  \"XA782\"\nFlight1.Destination  \"Cambridge\"\nFlight1.DepartureDate  12/12/2022\nFlight1.AircraftType  C350",
+      "marks": 3,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "Describe what is meant by a virtual machine.\nInclude in your answer two benefits and two drawbacks of using a virtual machine.\nDescription\nBenefit 1\nBenefit 2\nDrawback 1\nDrawback 2\n[6]",
+      "mark_scheme": "One mark for each description (Max 2)\n• The emulation of a computer system / hardware and/or software\n• … using a host computer system.\n• Using guest operating system(s) for emulation.\nOne mark for each correct benefit (Max 2)\n• Multiple guest operating systems / VMs can be used on the same computer.\n• Different instruction set architectures can be emulated on a single computer.\n• A virtual machine can crash without affecting the host machine.\n• There are security benefits // Trying a piece of suspicious software and if it is / has a virus, it will only infect the virtual\nmachine.\n• Cost savings due to not needing to purchase extra hardware.\n• Can run legacy applications that are currently incompatible.\nOne mark for each correct drawback (Max 2)\n• A virtual machine is less efficient / has poorer performance than real machines because of extra load on the host\ncomputer\n• Performance of the guest system cannot be adequately measured.\n• A virtual machine may be affected by any weaknesses of the host machine.\n• Costly and/or complex to maintain / implement / manage.\n• Cannot emulate some hardware.",
+      "marks": 6,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "virtual machine"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "State two differences between symmetric and asymmetric encryption.\n[2]",
+      "mark_scheme": "One mark for each point\n• Symmetric encryption uses a single key and asymmetric encryption uses a pair of keys.\n• The symmetric single key is used by all, whereas only one of the keys for asymmetric encryption is available to\neveryone / one of the asymmetric encryption keys needs to be kept secret.",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "Symmetric encryption",
+        "asymmetric encryption"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Explain the process by which an organisation may acquire its digital certificate.\n[4]",
+      "mark_scheme": "One mark for each point (Max 4)\n• The organisation requests a certificate from a Certificate Authority (CA)\n• The organisation may send their public key to CA\n• The organisation gathers all the information required by the CA in order to obtain their certificate, which includes\ninformation to prove their identity\n• The CA verifies the organisation’s identity\n• The CA generates / issues the certificate including the organisation’s public key (and other information).",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7",
+      "question_text": "Supervised and unsupervised learning are two categories of machine learning.\nDescribe supervised learning and unsupervised learning.\nSupervised learning\nUnsupervised learning\n[4]",
+      "mark_scheme": "One mark for each point\nSupervised learning (Max 3 of 4)\n• Supervised learning allows data to be collected, or a data output produced, from the previous experience.\n• In supervised learning, known input and associated outputs are given // uses sample data with known outputs (in\ntraining) // uses labelled input data.\n• Able to predict future outcomes based on past data.\nUnsupervised learning (Max 3 of 4)\n• Unsupervised machine learning helps all kinds of unknown patterns in data to be found.\n• Unsupervised learning only requires input data to be given.\n• Uses any data // not trained on the right output // uses unlabelled input data.",
+      "marks": 4,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Supervised learning",
+        "Unsupervised learning"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Draw a logic circuit for an SR flip-flop and label the inputs.\nQ\nQ¯\n[4]",
+      "mark_scheme": "One mark for each point (Max 4)\n• One correct NAND or NOR gate with two separate inputs and one output\n• Second correct logic gate of same type as first with two separate inputs and one output\n• Correct connections between logic gates\n• Correctly labelled inputs\nExample answers:\nS/Set\nR/Reset\nOr\nR/Reset\nS/Set",
+      "marks": 4,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        10,
+        11
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "State the purpose of a flip-flop.\n[1]",
+      "mark_scheme": "To store a binary digit / (single) bit.",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "8(c)",
+      "question_text": "Simplify the following expression using Boolean algebra, including De Morgan’s laws.\nShow your working.\n(A.B).(A.C).(B.D)\nWorking\nAnswer\n[3]",
+      "mark_scheme": "One mark for each point (Max 3)\n• Correct application of De Morgan’s Law\n• Correct application of Double Negation Law or Distributive Law\n• Correct answer\n(A.B).(A.C).(B.D)\n(A.B) + (A.C) + (B.D) [1]\n_ _ _\n(A.B) + (A.C) + (B.D) [1]\n_ _\nA. (B + C) + B.D [1]",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "De Morgan"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Explain the need for scheduling in process management.\n[3]",
+      "mark_scheme": "One mark for each point (Max 3)\n• Process scheduling allows more than one program/task to appear to be executed at the same time / enables multi-\ntasking / multiprogramming.\n• To allow high priority jobs to be completed first.\n• To keep the CPU busy all the time\n• … to ensure that all processes execute efficiently\n• … and to have reduced wait times for all processes / to ensure all processes have fair access to the CPU / prevent\nstarvation of some processes.",
+      "marks": 3,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "scheduling"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Describe these scheduling routines and identify a benefit for each one.\nShortest job first\nRound robin\nFirst come first served\n[6]",
+      "mark_scheme": "One mark for each point (Max 2) for Shortest job first:\n• Process are executed in ascending order of the amount of CPU time required // Short processes are executed first and\nfollowed by longer processes.\n• …which leads to an increased throughput (because more processes can be executed in a smaller amount of time).\nOne mark for each point (Max 2) for Round robin:\n• Each process is served by the CPU for a fixed time/time slice (so all processes are given the same priority).\n• Starvation doesn’t occur (because for each round robin cycle, every process is given a fixed time/time slice to execute).\nOne mark for each point (Max 2) for First come first served:\n• No complex logic, each process request is queued as it is received and executed one by one.\n• Starvation doesn’t occur (because every process will eventually get a chance to run) // less processor overhead.",
+      "marks": 6,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "Round robin"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "Define these Object-Oriented Programming (OOP) terms:\nEncapsulation\nGetter\nSetter\n[3]",
+      "mark_scheme": "One mark for each correct OOP term definition\n• Encapsulation – putting properties and methods inside a class // ensures sensitive data is hidden from users by hiding\nvalues of a structured data object inside a class.\n• Getter – method that is used to return the value of a property.\n• Setter – method that is used to update the value of a property.",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Encapsulation",
+        "Getter",
+        "Setter"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "A school has a program written using OOP to maintain its staff and student records.\nThe object allows the details of the school’s substitute teachers to be\nSubstituteTeacher\nstored. This includes their full name, telephone number and whether or not they are in school\ntoday. For example:\nSubName Sarah Jones\nTelephone 01223658721\nInSchool TRUE\nComplete the diagram for the object , including appropriate properties\nSubstituteTeacher\nand their getters and setters.\nSubstituteTeacher\nSubName : STRING\nInSchool : BOOLEAN\nSetTelephone(Tel : STRING)\nGetSubName()\n[3]",
+      "mark_scheme": "One mark for each point\n• properties correct\n• setters correct\n• getters correct\nSubstituteTeacher\nSubName : STRING\nTelephone : STRING\nInSchool : BOOLEAN\nSetSubName(StaffName : STRING)\nSetTelephone(Tel : STRING)\nSetInSchool(Present : BOOLEAN)\nGetSubName()\nGetTelephone()\nGetInSchool()",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "getters",
+        "setters"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "A simplified linked list is used to store the names of flowers in alphabetical order. It is implemented\nusing two 1D arrays:\n• stores the names of the flowers.\nFlower\n• stores the pointer to the next flower name in the list.\nNextPointer\nindicates the index of the first flower name in the linked list.\nHeadPointer\nHeadPointer 6\nWhen the end of the linked list is reached, the next pointer has the value of 0.\nThe following table shows the initial content of the arrays.\nIndex Flower NextPointer\n1 Rose 7\n2 Marigold 1\n3 Foxglove 10\n4 Iris 9\n5 Daisy 3\n6 Dahlia 5\n7 Saxifrage 0\n8 Lupin 2\n9 Lily 8\n10 Hydrangea 4\nSeveral flower names have been deleted from the linked list. These are crossed out in the\nfollowing table.\nComplete the table to show the new values of and to keep the\nHeadPointer NextPointer\nremaining flower names in alphabetical order.\nHeadPointer\nIndex Flower NextPointer\n1 Rose\n2 Marigold\n3 Foxglove\n4 Iris\n5 Daisy\n6 Dahlia\n7 Saxifrage\n8 Lupin\n9 Lily\n10 Hydrangea\n[3]",
+      "mark_scheme": "One mark for each point\n• Correct HeadPointer\n• Any three correct NextPointer\n• All six NextPointer correct\nHeadPointer 5\nIndex Flower NextPointer\n1 Rose 0\n2 Marigold\n3 Foxglove 4\n4 Iris 9\n5 Daisy 3\n6 Dahlia\n7 Saxifrage\n8 Lupin 1\n9 Lily 8\n10 Hydrangea",
+      "marks": 3,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "A simplified linked list is used to store the names of flowers in alphabetical order. It is implemented\nusing two 1D arrays:\n• stores the names of the flowers.\nFlower\n• stores the pointer to the next flower name in the list.\nNextPointer\nindicates the index of the first flower name in the linked list.\nHeadPointer\nHeadPointer 6\nWhen the end of the linked list is reached, the next pointer has the value of 0.\nThe following table shows the initial content of the arrays.\nIndex Flower NextPointer\n1 Rose 7\n2 Marigold 1\n3 Foxglove 10\n4 Iris 9\n5 Daisy 3\n6 Dahlia 5\n7 Saxifrage 0\n8 Lupin 2\n9 Lily 8\n10 Hydrangea 4\nComplete the pseudocode algorithm so that it achieves the following when applied to the\narrays:\n• The flower name is input.\n• The linked list is searched, in order, for the flower name.\n• If the flower name is found, an appropriate message is output to indicate it has been\nfound.\n• If the flower name is not found, an appropriate message is output to indicate it has not\nbeen found.\n• The algorithm terminates when the next pointer value is 0.\nPointer HeadPointer\nFound 0\nOUTPUT \"Enter a flower name \"\n………………………………………………………………….\n………………………………………………………………….\nIF Flower[Pointer] = FlowerName THEN\nFound Pointer\nPointer 0\nELSE\n………………………………………………………………….\nENDIF\nENDWHILE\n………………………………………………………………….\nOUTPUT Flower[Found], \" is found\"\nELSE\n………………………………………………………………….\nENDIF\n[5]",
+      "mark_scheme": "One mark for each correct line\nPointer  HeadPointer\nFound  0\nOUTPUT \"Enter a flower name \"\nINPUT FlowerName\nWHILE Pointer <> 0\nIF Flower[Pointer] = FlowerName THEN\nFound  Pointer\nPointer  0\nELSE\nPointer  NextPointer[Pointer]\nENDIF\nENDWHILE\nIF Pointer = 0 THEN // IF Found <> 0 THEN\nOUTPUT Flower[Found], \" is found\"\nELSE\nOUTPUT \"The flower you wanted is not in the list\"\nENDIF",
+      "marks": 5,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        16
+      ]
+    },
+    {
+      "question_number": "11(c)",
+      "question_text": "A simplified linked list is used to store the names of flowers in alphabetical order. It is implemented\nusing two 1D arrays:\n• stores the names of the flowers.\nFlower\n• stores the pointer to the next flower name in the list.\nNextPointer\nindicates the index of the first flower name in the linked list.\nHeadPointer\nHeadPointer 6\nWhen the end of the linked list is reached, the next pointer has the value of 0.\nThe following table shows the initial content of the arrays.\nIndex Flower NextPointer\n1 Rose 7\n2 Marigold 1\n3 Foxglove 10\n4 Iris 9\n5 Daisy 3\n6 Dahlia 5\n7 Saxifrage 0\n8 Lupin 2\n9 Lily 8\n10 Hydrangea 4\nExplain how you could improve the simplified linked list structure.\n[2]",
+      "mark_scheme": "One mark for each point (Max 2)\n• Include a free list pointer\n• …to reuse the unused space\n• …as a linked list of free space.",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "linked list"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        16
+      ]
+    }
+  ],
+  "marks": 75
+}

@@ -1,0 +1,564 @@
+{
+  "paper": "9618_s26_31",
+  "qp": "papers/9618/paper_3/2026/may_jun/9618_s26_qp_31.pdf",
+  "ms": "papers/9618/paper_3/2026/may_jun/9618_s26_ms_31.pdf",
+  "sha256": {
+    "qp": "aeb56592086be4bf2918bac30449eb32255f9dc2328db2c1b53a23abc0725e94",
+    "ms": "4c0d7d6c55966d08b5a1ffdcdac31fb6907157f92d9535bb7317fad7a8894ece"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "A record data type is a type of composite user‑defined data type.\nIdentify two other types of composite user‑defined data types.\n1\n2\n[2]",
+      "mark_scheme": "One mark per correct data type (Max 2)\nset\nclass / object",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "set"
+      ],
+      "common_mistakes": [
+        "Do not allow record."
+      ],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "1(b)(i)",
+      "question_text": "A pointer data type is a non‑composite user‑defined data type.\nState the purpose of a pointer user‑defined data type.\n[1]",
+      "mark_scheme": "A user-defined data type that is used to reference a memory location",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Do not allow point/pointer as the\npurpose."
+      ],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "1(b)(ii)",
+      "question_text": "Write the pseudocode statement to declare a pointer data type called Word to be used\nwith STRING data.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 TYPE Word\nMP2 = ^STRING\nExample answer:\nTYPE Word = ^STRING",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Random file organisation can be used with a database management system.\nState one other example of where random file organisation could be used.\n[1]",
+      "mark_scheme": "One mark for an appropriate use of random file organisation (Max 1)\nBooking systems e.g. airline\nOperating system file management systems\nVideo games\nEncryption utilities\nCompression utilities",
+      "marks": 1,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "random file organisation"
+      ],
+      "common_mistakes": [
+        "Do not allow DBMS.\nDo not allow definitions of random file\norganisation."
+      ],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Describe how records are organised in random files.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Records are stored in no particular order / any available position\nMP2 A record key is used to determine the location where the record is to be\nstored\nMP3 … which is generated using a hash function on the key field\nMP4 New records are added in an empty location",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record",
+        "hash function"
+      ],
+      "common_mistakes": [
+        "Do not allow use of data/file instead of\nrecord\nDo not accept random as the\ndescription."
+      ],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "2(c)",
+      "question_text": "Outline the process that would be used to find a record in a random file.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Direct file access is used\nMP2 A hashing function is used on the key field to find the location in the file\nwhere the record is stored\nMP3 If the required record is found at the hashed location it is retrieved\nMP4 If the required record is not found, a collision resolution strategy is\nemployed // Records from that point are searched linearly until the\nrequired record is found // Linear probing",
+      "marks": 3,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record",
+        "hashing function",
+        "collision"
+      ],
+      "common_mistakes": [
+        "Do not allow use of data/file instead of\nrecord\nAllow open or closed hashing /\naddressing for MP4."
+      ],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Numbers are stored in a computer system using binary floating‑point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised binary floating‑point representation of –10.8125 in this system.\nShow your working.\nmantissa exponent\nworking\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 correct method to find the binary number\nMP2 correct use of exponent\nMP3 correct answer in the space provided\nWorking:\n–10.8125 converted to binary positive binary version of 10.8125 = 01010.1101 //\ntwo’s complement version - bits flipped and 1 added = 10101.0011\n// -8+2+0.5+0.25+0.0625 // -16+4+1+0.125+0.0625.\nMovement of binary point by 4 places\nMantissa Exponent\n1 0 1 0 1 0 0 1 1 0 0 0 0 1 0 0",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [
+        "Allow other methods of working"
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Numbers are stored in a computer system using binary floating‑point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the denary value of the given normalised binary floating‑point number.\nShow your working.\nmantissa exponent\n1 0 1 0 0 0 0 1 1 1 0 0 0 1 1 1\nworking\ndenary value\n[3]",
+      "mark_scheme": "Two marks for working (Max 2)\n• correct application of exponent seen\n• correct method to find the final answer\nWorking:\n10100001.11 (moving bp 7 places to right)\nEvaluation of two’s complement −128 +32 + 1 + 0.5 + 0.25\nOne mark for correct answer (Max 1)\nDenary value: −94.25 // −941/\n4",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "exponent"
+      ],
+      "common_mistakes": [
+        "Allow other methods of working"
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "Draw one line to connect each TCP/IP layer to its most appropriate description.\nTCP/IP layer description\nensures packets arrive in sequence\nwithout errors\nApplication\nprovides remote access to files on a\nhost server to access and manage files\nstored in a remote location\nTransport\ninterconnects nodes or hosts in a\nnetwork, encapsulates IP packets into\nframes and ensures correct protocols\nare followed\nInternet\nidentifies the intended network and host\nLink\ncontains all the programs that exchange\ndata and includes protocols: HTTP, FTP\nand POP3\n[4]",
+      "mark_scheme": "One mark for each correct line connecting a TCP/IP layer to its description\n(Max 4).\nTCP/IP layer description\nensures packets arrive in sequence without\nerrors\nApplication\nprovides remote access to files on a host\nserver to access and manage files stored in a\nremote location\nTransport\ninterconnects nodes or hosts in a network,\nencapsulates IP packets into frames and\nensures correct protocols are followed\nInternet\nidentifies the intended network and host.\nLink\ncontains all the programs that exchange data\nand includes protocols: HTTP, FTP and\nPOP3",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocols",
+        "TCP/IP"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "A virtual machine may be used to emulate computer hardware using software.\nOutline two benefits and two limitations of using a virtual machine.\nbenefit 1\nbenefit 2\nlimitation 1\nlimitation 2\n[4]",
+      "mark_scheme": "One mark for each correct benefit (Max 2)\nMP1 Virtual machines can provide an instruction set architecture that is\ndifferent to the actual computer. // Multiple operating system\nenvironments can be used on the same computer. // You can run an\napplication / legacy software which is not compatible with the host\ncomputer / operating system using a guest operating system that is\ncompatible with the application / software.\nMP2 Costs can be saved by not having to purchase additional hardware to\ntest / use applications.\nMP3 The guest operating system can crash without affecting the host\nmachine. // Guest operating system hosted on a virtual machine can be\nused without impacting anything outside the virtual machine. // When\ntrying a piece of suspicious software, if it causes a problem, it will only\ninfect the virtual machine.\nOne mark for each correct limitation (Max 2)\nMP4 Degraded performance. // A virtual machine is less efficient than real\nmachines because they access hardware indirectly. // The virtual\nmachine has to request access to the hardware from the host, which\nslows usability. // If multiple virtual machines are running on the same\nhost, performance may be negatively affected if the host lacks sufficient\npower to deal with all their requirements.\nMP5 A virtual machine is dependent on the features / standard of the host\nmachine. // It may be affected by the weaknesses of the host machine //\nNot all hardware/software can be emulated.\nMP6 Managing and maintaining a virtual machine can be quite complex\n/specialised.",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "virtual machine"
+      ],
+      "common_mistakes": [
+        "MP2 do not allow the mark for ‘virtual\nmachines can be cheaper’, ‘cost saving’\nby itself, or similar. The answer must\nmatch the phrase in the mark scheme.\nMP6 do not allow for just saying ‘virtual\nmachine can be expensive’. It has to\nhave a reason e.g. expensive to\nmaintain."
+      ],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "The diagram shows a logic circuit.\nP\nA R\nQ\nB Z\nS\nC\nComplete the truth table for the given logic circuit.\nShow your working.\nworking space\nA B C P Q R S Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n[3]",
+      "mark_scheme": "• One mark for columns P, Q and R\n• One mark for column S\n• One mark for column Z\nWorking space\nA B C P Q R S Z\n0 0 0 1 1 1 0 0\n0 0 1 1 1 0 1 0\n0 1 0 1 0 1 0 0\n0 1 1 1 0 1 1 0\n1 0 0 0 1 1 1 1\n1 0 1 0 1 1 0 0\n1 1 0 0 0 1 1 0\n1 1 1 0 0 1 0 0",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Describe one benefit of using a Karnaugh map (K‑map) for solving logic problems.\n[1]",
+      "mark_scheme": "One mark per mark point (Max 1)\nSolving logic expressions using a K-map makes it easier because you don’t\nneed to use Boolean algebra. // It is guaranteed to give you an optimal solution.\n// Converts complex logic problems into simpler ones.",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "K-map"
+      ],
+      "common_mistakes": [
+        "Makes it easier by itself is not enough.\nDo not allow optimal sum-of-products\ninstead of optimal solution."
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "6(c)(i)",
+      "question_text": "The Karnaugh map (K‑map) represents a logic circuit with four inputs.\nAB\nCD\n00 01 11 10\n00 0 0 1 0\n01 0 1 1 0\n11 1 1 1 1\n10 0 0 1 0\nDraw loop(s) around appropriate group(s) in the K‑map to produce an\noptimal sum‑of‑products. [3]",
+      "mark_scheme": "One mark for each correct loop (Max 3)\nAB\nCD 00 01 11 10\n00 0 0 1 0\n01 0 1 1 0\n11 1 1 1 1\n10 0 0 1 0",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Max 2 if incorrect loops seen."
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "6(c)(ii)",
+      "question_text": "The Karnaugh map (K‑map) represents a logic circuit with four inputs.\nAB\nCD\n00 01 11 10\n00 0 0 1 0\n01 0 1 1 0\n11 1 1 1 1\n10 0 0 1 0\nWrite the Boolean expression from your answer to 6(c)(i) as a simplified\nsum‑of‑products. Do not carry out any further simplification.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 One correct Boolean term with an OR (+) sign\nMP2 All three correct Boolean terms connected by OR signs and no other\nterms present.\nA.B + B.D + C.D",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Terms can be in any order."
+      ],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Write this infix expression in Reverse Polish Notation (RPN).\n21 * (15 – 3 + 8) / 7\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 21 15 3 –\nMP2 8 + * 7 /\nFinal correct expression\n21 15 3 – 8 + * 7 /",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Write this RPN expression in infix form.\nc d + a b – a c - * /\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 (c + d)\nMP2 (a - b) * (a - c)\nMP3 /( MP2 )\nFinal correct expression\n(c + d) / ((a - b) * (a - c))",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "The RPN expression\n15 9 – 24 3 / * 18 6 + /\nis to be evaluated.\nShow the changing contents of the stack as the RPN expression is evaluated.\n[4]",
+      "mark_scheme": "One mark per ring (Max 3)\nOne mark for the interim total (48) and the final total (2).\n3 6\n9 24 24 8 18 18 24\n15 15 6 6 6 6 48 48 48 48 2",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Do not allow operators in stacks\nValues in shaded areas are necessary\nto award the marks in the rings."
+      ],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "8(a)(i)",
+      "question_text": "Define the following asymmetric key encryption terms:\ncipher text\n[1]",
+      "mark_scheme": "Text encrypted from plain text using an encryption algorithm // The result of\nputting plain text through an encryption algorithm.",
+      "marks": 1,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "8(a)(ii)",
+      "question_text": "Define the following asymmetric key encryption terms:\npublic key.\n[1]",
+      "mark_scheme": "A cryptographic/encryption key that can be obtained/used by anyone to send\nencrypted messages. // A key that is part of a matched pair // An encryption key\nknown to all users // A decryption key obtained/used by anyone to decrypt\nsender’s digital signature",
+      "marks": 1,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "digital signature"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Outline the process that would allow an individual to use asymmetric key encryption to send\na private message to an organisation.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 The organisation generates a matched pair of encryption keys\nMP2 The organisation makes its public key available to the individual\nMP3 The individual uses the public key to encrypt their message\nMP4 … and sends this message to the organisation\nMP5 The organisation decrypts the message using their private key\nAlternative answer\nOne mark per mark point (Max 4)\nMP6 The individual generates a matched pair of encryption keys\nMP7 The individual sends their public key to the organisation\nMP8 The individual uses their private key to encrypt their message\nMP9 … and sends this message to the organisation\nMP10 The organisation decrypts the message using the individual’s public key",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key"
+      ],
+      "common_mistakes": [
+        "The correct sequence of steps that is\nimportant."
+      ],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Explain how supervised learning and unsupervised learning are trained.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Supervised learning makes use of labelled training data\nMP2 … to predict future events based on past outcomes\nMP3 Unsupervised learning makes use of unlabelled training data / training\ndata without instructions on what to do with it / does not use training\ndata with the correct/expected outcomes\nMP4 … to search for hidden patterns/relationships/structures/similarities/\noutliers within the data\nMP5 … to therefore get closer to the desired outcome as the training\nprogresses.",
+      "marks": 4,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Supervised learning",
+        "Unsupervised learning"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Calculate the best path between the Begin node and each of the nodes in the diagram using\nDijkstra’s algorithm.\nShow your working and write your answers in the table provided.\n5 S\nQ\nR\n5\nP 6\n9\nT\nBegin\nU\nworking\nanswers:\nP Q R S T U\n[5]",
+      "mark_scheme": "One mark per mark point - working (Max 3)\nMay be seen on diagram or in working section\nMP1 Initialisation – setting Begin to 0\nMP2 … and the rest of the nodes to \nMP3 Evidence to show values at nodes being updated\nMP4 Evidence to show ‘visited node(s)’\nMP5 Evidence to show a correct calculation of at least one route\nMP6 Evidence to show more than one route has been calculated for at least\none node\nCorrect Answers (Max 2)\nTwo marks for all six correct values\nOne mark for four or five correct values.\nP Q R S T U\n8 13 6 14 17 20",
+      "marks": 5,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [
+        "MP1 a 0 on the Begin node in the\ndiagram or clearly labelled in working\nMP2 requires an  symbol on EVERY\nnode except Begin in the diagram or\nclearly labelled in working\nMP3 evidence of correct numbers being\nwritten on the diagram at the nodes to\nrepresent ‘distance’ for a particular route\nMP4 any evidence of nodes being\n‘visited’ in a route on the diagram OR\nlisting of nodes by letter in the working\nMP5 numbers on the diagram or in\nworking that show a route being\ncalculated from the component\ndistances between nodes\nMP6 numbers on the diagram or in\nworking to show distances calculated to\na node via different routes."
+      ],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "An insertion sort algorithm is used to sort the unique ID numbers of club members into\nascending order. These unique ID numbers are kept in a 1D array MemberID. The\ncorresponding names of the members are stored in a 1D array Names.\nThe arrays are declared as:\nDECLARE MemberID : ARRAY[0:499] OF INTEGER\nDECLARE Names : ARRAY[0:499] OF STRING\nThe following table defines the variables to be used in this algorithm.\nidentifier data type description\nCount integer main loop counter to iterate through the whole array\nTemp1 integer temporary holding location for current member ID\nTemp2 string temporary holding location for current member name\nInsert integer counter to show current insertion position\nWrite the pseudocode for an insertion sort to arrange the unique ID numbers into ascending\norder. Make sure that the data in both arrays is swapped as required so that data with the\nsame index continues to apply to the same person.\nUse the given identifiers. Assume all variables have been declared.\n[5]",
+      "mark_scheme": "One mark per mark point (Max 5)\nMP1 Correct outer loop iterating through entire array starting at second\nelement\nMP2 Temporary variables both initialised to current value of arrays\nMP3 Insertion variable initialised\nMP4 Correct inner loop criteria\nMP5 Elements of both arrays inserted as appropriate\nMP6 Insertion variable decremented\nMP7 Temporary values replaced in correct place in arrays\nSample algorithm\nFOR Count  1 to 499\nTemp1  MemberID[Count]\nTemp2  Names[Count]\nInsert  Count – 1\nWHILE Insert >= 0 AND MemberID[Insert] > Temp1\nMemberID[Insert + 1]  MemberID[Insert]\nNames[Insert + 1]  Names[Insert]\nInsert  Insert – 1\nENDWHILE\nMemberID[Insert + 1]  Temp1\nNames[Insert + 1]  Temp2\nNEXT Count",
+      "marks": 5,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [
+        "MP2 must be Temp1 and Temp2\nMP3 must be Insert\nDo not accept bubble sort answers"
+      ],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Describe the factors, other than changing the algorithm, that affect the time efficiency of the\ninsertion sort algorithm.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Array size // Number of elements in the array\nMP2 … time efficiency will improve if the number of elements to be sorted\nare fewer\nMP3 Initial order\nMP4 … if the array is partially sorted the insertion sort works better",
+      "marks": 3,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "insertion sort"
+      ],
+      "common_mistakes": [
+        "Allow the opposite for MP2\n(worse/more).\nAllow the opposite for MP4\n(reversed/slower)."
+      ],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "10(c)",
+      "question_text": "State the Big O notation for the worst‑case time complexity of the insertion sort.\n[1]",
+      "mark_scheme": "O(n2) // O(N2)",
+      "marks": 1,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Must be completely correct (including\nbrackets)."
+      ],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "A declarative programming language is used to show which home cinema devices customers\nalready have and which devices they want.\n01 device(projector).\n02 device(large_tv).\n03 device(medium_tv).\n04 device(bluray_player).\n05 device(amplifier).\n06 device(media_player).\n07 device(main_speakers).\n08 device(centre_speaker).\n09 device(surround_speakers).\n10 customer(petrov).\n11 customer(margaret).\n12 customer(steffan).\n13 customer(susan).\n14 customer(allan).\n15 customer(sammy).\n16 owns(projector, petrov).\n17 owns(media_player, petrov).\n18 owns(projector, susan).\n19 owns(projector, sammy).\n20 owns(media_player, allan).\n21 owns(bluray_player, steffan).\n22 wants(main_speakers, margaret).\n23 wants(surround_speakers, susan).\n24 wants(medium_tv, steffan).\nThese facts (clauses) have the meanings:\nfact meaning\n01 A projector is a device.\n10 Petrov is a customer.\n16 Petrov owns a projector.\n22 Margaret wants main speakers.\nBetty is a customer who owns a large TV and wants a Blu‑ray player.\nWrite additional facts to represent this information.\n25\n26\n27\n[3]",
+      "mark_scheme": "One mark for each correctly completed clause (Max 3)\n(25) customer(betty).\n(26) owns(large_tv, betty).\n(27) wants(bluray_player, betty).",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Accept facts in any order.\nThe device names have been given in\nclauses 02 and 04. Responses must\nmatch these."
+      ],
+      "qp_pages": [
+        14
+      ],
+      "ms_pages": [
+        16
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "A declarative programming language is used to show which home cinema devices customers\nalready have and which devices they want.\n01 device(projector).\n02 device(large_tv).\n03 device(medium_tv).\n04 device(bluray_player).\n05 device(amplifier).\n06 device(media_player).\n07 device(main_speakers).\n08 device(centre_speaker).\n09 device(surround_speakers).\n10 customer(petrov).\n11 customer(margaret).\n12 customer(steffan).\n13 customer(susan).\n14 customer(allan).\n15 customer(sammy).\n16 owns(projector, petrov).\n17 owns(media_player, petrov).\n18 owns(projector, susan).\n19 owns(projector, sammy).\n20 owns(media_player, allan).\n21 owns(bluray_player, steffan).\n22 wants(main_speakers, margaret).\n23 wants(surround_speakers, susan).\n24 wants(medium_tv, steffan).\nThese facts (clauses) have the meanings:\nfact meaning\n01 A projector is a device.\n10 Petrov is a customer.\n16 Petrov owns a projector.\n22 Margaret wants main speakers.\nUsing the variable Owner, the goal:\nowns(media_player, Owner)\nreturns\nOwner = petrov, allan\nWrite the result of using the goal:\nowns(projector, Owner)\nOwner =  [1]",
+      "mark_scheme": "(Owner =) petrov, susan, sammy",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Can be in any order"
+      ],
+      "qp_pages": [
+        14,
+        15
+      ],
+      "ms_pages": [
+        16
+      ]
+    },
+    {
+      "question_number": "11(c)",
+      "question_text": "A declarative programming language is used to show which home cinema devices customers\nalready have and which devices they want.\n01 device(projector).\n02 device(large_tv).\n03 device(medium_tv).\n04 device(bluray_player).\n05 device(amplifier).\n06 device(media_player).\n07 device(main_speakers).\n08 device(centre_speaker).\n09 device(surround_speakers).\n10 customer(petrov).\n11 customer(margaret).\n12 customer(steffan).\n13 customer(susan).\n14 customer(allan).\n15 customer(sammy).\n16 owns(projector, petrov).\n17 owns(media_player, petrov).\n18 owns(projector, susan).\n19 owns(projector, sammy).\n20 owns(media_player, allan).\n21 owns(bluray_player, steffan).\n22 wants(main_speakers, margaret).\n23 wants(surround_speakers, susan).\n24 wants(medium_tv, steffan).\nThese facts (clauses) have the meanings:\nfact meaning\n01 A projector is a device.\n10 Petrov is a customer.\n16 Petrov owns a projector.\n22 Margaret wants main speakers.\nD may be available for A to buy if D is a device and A is a customer and A does not own\nthat device.\nWrite this as a rule:\nmay_buy_device(D, A)\nIF\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 device(D)\nMP2 customer(A)\nMP3 owns(D, A).\nMP4 All logic conditions / punctuation correct (accept , for AND)\nExample answers\nmay_buy_device(D, A)\nIF device(D) AND customer(A) AND NOT owns(D, A).\nmay_buy_device(D, A)\nIF device(D), customer(A), NOT owns(D, A).",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Allow MP1, MP2 and MP3 in any order.\nAccept \\+ for NOT operator as Swish\nProlog."
+      ],
+      "qp_pages": [
+        14,
+        15
+      ],
+      "ms_pages": [
+        16
+      ]
+    }
+  ],
+  "marks": 75
+}
