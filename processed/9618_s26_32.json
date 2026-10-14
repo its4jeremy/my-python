@@ -1,0 +1,538 @@
+{
+  "paper": "9618_s26_32",
+  "qp": "papers/9618/paper_3/2026/may_jun/9618_s26_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2026/may_jun/9618_s26_ms_32.pdf",
+  "sha256": {
+    "qp": "b8977524b1dba38869c69e6290a3647d644f7a4ae450f7ae5eff29fe569751fb",
+    "ms": "711360ab6d0a366f9cb2d5143695c106a3a4879b7f41d97773be5223c059aa4d"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "A user-defined data type is required to store the types of animals in a children’s zoo.\nWrite the pseudocode statement to declare a non-composite data type, Animals, that holds\nthe following data:\nAlpaca, Chicken, Donkey, Duck, Goat, Pony, Sheep\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 TYPE Animals =\nMP2 (Alpaca, Chicken, Donkey, Duck, Goat, Pony, Sheep)\nExample answer\nTYPE Animals = (Alpaca, Chicken, Donkey, Duck, Goat, Pony,\nSheep)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Only allow equals sign\nDo not allow quotation marks around\ndata elements.\nThe order of the elements must be\ncorrect.\nDo not allow extra punctuation, such as\nunderscore, between elements, or when\ngoing onto the next line."
+      ],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "1(b)(i)",
+      "question_text": "A user-defined data type is required to store the types of animals in a children’s zoo.\nState the type of user-defined non-composite data type created in 1(a).\n[1]",
+      "mark_scheme": "Enumerated",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "1(b)(ii)",
+      "question_text": "A user-defined data type is required to store the types of animals in a children’s zoo.\nGive two features that would apply to any list used in the data type in 1(a).\n1\n2\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 The list is complete / contains all possible values // Cannot change\nvalues of list after it is defined/declared // The list is of fixed length\nMP2 The list is ordinal / ordered / in alphabetical order\nMP3 Elements are unique / not repeated",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Do not allow chronological order for MP2"
+      ],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "Complete the following paragraph using the most appropriate words from the given list.\nSome words are not used.\napplication controls disconnects four\ninterconnects internet link lists\nmany packets seven transport\nThe TCP/IP protocol suite consists of  layers which can be thought of as\na stack. It is designed to send  of data across the internet. It is also used\nas a communications protocol to ensure accurate delivery of data over private networks.\nThe lowest layer of the stack is the  layer. This is the layer that\nnodes in the network.\n[4]",
+      "mark_scheme": "One mark for each correct word in the correct place (Max 4)\nfour\npackets\nlink\ninterconnects\nThe TCP/IP protocol suite consists of four layers which can be thought of as a\nstack. It is designed to send packets of data across the internet. It is also used\nas a communications protocol to ensure accurate delivery of data over private\nnetworks. The lowest layer of the stack is the link layer. This is the layer that\ninterconnects nodes in the network.",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocol",
+        "TCP/IP"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Numbers are stored in a computer system using binary floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the denary value of the given normalised binary floating-point number.\nShow your working.\nmantissa exponent\n1 0 1 1 0 1 0 0 0 1 1 0 0 1 1 0\nworking\ndenary value\n[3]",
+      "mark_scheme": "Two marks for working (Max 2)\n• correct use of exponent seen\n• correct conversion method from binary to denary\nOne mark for correct answer (Max 1)\nWorking:\n1011010.00110 (moving bp 6 places to right) // multiply by 64 / 26\nEvaluation of two’s complement −64 +16 + 8 + 2 + 0.125 + 0.0625\n// −64 +16 + 8 + 2 + 1/8 + 1/16\n// 32 + 4 + 1 + 0.5 + 0.25 + 0.0625\n// 32 + 4 + 1 + 1/2 + 1/4 + 1/16\n// –1 + 1/4 + 1/8 + 1/32 + 1/512 + 1/1024 x 64\nAnswer:\n−37.8125 // −3713/\n16",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "exponent"
+      ],
+      "common_mistakes": [
+        "Allow other methods of working."
+      ],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Numbers are stored in a computer system using binary floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nDescribe one example of a situation that could cause underflow to occur and the\nconsequences of this underflow.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 When a calculation is performed on a normalised floating-point number //\nallow a specific example\nMP2 … so that the result obtained is less than the lowest possible value that\ncan be stored in the system an underflow will occur // the exponent is too\nsmall / too negative for the number of bits in the mantissa, so the result\nbecomes zero",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent",
+        "normalised",
+        "underflow"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "State one example of where sequential file organisation could be used.\n[1]",
+      "mark_scheme": "One mark for an appropriate use of sequential file organisation (Max 1)\nBatch processing tasks\nRecording log files\nGenerating bills/payroll\nBackup\nA valid example where the data is stored in a specified order",
+      "marks": 1,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "sequential file organisation"
+      ],
+      "common_mistakes": [
+        "Do not allow examples that simply\ndescribe sequential file organisation,\nsuch as ‘records are stored one after the\nother’."
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Describe how records are organised in sequential files.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Records are stored in a file one after the other / linearly\nMP2 … in a given order\nMP3 … usually based on a key field / unique identifier",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Chronological order is not correct for\nMP2 – that would be serial organisation."
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "4(c)",
+      "question_text": "Outline the process of sequential file access to find a record in a sequential file.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Each record in the file is searched, one after the other / linearly // Each\nrecord in the file is searched from the physical start of the file\nMP2 … using the record key\nMP3 … until the record is found.\nMP4 … until the value of the record key being searched has been exceeded //\n… until the end of the file is reached.",
+      "marks": 3,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record"
+      ],
+      "common_mistakes": [
+        "Candidates whose answer is about\nsearching an index as for index\nsequential files do not answer this\nquestion."
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "Explain what is meant by the term virtual machine.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 A VM is a standalone environment running on a physical computer\n// A VM is not a physical machine\nMP2 It can emulate the hardware/software of another system\nMP3 VM software has all the components of a physical computer system\nMP4 The host machine provides all the physical resources e.g. RAM/ROM\nMP5 … and is controlled via a host operating system\nMP6 The hypervisor runs between the host and guest operating systems\nMP7 … and creates and runs virtual machines / allocates resources from the\nhost to the guest OS.\nMP8 A guest OS runs within the VM/host OS\nMP9 Multiple guest OS can run on the same VM\n// Multiple VMs can run on the same host OS\nMP10 The guest operating system controls/accesses the virtual\nhardware/software.",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "virtual machines"
+      ],
+      "common_mistakes": [
+        "Do not allow benefits, drawbacks or\nuses, as the question is about the\nmeaning of the term virtual machine, so\nrequires a description."
+      ],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "Write this infix expression in Reverse Polish Notation (RPN).\n16 + ((9 – 7) / (18 + 6))\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 16 9 7 –\nMP2 18 6 + / +\nFinal correct expression\n16 9 7 – 18 6 + / +",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Write this RPN expression in infix form.\n6 15 + 20 3 - - 27 9 * /\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 (6 + 15) // 6 + 15\nMP2 - (20 – 3)\nMP3 / (27 * 9) and the pair of brackets around the whole numerator\nFinal correct expression\n((6 + 15) - (20 – 3)) / (27 * 9) //\n(6 + 15 - (20 – 3)) / (27 * 9)",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(c)",
+      "question_text": "The RPN expression\nc a b - * b c + / d *\nis to be evaluated, where:\na = 8, b = 2, c = 10 and d = 18.\nShow the changing contents of the stack as the RPN expression is evaluated.\n[4]",
+      "mark_scheme": "One mark per ring (Max 3)\nOne mark for the interim totals (60) and (5).\n2 10\n8 8 6 2 2 12 18\n10 10 10 10 60 60 60 60 5 5 90",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Do not allow operators in stacks\nDo not allow letters in stacks\nValues in shaded areas are necessary\nto award the marks in the rings."
+      ],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(a)(i)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 1\n0 1 0 1 1\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 1\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 1\nComplete the Karnaugh map (K-map) for the given truth table.\nAB\n00 01 11 10\nCD\n[2]",
+      "mark_scheme": "Two marks if no errors present\nOne mark if one error present\nAB\nCD 00 01 11 10\n00 0 1 1 0\n01 1 1 1 1\n11 0 1 1 0\n10 0 1 1 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [
+        "0’s must be present"
+      ],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(a)(ii)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 1\n0 1 0 1 1\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 1\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 1\nDraw loop(s) around appropriate group(s) in the K-map to produce an optimal\nsum-of-products. [2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)\nAB\nCD 00 01 11 10\n00 0 1 1 0\n01 1 1 1 1\n11 0 1 1 0\n10 0 1 1 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Max 1 if incorrect loops present."
+      ],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(a)(iii)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 1\n0 1 0 1 1\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 1\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 1\nWrite the Boolean expression from your answer to 7(a)(ii) as a\nsimplified sum-of-products.\n[1]",
+      "mark_scheme": "B + C.D // C.D + B",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Allow products with or without dots\ne.g. C.D or CD."
+      ],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 1\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 1\n0 1 0 1 1\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 1\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 1\nSimplify the following expression using De Morgan’s laws and Boolean algebra.\nShow all the stages in your simplification.\nX = A.B.C.D + A.D\n[3]",
+      "mark_scheme": "One mark for correct answer\n(Max 2) for correct working from points shown\nX = A.B.C.D + A.D\nDe Morgan’s laws\n(X =) A + B + C + D + A . D\n// (X =) A + B + C + D + A.D\nDouble negation law\n(X =) A + B + C + D + A.D\nAbsorption law\nCorrect answer\n(X =) A + B + C + D",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "De Morgan’s laws"
+      ],
+      "common_mistakes": [
+        "One mark for correct answer and up to\ntwo marks to show correct use of\ndifferent laws in the solution, which\ncould be in the same line.\nThe top line, shaded grey, is given in the\nquestion.\nOther solutions are possible.\nIf distributive law is seen, that is also\nworth 1 working mark.\nMark correct working lines where you\nsee them."
+      ],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Describe the differences between symmetric key and asymmetric key cryptography.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Symmetric key encryption uses only one key but asymmetric encryption\nuses two keys // Asymmetric public and private keys are a\nmathematically linked pair, whereas symmetric uses the same key.\nMP2 Asymmetric key encryption uses one key to encrypt and the other key to\ndecrypt, whereas symmetric key encryption uses the same key for both.\nMP3 Symmetric key encryption suffers from the key distribution problem,\nwhich the matched pair of keys for asymmetric has resolved.\nMP4 Asymmetric keys must be much larger/longer to achieve the same level\nof security as symmetric key encryption.\nMP5 Asymmetric key encryption allows verification of the sender, which\nsymmetric key encryption does not.",
+      "marks": 3,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "Symmetric key encryption",
+        "asymmetric encryption",
+        "private keys"
+      ],
+      "common_mistakes": [
+        "Candidates are asked to describe the\ndifference, so both key types need to be\nincluded for each mark, where\napplicable."
+      ],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Outline the process that would allow a business to use encryption keys to send a verified\nmessage to a group of people.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 The organisation generates a matched pair of encryption keys\nMP2 The organisation makes its public key available to the group of people /\nvia its website\nMP3 The organisation encrypts its message using its private key\nMP4 … and sends it to the group of people\nMP5 Anyone receiving the message can decrypt it using the organisation’s\npublic key\nMP6 Therefore, verifying the sender // Providing non-repudiation.",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key"
+      ],
+      "common_mistakes": [
+        "The correct sequence of steps that is\nimportant."
+      ],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "State the subset of Artificial Intelligence (AI) which makes use of an artificial neural network.\n[1]",
+      "mark_scheme": "One mark per correct machine learning type (Max 1)\nDeep learning",
+      "marks": 1,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Deep learning"
+      ],
+      "common_mistakes": [
+        "Machine learning is NE because not all\nmachine learning uses ANNs."
+      ],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(b)(i)",
+      "question_text": "The A* and Dijkstra’s algorithms are used to perform searches on a graph.\nOutline how the A* algorithm is different from Dijkstra’s algorithm.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 The A* algorithm tries to find the shortest path using heuristics /\nintelligent guesses\nMP2 The A* algorithm doesn’t necessarily pass through all nodes/paths\nMP3 Dijkstra’s algorithm finds the shortest path to all nodes // Dijkstra’s\nalgorithm simply checks each vertex looking for the shortest path\nMP4 Dijkstra’s algorithm always finds the shortest path\nMP5 The A* algorithm may not find the shortest path if the heuristics are\ninaccurate.",
+      "marks": 3,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "heuristics",
+        "Dijkstra’s algorithm",
+        "A* algorithm"
+      ],
+      "common_mistakes": [
+        "Do not award MP3 for searching through\nall routes/paths – it is looking at the\nshortest path to all nodes"
+      ],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(b)(ii)",
+      "question_text": "The A* and Dijkstra’s algorithms are used to perform searches on a graph.\nCalculate the best path between the Home node and each of the nodes in the diagram\nusing Dijkstra’s algorithm.\nShow your working and write your answers in the table provided.\nC\n4 12\nB\n3 D\nA 6\n6 8\nF 3\nHome\nE\nworking\nAnswers:\nA B C D E F\n[5]",
+      "mark_scheme": "One mark per mark point - working (Max 3)\nMay be seen on diagram or in working section\nMP1 Initialisation – setting Home to 0\nMP2 … and the rest of the nodes to \nMP3 Evidence to show values at nodes being updated\nMP4 Evidence to show ‘visited node(s)’\nMP5 Evidence to show a correct calculation of at least one route\nMP6 Evidence to show more than one route has been calculated for at least\none node\nCorrect Answers (Max 2) - allow these marks if totals clearly identified in\nworking\nTwo marks for all six correct values\nOne mark for four or five correct values\nA B C D E F\n6 13 9 20 17 14",
+      "marks": 5,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [
+        "MP1 a 0 on the home node in the\ndiagram or clearly labelled in working\nMP2 requires an  symbol on EVERY\nnode except Home in the diagram or\nclearly labelled in working\nMP3 evidence of correct numbers being\nwritten and amended on the diagram at\nthe nodes to represent ‘distance’ for a\nparticular route, or in the working\nMP4 any evidence of nodes being\n‘visited’ in a route on the diagram OR\nlisting of nodes by letter in the working\nMP5 numbers on the diagram or in\nworking that show a route being\ncalculated from the component\ndistances between nodes\nMP6 numbers on the diagram or in\nworking to show distances calculated to\na node via different routes."
+      ],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "Two examples of searching algorithms are a linear search and a binary search.\nDescribe how increasing the number of data items in the file to be searched affects the time\nefficiency of these search algorithms. Refer to Big O notation in your answer.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 The time it takes to execute a linear search will increase linearly as the\nnumber of search items increases linearly\nMP2 Linear search worst case Big O notation is O(n)\nMP3 The time it takes to execute a binary search will increase logarithmically\nas the number of search items increases linearly // The time it takes to\nexecute a binary search will increase linearly as the number of search\nitems increases exponentially\nMP4 Binary search worst case Big O notation is O(log n) / O(log n).\n2",
+      "marks": 3,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "binary search",
+        "linear search",
+        "Big O"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "A temperature in degrees Celsius (°C) is recorded every minute for one day in a random\nfile, Temperatures.dat.\nA function is required to find the temperature for a specific time in the day to check if it\nwas freezing. The position of each temperature in the file corresponds to the number\nof minutes after midnight, for example, the temperature at 10:00 am would be stored at\nposition 600 (10 × 60).\nWrite the pseudocode to complete the algorithm to check a temperature stored in\nTemperatures.dat, by passing its position in the file as a parameter and using file\nhandling commands to find the relevant data item. Once the temperature is found, it is\nchecked to see if it is above or below freezing, and an appropriate message is returned.\nSome of the blank lines may not be used.\nFUNCTION TempCheck(\nDECLARE Temperature : REAL\nDECLARE Response : STRING\nOPENFILE\nENDFUNCTION\n[6]",
+      "mark_scheme": "One mark per mark point (Max 6)\nMP1 Correct completion of FUNCTION header\nMP2 Correct OPENFILE statement\nMP3 Correct use of SEEK\nMP4 Correct use of GETRECORD\nMP5 Correct complete selection statement(s) structure IF … THEN …. ELSE\n… ENDIF OR multiple IF … THEN … ENDIF\nMP6 Correct application of logic between condition and action to produce /\nreturn appropriate messages\nMP7 Correct use of CLOSEFILE – must be after GETRECORD but do NOT\naward this mark if RETURN statements(s) come before this line\nMP8 Correct RETURN statement(s) - allow use of other variables in this\nstatement as the question does not specifically ask for Response to be\nused.\nCompleted algorithm\nFUNCTION TempCheck(Position : INTEGER) RETURNS STRING\nDECLARE Temperature : REAL\nDECLARE Response : STRING\nOPENFILE \"Temperatures.dat\" FOR RANDOM\nSEEK \"Temperatures.dat\", Position\nGETRECORD \"Temperatures.dat\", Temperature\nIF Temperature > 0 THEN\nResponse  \"Not freezing\"\nELSE\nResponse  \"Freezing\"\nENDIF\nCLOSEFILE \"Temperatures.dat\"\nRETURN Response\nENDFUNCTION",
+      "marks": 6,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [
+        "Temperatures.dat given in question\nand all variables needed are declared at\nthe top of the algorithm, so these must\nbe used.\nThe parameter can be anything, but it\nneeds to be the same as the variable\nused in the SEEK line to award MP3.\nMP5 and MP8 may be given together if\nthe RETURN statement is included in the\nselection statement.\nBe careful to check that RETURN and\nRETURNS are correct.\nGrey shaded areas given in question."
+      ],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "Object-Oriented Programming (OOP) is used to design a class called Node.\nA partial design of the Node class includes the STRING attribute Content and the INTEGER\nattribute Pointer, together with their getters and setters.\nThe class also includes a constructor, with two parameters, to set the values of\nthese attributes.\nWrite pseudocode statements to declare the Node class, its attributes and the constructor.\n[5]",
+      "mark_scheme": "One mark per mark point (Max 5)\nMP1 Correct CLASS Node and ENDCLASS statements\nMP2 Correct attribute declaration section before the constructor\nMP3 Correct statement to begin and end the constructor as PUBLIC\nPROCEDURE NEW … ENDPROCEDURE\nMP4 Two parameters identified in the constructor with appropriate names and\ndata types.\nMP5 Values passed using the constructer are assigned correctly – allow use\nof setters.\nExample algorithm\nCLASS Node\nPRIVATE Content : STRING\nPRIVATE Pointer : INTEGER\nPUBLIC PROCEDURE NEW(NewContent : STRING,\nNewPointer : INTEGER)\nContent  NewContent\nPointer  NewPointer\nENDPROCEDURE\nENDCLASS",
+      "marks": 5,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "setters"
+      ],
+      "common_mistakes": [
+        "MP1 Node is given in the question, so\nmust be used.\nMP2 must use Content and Pointer\nas STRING and INTEGER, respectively.\nMP4 any names can be used except\nContent and Pointer.\nMP5 the candidate’s parameters from\nMP4 must be assigned to the attributes\nfrom MP2."
+      ],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "Complete the table by filling in the missing OOP terms and descriptions.\nOOP term description\nA method used to change values in private attributes in\na class.\nAn occurrence of a class during the execution of a program.\naggregation\ninheritance\n[4]",
+      "mark_scheme": "One mark per correct answer (Max 4)\nOOP Term Description\nA method used to change values in private\nsetter\nattributes in a class.\nAn occurrence of a class during the execution of a\ninstance(s) // object(s)\nprogram.\nOne class/object contains another\n// Hierarchy of nested classes/objects\n// Process by which one class can contain other\naggregation\nclasses\n// Represents a “has a” relationship between\nclasses.\nDeriving new classes/objects on existing\nclasses/objects\n// Process in which the methods and data from\none class, a superclass or base class, are copied\ninheritance\nto another class, a derived class\n// Represents a hierarchy of derived classes\n// Represents an “is a” relationship between\nclasses.",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "inheritance",
+        "setter",
+        "instance"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        16
+      ]
+    }
+  ],
+  "marks": 75
+}

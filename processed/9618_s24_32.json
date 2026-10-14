@@ -1,0 +1,515 @@
+{
+  "paper": "9618_s24_32",
+  "qp": "papers/9618/paper_3/2024/may_jun/9618_s24_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2024/may_jun/9618_s24_ms_32.pdf",
+  "sha256": {
+    "qp": "462c74ad9a5c6e2fd37ad1eed0fb6ca4f64e33f5389d28a30d93aac878f4e466",
+    "ms": "7c1814d97a72fb194fafa21c9115695fca3c2b712a0f661e9c199173158bca4b"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Describe the effect of changing the allocation of bits used for the mantissa and for the\nexponent in a floating-point number with a fixed total number of bits.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 When the number of bits in the mantissa is raised, the precision / accuracy of the number represented increases //\nwhen the number of bits in the mantissa is lowered, the precision / accuracy of the number represented reduces.\nMP2 When the number of bits in the exponent is reduced, the range of numbers that can be represented is reduced //\nwhen the number of bits in the exponent is increased, the range of possible numbers that can be represented\nincreases.\nMP3 When the range increases the accuracy decreases // When the range decreases the accuracy increases.",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Real numbers are stored in a computer, using floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and exponent.\nCalculate the normalised floating-point representation of +54.8125 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\n number converted to binary e.g. 54.8125 = 00110110.1101 // Fractions method 1/2 + 1/4 + 1/16 + 1/32 + 1/128 + 1/256\n+ 1/1024 = 877/1024 // 32 + 16 + 4 + 2 + 0.5 + 0.25 + 0.0625 / (1/2 + 1/4 + 1/16)\n exponent = 6 // Moving binary point the correct number of places\n correct answer\nMantissa Exponent\n0 1 1 0 1 1 0 1 1 0 1 0 0 1 1 0",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Outline why protocols are essential for communication between computers.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Protocols provide a standard set of rules that enables successful data transfer between devices.\nMP2 Allows communication between devices on different platforms.\nMP3 Makes communications independent of software and hardware.",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "Protocols"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "State the names of two different protocols associated with the sending and receiving of\nemails between computers.\nSending\nReceiving\n[2]",
+      "mark_scheme": "One mark per mark point\nMP1 Sending - SMTP\nMP2 Receiving – POP3 // IMAP // Post Office Protocol 3",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "Protocol"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(c)",
+      "question_text": "Explain the meaning of the phrase:\nBitTorrent protocol provides peer-to-peer file sharing.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 BitTorrent allows the sharing of files between thousands of users who are connected together over the internet.\nMP2 It allows more users to share files with each other than would be the case with a peer-to-peer network.\nMP3 Users share files directly with each other // the users’ computers are acting as peers\nMP4 … no web server / central device is used // all users are of equal status.",
+      "marks": 3,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Explain what is meant by the term non-composite data type and give an example of a\nnon-composite data type.\nExample\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 A data type that is defined without referencing another data type.\nMP2 It can be a primitive data type found in a programming language or a user-defined data type.\nMP3 Example – enumerated data type / pointer data type / allow a correct example of an enumerated or pointer data\ntype declaration.",
+      "marks": 3,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "enumerated data type",
+        "pointer data type"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Write pseudocode statements to declare the set data type to hold this set of\nEvenNumbers\neven numbers between 2 and 12:\n2, 4, 6, 8, 10, 12\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Type statement fully correct\nMP2 DEFINE EvenNumbers\nMP3 Correct list of values in brackets\nMP4 : <set identifier> from Type statement used\nExample answer\nTYPE Numbers = SET OF INTEGER\nDEFINE EvenNumbers (2, 4, 6, 8, 10, 12): Numbers",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "set"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "Sheila has a customer called Fred. Fred wants to send Sheila a confidential document as part of a\ntransaction.\nExplain how Fred uses asymmetric encryption to send his document securely.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Sheila’s computer uses an algorithm to generate a matching pair of keys private and public\nMP2 Sheila’s computer sends Fred’s computer Sheila’s public key // Fred‘s computer acquires Sheila’s public key\nMP3 Fred’s computer encrypts the document/plain text using Sheila’s public key to create cipher text\nMP4 Fred’s computer sends the cipher text to Sheila’s computer The cipher text can only be decrypted using Sheila’s\nprivate key // Sheila’s computer uses Sheila’s private key to decrypt the cipher text.",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key",
+        "cipher text"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Write this infix expression in Reverse Polish Notation (RPN):\n(7 – 2 + 8) / (9 – 5)\n[2]",
+      "mark_scheme": "One mark 7 2 – 8 +\nOne mark 9 5 - /\nComplete answer\n7 2 – 8 + 9 5 - /",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Evaluate this RPN expression:\na d + a b + c - *\nwhen\n, , and\na = 6 b = 3 c = 7 d = 9\nShow the changing contents of the stack as the RPN expression is evaluated.\n[4]",
+      "mark_scheme": "One mark per ring (Max 4)\n3 7\n9 6 6 9 9 2\n6 6 15 15 15 15 15 15 30",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(c)",
+      "question_text": "Write this RPN expression in infix form:\nb a c - + d b + * c /\n[3]",
+      "mark_scheme": "One mark per correct term (Max 3)\n(a – c + b)\n* (d + b)\n/c\nComplete correct answer\n(((a – c) + b) * (d + b))/c\nOr\n(a – c + b) * (d + b)/c",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "The diagram shows a logic circuit.\nP\nA\nS\nQ\nB Z\nT\nR\nC\nComplete the truth table for the given logic circuit.\nShow your working.\nWorking space\nA B C P Q R S T Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n[3]",
+      "mark_scheme": "One mark for working, all five columns P, Q, R, S and T\nOne mark for first four rows of column Z\nOne mark for second four rows of column Z\nWorking space\nA B C P Q R S T Z\n0 0 0 1 1 1 1 1 0\n0 0 1 1 1 0 1 0 1\n0 1 0 1 0 1 1 0 1\n0 1 1 1 0 0 1 0 1\n1 0 0 0 1 1 0 0 0\n1 0 1 0 1 0 1 0 1\n1 1 0 0 0 1 1 0 1\n1 1 1 0 0 0 1 0 1",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "The diagram shows a logic circuit.\nP\nA\nS\nQ\nB Z\nT\nR\nC\nWrite the Boolean expression that corresponds to the logic circuit as a sum-of-products.\nZ =\n[2]",
+      "mark_scheme": "Two marks for all six correct terms only\nOne mark for any three correct terms\n(Z = ) A.B.C + A.B.C + A.B.C + A.B.C + A.B.C + A.B.C",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(c)(i)",
+      "question_text": "The diagram shows a logic circuit.\nP\nA\nS\nQ\nB Z\nT\nR\nC\nComplete the Karnaugh map (K-map) for this Boolean expression:\n– – – – – – – – –\nA.B.C + A.B.C + A.B.C + A.B.C + A.B.C + A.B.C\nBC\n00 01 11 10\nA\n[2]",
+      "mark_scheme": "Two marks if all correct\nOne mark if only one error present\nBC\n00 01 11 10\nA\n0 1 0 1 1\n1 1 0 1 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7,
+        8
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(c)(ii)",
+      "question_text": "The diagram shows a logic circuit.\nP\nA\nS\nQ\nB Z\nT\nR\nC\nDraw loop(s) around appropriate group(s) in the K-map to produce an optimal\nsum-of-products. [2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)\nBC\n00 01 11 10\nA\n0\n0 1 1 1\n1 1 0 1 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7,
+        8
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(c)(iii)",
+      "question_text": "The diagram shows a logic circuit.\nP\nA\nS\nQ\nB Z\nT\nR\nC\nWrite the Boolean expression from your answer to part c(ii) as a simplified\nsum-of-products.\n[1]",
+      "mark_scheme": "B + C",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7,
+        8
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Outline what is meant by direct access as a method of file access.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Direct access allows a record to be found in a file without other records being read.\nMP2 Records are found by using the key field of the target record // the location of the record is found using a\nhashing algorithm.",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record",
+        "Direct access",
+        "hashing algorithm"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(b)(i)",
+      "question_text": "Explain how direct access is used to locate a specific record in sequential files and random\nfiles.\nSequential files\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 In sequential files, an index of all key fields is kept\nMP2 The index is searched for the address of the file location where the target record is stored.",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(b)(ii)",
+      "question_text": "Explain how direct access is used to locate a specific record in sequential files and random\nfiles.\nRandom files\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 A hashing algorithm is used on the key field of the record\nMP2 … to calculate the address of the memory location where the target record is expected to be stored.\nMP3 Method to find a record if it is not at the expected location e.g. linear probing, search overflow area etc.",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record",
+        "hashing algorithm"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Complete the pseudocode to find an item in a 1D array of type , using a\nWidgets STRING\nlinear search.\nDECLARE Widgets : ARRAY[1:50000] OF STRING\nDECLARE TopOfList : INTEGER\nDECLARE EndOfList : INTEGER\nDECLARE Count : INTEGER\nDECLARE ToFind : STRING\nDECLARE Found : BOOLEAN\nDECLARE NotInList : BOOLEAN\nTopOfList 1\nEndOfList 50000\nOUTPUT \"Enter the name of the item you wish to find \"\nINPUT ToFind\n…………………………………………………………………………………………………………………………………\nNotInList FALSE\nCount TopOfList\nWHILE …………………………………………………………… AND ………………………………………………………………………\nIF ……………………………………………………………………………………………………………………………… THEN\nFound TRUE\nENDIF\nCount Count + 1\nIF …………………………………………………………………………………………………………………………… THEN\nNotInList TRUE\nENDIF\nENDWHILE\nIF Found = TRUE THEN\nOUTPUT \"Item found at position \", Count - 1, \" in array\"\nELSE\nOUTPUT \"Item not in array\"\nENDIF\n[4]",
+      "mark_scheme": "One mark for each correctly completed line (Max 4)\nDECLARE Widgets : ARRAY[1:50000] OF STRING\nDECLARE TopOfList : INTEGER\nDECLARE EndOfList : INTEGER\nDECLARE Count : INTEGER\nDECLARE ToFind : STRING\nDECLARE Found : BOOLEAN\nDECLARE NotInList : BOOLEAN\nTopOfList  1\nEndOfList  50000\nOUTPUT \"Enter the name of the item you wish to find \"\nINPUT ToFind\nFound  FALSE\nNotInList  FALSE\nCount  TopOfList\nWHILE Found = FALSE AND NotInList = FALSE // Count <= EndOfList\nIF ToFind = Widgets[Count] // Widgets[Count] = ToFind THEN\nFound  TRUE\nENDIF\nCount  Count + 1\nIF Found = FALSE AND Count > EndOfList THEN\nNotInList  TRUE\nENDIF\nENDWHILE\nIF Found = TRUE THEN\nOUTPUT \"Item found at position \", Count - 1, \" in array\"\nELSE\nOUTPUT \"Item not in array\"\nENDIF",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Compare the methods used by the linear and binary search algorithms to find an item in an\narray. Refer to Big O notation in your answer.\n[4]",
+      "mark_scheme": "Max 4\nOne mark per mark point (Max 3)\nMP1 Linear search sequentially checks each element of the array / list.\nMP2 … until the matching element is found, or the end of the array / list is reached.\nMP3 Binary search finds the mid-point of an array/list and determines which side contains the item to be found\nMP4 … it discards the half of the array/list not containing the search item // … it finds the position of a target value within\nan array / list by repeatedly halving the target search field.\nMP5 The binary search requires the elements to be sorted // The linear search does not require the elements to be\nsorted.\nMP6 The binary search will usually do many fewer comparisons of records/iterations against the target than a linear\nsearch before it finds its target.\nMP7 Linear search starts at the beginning of the array/list and binary search starts in the middle of the array/list.\nOne mark per mark point (Max 2)\nMP8 Big O for binary search is O (Log n)\n2\nMP9 Big O for linear search is O (n)\nMP10 Big O notation is used to indicate the time / space complexity of an algorithm",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Binary search",
+        "Linear search",
+        "Big O"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Outline two benefits and two limitations of a virtual machine.\nBenefit 1\nBenefit 2\nLimitation 1\nLimitation 2\n[4]",
+      "mark_scheme": "One mark per mark point for up to two benefits (Max 2)\nMP1 COMPATIBILTY e.g. Applications that aren’t compatible with the host computer can be run on the virtual machine\n// It is possible to emulate old software on a new system by running a compatible guest operating system as a\nvirtual machine // Software can be tried on different OS on the same hardware.\nMP2 PROTECTION e.g. The guest operating system has no effect on anything outside the virtual machine other virtual\nmachines or the host computer//Virtual machines are useful for testing as they will not crash the host computer if\nsomething goes wrong // Easier to recover if software causes a system crash as virtual machine software protects\nthe host system.\nMP3 COST e.g. No need to buy extra computers / hardware as multiple virtual machines can be implemented on the\nsame hardware.\nOne mark per mark point for up to two limitations (Max 2)\nMP4 PERFORMANCE e.g. The performance of the guest operating system will not be as good on a virtual machine as\nit would be on its own compatible machine because of the extra code / using more RAM/memory space // The\nperformance of the VM is dependent on the capabilities of the host computer // Response times cannot be\naccurately measured using a virtual machine.\nMP5 COMPLEXITY e.g. Building an in-house virtual machine can be expensive, time consuming and complex to\nmaintain / set-up.\nMP6 HARDWARE/SOFTWARE ISSUES e.g. Some hardware/software can’t be emulated with a virtual machine //\nSome of the host machine’s hardware can’t be directly accessed by the virtual machine.",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "virtual machine"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Explain the roles of the host operating system and the guest operating system as used in a\ncomputer system running a virtual machine.\n[3]",
+      "mark_scheme": "One mark per mark point – host operating system (Max 2)\nMP1 The host operating system is the normal operating system for the host computer / machine.\nMP2 It has control of all the resources of the host computer / machine. // It can access the physical resources of the\nhost computer / machine.\nMP3 It provides a user interface to operate the virtual machine software.\nMP4 It also runs the virtual machine software.\nOne mark per mark point – guest operating system (Max 2)\nMP5 The guest operating system runs within the virtual machine.\nMP6 … it controls the virtual hardware/software during the emulation. // It accesses the actual hardware through the\nvirtual machine and host operating system.\nMP7 It provides a virtual user interface for the emulated hardware/software.\nMP8 The guest operating system runs under the control of the host operating system.",
+      "marks": 3,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "virtual machine"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "A declarative programming language is used to allow clients to choose daily activities at the\nbeach.\n01 activity(paddleboarding).\n02 activity(sailing).\n03 activity(rowing).\n04 activity(kayaking).\n05 activity(jetskiing).\n06 client(stevie).\n07 client(antonio).\n08 client(henry).\n09 client(eliza).\n10 client(rebeka).\n11 client(danny).\n12 client(erik).\n13 client(simone).\n14 client(petra).\n15 client(frankie).\n16 choice(petra, rowing).\n17 choice(frankie, sailing).\n18 choice(erik, sailing).\n19 choice(eliza, rowing).\n20 choice(stevie, jetskiing).\n21 choice(henry, sailing).\n22 done(henry, jetskiing).\n23 done(rebeka, jetskiing).\n24 done(antonio, kayaking).\nThese clauses have the meanings:\nClause Meaning\n01 Paddle boarding is an activity.\n06 Stevie is a client.\n16 Petra has chosen rowing.\n22 Henry has already done jet skiing.\nJane is a client who would like to choose the activity surfing and she has already done sailing.\nWrite additional clauses to represent this information.\n25\n26\n27\n28\n[4]",
+      "mark_scheme": "One mark for each correctly completed clause (Max 4)\nExample answer\n(25) client(jane).\n(26) activity(surfing).\n(27) choice(jane, surfing).\n(28) done(jane, sailing).",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "A declarative programming language is used to allow clients to choose daily activities at the\nbeach.\n01 activity(paddleboarding).\n02 activity(sailing).\n03 activity(rowing).\n04 activity(kayaking).\n05 activity(jetskiing).\n06 client(stevie).\n07 client(antonio).\n08 client(henry).\n09 client(eliza).\n10 client(rebeka).\n11 client(danny).\n12 client(erik).\n13 client(simone).\n14 client(petra).\n15 client(frankie).\n16 choice(petra, rowing).\n17 choice(frankie, sailing).\n18 choice(erik, sailing).\n19 choice(eliza, rowing).\n20 choice(stevie, jetskiing).\n21 choice(henry, sailing).\n22 done(henry, jetskiing).\n23 done(rebeka, jetskiing).\n24 done(antonio, kayaking).\nThese clauses have the meanings:\nClause Meaning\n01 Paddle boarding is an activity.\n06 Stevie is a client.\n16 Petra has chosen rowing.\n22 Henry has already done jet skiing.\nUsing the variable , the goal:\nList\nchoice(List, rowing)\nreturns\nList = petra, eliza\nWrite the result returned by the goal:\nchoice(List, sailing)\n[1]\nList =",
+      "mark_scheme": "(List =) frankie, erik, henry",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11,
+        12
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(c)",
+      "question_text": "A declarative programming language is used to allow clients to choose daily activities at the\nbeach.\n01 activity(paddleboarding).\n02 activity(sailing).\n03 activity(rowing).\n04 activity(kayaking).\n05 activity(jetskiing).\n06 client(stevie).\n07 client(antonio).\n08 client(henry).\n09 client(eliza).\n10 client(rebeka).\n11 client(danny).\n12 client(erik).\n13 client(simone).\n14 client(petra).\n15 client(frankie).\n16 choice(petra, rowing).\n17 choice(frankie, sailing).\n18 choice(erik, sailing).\n19 choice(eliza, rowing).\n20 choice(stevie, jetskiing).\n21 choice(henry, sailing).\n22 done(henry, jetskiing).\n23 done(rebeka, jetskiing).\n24 done(antonio, kayaking).\nThese clauses have the meanings:\nClause Meaning\n01 Paddle boarding is an activity.\n06 Stevie is a client.\n16 Petra has chosen rowing.\n22 Henry has already done jet skiing.\nis a client who would like to choose if is an activity and has not already done .\nC A A C A\nWrite this as a rule:\nmay_choose_activity(C, A)\nIF\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 client(C)\nMP2 activity(A)\nMP3 done(C, A)\nMP4 all correct Boolean operators and punctuation (allow , for AND). There must be the correct number of terms and\nno additional lines of code\nExample answers\nmay_choose_activity(C, A)\nIF\nclient(C) AND activity(A) AND NOT done(C, A).\nclient(C), activity(A), NOT (done(C, A)).",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11,
+        12
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "11",
+      "question_text": "Explain what is meant by Reinforcement Learning in relation to Artificial Intelligence.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Reinforcement learning is a machine learning technique based on feedback / rewards / punishment.\nMP2 … in which an agent learns to behave in an environment by performing the actions and seeing the results of the\nactions.\nMP3 … for each good action, the agent gets positive feedback / reward and each bad action receives negative feedback\n/ punishment.\nMP4 The agent learns automatically using feedback without any labelled data / specific instructions.\nMP5 Adjust node weightings to achieve the correct outcome. // Using feedback to improve its performance at\naccomplishing similar tasks.",
+      "marks": 3,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Reinforcement learning"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        14
+      ]
+    }
+  ],
+  "marks": 75
+}

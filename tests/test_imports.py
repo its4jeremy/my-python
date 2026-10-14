@@ -46,6 +46,8 @@ class ImportTests(unittest.TestCase):
             database = Path(directory) / 'bank.db'
             with sqlite3.connect(ROOT / 'pastpapers.db') as source, sqlite3.connect(database) as target:
                 source.backup(target)
+                target.execute("DELETE FROM questions WHERE NOT (paper_code='9618' AND year='2025' AND season='October/November' AND paper_number='31')")
+                target.commit()
             self.assertEqual(import_questions(database, questions, '9618_w25_31'), {'inserted': 0, 'skipped': 28})
             self.assertEqual(import_questions(database, questions, '9618_w25_31'), {'inserted': 0, 'skipped': 28})
             changed = [dict(questions[0]), dict(questions[1])]

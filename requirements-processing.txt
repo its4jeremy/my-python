@@ -1,0 +1,2 @@
+# Optional offline extraction tools; the web server does not import these.
+pdfplumber==0.11.10

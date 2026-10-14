@@ -1,0 +1,531 @@
+{
+  "paper": "9618_w21_31",
+  "qp": "papers/9618/paper_3/2021/oct_nov/9618_w21_qp_31.pdf",
+  "ms": "papers/9618/paper_3/2021/oct_nov/9618_w21_ms_31.pdf",
+  "sha256": {
+    "qp": "4c5bb33485a256b019d6c5f0184e5dfa65d0c666697cca21176f23a50c4a4614",
+    "ms": "cab6e6db8f5fec29ce32ac5acd648098aad320702a758bcb68308ce303323f22"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)(i)",
+      "question_text": "Numbers are stored in a computer using floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and exponent.\nWrite the normalised floating-point representation of the following unsigned binary\nnumber using this system.\n1011100.011001\nWorking\nMantissa Exponent\n[2]",
+      "mark_scheme": "One mark for each correct marking point (Max 2)\n• 010111000110 (correct mantissa)\n• 0111 (correct exponent)",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "1(a)(ii)",
+      "question_text": "Numbers are stored in a computer using floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and exponent.\nState the consequence of storing the binary number in part (a)(i) as a floating-point\nnumber in this system. Justify your answer.\nConsequence\nJustification\n[2]",
+      "mark_scheme": "One mark for each correct consequence\nOne mark for each correct justification\nConsequence\n• The precision/accuracy of the number would be reduced\nJustification\n• … because the least significant bits of the original number have been\ntruncated/lost // the original number had 13 bits / 14 bits with sign but the\nmantissa can only store 12 bits",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Explain the reason why binary numbers are stored in normalised form.\n[3]",
+      "mark_scheme": "One mark for each correct marking point (Max 3)\n• To store the maximum range of numbers in the minimum number of bytes\n/ bits\n• Normalisation minimises the number of leading zeros/ones represented\n• Maximising the number of significant bits // maximising the (potential)\nprecision / accuracy of the number for the given number of bits\n• … enables very large / small numbers to be stored with accuracy.\n• Avoids the possibility of many numbers having multiple representations.",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Normalisation"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "Draw one line from each programming paradigm to its most appropriate description.\nProgramming paradigm Description\nPrograms using the instruction set of a\nprocessor\nDeclarative\nPrograms based on events such as user\nactions or sensor outputs\nImperative\nPrograms using the concepts of class,\ninheritance, encapsulation and\npolymorphism\nLow-level\nPrograms with an explicit sequence of\ncommands that update the program state,\nObject-oriented with or without procedure calls\nPrograms that specify the desired result\nrather than how to get to it\n[4]",
+      "mark_scheme": "One mark for each single correct line from Programming Paradigm to\nDescription\nProgramming Paradigm Description\nPrograms using the instruction set of a\nprocessor\nDeclarative\nPrograms based on events such as\nuser actions or sensor outputs\nImperative\nPrograms using the concepts of class,\ninheritance, encapsulation and\nLow-level polymorphism\nPrograms with an explicit sequence of\ncommands that update the program\nObject oriented state, with or without procedure calls\nPrograms that specify the desired\nresult rather than how to get to it",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "inheritance",
+        "encapsulation",
+        "polymorphism"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Enumerated and pointer are two non-composite data types.\nWrite pseudocode to create an enumerated type called to include these parts sold in\nParts\na computer shop:\nMonitor, CPU, SSD, HDD, LaserPrinter, Keyboard, Mouse\n[2]",
+      "mark_scheme": "One mark for each marking point (Max 2)\n• TYPE Parts =\n• (Monitor, CPU, SSD, HDD, LaserPrinter, Keyboard,\nMouse)\nComplete answer\nTYPE Parts = (Monitor, CPU, SSD, HDD, LaserPrinter,\nKeyboard, Mouse)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Enumerated and pointer are two non-composite data types.\nWrite pseudocode to create a pointer type called that will reference the\nSelectParts\nmemory location in which the current part name is stored.\n[2]",
+      "mark_scheme": "One mark for each marking point (Max 2)\n• TYPE SelectParts = ^\n• correct data type chosen Parts\nComplete answer\nTYPE SelectParts = ^Parts",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "The following syntax diagrams for a particular programming language show the syntax of:\n• a digit\n• a capital letter\n• a character.\ndigit capital letter\n0 A\n1 E\n2 I\n3 O\n4 U\n5 character\n$\n%\n&\n*\n#\nWrite the Backus-Naur Form (BNF) notation of the syntax diagram for character.\n[2]",
+      "mark_scheme": "One mark for each marking point (Max 2)\n• <character>::=\n• $|%|&|*|#\nComplete answer\n<character>::= $|%|&|*|#",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(b)(i)",
+      "question_text": "The following syntax diagrams for a particular programming language show the syntax of:\n• a digit\n• a capital letter\n• a character.\ndigit capital letter\n0 A\n1 E\n2 I\n3 O\n4 U\n5 character\n$\n%\n&\n*\n#\nA password must begin with a character and be followed by one or more digits or capital\nletters.\nState an example of a valid password.\n[1]",
+      "mark_scheme": "For example: $A9E3",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(b)(ii)",
+      "question_text": "The following syntax diagrams for a particular programming language show the syntax of:\n• a digit\n• a capital letter\n• a character.\ndigit capital letter\n0 A\n1 E\n2 I\n3 O\n4 U\n5 character\n$\n%\n&\n*\n#\nA password must begin with a character and be followed by one or more digits or capital\nletters.\nA valid password is represented by the syntax diagram:\npassword\ncharacter digit\ncapital letter\nWrite the BNF notation of the syntax diagram for password.\n[4]",
+      "mark_scheme": "One mark for each marking point (Max 4)\n• <password>::=<character> …\n• … <code>\n• <code>::= …\n• … <digit>|<capital_letter>\n• … |<digit><code>|<capital_letter><code>\nComplete answer\n<password>::=<character><code>\n<code>::=<digit>|<capital_letter>|<digit><code>|<capital_\nletter><code>",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Compare sequential and serial methods of file organisation.\n[4]",
+      "mark_scheme": "One mark for each correct marking point (Max 4)\n• In both serial and sequential files records are stored one after the other …\n• … and need to be accessed one after the other\n• Serial files are stored in chronological order\n• Sequential files are stored with ordered records\n• … and stored in the order of the key field\n• In serial files, new records are added in the next available space / records\nare appended to the file\n• In sequential files, new records are inserted in the correct position.",
+      "marks": 4,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "State the most suitable method of file access when a record is referenced by a unique\naddress on a disk-type storage medium.\n[1]",
+      "mark_scheme": "Direct (access)",
+      "marks": 1,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "5(c)",
+      "question_text": "State the most suitable method of file access when a bank stores its data records in ascending\norder of account number.\n[1]",
+      "mark_scheme": "Sequential (access)",
+      "marks": 1,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "Explain how packet switching is used to transfer messages across the internet.\n[5]",
+      "mark_scheme": "One mark for each correct marking point (Max 5)\n• A large message is divided up into a group of smaller chunks of the same\nsize called packets\n• The packet has a header and a payload\n• The header contains a source IP address, destination IP address (and\nsequence number)\n• Each packet is dispatched independently\n• … and may travel along different routes / paths\n• The packets may arrive out of order\n• … and are reassembled into the original message at the destination\n• If packets are missing / corrupted a re-transmission request is sent.",
+      "marks": 5,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Outline the function of a router in packet switching.\n[3]",
+      "mark_scheme": "One mark for each correct marking point (Max 3)\n• The router examines the packet’s header\n• It reads the IP address of the destination (from the packet header)\n• A router has access to a routing table\n• …containing information about, e.g., available hops / netmask / gateway\nused\n• … and the status of the routes along the route\n• … the router decides on the next hop / best route\n• … and sends the packet on its next hop.",
+      "marks": 3,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Write the Boolean expression that corresponds to the given truth table as a sum-of-products.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 0\n0 0 0 1 0\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 0\n0 1 1 1 0\n1 0 0 0 0\n1 0 0 1 1\n1 0 1 0 0\n1 0 1 1 1\n1 1 0 0 1\n1 1 0 1 1\n1 1 1 0 1\n1 1 1 1 1\nZ =\n[3]",
+      "mark_scheme": "One mark per two correct products (Max 3)\n_ _ _ _ _ _\n(Z =) A B C D + A B C D + A B C D + A B C D +\n_\nA B C D + A B C D",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(b)(i)",
+      "question_text": "Complete the Karnaugh map (K-map) for the given truth table.\nAB\nCD 00 01 11 10\n[2]",
+      "mark_scheme": "One mark for every two correct rows or columns (Max 2)\nAB\n00 01 11 10\n00 0 0 1 0\n01 0 0 1 1\nCD\n11 0 0 1 1\n10 0 0 1 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(b)(ii)",
+      "question_text": "Draw loop(s) around appropriate group(s) of 1s in the K-map to produce an optimal\nsum-of-products. [2]",
+      "mark_scheme": "One mark for correct loop (Max 2)\nAB\n00 01 11 10\n0 1\n00 0 0\n01 0 0 1 1\nCD\n11 0 0 1 1\n01 0 0 1 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(b)(iii)",
+      "question_text": "Write the Boolean expression from your answer to part b(ii) as a simplified\nsum-of-products.\nZ =\n[2]",
+      "mark_scheme": "One mark per correct marking point (Max 2)\n• A B // A D\n• + A D // + A B\n(Z =) A B + A D // A D + A B",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(b)(iv)",
+      "question_text": "Write the simplified Boolean expression for your answer to part b(iii).\nZ =\n[1]",
+      "mark_scheme": "(Z =) A (B + D) // A (D + B)",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Describe the purpose of the Secure Sockets Layer (SSL) and Transport Layer Security (TLS)\nprotocols.\n[2]",
+      "mark_scheme": "One mark for each correct marking point (Max 2)\n• The SSL and TLS protocols provide communications security over the\ninternet / network\n• … they provide encryption\n• They enable two parties to identify and authenticate each other\n• … and communicate with confidentiality and integrity.",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "TLS"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Explain how SSL/TLS protocols are used when a client-server communication is initiated.\n[4]",
+      "mark_scheme": "One mark for each correct marking point (Max 4)\n• An SSL/TLS connection is initiated by an application\n• … which becomes the client\n• The application which receives the connection becomes the server\n• Every new session begins with a handshake (as defined by the\n(SSL/TLS) protocols)\n• The client requests the digital certificate from the server // the server\nsends the digital certificate to the client\n• The client verifies the server’s digital certificate\n• …and obtains the server’s public key\n• The encryption algorithms are agreed\n• The symmetric\n• … session keys are generated / defined",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "digital certificate",
+        "TLS"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "9(a)(i)",
+      "question_text": "The diagram shown represents an artificial neural network.\nOutput\nLayer\nInput\nLayer\nHidden Hidden\nLayer 1 Hidden Layer 3\nLayer 2\nState the reason for having multiple hidden layers in an artificial neural network.\n[1]",
+      "mark_scheme": "One mark for correct statement (Max 1)\n• Enables deep learning to take place\n• Where the problem you are trying to solve has a higher level of\ncomplexity it requires more layers to solve\n• To enable the neural network to learn and make decisions on its own\n• To improve the accuracy of the result.",
+      "marks": 1,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "deep learning",
+        "neural network"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "9(a)(ii)",
+      "question_text": "The diagram shown represents an artificial neural network.\nOutput\nLayer\nInput\nLayer\nHidden Hidden\nLayer 1 Hidden Layer 3\nLayer 2\nExplain how artificial neural networks enable machine learning.\n[4]",
+      "mark_scheme": "One mark for each correct marking point (Max 4)\n• Artificial neural networks are intended to replicate the way human brains\nwork\n• Weights / values are assigned for each connection between nodes\n• The data are input at the input layer and are passed into the system\n• They are analysed at each subsequent (hidden) layer where\ncharacteristics are extracted / outputs are calculated\n• … this process of training / learning is repeated many times to achieve\noptimum outputs // reinforcement learning takes place\n• Decisions can be made without being specifically programmed\n• The deep learning net will have created complex feature detectors\n• The output layer provides the results\n• Back propagation (of errors) will be used to correct any errors that have\nbeen made.",
+      "marks": 4,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "reinforcement learning",
+        "deep learning",
+        "Artificial neural networks"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Find the shortest path between the Home and School nodes using the A* algorithm.\nShow your working in the table provided.\nThe first two rows in the table have been completed.\nHome\nh = 10 g = 1 4 9\nA 5 C\nB 6\nD 6\nF\nE\n3 5\nSchool\nNode Cost from Home node (g) Heuristic (h) Total (f = g + h)\nHome 0 14 14\nA 1 10 11\nFinal path\n[5]",
+      "mark_scheme": "One mark for each correct calculation as follows (Max 4)\n• Node B (from Home) (Line 3 in table)\n• Node C (from Home) (Line 4 in table)\n• Node B and Node E (from A) (Lines 5 and 6 in table)\n• Node F and Node School (from E) (Lines 7 and 8 in table)\n• Node School (from F) (Line 9 in table)\nOne mark for correct path (Max 1):\n• Home  A  E  F  School\nNode Cost from Home Heuristic Total\nNode (g) (h) (f = g + h)\n1 Home 0 14 14\n2 A 1 10 11\n3 B 5 7 12\n4 C 4 9 13\n5 B 1 + 3 = 4 7 11\n6 E 1 + 6 = 7 3 10\n7 F 7 + 1 = 8 3 11\n8 School 7 + 5 = 12 0 12\n9 School 8 + 3 = 11 0 11\nFinal Path Home  A  E  F  School",
+      "marks": 5,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Heuristic"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "State three essential features of recursion.\n1\n2\n3\n[3]",
+      "mark_scheme": "One mark for each correct marking point (Max 3)\n• Must have a base case/stopping condition\n• Must have a general case\n• … which calls itself (recursively) // Defined in terms of itself\n• … which changes its state and moves towards the base case\nUnwinding can occur once the base case is reached.",
+      "marks": 3,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "base case",
+        "stopping condition",
+        "general case",
+        "Unwinding"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Explain the reasons why a stack is a suitable Abstract Data Type (ADT) to implement\nrecursion.\n[3]",
+      "mark_scheme": "One mark for each correct marking point (Max 3)\n• A stack is a LIFO data structure\n• Each recursive call is pushed onto the stack\n• …. and is then popped as the function ends\n• Enables backtracking/unwinding\n… to maintain the required order.",
+      "marks": 3,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "recursive",
+        "unwinding",
+        "stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "10(c)",
+      "question_text": "Identify two ADTs other than a stack.\n1\n2\n[2]",
+      "mark_scheme": "One mark for each marking point (Max 2)\n• Linked List\n• Queue\nBinary Tree",
+      "marks": 2,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "Linked List",
+        "Binary Tree"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "10(d)",
+      "question_text": "The function checks whether a stack is full.\nStackFull()\nThe function uses the variable to represent the pointer to the most recent\nTopOfStack\nposition used on the stack, and the variable to represent the maximum size of the stack.\nMax\nAssume and are global variables.\nTopOfStack Max\nFUNCTION StackFull() RETURNS BOOLEAN\nIF TopOfStack = Max THEN\nRETURN TRUE\nELSE\nRETURN FALSE\nENDIF\nENDFUNCTION\nAn algorithm is required to add a new integer data element to a stack.\nAddInteger\nThe stack is implemented as an array .\nArrayStack\nThe function calls and returns an appropriate message.\nAddInteger() StackFull()\nComplete the pseudocode for the function .\nAddInteger()\nFUNCTION AddInteger(NewInteger : INTEGER) RETURNS STRING\nENDFUNCTION\n[5]",
+      "mark_scheme": "One mark for each marking point (Max 5)\n• Checking if stack is full / empty using IF … THEN … (ELSE) … ENDIF\n• … correctly using StackFull() function\n• RETURN suitable message if stack is full\n• RETURN message if space available on stack\n• Incrementing TopOfStack pointer if space available\n• Assigning new data using correct NewInteger variable\n• … to correct the array element in ArrayStack[] array.\nExample algorithm\nFUNCTION AddInteger(NewInteger : INTEGER) RETURNS STRING\nIF StackFull() THEN\nRETURN \"The stack is full\"\nELSE\nTopOfStack ← TopOfStack + 1\nArrayStack[TopOfStack] ← NewInteger\nRETURN \"Item added\"\nENDIF\nENDFUNCTION",
+      "marks": 5,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        14
+      ],
+      "ms_pages": [
+        10
+      ]
+    }
+  ],
+  "marks": 75
+}

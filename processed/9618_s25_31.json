@@ -1,0 +1,492 @@
+{
+  "paper": "9618_s25_31",
+  "qp": "papers/9618/paper_3/2025/may_jun/9618_s25_qp_31.pdf",
+  "ms": "papers/9618/paper_3/2025/may_jun/9618_s25_ms_31.pdf",
+  "sha256": {
+    "qp": "68475c1640b44518f74a6756b7895f81f0e9557f87ab1d97cdea832e83eea5e4",
+    "ms": "b86fb4fdeb6929b44df5aa180e829fc43d13f05a70722207c881516bb3990354"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "A programmer is writing a program to manage bookings for a small taxi compan.y The programmer\nrequires some user-defined data types.\nWrite a pseudocode statement to declare the enumerated data type, Vehicle, to hold the\nidentity code of each of the company’s taxis:\nM100, M230, T101, T102, T120, T150\n[2]",
+      "mark_scheme": "One mark per mark point\nMP1 TYPE Vehicle =\nMP2 (M100, M230, T101, T102, T120, T150)\nExample answer:\nTYPE Vehicle = (M100, M230, T101, T102, T120, T150)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "A programmer is writing a program to manage bookings for a small taxi compan.y The programmer\nrequires some user-defined data types.\nWrite pseudocode statements to declare the composite data type, Booking, to hold data\nabout taxi bookings. The data required includes:\n• booking number (any combination of letters and numbers)\n• destination\n• client name\n• client telephone number\n• date of departure\n• address for pick-up\n• the identity code of the taxi used.\nUse the most appropriate data type in each case, including the enumerated data type from\npart (a).\n[4]",
+      "mark_scheme": "One mark per mark point\nMP1 TYPE Booking and ENDTYPE correct\nMP2 Declare used correctly for every field in the response\nMP3 Any four fields correct\nMP4 Remaining fields correct\nExample answer:\nTYPE Booking\nDECLARE BookingNumber : STRING\nDECLARE Destination : STRING\nDECLARE ClientName : STRING\nDECLARE ClientTelephone : STRING\nDECLARE DateOfDeparture : DATE\nDECLARE PickupAddress : STRING\nDECLARE TaxiUsed : Vehicle\nENDTYPE",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Numbers are stored in a computer using binary floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nWrite the normalised floating-point representation of the following binary number using this\nsystem.\n0.00000011010111\nMantissa Exponent\n[2]",
+      "mark_scheme": "One mark per mark point\nMP1 Correct mantissa\nMP2 Correct exponent\nMantissa Exponent\n0 1 1 0 1 0 1 1 1 0 1 1 1 0 1 0",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Numbers are stored in a computer using binary floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised binary floating-point representation of –25.3125 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[4]",
+      "mark_scheme": "One mark per mark point for working (Max 2)\n• number converted to binary e.g., positive binary version of 25.3125 = (0)11001.0101\n• two’s complement version\nbits flipped and 1 added = 100110.1011\n• -32 + 4 + 2 + 0.5 + 0.125 + 0.0625 // -32 + 4 + 2 + 1/2 + 1/8 + 1/16\n• movement of binary point seen (5 places)\nOne mark per mark point\n• correct mantissa\n• correct exponent\nMantissa Exponent\n1 0 0 1 1 0 1 0 1 1 0 0 0 1 0 1",
+      "marks": 4,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "The Application Layer and Transport Layer are two layers of the TCP/IP protocol suite.\nDescribe the purpose of the Application Layer and the purpose of the Transport Layer.\nPurpose of Application Layer\nPurpose of Transport Layer\n[5]",
+      "mark_scheme": "One mark per mark point (Max 5)\nOne mark per mark point for purpose of Application Layer (Max 3)\nMP1 To provide services / interface with the user // access to applications, for example login, file transfer, network file\naccess, email, etc\nMP2 To provide mechanisms for securing communication e.g. encryption/authentication\nMP3 To define/provide protocols used to allow the exchange of data/communication // to contain programs that\nexchange data\nMP4 Error detection and recovery mechanisms to handle application specific errors\nOne mark per mark point for purpose of Transport Layer (Max 3)\nMP5 To provide logical communication between applications running on different hosts // To ensure that data is\ndelivered to the correct application process on the destination machine\nMP6 To ensure error-free, end-to-end delivery of data between a source and a destination, in sequence // to provide\nerror recovery techniques such as error detection codes and automatic repeat request\nMP7 To break data into segments when sent and to reconstruct when received // To reassemble segments at\ndestination\nMP8 To regulate network connections // to provide flow control mechanisms to prevent data loss.",
+      "marks": 5,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocols"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Describe packet switching as a method of transmitting messages across the internet.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Data are broken into equal sized packets\nMP2 Data packets have headers containing information such as the IP addresses of the sender and receiver\nMP3 Each packet of data is sent independently to the destination // Packets don’t necessarily follow the same route\nMP4 Each packet is sent via the most optimum path available\nMP5 Packets don’t necessarily arrive in the order they were sent // Packets are reconstructed at the destination in the\ncorrect order\nMP6 Missing / damaged packets are re-sent",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "A linked list of nodes is used to store an ordered list of integers. Each node consists of the\ndata, a left pointer and a right pointer, for example:\nLeft pointer Data Right pointer\nThe linked list will be organised as a binary tree.\n−1 is used to represent a null pointer .\nComplete the binary tree, including null pointers, to show how the data will be organised after\nthe following integers have been added:\n6, 15, 41, 66\nRoot pointer\n12 40\n– 1 3\n[4]",
+      "mark_scheme": "One mark per mark point\nMP1 Any two nodes added correctly with correct data (6, 15, 41, 66) and arrows\nMP2 Remaining two nodes added with correct data (6, 15, 41, 66) and all nodes with connecting arrows starting from\npointer boxes\nMP3 Correct null pointers (-1) added throughout\nMP4 … with no entries in other pointer boxes and all nodes correctly positioned and connected\nRoot pointer\nLeft pointer Data Right pointer\n36\n12 -1 40\n-1 3 -1 15 -1 -1 41\n-1 6 -1 -1 66 -1",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "null pointers"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Describe what is meant by recursion.\n[2]",
+      "mark_scheme": "One mark per mark point\nMP1 A technique used to solve problems using a function/procedure/subroutine that calls itself (general case)\nMP2 … until the terminating condition / base case is achieved, when no further recursive calls are made",
+      "marks": 2,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "recursive",
+        "base case",
+        "terminating condition",
+        "general case"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "4(c)",
+      "question_text": "A binary tree is a suitable Abstract Data Type (ADT) that a designer can implement using\nrecursive algorithms.\nIdentify one other ADT that a designer can implement using recursive algorithms.\n[1]",
+      "mark_scheme": "One mark\n• Stack",
+      "marks": 1,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "Stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 0\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 1\n0 1 1 0 0\n0 1 1 1 1\n1 0 0 0 1\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 1\nWrite the Boolean logic expression that correspo nds to the given truth table as the\nsum-of-products.\nZ =\n[2]",
+      "mark_scheme": "Two marks for all six correct terms\nOne mark for any three correct terms\nZ = A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "5(b)(i)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 0\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 1\n0 1 1 0 0\n0 1 1 1 1\n1 0 0 0 1\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 1\nComplete the Karnaugh map (K-map) for the given truth table.\nAB\n00 01 11 10\nCD\n[2]",
+      "mark_scheme": "Two marks if no errors present\nOne mark if one error present\nAB\nCD 00 01 11 10\n00 1 0 0 1\n01 0 1 1 0\n11 0 1 1 0\n10 0 0 0 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "5(b)(ii)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 0\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 1\n0 1 1 0 0\n0 1 1 1 1\n1 0 0 0 1\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 1\nDraw loop(s) around appropriate group(s) in the K-map to produce an optimal\nsum-of-products. [2]",
+      "mark_scheme": "One mark for each correct loop\nAB\nCD 00 01 11 10\n00 1 0 0 1\n01 0 1 1 0\n11 0 1 1 0\n10 0 0 0 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "5(b)(iii)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 0\n0 0 1 0 0\n0 0 1 1 0\n0 1 0 0 0\n0 1 0 1 1\n0 1 1 0 0\n0 1 1 1 1\n1 0 0 0 1\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 1\n1 1 1 0 0\n1 1 1 1 1\nWrite the Boolean logic expression from your answer to part (b)(ii) as the simplified\nsum-of-products.\nZ =\n[2]",
+      "mark_scheme": "One mark for each mark point\n• One correct Boolean term\n• Boolean terms and operator correct and no other terms present\nZ = B.D + B.C.D // B.C.D + B.D",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "Describe the process of executing a program using an interpreter.\n[4]",
+      "mark_scheme": "One mark for each mark point (Max 4)\nMP1 The interpreter translates the source code one line at a time\nMP2 If the line is syntax error free it is executed\nMP3 It is not stored in executable format\nMP4 If an error is found, the program halts with an error message\nMP5 Each line must be translated every time it is run, including lines running multiple times for example in loops",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "interpreter"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Several syntax diagrams are shown.\nuppercase lowercase\nA b\nC d\nE f\nG h\nJ k\nsymbol digit\n$ 0\n@ 1\n# 2\n& 3\n% 4\nlowercase\npasscode\nuppercase symbol\ndigit\nState why each passcode is invalid for the given syntax diagrams.\n#Jd7\nReason\nC%6A\nReason\n[2]",
+      "mark_scheme": "One mark for each correct answer\n#Jd7 – must begin with a member of the group uppercase // cannot begin with a symbol\nC%6A – the fourth character cannot be a member of the group uppercase // the fourth character must be either a symbol,\ndigit or lowercase",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Several syntax diagrams are shown.\nuppercase lowercase\nA b\nC d\nE f\nG h\nJ k\nsymbol digit\n$ 0\n@ 1\n# 2\n& 3\n% 4\nlowercase\npasscode\nuppercase symbol\ndigit\nComplete the Backus-Naur Form (BNF) for <uppercase> and <passcode>.\n<uppercase> ::=\n<passcode> ::=\n[4]",
+      "mark_scheme": "One mark per mark point\n<uppercase> ::= A | C | E | G | J\n<passcode> ::= <uppercase><code>\n<code> ::= <lowercase>|<symbol>|<digit>\n|<lowercase><code>|<symbol><code>|<digit><code>",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Describe what is meant by multi-tasking and how it benefits process management.\n[2]",
+      "mark_scheme": "One mark for each mark point\nMP1 Running multiple processes concurrently\nMP2 … which benefits process management by allowing more tasks to complete than would be the case if they had to\nrun one task after another.",
+      "marks": 2,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Explain the function of the shortest remaining time scheduling routine and give a benefit of\nthis routine.\nFunction\nBenefit\n[4]",
+      "mark_scheme": "One mark for each mark point (Max 3)\nMP1 The processes are queued as they arrive\nMP2 Processes with the shortest burst time are executed first\nMP3 It is a pre-emptive scheduling function // When a process with a shorter burst time arrives the existing process is\nreplaced by the shorter process.\nMP4 The scheduler will continue to choose shorter processes over longer processes if they continue to be added to the\nqueue can cause starvation for longer jobs\nOne mark for benefit (Max 1) e.g.\nMP5 Processes with a short burst time are processed very quickly\nMP6 Waiting time is minimised",
+      "marks": 4,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "scheduling"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Secure Socket Layer (SSL) and Transport Layer Security (TLS) are two protocols.\nState two functions of SSL/TLS.\n1\n2\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\nMP1 Ensure security/privacy when using the internet\nMP2 Data encryption\nMP3 Identification / authentication of client and server",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Secure Socket Layer (SSL) and Transport Layer Security (TLS) are two protocols.\nGive two examples of situations where the use of SSL/TLS would be appropriate.\n1\n2\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\nMP1 When transmitting authentication data e.g. passwords, session cookies\nMP2 When transmitting data that must be protected from modification on its way to or from a server e.g. user input, or\nresults from the server\nMP3 When transmitting data classified as non-public.",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "Describe the purpose of a graph when used in an Artificial Intelligence (AI) system.\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\nMP1 A graph is used in AI to record relationships between entities\nMP2 … using vertices / nodes and edges\nMP3 for example, to represent places on a map and the distances between them, in order to find the shortest route.",
+      "marks": 2,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Explain the use of artificial neural networks in Deep Learning.\n[4]",
+      "mark_scheme": "One mark for each mark point (Max 4)\nMP1 Artificial neural networks are designed to work in the same way as the human brain\nMP2 ANNs provide the architecture and algorithms for learning from the data\nMP3 They have a large number of connected processing units / nodes\nMP4 … that are arranged in layers / interconnected and work together to process data\nMP5 Deep learning models learn from data by adjusting the weights/biases of the connections between neurons\nMP6 They use multiple hidden layers to extract complex features and to make predictions",
+      "marks": 4,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Deep learning",
+        "Artificial neural networks"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "A medical centre uses objects of the class Appointment to record treatments given and\nmedication prescribed during each doctor ’s appointment. Some of the attributes required in\nthe class are listed in the table.\nAttribute Data type Description\nDateSeen DATE date of treatment\nTreatments STRING treatments given\nMedications STRING medications prescribed\nPatients are identified by a unique 8-digit number , beginning with the patient’s year of birth,\nfor example, 20108989.\nDoctors are identified by their name, for example, A N Other.\nComplete the class diagram for Appointment, to include:\n• attribute and data type for the identification of the patient\n• attribute and data type for the identification of the doctor\n• methods to assign date seen, treatments given and medications prescribed\n• method to return the date seen and the attributes for the patient and the doctor.\nAppointment\nDateSeen : DATE\n:\n:\nTreatments : STRING\nMedications : STRING\nSetPatientID(PatientNumber : INTEGER)\nSetDoctor(DoctorID : STRING)\nGetTreatments()\nGetMedications()\n[5]",
+      "mark_scheme": "One mark per mark point\nMP1 Two correct attributes (PatientID : INTEGER and Doctor : STRING)\nMP2 SetTreatments(…) and SetMedications(…) seen\nMP3 … and appropriate parameters, with string data types\nMP4 GetPatientID() and GetDoctor() seen\nMP5 SetDateSeen(…) and GetDateSeen fully correct with appropriate parameter and correct data type in setter.\nAppointment\nDateSeen : DATE\nPatientID : INTEGER\nDoctor : STRING\nTreatments : STRING\nMedications : STRING\nSetDateSeen(NewDate : DATE)\nSetPatientID(PatientNumber : INTEGER)\nSetDoctor(DoctorID : STRING)\nSetTreatments(NewTreatments : STRING)\nSetMedications(NewMedications : STRING)\nGetDateSeen()\nGetPatientID()\nGetDoctor()\nGetTreatments()\nGetMedications()",
+      "marks": 5,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "setter"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "11(b)(i)",
+      "question_text": "Identify the object-oriented programming (OOP) feature whose function includes\nrestricting external access to the data.\n[1]",
+      "mark_scheme": "Encapsulation",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Encapsulation"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "11(b)(ii)",
+      "question_text": "Describe what is meant by the OOP feature inheritance.\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\nMP1 Inheritance is where a derived class takes properties / behaviours attributes / methods\nMP2 … of a parent / super class / base class\nMP3 The attributes / methods / properties taken from the parent / super class / base class can also be extended /\ncopied / used / changed / overwritten / overridden in the subclass.",
+      "marks": 2,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Inheritance"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "12",
+      "question_text": "The pseudocode algorithm checks whether a location in a stock file StockList.dat is empty\nor not. The location is given by the user. If the location is empty, a suitable message is displayed,\notherwise the item stored at that location is displayed.\nComplete this file-handling pseudocode algorithm.\nDECLARE Location : INTEGER\nDECLARE Item : STRING\nDECLARE Continue : BOOLEAN\nDECLARE Answer : CHAR\nContinue TRUE\nOPENFILE\nWHILE Continue\nOUTPUT \"Enter a location between 1 and 500: \"\nINPUT Location\nGETRECORD\nIF Item = \"\" THEN\nOUTPUT \"This record is missing.\"\nELSE\nOUTPUT \"The item in stock is \",\nENDIF\nOUTPUT \"Another location (Y or N)?\"\nINPUT Answer\nIF Answer <> 'Y' THEN\nContinue FALSE\nENDIF\nENDWHILE\nOUTPUT \"End of program\"\n[5]",
+      "mark_scheme": "One mark for each correctly completed line (Max 5)\nDECLARE Location : INTEGER\nDECLARE Item : STRING\nDECLARE Continue : BOOLEAN\nDECLARE Answer : CHAR\nContinue  TRUE\nOPENFILE \"StockList.dat\" FOR RANDOM\nWHILE Continue\nOUTPUT \"Enter a location between 1 and 500: \"\nINPUT Location\nSEEK \"StockList.dat\", Location\nGETRECORD \"StockList.dat\", Item\nIF Item = \"\" THEN\nOUTPUT \"This record is missing\"\nELSE\nOUTPUT \"The item in stock is \", Item\nENDIF\nOUTPUT \"Another location (Y or N)?\"\nINPUT Answer\nIF Answer <> 'Y' THEN\nContinue  FALSE\nENDIF\nENDWHILE\nCLOSEFILE \"StockList.dat\"\nOUTPUT \"End of program\"",
+      "marks": 5,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [
+        "record"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        15
+      ]
+    }
+  ],
+  "marks": 75
+}

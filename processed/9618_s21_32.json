@@ -1,0 +1,501 @@
+{
+  "paper": "9618_s21_32",
+  "qp": "papers/9618/paper_3/2021/may_jun/9618_s21_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2021/may_jun/9618_s21_ms_32.pdf",
+  "sha256": {
+    "qp": "2d0f54f9348db6fcd01f6935abf3e947e8567dbed9f25e81942851c2eb162c0d",
+    "ms": "7bbc2b64157674950a13270fd4e72b9eaa34267d7a8eb792f2917f4143c9df1a"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• Two’s complement form for both the mantissa and the exponent.\nCalculate the normalised floating-point representation of –7.25 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "Working: one mark for calculation of the mantissa and one mark for\ncalculation or use of the exponent\nExponent: one from:\n= 0.11101 × 23 // 0.11101 × 211 // 0.11101 × 103 // 0.11101 × 1011\n= 1.00011 × 23 // 1.00011 × 211 // 1.00011 × 103 // 1.00011 × 1011\n= appropriate shifting of binary point for +7.25\nMantissa: one from:\n= 111.01 (conversion to binary +7.25 – 10 bits)\n= 0111010000 (mantissa 10 bits for +7.25\n= 1000101111(one’s complement mantissa for –7.25)\n= 1000110000 (two’s complement mantissa for –7.25)\nCorrect Answer (Max 1)\nMantissa Exponent\n1 0 0 0 1 1 0 0 0 0 0 0 0 0 1 1",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• Two’s complement form for both the mantissa and the exponent.\nCalculate the denary value of the given binary floating-point number.\nShow your working.\nMantissa Exponent\n1 0 1 1 0 0 0 1 1 1 0 0 0 1 1 1\nWorking\nAnswer\n[3]",
+      "mark_scheme": "One mark for working out the exponent\nOne mark for working out the mantissa\nOne mark for the correct answer\nExample answers\n• =1.011000111 × 27 (exponent is 7)\n• =10110001.11 // –128 + 32 + 16 + 1 + 0.5 + 0.25 // convert to positive\n01001110.01 (and add a minus sign to the answer)\n• –78.25",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "1(c)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• Two’s complement form for both the mantissa and the exponent.\nThe given binary floating-point number is not normalised.\nNormalise the floating-point number. Show your working.\nMantissa Exponent\n0 0 0 0 0 0 0 1 1 1 1 0 0 1 1 1\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "One mark for working\nOne mark for correct mantissa\nOne mark for correct exponent\nExample answers\nNumber of places added to exponent for normalisation −6 for number to\nretain its value // mantissa moved 6 places left\nMantissa\n0 1 1 1 0 0 0 0 0 0\nExponent\n1 0 0 0 0 1",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent",
+        "normalisation"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2,
+        3
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "1(d)(i)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• Two’s complement form for both the mantissa and the exponent.\nThe denary number 513 cannot be stored accurately as a normalised floating-point number in\nthis computer system.\nExplain the reason for this.\n[3]",
+      "mark_scheme": "One mark for each correct marking point (Max 3)\n• Requires 11 bits / more than 10 bits to store (accurately) / reference to\nmaximum (positive) number that can be stored = 511\n• Denary 513 in binary is 1000000001 // Normalised: 0.1000000001\n• Results in overflow",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Normalised",
+        "overflow"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2,
+        3
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "1(d)(ii)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• Two’s complement form for both the mantissa and the exponent.\nThe denary number 513 cannot be stored accurately as a normalised floating-point number in\nthis computer system.\nDescribe an alteration to the way floating-point numbers are stored to enable this number\nto be stored accurately using the same total number of bits.\n[2]",
+      "mark_scheme": "One mark for each correct marking point (Max 2)\n• The number of bits for the mantissa must be increased\n• 11/12 bits mantissa and 5/4 bits exponent",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2,
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Describe the purpose of a user-defined data type.\n[2]",
+      "mark_scheme": "One mark for each correct marking point (Max 2)\n• To create a new data type (from existing data types)\n• To allow data types not available in a programming language to be\nconstructed // To extend the flexibility of the programming language",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(b)(i)",
+      "question_text": "Define, using pseudocode, the following enumerated data types:\nto hold data about the days students are usually in school.\nSchoolDay\n[1]",
+      "mark_scheme": "TYPE SchoolDay = (Monday, Tuesday, Wednesday, Thursday,\nFriday)",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(b)(ii)",
+      "question_text": "Define, using pseudocode, the following enumerated data types:\nto hold data about the days that are not school days.\nWeekEnd\n[1]",
+      "mark_scheme": "TYPE WeekEnd = (Saturday, Sunday)",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(c)",
+      "question_text": "Define, using pseudocode, the composite data type . This will hold data about club\nClubMeet\nmembers that includes:\n• first name and last name\n• the two days they attend:\n○ one on a school day\n○ one not on a school day.\nUse the enumerated types you created in part (b).\n[4]",
+      "mark_scheme": "One mark for each marking point (Max 4)\n• TYPE ClubMeet and ENDTYPE correct\n• DECLARE FirstName and DECLARE LastName included with correct\ndata types\n• DECLARE Schoolday included with correct data types from part 2(b)(i)\n• DECLARE Weekend included with correct data types from part 2(b)(ii)\nExample answer\nTYPE ClubMeet\nDECLARE FirstName : STRING\nDECLARE LastName : STRING\nDECLARE Schoolday : SchoolDay\nDECLARE Weekend : WeekEnd\nENDTYPE",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Draw one line to connect each Operating System (OS) term to the most appropriate\ndescription about it.\nOS term Description\nUsing secondary storage to simulate\nadditional main memory\nMulti-tasking\nManaging the processes running on\nthe CPU\nPaging\nManaging the execution of many programs\nthat appear to run at the same time\nInterrupt handling\nLocating non-contiguous blocks of data and\nrelocating them\nScheduling\nTransferring control to another routine when\na service is required\nVirtual memory\nReading/writing same-size blocks of data\nfrom/to secondary storage when required\n[5]",
+      "mark_scheme": "One mark for each correct line from Operating System Term to Description\nManaging the execution of many programs\nthat appear to run at the same time",
+      "marks": 5,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Explain how an interpreter executes a program without producing a complete translated\nversion of it.\n[4]",
+      "mark_scheme": "One mark for each correct statement (Max 4)\n• An interpreter examines source code one statement at a time\n• Check each statement for errors\n• …If no error is found the statement is executed\n• …If an error is found this is reported and the interpreter halts\n• Interpretation is repeated for every iteration in repeated sections of\ncode/in loops\n• Interpretation has to be repeated every time the program is run",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "interpreter"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(a)(i)",
+      "question_text": "Explain why Reverse Polish Notation (RPN) is used to carry out the evaluation of\nexpressions.\n[2]",
+      "mark_scheme": "One mark for each correct marking point (Max 2)\n• Reverse Polish Notation provides an unambiguous method of\nrepresenting an expression\n• … reading from left to right\n• …without the need to use brackets\n• …with no need for rules of precedence / BODMAS",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "Reverse Polish Notation"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(a)(ii)",
+      "question_text": "Identify, with reasons, a data structure that could be used to evaluate an expression\nin RPN.\n[2]",
+      "mark_scheme": "One mark for identification of the data structure,\nOne mark for a sensible reason\nEither:\nStructure: stack\nThe operands are popped from the stack in the reverse order to how they\nwere pushed\nOr:\nStructure: Binary tree\nA (binary) tree allows both infix and postfix to be evaluated (tree traversal)",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Write the infix expression in RPN.\n(a – b) * (a + c) / 7\n[1]",
+      "mark_scheme": "a b - a c + * 7 /",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(c)",
+      "question_text": "Write the RPN expression as an infix expression.\na b / 4 * a b + -\n[1]",
+      "mark_scheme": "a / b * 4 – (a + b)",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(d)",
+      "question_text": "Evaluate the RPN expression:\na b + c d / /\nwhere .\na = 17, b = 3, c = 48 and d = 12\nShow your working.\n[2]",
+      "mark_scheme": "1 mark for correct structure\n1 mark for correct substitution\n(a + b) / (c / d)\n(17 + 3) / (48 / 12)",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Calculate the shortest distance between the base and each of the other towns in the diagram\nusing Dijkstra’s algorithm.\nShow your working and write your answers in the table provided.\nBase\nTown 1 2\nTown 2\nTown 3\n7 3 Town 6\nTown 4 Town 5\nWorking\nAnswers\nTown 1 Town 2 Town 3 Town 4 Town 5 Town 6\n[5]",
+      "mark_scheme": "Working (Max 3)\nMay be seen on diagram\n• Initialisation: setting Base to 0\n• … and the rest of the towns to ∞\n• Evidence to show values at nodes being updated\n• Evidence to show ‘visited node(s)’\nMay be seen in working section of paper\n• Evidence to show calculation of at least one route\n• Evidence to show more than one route has been calculated for at least\none town\nCorrect Answer (Max 2)\nOne mark for four correct values…\n… One mark for all values correct\nTown 1 Town 2 Town 3 Town 4 Town 5 Town 6\n3 5 2 9 3 8",
+      "marks": 5,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Explain the use of graphs to aid Artificial Intelligence (AI).\n[3]",
+      "mark_scheme": "One mark for each correct marking point (Max 3)\n• Artificial Neural Networks can be represented using graphs\n• Graphs provide structures for relationships // graphs provide\nrelationships between nodes\n• AI problems can be defined/solved as finding a path in a graph\n• Graphs may be analysed/ingested by a range of algorithms\n• …e.g. A* / Dijksta’s algorithm\n• …used in machine learning.\n• Example of method e.g. Back propagation of errors / regression\nmethods",
+      "marks": 3,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Artificial Neural Networks",
+        "A*"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "Give two benefits and two drawbacks of packet switching.\nBenefit 1\nBenefit 2\nDrawback 1\nDrawback 2\n[4]",
+      "mark_scheme": "One mark for each correct benefit (Max 2)\n• Accuracy – Ensures accurate delivery of the message\n• Completeness – Missing packets can be easily detected and a re-send\nrequest sent so the message arrives complete\n• Resilience – if a network changes the router can detect this and send\nthe data another way to ensure it arrives\n• Path also available to other users // Doesn’t use whole bandwidth //\nallows simultaneous use of channel by multiple users\n• Better security as packets hashed and sent by different routes.\nOne mark for each correct drawback (Max 2)\n• Time delays to correct errors // Network problems may introduce errors\nin packets\n• Requires complex protocols for delivery\n• Unsuitable for real time transmission applications",
+      "marks": 4,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "The diagram shows a logic circuit.\nA P\nY\nB\nC R\nZ\nQ\nComplete the truth table for the given logic circuit. Show your working.\nInputs Working space Outputs\nA B C P Q R Y Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n[3]",
+      "mark_scheme": "One mark for working, (all three columns P, Q and R)\nOne mark for each correct column Y, Z\nA B C P Q R Y Z\n0 0 0 0 0 0 0 0\n0 0 1 0 0 0 1 0\n0 1 0 1 0 0 1 0\n0 1 1 1 0 1 0 1\n1 0 0 1 0 0 1 0\n1 0 1 1 0 1 0 1\n1 1 0 0 1 0 0 1\n1 1 1 0 1 0 1 1",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "The diagram shows a logic circuit.\nA P\nY\nB\nC R\nZ\nQ\nState the name of the logic circuit.\n[1]",
+      "mark_scheme": "Full adder",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "The diagram shows a logic circuit.\nA P\nY\nB\nC R\nZ\nQ\nWrite the Boolean expressions for the two outputs Y and Z in the truth table as\nsum-of-products and state the purpose of each output.\nY =\nPurpose\nZ =\nPurpose\n[4]",
+      "mark_scheme": "One mark for each point\n_ _ _ _ _ _\nY = A B C + A B C + A B C + A B C\nPurpose: Sum bit\n_ _ _\nZ = A B C + A B C + A B C + A B C\nPurpose: Carry output",
+      "marks": 4,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "State two factors that may affect the performance of a sorting algorithm.\n[2]",
+      "mark_scheme": "One mark for each correct marking point (Max 2)\n• The initial order of the data\n• The number of data items to be sorted\n• The efficiency of the sorting algorithm",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "The given algorithm is a simple bubble sort that arranges a set of scores stored in a one-\ndimensional array into descending order, and orders the corresponding students’ names\nstored into a two-dimensional array in the same order as the scores. All the arrays are indexed\nfrom 1.\nThe contents of both arrays after sorting are shown.\nName\nScore\n1 2\n1 98 1 Smithfield Tom\n2 97 2 Johnson Jane\n… …\n248 5 248 Peters Jade\n249 3 249 Allen John\n←\nYearSize 249\n←\nFlag TRUE\nWHILE Flag = TRUE\n←\nFlag FALSE\n←\nFOR Student 1 TO YearSize - 1\nIF Score[Student] < Score[Student + 1] THEN\n←\nTemp1 Score[Student]\n←\nTemp2 Name[Student,1]\n←\nTemp3 Name[Student,2]\n←\nScore[Student] Score[Student + 1]\n←\nName[Student,1] Name[Student + 1,1]\n←\nName[Student,2] Name[Student + 1,2]\n←\nScore[Student + 1] Temp1\n←\nName[Student + 1,1] Temp2\n←\nName[Student + 1,2] Temp3\n←\nFlag TRUE\nENDIF\nNEXT Student\nENDWHILE\nWrite an algorithm, using pseudocode, that will perform the same task using an insertion sort.\n[6]",
+      "mark_scheme": "One mark for each marking point (max 6)\nMP1 Use of FOR loop to cycle through the whole year group\nMP2 Temporary storage of the score being ‘inserted’\nMP3 Temporary storage of the corresponding name elements\nMP4 Use of WHILE loop with correct exit clause\nMP5 Moving of all three elements of data to next array elements\nMP6 Correct updating of counter variable\nMP7 Final insertion of all three data elements\nExample algorithm\nYearSize ← 249\nFOR Student ← 2 to YearSize\nTemp1 ← Score[Student]\nTemp2 ← Name[Student,1]\nTemp3 ← Name[Student,2]\nCounter ← Student\nWHILE Counter > 1 AND Score[Counter - 1] < Temp1\nScore[Counter] ← Score[Counter - 1]\nName[Counter,1] ← Name[Counter - 1,1]\nName[Counter,2] ← Name[Counter - 1,2]\nCounter ← Counter – 1\nENDWHILE\nScore[Counter] ← Temp1\nName[Counter,1] ← Temp2\nName[Counter,2] ← Temp3\nNEXT Student",
+      "marks": 6,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Describe what is meant by an imperative (procedural) programming language.\n[2]",
+      "mark_scheme": "One mark for each correct marking point (Max 2)\n• Imperative languages use variables\n• … which are changed using (assignment) statements\n• … they rely on a method of repetition / iteration.\n• The statements provide a sequence of commands for the computer to\nperform\n• … in the order written / given\n• … each line of code changes something in the program run.",
+      "marks": 2,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Describe what is meant by a declarative programming language.\n[2]",
+      "mark_scheme": "One mark for each correct marking point (Max 2)\n• Instructs a program on what needs to be done instead of how to do it\n• ... using facts and rules\n• … using queries to satisfy goals.\n• Can be logical or functional\n• Logical - states a program as a set of logical relations\n• Functional – constructed by applying functions to arguments / uses a\nmathematical style",
+      "marks": 2,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(c)",
+      "question_text": "Identify the programming paradigm for each of these program code examples.\nProgram code example Programming paradigm\nmale(john).\nfemale(ethel).\nparent(john, ethel).\nFOR Counter = 1 TO 20\nX = X * Counter\nNEXT Counter\nStart: LDD Counter\nINC ACC\nSTO Counter\npublic class Vehicle\n{\nprivate speed;\npublic Vehicle()\n{\nspeed = 0;\n}\n}\n[4]",
+      "mark_scheme": "One mark for each correct programming paradigm (Max 4)\nProgram code example Programming paradigm\nmale(john).\nfemale(ethel). Declarative\nparent(john, ethel).\nFOR Counter = 1 TO 20\nX = X * Counter Procedural / imperative\nNEXT Counter\nStart: LDD Counter\nINC ACC Low-level / assembly\nSTO Counter\npublic class Vehicle\n{\nprivate speed;\npublic Vehicle()\nObject oriented / (OOP)\n{\nspeed = 0;\n}\n}",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        10
+      ]
+    }
+  ],
+  "marks": 75
+}

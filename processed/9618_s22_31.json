@@ -1,0 +1,449 @@
+{
+  "paper": "9618_s22_31",
+  "qp": "papers/9618/paper_3/2022/may_jun/9618_s22_qp_31.pdf",
+  "ms": "papers/9618/paper_3/2022/may_jun/9618_s22_ms_31.pdf",
+  "sha256": {
+    "qp": "cb062c2734a9865390415d23f24070fe007c4ae01ea265352c0c621136b0bbc3",
+    "ms": "9875a26527ec8bce0208b96d70995b35cfd0dd8b96cb25d3059d7c7fd0222e6a"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nLibraryRecord\nTYPE LibraryRecord\nDECLARE Title : STRING\nDECLARE Fiction : BOOLEAN\nDECLARE Author : STRING\nDECLARE NumberOfCopies : INTEGER\nENDTYPE\nA variable, , is declared in pseudocode as:\nLibraryBook\nDECLARE LibraryBook : LibraryRecord\nWrite pseudocode statements to assign:\n• to of\nA Level Computer Science Title LibraryBook\n• to of .\nFALSE Fiction LibraryBook\n[2]",
+      "mark_scheme": "LibraryBook.Title  \"A Level Computer Science\"\nLibraryBook.Fiction  FALSE",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)(i)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nLibraryRecord\nTYPE LibraryRecord\nDECLARE Title : STRING\nDECLARE Fiction : BOOLEAN\nDECLARE Author : STRING\nDECLARE NumberOfCopies : INTEGER\nENDTYPE\nA variable, , is declared in pseudocode as:\nLibraryBook\nDECLARE LibraryBook : LibraryRecord\nThe type definition for is changed.\nLibraryRecord\nThe value for must be between and inclusive.\nNumberOfCopies 1 10\nWrite the updated line of pseudocode from the type definition of to\nLibraryRecord\nimplement the change.\n[1]",
+      "mark_scheme": "DECLARE NumberOfCopies : 1 .. 10",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)(ii)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nLibraryRecord\nTYPE LibraryRecord\nDECLARE Title : STRING\nDECLARE Fiction : BOOLEAN\nDECLARE Author : STRING\nDECLARE NumberOfCopies : INTEGER\nENDTYPE\nA variable, , is declared in pseudocode as:\nLibraryBook\nDECLARE LibraryBook : LibraryRecord\nThe type definition for is changed.\nLibraryRecord\nEvery copy of every book is now uniquely identified by an accession number,\n, as it is added to the library. Each library record will include one or\nAccessionNumber\nmore accession numbers. Each accession number is an integer.\nWrite the extra line of pseudocode needed in the type definition of .\nLibraryRecord\n[2]",
+      "mark_scheme": "DECLARE AccessionNumber : ARRAY[1:NumberOfCopies] OF INTEGER",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(c)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nLibraryRecord\nTYPE LibraryRecord\nDECLARE Title : STRING\nDECLARE Fiction : BOOLEAN\nDECLARE Author : STRING\nDECLARE NumberOfCopies : INTEGER\nENDTYPE\nA variable, , is declared in pseudocode as:\nLibraryBook\nDECLARE LibraryBook : LibraryRecord\nA record is a user-defined composite data type.\nExplain what is meant by a user-defined composite data type.\nInclude an example of another user-defined composite data type in your answer.\n[3]",
+      "mark_scheme": "Any two from\n A data type constructed by a programmer // not a primitive data type\n A data type that references at least one other data type…\n … the data types can be primitive, or user defined\nOne mark for an example\n Class / object / set",
+      "marks": 3,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "set"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2,
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "A declarative language is used to represent the following facts about cats.\n01 type(leopard, wild).\n02 type(lion, wild).\n03 type(cheetah, wild).\n04 type(savannah, hybrid).\n05 type(persian, domestic).\n06\n07 hair(leopard, medium).\n08 hair(lion, short).\n09 hair(cheetah, medium).\n10 hair(savannah, medium).\n11 hair(persian, long).\n12\n13 spots(leopard, yes).\n14 spots(lion, no).\n15 spots(cheetah, yes).\n16 spots(savannah, yes).\n17 spots(persian, no).\nThese clauses have the following meaning:\nClause Meaning\n01 A leopard is a type of wild cat.\n08 A lion has short hair.\n16 A savannah has spots.\nMore facts are to be included. A caracal is a wild cat with short hair.\nWrite the additional clauses to record these facts.\n18\n19\n[2]",
+      "mark_scheme": "type(caracal, wild).\nhair(caracal, short).",
+      "marks": 2,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "A declarative language is used to represent the following facts about cats.\n01 type(leopard, wild).\n02 type(lion, wild).\n03 type(cheetah, wild).\n04 type(savannah, hybrid).\n05 type(persian, domestic).\n06\n07 hair(leopard, medium).\n08 hair(lion, short).\n09 hair(cheetah, medium).\n10 hair(savannah, medium).\n11 hair(persian, long).\n12\n13 spots(leopard, yes).\n14 spots(lion, no).\n15 spots(cheetah, yes).\n16 spots(savannah, yes).\n17 spots(persian, no).\nThese clauses have the following meaning:\nClause Meaning\n01 A leopard is a type of wild cat.\n08 A lion has short hair.\n16 A savannah has spots.\nUsing the variable , the goal:\nCat\nhair(Cat, medium)\nreturns\nCat = leopard, cheetah, savannah\nWrite the result returned by the goal:\nhair(Cat, long)\n[1]\nCat =",
+      "mark_scheme": "persian",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(c)(i)",
+      "question_text": "A declarative language is used to represent the following facts about cats.\n01 type(leopard, wild).\n02 type(lion, wild).\n03 type(cheetah, wild).\n04 type(savannah, hybrid).\n05 type(persian, domestic).\n06\n07 hair(leopard, medium).\n08 hair(lion, short).\n09 hair(cheetah, medium).\n10 hair(savannah, medium).\n11 hair(persian, long).\n12\n13 spots(leopard, yes).\n14 spots(lion, no).\n15 spots(cheetah, yes).\n16 spots(savannah, yes).\n17 spots(persian, no).\nThese clauses have the following meaning:\nClause Meaning\n01 A leopard is a type of wild cat.\n08 A lion has short hair.\n16 A savannah has spots.\nWrite the goal, using the variable , to find all the domestic cats.\nPet\n[1]",
+      "mark_scheme": "type(Pet, domestic).",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(c)(ii)",
+      "question_text": "A declarative language is used to represent the following facts about cats.\n01 type(leopard, wild).\n02 type(lion, wild).\n03 type(cheetah, wild).\n04 type(savannah, hybrid).\n05 type(persian, domestic).\n06\n07 hair(leopard, medium).\n08 hair(lion, short).\n09 hair(cheetah, medium).\n10 hair(savannah, medium).\n11 hair(persian, long).\n12\n13 spots(leopard, yes).\n14 spots(lion, no).\n15 spots(cheetah, yes).\n16 spots(savannah, yes).\n17 spots(persian, no).\nThese clauses have the following meaning:\nClause Meaning\n01 A leopard is a type of wild cat.\n08 A lion has short hair.\n16 A savannah has spots.\nWrite the goal, using the variable , to find all the wild cats with spots.\nWildSpotty\n[2]",
+      "mark_scheme": "spots(WildSpotty, yes)\n,type(WildSpotty, wild).",
+      "marks": 2,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "3",
+      "question_text": "Data can be sent over networks using either circuit switching or packet switching.\nDescribe both methods of data transmission. Include a different advantage and disadvantage for\neach method.\nCircuit switching\nAdvantage\nDisadvantage\nPacket switching\nAdvantage\nDisadvantage\n[8]",
+      "mark_scheme": "Circuit switching max four marks\nAny two from\n a dedicated circuit\n circuit is established before transmission starts //\ncircuit is released after transmission ends\n data is transferred using the whole bandwidth\n all data is transferred over the same route\nTwo from\n Advantage – data /frames arrive in order and do not need to be reassembled\n Disadvantage – nobody else can use the same circuit even if it is idle //less secure as only one route used\nPacket switching max four marks\nAny two from\n data is split into packets\n each packet is given its own route\n the routing for a packet depends on the congestion\n packets may not arrive in the order sent\nTwo from\n Advantage – packets can be rerouted if there are problems// more secure as harder to intercept messages\n Disadvantage – time taken to reassemble packets at the destination",
+      "marks": 8,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [
+        "Packet switching",
+        "Circuit switching"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.\nDescribe what is meant by RISC and CISC processors.\nRISC\nCISC\n[4]",
+      "mark_scheme": "RISC max 2 any two from:\n Uses simple instructions\n Uses fixed length instructions\n Instructions only require one clock cycle\n Uses many registers\n Makes use of pipelining\n Hardwired CU\nCISC max 2 any two from:\n Uses many instruction formats\n Uses variable length instructions\n Makes use of different addressing modes\n Uses few registers\n Has a large instruction set\n Requires complex circuits\n Frequently uses cache\n Instructions (converted to sub-instructions that) may require many clock cycles\n Programmable CU",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "RISC",
+        "CISC",
+        "pipelining"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.\nIdentify two differences between RISC and CISC processors.\n1\n2\n[2]",
+      "mark_scheme": "One mark for each difference max 2 from:\n RISC has fewer instructions // CISC has more instructions\n RISC has many registers // CISC has few registers\n RISC’s instructions are simpler // CISC’s instructions are more complex\n RISC has a few instruction formats / CISC has many instruction formats\n RISC usually uses single-cycle instructions// CISC uses multi-cycle instructions\n RISC uses fixed-length instructions // CISC uses variable-length instructions\n RISC has better pipelineability // CISC has poorer pipelineability\n RISC requires less complex circuits// CISC requires more complex circuits\n RISC has fewer addressing modes // CISC has more addressing modes\n RISC makes more use of RAM// CISC makes more use of cache/less use of RAM\n RISC has a hard-wired control unit // CISC has a programmable control unit\n RISC only uses load and store instructions to address memory // CISC has many types of instructions to address\nmemory",
+      "marks": 2,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "RISC",
+        "CISC"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Part of a program’s calculations uses the integer variables , , , and .\nj k m n p\nj = 3\nk = 2\nm = 10\nn = (j + k)/(j - k)\np = m * (m - j * k)\nWrite the Reverse Polish Notation (RPN) for the expression:\n(j + k)/(j - k)\n[2]",
+      "mark_scheme": "One mark for each in order jk+jk-/\njk+\njk-/",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(b)(i)",
+      "question_text": "Part of a program’s calculations uses the integer variables , , , and .\nj k m n p\nj = 3\nk = 2\nm = 10\nn = (j + k)/(j - k)\np = m * (m - j * k)\nShow the changing contents of the stack as the value for is calculated from its RPN\np\nexpression:\nm m j k * - *\n[4]",
+      "mark_scheme": "1 mark per ring\nDo not allow operators in stacks\n2\n3 3 6\n10 10 10 10 4\n10 10 10 10 10 10 40",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "stacks"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(b)(ii)",
+      "question_text": "Part of a program’s calculations uses the integer variables , , , and .\nj k m n p\nj = 3\nk = 2\nm = 10\nn = (j + k)/(j - k)\np = m * (m - j * k)\nDescribe the main steps in the evaluation of this RPN expression using a stack.\n[4]",
+      "mark_scheme": "Any four from Max 4\nMax 3 generic answer only\n Working from left to right in the expression\n PUSH 10/m onto the stack\n PUSH the following numbers (10/m, 3/j, 2/k) onto the stack\n When the first operator ,*, is reached\n … POP the top two numbers, 2/k and 3/j\n … apply the operation\n PUSH result back onto stack\n Continue to the end of the expression",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(c)",
+      "question_text": "Part of a program’s calculations uses the integer variables , , , and .\nj k m n p\nj = 3\nk = 2\nm = 10\nn = (j + k)/(j - k)\np = m * (m - j * k)\nState two other uses of a stack.\n1\n2\n[2]",
+      "mark_scheme": "Any two from\n recursion\n implementation of ADTs e.g. linked lists\n procedure calls\n interrupt handling (storing contents of registers etc)",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6",
+      "question_text": "A virtual machine is used to emulate a new computer system.\nDescribe two benefits and one limitation of using a virtual machine for this purpose.\nBenefit 1\nBenefit 2\nLimitation\n[6]",
+      "mark_scheme": "Two marks each benefit description max 4\nNew system can be tried on different virtual hardware (1)\nwithout need to purchase the hardware (1)\nEasier to recover if software emulating the new computer causes system crash (1) as VM provides protection to other\nsoftware (1)\nEmulate programs for the new computer system that are not compatible with the host computer / operating system (1) by\nusing the guest operating system on the old computer (1)\nMore than one new computer system can be emulated (1) this allows multiple operating systems to coexist on a single\ncomputer(1)\nTwo marks each limitation description max 2 from:\nVirtual machines may not be able to emulate the new hardware (1) because this hardware may have been developed since\nthe virtual machine was developed (1)\nUsing virtual machine means execution of extra code // A virtual machine might not be as efficient // resources e.g. memory\nor processor time are shared (1) processing time increased // performance degrades (1)\nUse of a virtual machine increases the maintenance overheads (1) because both host system and the virtual machine must\nbe maintained (1)",
+      "marks": 6,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "virtual machine"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "A program is to be written using Object-Oriented Programming (OOP) for a shop that sells knitting\nyarn. There are three types of yarn: acrylic, wool or mix.\nThe following data are stored for each type.\n• Name\n• Colour\n• Batch code\n• Weight\n• Number of balls of yarn in stock (can be edited)\n• Type of yarn\nThe following statements apply to yarn.\n• Acrylic can be soft or not soft.\n• Wool can be lamb, merino or alpaca.\n• Mix contains a percentage of acrylic.\nEach type of yarn has a method that will display all the information about the yarn.\nComplete this class inheritance diagram to show the properties, methods and inheritance.\nYarn\nName: STRING\nColour: STRING\nBatchCode: STRING\nWeight: INTEGER\nNumberBalls: INTEGER\nType: STRING\nConstructor()\nEditNumberBalls()\nYarnInfo()\nAcrylic Wool Mix\nPercentage: INTEGER\nConstructor()\nYarnInfo()\nConstructor() Constructor()\n[5]",
+      "mark_scheme": "1 mark per point\nAcrylic has attribute Soft of type BOOLEAN\nWool has attribute WoolType with suitable data type\nAcrylic and Wool have method YarnInfo()\nAcrylic, Wool and Mix at least one inherit (one arrow correct) from Yarn …\n… Acrylic, Wool and Mix all inherit (all arrows correct) from Yarn\nYarn\nName: STRING\nColour: STRING\nBatchCode: STRING\nWeight: INTEGER\nNumberBalls: INTEGER\nType: STRING\nConstructor()\nEditNumberBalls()\nYarnInfo()\nAcrylic Wool Mix\nWoolType: STRING Percentage: INTEGER\nSoft: BOOLEAN\nConstructor() Constructor()\nConstructor() YarnInfo() YarnInfo()\nYarnInfo()",
+      "marks": 5,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "A program is to be written using Object-Oriented Programming (OOP) for a shop that sells knitting\nyarn. There are three types of yarn: acrylic, wool or mix.\nThe following data are stored for each type.\n• Name\n• Colour\n• Batch code\n• Weight\n• Number of balls of yarn in stock (can be edited)\n• Type of yarn\nThe following statements apply to yarn.\n• Acrylic can be soft or not soft.\n• Wool can be lamb, merino or alpaca.\n• Mix contains a percentage of acrylic.\nEach type of yarn has a method that will display all the information about the yarn.\nDescribe what is meant by the terms properties, methods and inheritance.\nProperties\nMethods\nInheritance\n[6]",
+      "mark_scheme": "Properties max 2:\n the data items / attributes\n the data types // characteristics\n defined in a class\nMethods max 2:\n the procedures/ functions / programmed instructions in a\nclass / super class / base class\n … implementing the behaviours\n … that act on the properties / attributes\nInheritance max 2:\n Methods and properties / attributes contained in one class/ super class / base class\n Are made available to / reused by another class/ derived class",
+      "marks": 6,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Inheritance"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(a)(i)",
+      "question_text": "A message is to be sent securely. Software uses a key to encrypt the message before it is sent.\nGive two reasons for using key cryptography.\n1\n2\n[2]",
+      "mark_scheme": "Any two from\n To ensure the message is authentic // came from a trusted source\n To ensure that only the intended receiver is able to understand the message\n To ensure the message has not been altered during transmission\n Non-repudiation, neither the sender or receiver can deny the transmission occurred",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(a)(ii)",
+      "question_text": "A message is to be sent securely. Software uses a key to encrypt the message before it is sent.\nGive two methods of key cryptography that can be used.\n1\n2\n[2]",
+      "mark_scheme": "Symmetric\nAsymmetric",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(b)(i)",
+      "question_text": "A message is to be sent securely. Software uses a key to encrypt the message before it is sent.\nWhen there is a secure exchange of key(s), the message is sent.\nThe use of quantum cryptography is being considered for the secure exchange.\nState two possible benefits of using quantum cryptography.\n1\n2\n[2]",
+      "mark_scheme": "Any two from\n Any eavesdropping can be identified (as the state will be changed)\n Integrity of the key once transferred can be guaranteed (cannot be copied and decrypted at a later date)\n Longer/more secure keys can be exchanged",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(b)(ii)",
+      "question_text": "A message is to be sent securely. Software uses a key to encrypt the message before it is sent.\nWhen there is a secure exchange of key(s), the message is sent.\nThe use of quantum cryptography is being considered for the secure exchange.\nState two possible drawbacks of using quantum cryptography.\n1\n2\n[2]",
+      "mark_scheme": "Any two from\n Limited range\n requires dedicated fibre (optic) line and specialist hardware\n cost of dedicated fibre (optic) line and specialist hardware is expensive\n polarisation of light may be altered whilst travelling down fibre optic cables",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "The table shows assembly language instructions for a processor that has one general purpose\nregister, the Accumulator (ACC).\nInstruction Explanation\nLabel Opcode Operand\nLoad the number n to ACC\nLDM #n\nLoad the contents of the given address to ACC\nLDD <address>\nThe address to be used is at the given address\nLDI <address>\nLoad the contents of this second address to ACC\nAdd the contents of the given address to the ACC\nADD <address>\nStore the contents of the ACC at the given address\nSTO <address>\nGives a symbolic address <label> to the memory\nlocation with the contents <data>\n<label>: <data>\n<label> can be used in place of <address>\n# denotes a denary number, e.g. #123\nThe address contains the value and the address contains the value .\n500 100 100 20\nState the addressing mode and the contents of ACC after each instruction has been executed.\nAddressing mode\nLDM #500\nContents of ACC\nAddressing mode\nLDD 500\nContents of ACC\nAddressing mode\nLDI 500\nContents of ACC\n[3]",
+      "mark_scheme": "LDM #500: Immediate 500\nLDD 500: Direct 100\nLDI 500: Indirect 20",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        14
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "The table shows assembly language instructions for a processor that has one general purpose\nregister, the Accumulator (ACC).\nInstruction Explanation\nLabel Opcode Operand\nLoad the number n to ACC\nLDM #n\nLoad the contents of the given address to ACC\nLDD <address>\nThe address to be used is at the given address\nLDI <address>\nLoad the contents of this second address to ACC\nAdd the contents of the given address to the ACC\nADD <address>\nStore the contents of the ACC at the given address\nSTO <address>\nGives a symbolic address <label> to the memory\nlocation with the contents <data>\n<label>: <data>\n<label> can be used in place of <address>\n# denotes a denary number, e.g. #123\nUse only the given instruction set to write assembly language code to:\n• use the constant which needs to be stored\n• add this constant to the value stored in the address contained in the variable\nY\n• store the result in variable .\nZ\nInstruction\nLabel Opcode Operand\n[7]",
+      "mark_scheme": "Instruction\nLabel Opcode Operand\nLDM #20\nSTO Twenty\nLDI Y\nADD Twenty\nSTO Z\nTwenty: #20\nY:\nZ:\nOne mark for LDM #20 seen\nOne mark for storing 20 at any address\nOne mark for labelling that address e.g. Twenty away from the program code\nOne mark for labelling addresses away from the program code as Y and Z\nOne mark for correct use of LDI Y\nOne mark for correct use of STO Z\nOne mark for correct use of ADD with labelled address",
+      "marks": 7,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        14,
+        15
+      ],
+      "ms_pages": [
+        11
+      ]
+    }
+  ],
+  "marks": 75
+}

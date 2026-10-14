@@ -1,0 +1,551 @@
+{
+  "paper": "9618_s24_33",
+  "qp": "papers/9618/paper_3/2024/may_jun/9618_s24_qp_33.pdf",
+  "ms": "papers/9618/paper_3/2024/may_jun/9618_s24_ms_33.pdf",
+  "sha256": {
+    "qp": "228255f4341b8783b7004f9f63c935e4918877ddf95b568d906069622a3e5c93",
+    "ms": "36e89f9a9f0ec6d0210b41766a8e62f13aca6387f7129abc673054e056e9f2be"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the denary value of the given normalised floating-point number.\nShow your working.\nMantissa Exponent\n0 1 0 0 1 1 1 1 0 0 0 0 1 0 0 1\nWorking\nAnswer\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 conversion of exponent 001001 to 9\nMP2 application of exponent to mantissa to go from 0.100111100 to 100111100 // 256 + 32 + 16 + 8 + 4 seen // 64/128\n+ 8/128 + 4/128 + 2/128 + 1/128 = 79/128 // 1/2 + 1/16 + 1/32 + 1/64 + 1/128 = 79/128\nMP3 correct answer = 316",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised floating-point representation of –102.75 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 number converted to binary 10011001.01 // number converted to positive 102.75, reversed bits and 1 added.\n(0)1100110.11  10011001.00  10011001.01 // -128 + 16 + 8 + 1 + 0.25 = –102.75\nMP2 exponent = 7 // Moving binary point the correct number of places\nMP3 correct answer\nMantissa Exponent\n1 0 0 1 1 0 0 1 0 1 0 0 0 1 1 1",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "The TCP / IP protocol suite has four layers:\nTransport, Application, Link, Internet\nComplete the diagram to show the correct order for these layers.\n[2]",
+      "mark_scheme": "Two marks for all protocols in correct position\nOne mark for at least two protocols in correct position\nApplication\nTransport\nInternet\nLink",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocols"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "The TCP / IP protocol suite has four layers:\nTransport, Application, Link, Internet\nDescribe the function of the Transport layer.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 The transport layer is responsible for delivery of data from the source host to the destination host\nMP2 It is where data is broken up into packets and sent to the internet layer\nMP3 Adds the sequence number to the packet header\nMP4 It establishes end to end contact\nMP5 It ensures data arrives error free // It retransmits packets if lost.",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "2(c)",
+      "question_text": "The TCP / IP protocol suite has four layers:\nTransport, Application, Link, Internet\nOutline one protocol that is associated with the Application layer.\n[2]",
+      "mark_scheme": "One mark for name of protocol and one mark for expansion (Max 2)\nHTTP(S) – responsible for correct transfer of files / hypertext documents that make up web pages on the world wide web\nFTP – used when transferring files from a server to a client on a network\nPOP3 – handles the receiving of emails\nIMAP – handles the receiving of emails\nSMTP – handles the sending of emails\nBitTorrent – provides peer-to-peer file sharing",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "protocol"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Explain what is meant by non-composite and composite data types.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 2)\nnon-composite data types\nMP1 Non-composite data types can both be user-defined or primitive\nMP2 Non-composite data types do not refer to other data types in their definition / contain one data type in their\ndefinition\nMP3 Non-composite data types can be primitive/enumerated/pointer\nOne mark per mark point (Max 2)\ncomposite data types\nMP4 Composite data types can be user-defined or primitive\nMP5 Composite data types refer to other data types in their definition/contain more than one data type in their\ndefinition\nMP6 Composite data types can be record/set/class",
+      "marks": 3,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "record",
+        "set"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Write pseudocode statements to declare the record data type FootballClub to hold data\nabout football clubs in a league, to include:\n• name of team\n• date team joined the league\n• main telephone number\n• name of the manager\n• number of members\n• current position in the league.\n[4]",
+      "mark_scheme": "One mark for TYPE FootballClub and ENDTYPE correct\nOne mark for every two correct declarations\nExample answer\nTYPE FootballClub\nDECLARE TeamName : STRING\nDECLARE DateOfJoining : DATE\nDECLARE MainTelephone : STRING\nDECLARE ManagerName : STRING\nDECLARE NumberOfMembers : INTEGER\nDECLARE LeaguePosition : INTEGER\nENDTYPE",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Describe the sequential method of file access.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Sequential access method searches for records one after the other\nMP2 … from the physical start of the file until the record is found/the end of file.",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record",
+        "Sequential access"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Explain how the sequential method of file access is applied to files with serial organisation\nand to files with sequential organisation.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 For serial files, records are stored in chronological order\nMP2 … every record needs to be checked until the record is found, or all records have been checked.\nMP3 For sequential files, records are stored in order of a key field/index, and it is the key field/index that is compared.\nMP4 … every record is checked until the record is found, or the key field of the current record is greater than the key\nfield of the target record.",
+      "marks": 3,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Write this Reverse Polish Notation (RPN) in infix form:\n5 2 + 9 3 - / 3 *\n[3]",
+      "mark_scheme": "One mark per correct term (Max 3)\n(5 + 2)\n/ (9 – 3)\n* 3\nComplete correct answer\n((5 + 2) / (9 - 3)) * 3",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Write this infix expression in RPN:\n((7 + 3) - (2 * 8)) / 6\n[2]",
+      "mark_scheme": "One mark 7 3 +\nOne mark 2 8 * - 6 /\nComplete answer\n7 3 + 2 8 * - 6 /",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(c)",
+      "question_text": "Evaluate this RPN expression:\na b - c d + * e /\nwhen\na = 17, b = 5, c = 7, d = 3 and e = 10\nShow the changing contents of the stack as the RPN expression is evaluated.\n[4]",
+      "mark_scheme": "One mark per ring (Max 4)\n3\n5 7 7 10 10\n17 17 12 12 12 12 120 120 12",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "The diagram shows a logic circuit.\nA Q\nP R\nB Z\nS\nC\nComplete the truth table for the given logic circuit.\nShow your working.\nWorking space\nA B C P Q R S Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n[3]",
+      "mark_scheme": "One mark for working, all four columns P, Q, R and S\nOne mark for first four rows of column Z\nOne mark for second four rows of column Z\nWorking space\nA B C P Q R S Z\n0 0 0 1 0 0 1 1\n0 0 1 1 0 0 1 1\n0 1 0 0 0 0 0 0\n0 1 1 0 0 0 0 0\n1 0 0 1 0 0 0 0\n1 0 1 1 0 1 0 1\n1 1 0 0 0 0 1 1\n1 1 1 0 1 0 1 1",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "The diagram shows a logic circuit.\nA Q\nP R\nB Z\nS\nC\nWrite the Boolean expression that corresponds to the logic circuit as a sum-of-products.\nZ =\n[2]",
+      "mark_scheme": "Two marks for all five correct terms and no extras\nOne mark for any three correct terms\n(Z =) A.B.C + A.B.C + A.B.C + A.B.C + A.B.C",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "6(c)(i)",
+      "question_text": "The diagram shows a logic circuit.\nA Q\nP R\nB Z\nS\nC\nComplete the Karnaugh map (K-map) for the Boolean expression:\nA .B.C + A.B.C + A.B.C + A.B.C + A.B.C + A.B.C\nBC\n00 01 11 10\nA\n0\n1\n[2]",
+      "mark_scheme": "Two marks if all correct\nOne mark if one error present\nBC\n00 01 11 10\nA\n0 1 1 0 0\n1 1 1 1 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "6(c)(ii)",
+      "question_text": "The diagram shows a logic circuit.\nA Q\nP R\nB Z\nS\nC\nDraw loop(s) around appropriate group(s) in the K-map to produce an optimal\nsum-of-products. [2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)\nBC\n00 01 11 10\nA\n0 1 1 0 0\n1 1 1 1 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "6(c)(iii)",
+      "question_text": "The diagram shows a logic circuit.\nA Q\nP R\nB Z\nS\nC\nWrite the Boolean expression from your answer to part (c)(ii) as a simplified\nsum-of-products.\n[1]",
+      "mark_scheme": "A + B",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Describe what is meant by a digital certificate.\n[3]",
+      "mark_scheme": "One mark per point (max 3)\nMP1 A digital certificate is an electronic/online document.\nMP2 used to authenticate/prove the identity of a website/the online identity of an individual/organisation\nMP3 typically issued by a CA\nMP4 For example: it contains information identifying a website owner/individual and a public key",
+      "marks": 3,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "digital certificate"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Explain the role of a digital certificate in creating a digital signature.\n[2]",
+      "mark_scheme": "One mark per point (max 2)\nMP1 The digital certificate provides the public key\nMP2 … that can be used to validate the private key associated with the organisation/website/digital signature",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key",
+        "digital certificate",
+        "digital signature"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "A declarative programming language is used to represent the features that are available and the\nfeatures that are unavailable on different body styles of a car.\n01 feature(sunroof).\n02 feature(automatic_tailgate).\n03 feature(heated_seats).\n04 feature(extra_seats).\n05 feature(reversing_camera).\n06 feature(dashboard_camera).\n07 feature(air_conditioning).\n08 feature(heated_windscreen).\n09 feature(satnav).\n10 bodystyle(saloon).\n11 bodystyle(hatchback).\n12 bodystyle(estate).\n13 bodystyle(minivan).\n14 bodystyle(convertible).\n15 available(sunroof, hatchback).\n16 available(sunroof, minivan).\n17 available(reversing_camera, hatchback).\n18 available(extra_seats, minivan).\n19 available(reversing_camera, saloon).\n20 unavailable(sunroof, convertible).\n21 unavailable(automatic_tailgate, saloon).\n22 unavailable(extra_seats, hatchback).\nThese clauses have the meanings:\nClause Meaning\n01 Sunroof is a feature.\n10 Saloon is a body style.\n15 Sunroof is available on a hatchback.\n20 Sunroof is unavailable on a convertible.\nSliding doors is a feature that is available on a minivan but unavailable on a hatchback.\nW rite additional clauses to represent this information.\n23\n24\n25\n[3]",
+      "mark_scheme": "One mark for each correctly completed clause (Max 3)\n(23) feature(sliding_doors).\n(24) available(sliding_doors, minivan).\n(25) unavailable(sliding_doors, hatchback).",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "A declarative programming language is used to represent the features that are available and the\nfeatures that are unavailable on different body styles of a car.\n01 feature(sunroof).\n02 feature(automatic_tailgate).\n03 feature(heated_seats).\n04 feature(extra_seats).\n05 feature(reversing_camera).\n06 feature(dashboard_camera).\n07 feature(air_conditioning).\n08 feature(heated_windscreen).\n09 feature(satnav).\n10 bodystyle(saloon).\n11 bodystyle(hatchback).\n12 bodystyle(estate).\n13 bodystyle(minivan).\n14 bodystyle(convertible).\n15 available(sunroof, hatchback).\n16 available(sunroof, minivan).\n17 available(reversing_camera, hatchback).\n18 available(extra_seats, minivan).\n19 available(reversing_camera, saloon).\n20 unavailable(sunroof, convertible).\n21 unavailable(automatic_tailgate, saloon).\n22 unavailable(extra_seats, hatchback).\nThese clauses have the meanings:\nClause Meaning\n01 Sunroof is a feature.\n10 Saloon is a body style.\n15 Sunroof is available on a hatchback.\n20 Sunroof is unavailable on a convertible.\nUsing the variable Options, the goal:\navailable(Options, saloon)\nreturns\nOptions = reversing_camera\nW rite the result returned by the goal:\navailable(Options, hatchback)\nOptions =  [1]",
+      "mark_scheme": "(Options =) sunroof, reversing_camera",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "8(c)",
+      "question_text": "A declarative programming language is used to represent the features that are available and the\nfeatures that are unavailable on different body styles of a car.\n01 feature(sunroof).\n02 feature(automatic_tailgate).\n03 feature(heated_seats).\n04 feature(extra_seats).\n05 feature(reversing_camera).\n06 feature(dashboard_camera).\n07 feature(air_conditioning).\n08 feature(heated_windscreen).\n09 feature(satnav).\n10 bodystyle(saloon).\n11 bodystyle(hatchback).\n12 bodystyle(estate).\n13 bodystyle(minivan).\n14 bodystyle(convertible).\n15 available(sunroof, hatchback).\n16 available(sunroof, minivan).\n17 available(reversing_camera, hatchback).\n18 available(extra_seats, minivan).\n19 available(reversing_camera, saloon).\n20 unavailable(sunroof, convertible).\n21 unavailable(automatic_tailgate, saloon).\n22 unavailable(extra_seats, hatchback).\nThese clauses have the meanings:\nClause Meaning\n01 Sunroof is a feature.\n10 Saloon is a body style.\n15 Sunroof is available on a hatchback.\n20 Sunroof is unavailable on a convertible.\nF may be available for B if F is a feature and B is a body style and F is not unavailable for that\nbody style.\nW rite this as a rule:\nmay_choose_option(F, B)\nIF\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 feature(F)\nMP2 bodystyle(B)\nMP3 unavailable(F, B)\nMP4 all correct Boolean operators and punctuation (allow , for AND) and no additional lines of code\nExample answers\nmay_choose_option(F, B)\nIF\nfeature(F) AND bodystyle(B) AND NOT unavailable(F, B).\nfeature(F), bodystyle(B), NOT unavailable(F, B).",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9",
+      "question_text": "Explain what is meant by Deep Learning in relation to Artificial Intelligence (AI).\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Deep learning learns by finding hidden patterns that are undetectable to humans.\nMP2 It structures algorithms in layers: input layer, hidden layers and output layer.\nMP3 … to create an artificial neural network to learn and make intelligent decisions on its own.\nMP4 It is trained using large quantities of unlabelled data.\nMP5 Deep learning requires/uses a large number of hidden layers.\nMP6 … the larger the number of layers, the higher the level of success.",
+      "marks": 3,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Deep learning",
+        "artificial neural network"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "State a condition that must be true for an array to be searchable for a binary search.\n[1]",
+      "mark_scheme": "One mark\nThe elements are sorted according to the compare function / in ascending / descending order.",
+      "marks": 1,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Complete the given pseudocode to find an item in a 1D array Names of type STRING using a\nbinary search.\nDECLARE Names : ARRAY[1:100000] OF STRING\nDECLARE TopOfList : INTEGER\nDECLARE EndOfList : INTEGER\nDECLARE CurrentItem : INTEGER\nDECLARE ToFind : STRING\nDECLARE Found : BOOLEAN\nDECLARE Not←InList : BOOLEAN\nTopOfList ← 1\nEndOfList 100000\nOUTPUT \"Which name do you wish to find? \"\nINPUT ToFind\n←\nNotInList FALSE\nWHILE ← AND\nCurrentItem (TopOfList + EndOfList) DIV 2\nIF ← THEN\nFound TRUE\nELSE\nIF TopOfList >= EndOfList THEN\nELSE\nIF ToFind > Names[CurrentItem] THEN\nELSE ←\nEndOfList CurrentItem – 1\nENDIF\nENDIF\nENDIF\nENDWHILE\nIF Found = TRUE THEN\nOUTPUT \"Item found at position \", CurrentItem, \" in array\"\nELSE\nOUTPUT \"Item not in array\"\nENDIF\n[5]",
+      "mark_scheme": "One mark for each correctly completed line (Max 5)\nDECLARE Names : ARRAY[1:100000] OF STRING\nDECLARE TopOfList : INTEGER\nDECLARE EndOfList : INTEGER\nDECLARE CurrentItem : INTEGER\nDECLARE ToFind : STRING\nDECLARE Found : BOOLEAN\nDECLARE NotInList : BOOLEAN\nTopOfList  1\nEndOfList  100000\nOUTPUT \"Which name do you wish to find? \"\nINPUT ToFind\nFound  FALSE\nNotInList  FALSE\nWHILE Found = FALSE AND NotInList = FALSE\nCurrentItem  (TopOfList + EndOfList) DIV 2\nIF ToFind = Names[CurrentItem]// Names[CurrentItem] = ToFind THEN\nFound  TRUE\nELSE\nIF TopOfList >= EndOfList THEN\nNotInList  TRUE\nELSE\nIF ToFind > Names[CurrentItem] THEN\nTopOfList  CurrentItem + 1\nELSE\nEndOfList  CurrentItem – 1\nENDIF\nENDIF\nENDIF\nENDWHILE\nIF Found = TRUE THEN\nOUTPUT \"Item found at position \", CurrentItem, \" in array\"\nELSE\nOUTPUT \"Item not in array\"\nENDIF",
+      "marks": 5,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        12,
+        13
+      ]
+    },
+    {
+      "question_number": "10(c)",
+      "question_text": "Describe the performance of a binary search in relation to the number of data items in the\narray being searched. Refer to Big O notation in your answer.\n[2]",
+      "mark_scheme": "One mark from\nMP1 Big O for a binary search is O(Log n).\n2\nMP2 Big O notation is used to indicate the time/space complexity of an algorithm.\nOne mark from\nMP3 The time taken to complete the search increases logarithmically as the number of search items increases linearly\nMP4 The time taken to complete the search increases linearly as the number of search items increases exponentially\nMP5 As the search field is repeatedly getting smaller, the number of comparisons made before the item is found, or the\nnumber of items runs out, is relatively small.",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "binary search",
+        "Big O"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.\nState two features of RISC processors.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Uses hard-wired code/control units\nMP2 Uses relatively few instructions / simple instructions\nMP3 Uses relatively few addressing modes\nMP4 Makes use of a single-cycle for each instruction\nMP5 Makes use of fixed length / fixed format instructions\nMP6 Makes use of general-purpose registers\nMP7 Pipelining is straightforward to apply\nMP8 The design emphasis is on the software\nMP9 Processor chips require few transistors.",
+      "marks": 2,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "Pipelining"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.\nOutline the process of interrupt handling as it could be applied to RISC or CISC processors.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Once the processor detects an interrupt at the start/end of the fetch-execute cycle\nMP2 … the current program is temporarily stopped and the status of each register stored on the stack.\nMP3 After the interrupt has been serviced/the Interrupt Service Routine (ISR) has been executed …\nMP4 … the registers can be restored to its original status before the interrupt was detected // … the data can be\nrestored from the stack.",
+      "marks": 3,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "interrupt"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "11(c)",
+      "question_text": "Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.\nExplain how pipelining affects interrupt handling for RISC processors.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Pipelining adds an additional complexity // there could be a number of instructions still in the pipeline when the\ninterrupt is received\nMP2 All the instructions currently in operation are usually discarded except for the last one/the one at write back\nMP3 … the interrupt handler routine is applied to the remaining instruction.\nMP4 Once the interrupt has been serviced the processor can restart with the next instruction in the sequence.",
+      "marks": 3,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "Pipelining",
+        "interrupt"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        14
+      ]
+    }
+  ],
+  "marks": 75
+}

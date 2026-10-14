@@ -1,0 +1,497 @@
+{
+  "paper": "9618_s23_33",
+  "qp": "papers/9618/paper_3/2023/may_jun/9618_s23_qp_33.pdf",
+  "ms": "papers/9618/paper_3/2023/may_jun/9618_s23_ms_33.pdf",
+  "sha256": {
+    "qp": "cb20a0ec44f657662d6452826ebfa1719731a5e1893911aa9e80940946af79da",
+    "ms": "af29cc287c1352aaedcf73176058fb97bbe1787a33fca80430c7c77022febd4e"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Numbers are stored in two different computer systems by using floating-point representation.\nSystem 1 uses:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nSystem 2 uses:\n• 8 bits for the mantissa\n• 8 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised floating-point representation of 113.75 and show how it would be\nrepresented in each of these two systems.\nShow your working.\nSystem 1\nMantissa Exponent\nSystem 2\nMantissa Exponent\nWorking\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\n conversion of 113.75 to binary seen 1110001.11\n exponent for normalisation 7 converted to binary 111 // evidence of binary\npoint moved 7 places // evidence of finding exponent = 7\n system 1 answer\n system 2 answer showing correct version from system 1\nSystem 1 Mantissa Exponent\n0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1\nSystem 2 Mantissa Exponent\n0 1 1 1 0 0 0 1 0 0 0 0 0 1 1 1",
+      "marks": 4,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Mantissa",
+        "exponent",
+        "normalisation"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Numbers are stored in two different computer systems by using floating-point representation.\nSystem 1 uses:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nSystem 2 uses:\n• 8 bits for the mantissa\n• 8 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nExplain the problem that occurred in part (a) when representing the number in system 2.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\n the mantissa in system 2 does not have enough bits to store the whole\nbinary number // 10 bits required and only 8 bits available\n so precision is lost / the number is truncated",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2,
+        3
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Draw one line from each machine learning category to its most appropriate description.\nMachine learning category Description\nsimulates the data-processing\ncapabilities of the human brain to\nmake decisions\nSupervised\nlearning\nenables learning by mapping an input\nto an output based on example input–\noutput pairs\nReinforcement\nlearning\nenables information related to errors\nproduced by the neural network to be\ntransmitted\nDeep\nlearning\nenables learning in an interactive\nenvironment by trial and error using\nits own experiences\nUnsupervised\nlearning\nenables learning by allowing the\nprocess to discover patterns on its\nown that were previously undetected\n[4]",
+      "mark_scheme": "One mark for each correct line connecting a machine learning technique to its\nmost appropriate description (Max 4).\nMachine learning category Description\nsimulates the data processing\ncapabilities of the human brain to\nmake decisions\nSupervised\nlearning\nenables learning by mapping an input\nto an output based on example input-\nReinforcement output pairs\nlearning\nenables information related to errors\nproduced by the neural network to be\ntransmitted\nDeep learning\nenables learning in an interactive\nenvironment by trial and error using\nits own experiences\nUnsupervised\nlearning\nenables learning by allowing the\nprocess to discover patterns on its\nown that were previously undetected",
+      "marks": 4,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Deep learning",
+        "neural network"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        3
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Describe the purpose of both the A* algorithm and Dijkstra’s algorithm.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\n to find the optimal / shortest / most cost-effective route\n … between two nodes in a\n … based on distance / cost / time.",
+      "marks": 2,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "A hashing algorithm is used to calculate storage locations for records in a random access file.\nIt calculates hash values by using the function modulus 3.\nThe function modulus gives the remainder after integer division.\nFor example, 1030 modulus 3 = 1. Therefore, the record key 1030 gives a hash value of 1.\nComplete the table to show the remaining hash values.\nRecord key Hash value\n1030 1\n[2]",
+      "mark_scheme": "One mark for each correct hash value (Max 2)\nRecord key Hash value\n1030 1\n1050 0\n1025 2",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "Record"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Describe what happens, in relation to the storage or retrieval of a record in the file, when\nthe calculated hash value is a duplicate of a previously calculated hash value for a different\nrecord key.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 A collision occurs when the record key doesn’t match the stored record\nkey\nMP2 … this means the determined storage location has already been used\nfor another record.\nIf the record is to be stored\nMP3 Search the file linearly\nMP4 … to find the next available storage space (closed hash)\nMP5 Search the overflow area linearly\nMP6 … to find next available storage space (open hash)\nIf the record is to be found\nMP7 … search the overflow area linearly (open hash) until the matching\nrecord key is found\nMP8 … search linearly from where you are (closed hash) until the matching\nrecord key is found\nMP9 If not found record is not in file",
+      "marks": 4,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record",
+        "collision"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Two descriptions of user-defined data types are given.\nGive appropriate type declaration statements for each, including appropriate names.\nA data type to hold a set of prime numbers below 20. These prime numbers are:\n2, 3, 5, 7, 11, 13, 17, 19\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\n TYPE Prime\n = (2, 3, 5, 7, 11, 13, 17, 19)\nExample answer\nTYPE Prime = (2, 3, 5, 7, 11, 13, 17, 19)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Two descriptions of user-defined data types are given.\nGive appropriate type declaration statements for each, including appropriate names.\nA data type to point to a day in the week, for example Monday.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\n TYPE TDayPointer\n = ^STRING //^DayOfWeek\nExample answer\nTYPE TDayPointer = ^STRING // ^DayOfWeek",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "State, with a reason, where it would be appropriate to use circuit switching.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\n Circuit switching is used where a dedicated path needs to be sustained\nthroughout the call / communication // where the whole bandwidth is\nrequired // where a real time communication is used.\n A typical application is standard voice communications / video streaming /\nprivate data networks",
+      "marks": 2,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [
+        "Circuit switching"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Give two benefits and two drawbacks of circuit switching.\nBenefit 1\nBenefit 2\nDrawback 1\nDrawback 2\n[4]",
+      "mark_scheme": "One mark per benefit (Max 2)\nMP1 Whole of bandwidth is available\nMP2 Dedicated communication channel increases the quality of transmission\nMP3 Data is transmitted with a fixed data rate\nMP4 No waiting time at switches\nMP5 Suitable for long continuous communication\nMP6 Fast method of data transfer\nMP7 Data arrives in the same order as it was sent\nMP8 Data can’t get lost\nMP9 Data all follows the same path / route\nMP10 Better for real-time\nMP11 Simple method of data transfer.\nOne mark per drawback (Max 2)\nMP1 A dedicated connection makes it impossible to transmit other data even\nif the channel is free\nMP2 Not very flexible\nMP3 No alternative route in case of failure\nMP4 The time required to establish the physical link between the two stations\ncan be too long\nMP5 The need to establish a dedicated path for each connection can have\ncost implications\nMP6 Dedicated channels require the whole bandwidth / bandwidth can’t be\nshared",
+      "marks": 4,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "Several syntax diagrams are shown.\noperator digit\n+ 0\n– 1\n* 2\n/ 3\nsymbol\n$\n%\n&\n@\n#\nletter\nA\nD\nP\nR\nY\npassword\nletter digit symbol\nState whether each of the following passwords is valid or invalid and give a reason for your\nchoice.\nDPAD99$\nReason\nDAD#95\nReason\nADY123?\nReason\n[3]",
+      "mark_scheme": "One mark per correct valid/invalid and reason combination (Max 3)\nDPAD99$ – Valid\nReason – 4/multiple letters followed by 2/multiple digits followed by a symbol.\nDAD#95 – Invalid\nReason – The symbol comes before the digits – it should be after.\nADY123? – Invalid\nReason – The ? is not a valid symbol.",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Several syntax diagrams are shown.\noperator digit\n+ 0\n– 1\n* 2\n/ 3\nsymbol\n$\n%\n&\n@\n#\nletter\nA\nD\nP\nR\nY\npassword\nletter digit symbol\nComplete the Backus-Naur Form (BNF) for the syntax diagrams shown.\n<symbol> ::=\n<letter> ::=\n[1]",
+      "mark_scheme": "<symbol> ::= $ | % | & | @ | #\n<letter> ::= A | D | P | R | Y",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "6(c)",
+      "question_text": "Several syntax diagrams are shown.\noperator digit\n+ 0\n– 1\n* 2\n/ 3\nsymbol\n$\n%\n&\n@\n#\nletter\nA\nD\nP\nR\nY\npassword\nletter digit symbol\nAn identifier begins with one or more letters, followed by zero digits or one digit or more\ndigits.\nValid letters and digits are shown in the syntax diagrams on page 6.\nDraw a syntax diagram for an identifier.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\n begins with a letter\n letter can repeat and digit present\n digit can repeat or can be bypassed\n correct structure – name, boxes and arrows (in and out).\nExample answers:\nidentifier\nletter digit\nidentifier\nletter letter digit",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Complete the Karnaugh map (K-map) for the following Boolean expression.\nZ = A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D\nAB\nCD 00 01 11 10\n[2]",
+      "mark_scheme": "Two marks if no errors present\nOne mark if one error present",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Draw loop(s) around appropriate group(s) in the K-map to produce an optimal\nsum-of-products. [2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "Write the Boolean logic expression from your answer to part (b) as a simplified\nsum-of-products.\nZ =\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\n Any correct Boolean term\n Boolean terms and operator correct and no other terms present\n(Z =) AC + BC",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(d)",
+      "question_text": "Use Boolean algebra to give your answer to part (c) in its simplest form.\nZ =  [1]",
+      "mark_scheme": "One mark for simplest form (Max 1)\n(Z =) C (A + B)",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "Outline the characteristics of massively parallel computers.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 A large number of computer processors / separate computers\nconnected together\nMP2 … simultaneously performing a set of coordinated computations //\ncollaborative processing\nMP3 network infrastructure\nMP4 communicate using a message interface / by sending messages.",
+      "marks": 3,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Encryption is used to alter data into a form that makes it meaningless if intercepted.\nDescribe the purpose of asymmetric key cryptography.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 To provide better security\nMP2 … by using two different keys / a public key and a private key\nMP3 One of the keys is used to encrypt the message\nMP4 … the matching key is used to decrypt the message.",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Identify two benefits and two drawbacks of quantum cryptography.\nBenefit 1\nBenefit 2\nDrawback 1\nDrawback 2\n[4]",
+      "mark_scheme": "One mark per benefit (Max 2)\nMP1 Provides security based on laws of physics rather than mathematical\nalgorithms, so more secure.\nMP2 To protect the security of data transmitted over fibre optic cables.\nMP3 Virtually unhackable.\nMP4 The performance of quantum cryptography is continuously improved,\nmaking it suitable for most valuable government/industrial secrets.\nMP5 Longer keys can be used\nMP6 Eavesdropping can be detected\nOne mark per drawback (Max 2)\nMP1 Lacks many vital features such as digital signature, certified mail, etc.\nMP2 High cost of purchasing / maintaining equipment required.\nMP3 Currently only works over relatively short distances.\nMP4 Error rates are relatively high as technology is still being developed.\nMP5 Polarisation of light can change during transmission.\nMP6 Allows criminals and terrorists to hide their communications.",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "digital signature"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "10",
+      "question_text": "The pseudocode algorithm shown copies an active accounts text file to an\nActiveFile.txt\narchive accounts text file , one line at a time. Any blank lines found in the\nArchiveFile.txt\nactive accounts text file are replaced with the words in the archive\n\"Account not present\"\naccounts text file.\nComplete this file-handling pseudocode.\nDECLARE Account : STRING\nOPENFILE \"ArchiveFile.txt\" FOR WRITE\nWHILE NOT\nREADFILE \"ActiveFile.txt\", Account\nIF Account = \"\" THEN\nWRITEFILE \"ArchiveFile.txt\", \" \"\nELSE\nWRITEFILE \"ArchiveFile.txt\",\nENDIF\nENDWHILE\nCLOSEFILE \"ArchiveFile.txt\"\n[5]",
+      "mark_scheme": "One mark for each correctly completed line (Max 5)\nDECLARE Account : STRING\nOPENFILE \"ActiveFile.txt\" FOR READ\nOPENFILE \"ArchiveFile.txt\" FOR WRITE\nWHILE NOT EOF(\"ActiveFile.txt\")\nREADFILE \"ActiveFile.txt\", Account\nIF Account = \"\" THEN\nWRITEFILE \"ArchiveFile.txt\", \"Account not present\"\nELSE\nWRITEFILE \"ArchiveFile.txt\", Account\nENDIF\nENDWHILE\nCLOSEFILE \"ActiveFile.txt\"\nCLOSEFILE \"ArchiveFile.txt\"",
+      "marks": 5,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "Pseudocode is to be written to implement a queue Abstract Data Type (ADT) with items of the\nstring data type. This will be implemented using the information in the table.\nIdentifier Data type Description\npoints to the start of the queue\nFrontPointer INTEGER\npoints to the end of the queue\nRearPointer INTEGER\nthe current size of the queue\nLength INTEGER\n1D array to implement the queue\nQueue STRING\nA constant, with identifier , limits the size of the queue to 60 items.\nMaxSize\nWrite the pseudocode to declare , , , and\nMaxSize FrontPointer RearPointer Length\n.\nQueue\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\n correctly defined constant\n correctly defined array\n three correctly defined integers\nCONSTANT MaxSize = 60\nDECLARE Queue : ARRAY[1:60] OF STRING // DECLARE Queue :\nARRAY[0:59] OF STRING // DECLARE Queue : ARRAY[1:MaxSize]\nOF STRING // DECLARE Queue : ARRAY[0:MaxSize - 1] OF\nSTRING\nDECLARE FrontPointer : INTEGER\nDECLARE RearPointer : INTEGER\nDECLARE Length : INTEGER",
+      "marks": 3,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Queue"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "Pseudocode is to be written to implement a queue Abstract Data Type (ADT) with items of the\nstring data type. This will be implemented using the information in the table.\nIdentifier Data type Description\npoints to the start of the queue\nFrontPointer INTEGER\npoints to the end of the queue\nRearPointer INTEGER\nthe current size of the queue\nLength INTEGER\n1D array to implement the queue\nQueue STRING\nA constant, with identifier , limits the size of the queue to 60 items.\nMaxSize\nComplete the following pseudocode for the function to remove the front item from\nDequeue\nthe queue.\nFUNCTION Dequeue RETURNS STRING\nDECLARE Item : STRING\n> 0 THEN\nItem ←\nIF Length = 0 THEN\nCALL Initialise // reset the pointers\nELSE\nIF FrontPointer > MaxSize THEN\n← 1\nENDIF\nENDIF\nELSE\nOUTPUT \"The print queue was empty – error!\"\nItem ← \"\"\nENDIF\nRETURN Item\nENDFUNCTION\n[4]",
+      "mark_scheme": "One mark for each correctly completed line (Max 4)\nFUNCTION Dequeue RETURNS STRING\nDECLARE Item : STRING\nIF Length > 0 THEN\nItem  Queue[FrontPointer]\nFrontPointer  FrontPointer + 1\nLength  Length – 1\nIF Length = 0 THEN\nCALL Initialise // procedure to reset the\npointers\nELSE\nIF FrontPointer > MaxSize THEN\nFrontPointer  1\nENDIF\nENDIF\nELSE\nOUTPUT \"The print queue was empty – error\"\nItem  \"\"\nENDIF\nRETURN Item\nENDFUNCTION",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Queue"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "11(c)",
+      "question_text": "Pseudocode is to be written to implement a queue Abstract Data Type (ADT) with items of the\nstring data type. This will be implemented using the information in the table.\nIdentifier Data type Description\npoints to the start of the queue\nFrontPointer INTEGER\npoints to the end of the queue\nRearPointer INTEGER\nthe current size of the queue\nLength INTEGER\n1D array to implement the queue\nQueue STRING\nA constant, with identifier , limits the size of the queue to 60 items.\nMaxSize\nExplain how a new element can be added to the queue if it is implemented using two stacks.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 (Two stacks are required) so that the second stack can reverse the\norder of the first stack.\nMP2 Stack 1 operates as the queue with the newest elements at the bottom.\nStack 2 is empty.\nMP3 To add an element, pop all the elements from stack 1 and push onto\nstack 2.\nMP4 Push the new element onto either stack.\nMP5 Pop all the elements of stack 2 back onto stack 1.",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "stack",
+        "queue"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "12(a)",
+      "question_text": "Describe what is meant by recursion.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\n A process using a function or procedure defined in terms of itself / calls\nitself.\n A recursive process must have a base case (which is a way to return\nwithout making a recursive call) // terminating solution // concept of\nunwinding described\n There must (also) be a general case where the recursive call takes place.",
+      "marks": 2,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "recursive",
+        "base case",
+        "general case",
+        "unwinding"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "12(b)",
+      "question_text": "A Fibonacci sequence is a series of numbers formed by adding together the two preceding\nnumbers, for example:\n0, 1, 1, 2, …\nThis function calculates and returns values in the Fibonacci sequence and uses recursion.\nFUNCTION Fib(Number : INTEGER) RETURNS INTEGER\nIF Number <= 1 THEN\nResult ← Number\nELSE\nResult ← Fib(Number – 1) + Fib(Number – 2)\nENDIF\nRETURN Result\nENDFUNCTION\nComplete the trace table for the function when it is called as .\nFib(5)\nCall number Function call Number Result Return value\n[5]",
+      "mark_scheme": "One mark per mark point (Max 5)\n Call number column correct\n Function call and Number columns correct\n Result column down to base case (Winding) rows 1–6 correct\n Result column down from base case (Unwinding) rows 7–10 correct\n Return value column correct\nCall Function call Number Result Return\nnumber value\n1 Fib(5) 5 Fib(4) + Fib(3)\n2 Fib(4) 4 Fib(3) + Fib(2)\n3 Fib(3) 3 Fib(2) + Fib(1)\n4 Fib(2) 2 Fib(1) + Fib(0)\n5 Fib(1) 1 1 1\n6 Fib(0) 0 0 0\n(4) Fib(2) 2 1 + 0 1\n(3) Fib(3) 3 1 + 1 2\n(2) Fib(4) 4 2 + 1 3\n(1) Fib(5) 5 3 + 2 5",
+      "marks": 5,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "base case",
+        "Unwinding"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        10
+      ]
+    }
+  ],
+  "marks": 75
+}

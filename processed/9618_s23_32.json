@@ -1,0 +1,515 @@
+{
+  "paper": "9618_s23_32",
+  "qp": "papers/9618/paper_3/2023/may_jun/9618_s23_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2023/may_jun/9618_s23_ms_32.pdf",
+  "sha256": {
+    "qp": "194a23956f02c81e8597dcdd6d6b9416b9fdd83f6dc45536ab5c9e4d16b8e78c",
+    "ms": "eabdec62db02ff77a9425ac1b5e82f1a9e77a0ced3fe1cd6f32e83177528cf01"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Numbers are stored in a computer using floating point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and exponent.\nWrite the normalised floating‑point representation of the following binary number using this\nsystem:\n0101010.111\nShow your working.\nWorking\nMantissa Exponent\n[2]",
+      "mark_scheme": "One mark per mark point\n correct mantissa\n correct exponent with associated working\nAnswer\nMantissa Exponent\n0 1 0 1 0 1 0 1 1 1 0 0 0 1 1 0\nWorking\nexponent = 6 (movement of 6 bicimal places seen to find what exponent should\nbe)\ncalculation of denary 6 to binary (000)110",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Numbers are stored in a computer using floating point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and exponent.\nDescribe the reason why the normalised form of the following binary number cannot be\nrepresented accurately using this system.\n0101011.111001\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 the mantissa of the number would need to be 0.101011111001 / 13\nbits / digits\nMP2 … it can only store 10 bits / digits\nMP3 The 3 least significant digits would be truncated\nMP4 …causing a loss of precision",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Describe how records are organised and accessed in a sequential file.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 records are stored in a particular order\nMP2 the order is determined based on the value in a key field\nMP3 records are accessed one after the other\nMP4 records can be found by searching from the beginning of the file,\nrecord by record,\nMP5 … until the required record is found or key field value is exceeded.",
+      "marks": 3,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "record"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "A hashing algorithm is used to calculate storage locations for records in a random access file.\nThe algorithm calculates hash values using the function modulus 5.\nThe function modulus gives the remainder after integer division.\nFor example, 3003 modulus 5 = 3, so the record key 3003 gives a hash value of 3.\nComplete the table to show the remaining hash values.\nRecord key Hash value\n3003 3\n[2]",
+      "mark_scheme": "One mark for each correct hash value (Max 2)\nRecord key Hash value\n3003 3\n1029 4\n7630 0",
+      "marks": 2,
+      "syllabus_section": "13.2",
+      "topic": "Data Representation",
+      "subtopic": "File organisation and access",
+      "key_phrases": [
+        "Record"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Several syntax diagrams are shown.\ndigit letter\n0 A\n1 C\n2 E\n3 G\n4 I\n5 K\n6 M\n7 O\n8 Q\n9 S\nU\nW\nY\nvariable\nletter digit\nState whether each variable is valid or invalid and give a reason for your choice in each case.\n9SW\nReason\nUWY\nReason\n[2]",
+      "mark_scheme": "One mark per correct valid/invalid and reason combination (Max 2)\n9SW – Invalid\nReason - This begins with a digit and a variable must begin with a letter\nUWY – Valid\nReason – This begins with a letter and is followed by two other letters.",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Several syntax diagrams are shown.\ndigit letter\n0 A\n1 C\n2 E\n3 G\n4 I\n5 K\n6 M\n7 O\n8 Q\n9 S\nU\nW\nY\nvariable\nletter digit\ncontains one or more letters.\n<word>\nComplete the Backus‑Naur Form (BNF) for and use this to complete the BNF for\n<word>\n.\n<variable>\n<word> ::=\n<variable> ::=\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\n <word> ::= <letter>|\n …<word><letter>\n <variable> ::= <word>|<word><digit>\nExample answers\n<word> ::= <letter>|<word><letter>\n<word> ::= <letter><word>|<letter>\n<variable> ::= <word>|<word><digit>\n<variable> ::= <word><digit>|<word>",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(c)(i)",
+      "question_text": "Several syntax diagrams are shown.\ndigit letter\n0 A\n1 C\n2 E\n3 G\n4 I\n5 K\n6 M\n7 O\n8 Q\n9 S\nU\nW\nY\nvariable\nletter digit\nVehicle registrations must begin with two letters and be followed by one, two or three digits.\nValid letters and digits are shown in the syntax diagrams on page 4.\nState an example of a valid vehicle registration.\n[1]",
+      "mark_scheme": "Answer must be two letters followed by one, two or three digits using the letters\nand digits on the syntax diagram.\nExample answer\nAC768",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(c)(ii)",
+      "question_text": "Several syntax diagrams are shown.\ndigit letter\n0 A\n1 C\n2 E\n3 G\n4 I\n5 K\n6 M\n7 O\n8 Q\n9 S\nU\nW\nY\nvariable\nletter digit\nVehicle registrations must begin with two letters and be followed by one, two or three digits.\nValid letters and digits are shown in the syntax diagrams on page 4.\nDraw a syntax diagram for a vehicle registration.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\n always has only two letters\n one, two or three digits possible\n correct arrows, boxes and name of syntax diagram\nExample answer\nVehicle registration\nletter letter digit digit digit",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "Draw one line from each Object‑Oriented Programming (OOP) term to its most appropriate\ndescription.\nOOP term Description\nmethods used to return the value of\na property\nEncapsulation\nthe process of putting data and\nmethods together as a single unit\nGetters\nmethods used to update the value of\na property\nPolymorphism\nallows methods to be redefined for\nderived classes\nSetters\nenables the defining of a new class\nthat inherits from a parent class\n[4]",
+      "mark_scheme": "One mark for each correct line connecting an OOP term to its description\n(Max 4).\nOOP term Description\nmethods used to return the value of a\nproperty\nEncapsulation\nthe process of putting data and\nmethods together as a single unit\nGetters\nmethods used to update the value of\na property\nPolymorphism\nallows methods to be redefined for\nderived classes\nSetters\nenables the defining of a new class\nthat inherits from a parent class",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Encapsulation",
+        "Polymorphism",
+        "Getters",
+        "Setters"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Encryption is used to scramble data to make it meaningless if intercepted.\nDescribe the purpose of quantum cryptography.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 to produce a virtually unbreakable encryption system / send\nvirtually un-hackable secure messages …\nMP2 …using the laws / principles of quantum mechanics / properties of\nphotons\nMP3 detects eavesdropping …\nMP4 …because the properties of photons change\nMP5 to protect security of data transmitted over fibre optic cables\nMP6 to enable the use of longer keys.",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "Explain the differences between symmetric and asymmetric cryptography when encrypting\nand decrypting data.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Symmetric cryptography uses a single key to encrypt and decrypt\nmessages, Asymmetric cryptography uses two.\nMP2 The symmetric key is shared, whereas with asymmetric, only the\npublic key is shared (and the private key isn’t).\nMP3 … the risk of compromise is higher with symmetric encryption and\nasymmetric encryption is more secure.\nMP4 Symmetric cryptography is a simple process that can be carried out\nquickly, but asymmetric is much more complex, so slower.\nMP5 The length of the keys in symmetric encryption are (usually) shorter\nthan those for asymmetric (128/256 bits v 2048 bits).",
+      "marks": 3,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "symmetric encryption",
+        "asymmetric encryption",
+        "public key",
+        "private key"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "Write pseudocode statements to declare the composite data type, , to hold\nTAppointments\ndata about patients for a dental clinic. It will include for each patient:\n• name (first name and last name)\n• date of birth\n• telephone number\n• date of last appointment\n• date of next appointment\n• all treatments are complete (yes or no).\n[4]",
+      "mark_scheme": "One mark for TYPE TAppointments and ENDTYPE correct\nOne mark for every two correct declarations (Max 3)\nExample answer\nTYPE TAppointments\nDECLARE Name : STRING\nDECLARE DateOfBirth : DATE\nDECLARE Telephone : STRING\nDECLARE LastAppointment : DATE\nDECLARE NextAppointment : DATE\nDECLARE TreatmentsComplete : BOOLEAN\nENDTYPE",
+      "marks": 4,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "This pseudocode algorithm reads dental records stored in a random file using the user‑defined\ndata type and prints the contents of the file, one record at a time.\nTAppointments\nComplete this file handling pseudocode:\nDECLARE DentalRecord : ARRAY[1:250] OF TAppointments\nDECLARE DentalFile : STRING\nDECLARE Count : INTEGER\nDentalFile \"DentalFile.dat\"\nOUTPUT \"The file \", DentalFile, \" contains these records:\"\nOPENFILE\nREPEAT\nSEEK DentalFile, Count\nOUTPUT DentalRecord[Count]\nCount Count + 1\n(DentalFile)\n[5]",
+      "mark_scheme": "One mark for each correctly completed line (Max 5)\nDECLARE DentalRecord : ARRAY[1:250] OF TAppointments\nDECLARE DentalFile : STRING\nDECLARE Count : INTEGER\nDentalFile  \"DentalFile.dat\"\nOUTPUT \"The file \", DentalFile, \" contains these records:\"\nOPENFILE DentalFile FOR RANDOM\nCount  1\nREPEAT\nSEEK DentalFile, Count\nGETRECORD DentalFile, DentalRecord[Count]\nOUTPUT DentalRecord[Count]\nCount  Count + 1\nUNTIL EOF(DentalFile)\nCLOSEFILE DentalFile",
+      "marks": 5,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "State two examples of where it would be appropriate to use packet switching.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Packet switching is most commonly used on data networks such as\nthe internet to send large data files that don’t need to be live streamed\nMP2 Packet switching is used when it is necessary to be able to overcome\nfailed/faulty lines by rerouting.\nMP3 Packet switching is used when it is necessary for the communication\nto be more secure.\nMP4 Packet switching is used for high volume data transmission.\nMP5 Packet switching is used when it isn’t necessary to use all the\nbandwidth.\nMP6 Specific examples e.g. email, text messages, documents, VOIP etc.\n(up to two marks).",
+      "marks": 2,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [
+        "Packet switching"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Give four differences between circuit switching and packet switching.\n1\n2\n3\n4\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Circuit switching uses a dedicated channel to make communication,\nwhereas packet switching forms data into packets to transmit over a\ndigital network.\nMP2 The dedicated path for circuit switching must be established before\nthe transfer of data can commence, which is not the case with packet\nswitching (as it doesn’t require a dedicated path).\nMP3 Data in packet switching is split into packets, in circuit switching the\nmessage remains intact.\nMP4 All of the transmission in circuit switching follows the same path\nwhereas different packets in packet switching can take different\nroutes.\nMP5 The message is received in the same order in which it is sent with\ncircuit switching, but with packet switching, the packets can be\nreceived out of order (for assembly at the destination).\nMP6 Circuit switching is implemented at the physical layer while packet\nswitching is implemented at the network layer.\nMP7 Circuit switching uses the whole bandwidth of the channel used,\npacket switching can share bandwidth.\nMP8 Circuit switching communication ends with an error but packet\nswitching allows packets to be re-sent.\nMP9 Circuit switching is a simpler process than packet switching.",
+      "marks": 4,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [
+        "packet switching",
+        "Circuit switching"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Describe the use of pipelining in Reduced Instruction Set Computers (RISC).\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Pipelining allows several instructions to be processed simultaneously\n/ concurrently.\nMP2 … therefore, increasing the CPU instruction throughput / the number\nof instructions completed per unit of time.\nMP3 Each instruction stage / subtask is completed during one clock cycle\nMP4 No two instructions can execute their same stage of instruction /\nsubtask at the same clock cycle.\nMP5 … e.g., while one instruction is being decoded, the next instruction\ncan be fetched, etc.",
+      "marks": 2,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "Pipelining"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "The processing of instructions is divided into five stages:\n• instruction fetch (IF)\n• instruction decode (ID)\n• operand fetch (OF)\n• instruction execute (IE)\n• write back result (WB)\nEach stage is carried out using a different register when pipelining is used.\nComplete the table to show how a program consisting of six instructions would be completed\nusing pipelining.\nClock cycles\n1 2 3 4 5 6 7 8 9 10 11 12\nsegats\nrossecorP\nIF\nID\nOF\nIE\nWB\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\n First stage of first instruction in first clock cycle\n First instruction successfully completed over five clock cycles\n Remaining instructions completed over ten clock cycles …\n … with no extra instruction sections added on any row.\nExample answer 1\nClock cycles\nsegats\nrossecorP\n1 2 3 4 5 6 7 8 9 10 11 12\nIF 1.1 2.1 3.1 4.1 5.1 6.1\nID 1.2 2.2 3.2 4.2 5.2 6.2\nOF 1.3 2.3 3.3 4.3 5.3 6.3\nIE 1.4 2.4 3.4 4.4 5.4 6.4\nWB 1.5 2.5 3.5 4.5 5.5 6.5\nExample answer 2\nClock cycles\nsegats\nrossecorP\n1 2 3 4 5 6 7 8 9 10 11 12\nIF A B C D E F\nID A B C D E F\nOF A B C D E F\nIE A B C D E F\nWB A B C D E F",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0\nWrite the Boolean logic expression that corresponds to the given truth table as the\nsum‑of‑products.\nZ =\n[3]",
+      "mark_scheme": "One mark for every two correct products (Max 3)\n(Z =) ABCD + ABCD + ABCD + ABCD + ABCD + ABCD",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0\nComplete the Karnaugh map (K‑map) for the given truth table.\nAB\nCD 00 01 11 10\n[2]",
+      "mark_scheme": "Two marks if no errors present\nOne mark if one error present",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(c)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0\nDraw loop(s) around appropriate group(s) in the K‑map to produce an optimal sum‑of‑products.\n[2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "9(d)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0\nWrite the Boolean logic expression from your answer to part (c) as a simplified\nsum‑of‑products.\nZ =\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\n Any correct Boolean term\n Boolean terms and operator correct and no other terms present\n(Z =) AB + AC",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "9(e)",
+      "question_text": "This truth table represents a logic circuit.\nINPUT OUTPUT\nA B C D Z\n0 0 0 0 1\n0 0 0 1 1\n0 0 1 0 1\n0 0 1 1 1\n0 1 0 0 0\n0 1 0 1 0\n0 1 1 0 1\n0 1 1 1 1\n1 0 0 0 0\n1 0 0 1 0\n1 0 1 0 0\n1 0 1 1 0\n1 1 0 0 0\n1 1 0 1 0\n1 1 1 0 0\n1 1 1 1 0\nUse Boolean algebra to give your answer to part (d) in its simplest form.\nZ =  [1]",
+      "mark_scheme": "One mark for simplest form (Max 1)\n(Z =) A (B + C)",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "State one category of machine learning.\n[1]",
+      "mark_scheme": "One mark from:\nSupervised (learning)\nUnsupervised (learning)\nReinforcement (learning)\nDeep (learning)",
+      "marks": 1,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Calculate the path that takes the shortest time to travel from the Begin node to the End node,\nusing the A* algorithm.\nShow your working in the table provided.\nThe first two rows have already been completed.\nBegin\ng = 5\nh = 8\n4 11\nA D\n6 7\n7 C\nB\n6\n8\nE 7\n7 G\nEnd\n7\n1 F\nCost from\nDestination Heuristic Total\nStart node start node\nnode (h) (f = g + h)\n(g)\nBegin Begin 0 12 12\nBegin A 5 8 13\nFinal path\n[5]",
+      "mark_scheme": "One mark for each correct calculation as follows (Max 2):\n Node B (from Begin) (Line 3 in table)\n Node C (from Begin) (Line 4 in table)\n Node D (from Begin) (Line 5 in table)\nOne mark for each correct calculation as follows (Max 2):\n Node G (from C) (Line 6 in table)\n Node F and Node End (from G) (Lines 7 and 8 in table)\n Node End (from F) (Line 9 in table)\nOne mark for correct path (Max 1):\n Begin  C  G  F  End\nCost from\nStart Destination Heuristic Total\nstart node\nnode node (h) (f = g + h)\n(g)\nBegin Begin 0 12 12\nBegin A 5 8 13\nBegin B 6 7 13\nBegin C 5 7 12\nBegin D 4 11 15\nC G 5 + 2 = 7 5 12\nG F 5 + 2 + 4 = 11 1 12\nG End 5 + 2 + 7 = 14 0 14\n5 + 2 + 4 + 1 =\nF End 0 12\n12\nFinal Path Begin  C  G  F  End",
+      "marks": 5,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Heuristic"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "11(a)(i)",
+      "question_text": "The pseudocode shown represents a queue Abstract Data Type (ADT) with procedures for\ninitialisation and to add new items. It is incomplete.\nCONSTANT MaxLength = 50\nDECLARE FrontPointer : INTEGER\nDECLARE RearPointer : INTEGER\nDECLARE Length : INTEGER\nDECLARE Queue : ARRAY[0 : MaxLength – 1] OF STRING\n// initialisation of queue\nPROCEDURE Initialise\nFrontPointer ‑1\nENDPROCEDURE\n// adding a new item to the queue\nPROCEDURE Enqueue(NewItem : STRING)\nIF THEN\nRearPointer\nIF RearPointer > MaxLength – 1 THEN\nRearPointer 0\nENDIF\nLength Length + 1\nENDIF\nENDPROCEDURE\nStudy the pseudocode and insert the identifiers to complete this table.\nIdentifier Data type Description\nAn array to store the contents of the queue.\nSTRING\nPoints to the last item of the queue.\nINTEGER\nIndicates the number of items in the queue.\nINTEGER\nPoints to the first item of the queue.\nINTEGER\n[2]",
+      "mark_scheme": "One mark for every two correct identifiers (Max 2)\nIdentifier Data type Description\nQueue STRING An array to store the contents of the queue.\nRearPointer INTEGER Points to the last term of the queue.\nLength INTEGER Indicates the number of items in the queue.\nFrontPointer INTEGER Points to the first term of the queue.",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Queue"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "11(a)(ii)",
+      "question_text": "The pseudocode shown represents a queue Abstract Data Type (ADT) with procedures for\ninitialisation and to add new items. It is incomplete.\nCONSTANT MaxLength = 50\nDECLARE FrontPointer : INTEGER\nDECLARE RearPointer : INTEGER\nDECLARE Length : INTEGER\nDECLARE Queue : ARRAY[0 : MaxLength – 1] OF STRING\n// initialisation of queue\nPROCEDURE Initialise\nFrontPointer ‑1\nENDPROCEDURE\n// adding a new item to the queue\nPROCEDURE Enqueue(NewItem : STRING)\nIF THEN\nRearPointer\nIF RearPointer > MaxLength – 1 THEN\nRearPointer 0\nENDIF\nLength Length + 1\nENDIF\nENDPROCEDURE\nComplete the given pseudocode. [5]",
+      "mark_scheme": "One mark for each correctly completed line (Max 5)\nCONSTANT MaxLength = 50\nDECLARE FrontPointer : INTEGER\nDECLARE RearPointer : INTEGER\nDECLARE Length : INTEGER\nDECLARE Queue : ARRAY[0:MaxLength – 1] OF STRING\n// Initialisation of queue\nPROCEDURE Initialise\nFrontPointer  -1\nRearPointer  -1\nLength  0\nENDPROCEDURE\n// Adding a new item to the queue\nPROCEDURE Enqueue(NewItem : STRING)\nIF Length < MaxLength THEN // IF Length <= MaxLength -\n1 THEN\nRearPointer  RearPointer + 1\nIF RearPointer > MaxLength – 1 THEN\nRearPointer  0\nENDIF\nQueue[RearPointer]  NewItem\nLength  Length + 1\nENDIF\nENDPROCEDURE",
+      "marks": 5,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Queue"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "Explain the reasons why a queue ADT works better than a stack ADT in organising print jobs.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\n Print jobs are expected to be actioned by the printer in the order they are\nreceived\n … because the printer queue is a queue, the first job to be sent to the\nprinter would be the first job printed.\n If the printer queue was on a stack, the first job the printer received would\nnot be printed until all the other jobs have been printed.",
+      "marks": 3,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "stack",
+        "queue"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        14
+      ],
+      "ms_pages": [
+        12
+      ]
+    }
+  ],
+  "marks": 75
+}

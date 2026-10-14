@@ -1,0 +1,552 @@
+{
+  "paper": "9618_w25_32",
+  "qp": "papers/9618/paper_3/2025/oct_nov/9618_w25_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2025/oct_nov/9618_w25_ms_32.pdf",
+  "sha256": {
+    "qp": "32fa93ce12752f860fe43655e2ea5dd94e6ca8e0e6964af56fe262d32b68ac36",
+    "ms": "c89b0fc36a36f60906d0a38dfb2c50ed3f02746ef3994eb240cef21be2c9f648"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)(i)",
+      "question_text": "The composite data type, Car, is defined in pseudocode as:\nTYPE Car\nDECLARE RegNumber : STRING\nDECLARE Make : STRING\nDECLARE Model : STRING\nDECLARE BodyStyle : STRING\nDECLARE Colour : STRING\nDECLARE IntoStock : DATE\nDECLARE Price : REAL\nENDTYPE\nWrite the pseudocode statement to set up a variable for one record of the composite\ndata type, Car.\n[1]",
+      "mark_scheme": "DECLARE Car1 : Car",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(a)(ii)",
+      "question_text": "The composite data type, Car, is defined in pseudocode as:\nTYPE Car\nDECLARE RegNumber : STRING\nDECLARE Make : STRING\nDECLARE Model : STRING\nDECLARE BodyStyle : STRING\nDECLARE Colour : STRING\nDECLARE IntoStock : DATE\nDECLARE Price : REAL\nENDTYPE\nWrite the pseudocode statements to assign the following values to the variable set up in\npart (a)(i):\n• \"Blue\" to Colour\n• 21/10/2025 to IntoStock\n[2]",
+      "mark_scheme": "One mark for each correct answer\nExample answer\nCar1.Colour  \"Blue\"\nCar1.IntoStock  21/10/2025",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(b)(i)",
+      "question_text": "The composite data type, Car, is defined in pseudocode as:\nTYPE Car\nDECLARE RegNumber : STRING\nDECLARE Make : STRING\nDECLARE Model : STRING\nDECLARE BodyStyle : STRING\nDECLARE Colour : STRING\nDECLARE IntoStock : DATE\nDECLARE Price : REAL\nENDTYPE\nThe data type for BodyStyle is changed to an enumerated type, Body.\nWrite the pseudocode statement for the type declaration of Body to hold the names of\nthe available choices:\nConvertible, Hatchback, Saloon, SUV\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 TYPE Body =\nMP2 (Convertible, Hatchback, Saloon, SUV)\nExample answer\nTYPE Body = (Convertible, Hatchback, Saloon, SUV)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "1(b)(ii)",
+      "question_text": "The composite data type, Car, is defined in pseudocode as:\nTYPE Car\nDECLARE RegNumber : STRING\nDECLARE Make : STRING\nDECLARE Model : STRING\nDECLARE BodyStyle : STRING\nDECLARE Colour : STRING\nDECLARE IntoStock : DATE\nDECLARE Price : REAL\nENDTYPE\nThe data type for BodyStyle is changed to an enumerated type, Body.\nWrite the new pseudocode statement required to update the declaration of BodyStyle\nin the definition of Car.\n[1]",
+      "mark_scheme": "DECLARE BodyStyle : Body",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Numbers are stored in a computer system using binary floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the denary value of the given normalised binary floating-point number.\nShow your working.\nMantissa Exponent\n0 1 1 1 1 0 0 1 0 1 0 0 1 0 1 1\nW orking\nDenary value\n[3]",
+      "mark_scheme": "Two marks for working\n• correct calculation/application of exponent seen\n• correct method to find the final answer\nWorking:\nExponent = 8 + 2 + 1 = 11\n// =0.111100101 x 211\n// =11110010100.0 (moving bp 11 places to right)\nMethod to find the answer\n// 1024 + 512 + 256 + 128 + 16 + 4\nOne mark for correct answer\nDenary value: 1940\nExample of solution using fractions:",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Numbers are stored in a computer system using binary floating-point representation with:\n• 10 bits for the mantissa\n• 6 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised binary floating-point representation of +26.6875 in this system.\nShow your working.\nMantissa Exponent\nW orking\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 correct method to find the binary number\nMP2 correct use of exponent\nMP3 correct answer in the space provided\nWorking:\n26.6875 converted to binary (0)11010.1011 // 16+8+2+0.5+0.125+0.0625 movement of binary point by 5 places\nMantissa Exponent\n0 1 1 0 1 0 1 0 1 1 0 0 0 1 0 1",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "HTTP and IMAP are examples of protocols used in the Application Layer of the TCP/IP\nprotocol suite.\nState the purpose of the HTTP and IMAP protocols.\nHTTP\nIMAP\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\n• HTTP to send and receive / transfer web pages / hypertext / images / videos\n• IMAP allows users to access/read their emails from any device without removing the message from the mail server\n// synchronises emails on any device",
+      "marks": 2,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Describe how files are shared using the BitTorrent protocol.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Files are shared over a peer-to-peer network\nMP2 A small file, a torrent (descriptor file), is initially created by a peer\nMP3 The torrent (descriptor file) contains metadata about the file to be shared\nMP4 The whole file must initially be located on at least one peer\nMP5 The file is broken into equal sized pieces\nMP6 Other peers who wish to download the file first obtain the torrent (descriptor file) and connect to a tracker\nMP7 A tracker acts like a server that holds all the data about all the computers connected to it / the swarm\nMP8 Each peer downloads parts of the file from other peers until the entire file has been downloaded\nMP9 As each peer receives a piece of the file, they become a source for that piece of the file\nMP10 A peer who has a complete file and is sharing it is a seed // Once a peer has completely downloaded the file\nand made the file available to others in the swarm, they become a seed.",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "Identify one benefit of circuit switching and one benefit of packet switching.\nCircuit switching\nPacket switching\n[2]",
+      "mark_scheme": "One mark for a benefit of circuit switching (Max 1)\nMP1 Once the connection is made, it is available until the end of the transmission (suitable for long continuous\ntransmission)\nMP2 The dedicated path ensures a steady rate of data transmission, once connection has been made (because the\nwhole bandwidth is available)\nMP3 The dedicated path ensures data is less likely to be lost.\nMP4 No intermediate delays once the circuit is established, enables real time transmission\nMP5 No additional time/delay to reorder needed because data arrives in the order it was sent / data sent as a\ncontinuous stream\nOne mark for a benefit of packet switching (Max 1)\nMP6 No need to tie up a communication line // path available to multiple users // bandwidth can be shared by multiple\nusers\nMP7 Possible to overcome failed / faulty / busy lines by re-routing packets\nMP8 Individual packets can be resent if lost/damaged\nMP9 Users only charged for the duration of connectivity\nMP10 High rate of data transmission possible\nMP11 Always uses digital networks so data is transmitted directly to the destination\nMP12 Good security because all packets can take different routes // A more secure method because all packets can take\ndifferent routes",
+      "marks": 2,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [
+        "packet switching",
+        "circuit switching"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "Identify two differences between circuit switching and packet switching.\n1\n2\n[2]",
+      "mark_scheme": "One mark per difference (Max 2)\nMP1 Circuit switching requires a dedicated line to be connected before the data transfer takes place, in packet\nswitching, data transfer commences directly/ straight away\nMP2 In circuit switching, each data unit knows the entire path address, but in packet switching, each data unit only\nknows the final address (routers decide intermediate paths)\nMP3 Circuit switching uses the whole bandwidth of the transmission path, but packet switching shares it with other users\n// circuit switching uses a constant high bandwidth. Packet switching has variable bandwidth\nMP4 In circuit switching each data unit follows the same route, but in packet switching, packets can follow any route\nMP5 In circuit switching data arrives in the correct order but in packet switching it has to be reordered\nMP6 Data remains intact / a continuous stream in circuit switching but is segmented in packet switching\nMP7 Lost data in circuit switching requires the whole transmission to be resent, but individual packets can be\nresent in packet switching\nMP8 Circuit switching doesn’t suffer data loss but packets can be lost in packet switching.",
+      "marks": 2,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [
+        "packet switching",
+        "Circuit switching"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Describe how interrupt handling is used in low-level scheduling.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 The low-level scheduler manages the handling of interrupts based on priority\nMP2 … ensuring that critical events are handled without delay\nMP3 It uses an Interrupt Vector Table (IVT) / Interrupt Descriptor/Despatch Table (IDT) / Interrupt Service Routine (ISR)\nlookup\nMP4 … to map the interrupt to the specific handling routine / ISR.",
+      "marks": 2,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "Interrupt"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "In process management, a process can be in one of three process states: running, ready or\nblocked.\nComplete the table to identify one reason why a process could be in each of the three states.\nProcess state Reason\nrunning\nready\nblocked\n[3]",
+      "mark_scheme": "One mark per correct answer (Max 3)\nProcess state Reason\nrunning CPU time has been allocated and the process is being executed.\nThe process is waiting (in the ready queue) for a slice of CPU time. It could run. // It has been displaced\nready\nby a higher priority process and could otherwise still run.\nblocked The process is waiting for an I/O operation / some event to take place / be completed.",
+      "marks": 3,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "The diagram shows a logic circuit.\nA\nQ\nS\nZ\nP\nB\nR\nC\nComplete the truth table for the given logic circuit.\nShow your working.\nWorking space\nA B C P Q R S Z\n0 0 0\n0 0 1\n0 1 0\n0 1 1\n1 0 0\n1 0 1\n1 1 0\n1 1 1\n[3]",
+      "mark_scheme": "• One mark for working, (all four columns P, Q, R and S)\n• One mark for first four rows of column Z\n• One mark for second four rows of column Z\nWorking space\nA B C P Q R S Z\n0 0 0 1 1 0 0 1\n0 0 1 1 1 1 1 1\n0 1 0 0 0 1 0 1\n0 1 1 0 0 0 0 0\n1 0 0 1 0 0 0 1\n1 0 1 1 0 1 0 1\n1 1 0 0 1 1 0 1\n1 1 1 0 1 0 0 0",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "6(b)(i)",
+      "question_text": "Complete the Karnaugh map (K-map) for the Boolean expression:\nA.B.C + A.B.C + A.B.C + A.B.C\nBC\nA 00 01 11 10\n[2]",
+      "mark_scheme": "Two marks if no errors present\nOne mark if only one error present\nBC\n00 01 11 10\nA\n0 0 1 1 0\n1 0 1 0 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "6(b)(ii)",
+      "question_text": "Draw loop(s) around appropriate group(s) in the K-map to produce an optimal\nsum-of-products. [2]",
+      "mark_scheme": "One mark for each correct loop (Max 2)\nBC\n00 01 11 10\nA\n0 0 1 1 0\n1 0 1 0 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "6(b)(iii)",
+      "question_text": "Write the Boolean expression from your answer to part b(ii) as a simplified\nsum-of-products. Do not carry out any further simplification.\n[2]",
+      "mark_scheme": "One mark for each mark point (Max 2)\n• One correct Boolean term with a + / OR sign\n• All Boolean terms and operators correct and no other terms present\n_ _ _\nA.C + B.C + A.B.C",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Asymmetric encryption is a type of cryptography.\nIdentify one other type of cryptography.\n[1]",
+      "mark_scheme": "One from\nSymmetric (cryptography / encryption)\nQuantum (cryptography)",
+      "marks": 1,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "An organisation holds two asymmetric encryption keys, which they intend to use to receive\nsecure transmissions.\nExplain how the organisation makes use of the two keys to receive a secure transmission.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 The two keys held by the organisation are a private key and a public key\nMP2 The organisation makes the public key available to anyone who wishes to send them secure transmissions // The\nsender obtains the organisation’s public key\nMP3 The sender uses the organisation’s public key to encrypt the message / plain text // The sender uses the\norganisation’s public key to turn the message into cipher text\nMP4 The organisation uses its private key to decrypt the message.",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key",
+        "cipher text"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "State the purpose of the optimisation stage in the compilation of a program.\n[1]",
+      "mark_scheme": "To improve the code by making it use minimum resources (CPU, memory/storage, time) // Answer by example: To improve\nthe code by\n• minimising program storage\n• minimising CPU time\n• minimising memory use\n• minimising program execution time (includes peripheral use as well as CPU)",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Convert this Reverse Polish Notation (RPN) back to its original infix form:\na b - c + c a - * d /\n[3]",
+      "mark_scheme": "One mark (a – b + c)\nOne mark * (c - a)\nOne mark / d\nComplete answer\n(a – b + c) * (c - a) / d",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "8(c)",
+      "question_text": "The RPN expression:\nc a / b d – * b +\nis to be evaluated, where:\na = 3, b = 16, c = 9 and d = 6.\nShow the changing contents of the stack as the RPN expression is evaluated.\n[4]",
+      "mark_scheme": "One mark per ring (Max 4)\n6\n3 16 16 10 16\n9 9 3 3 3 3 30 30 46",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "9(a)(i)",
+      "question_text": "Deep Learning is a form of Machine Learning.\nState one example where Deep Learning is used.\n[1]",
+      "mark_scheme": "One from:\ne.g.\n• Virtual assistants // AI Agents\n• Chatbots\n• Composing music\n• Self-driving cars\n• Natural language processing\n• Fraud detection\n• Image colouring // photograph enhancement\n• Visual/Image recognition/facial recognition\n• Text mining\n• Computer assisted translation\n• Large language models (LLMs)\n• Playing chess\n• Grading student exams\n• Weather forecasting",
+      "marks": 1,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "9(a)(ii)",
+      "question_text": "Deep Learning is a form of Machine Learning.\nIdentify how Deep Learning can be made more effective.\n[1]",
+      "mark_scheme": "Use / introduce more hidden layers",
+      "marks": 1,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Describe the back propagation of errors method in Machine Learning.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Initial outputs are compared to expected outputs\nMP2 … weightings are adjusted to minimise the difference between actual and expected outputs\nMP3 Calculus is used to find the error gradient in the obtained outputs\nMP4 … the results are fed back into the neural network\nMP5 … weightings of each neuron / node are adjusted as a result of the feedback\nMP6 … the process repeats until results are more accurate",
+      "marks": 4,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "neural network"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "An exception is an error that may cause a program to halt unexpectedly.\nDescribe how program termination due to an exception can be avoided.\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Use an exception handling routine (to respond to unwanted / unexpected events when the program is running)\nMP2 Use of try … except / catch // Generate some form of error message",
+      "marks": 2,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [
+        "exception",
+        "exception handling"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "An exception is an error that may cause a program to halt unexpectedly.\nIdentify two possible causes of exceptions.\n1\n2\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Coding errors\nMP2 User errors\nMP3 Hardware failure // Losing connection to a device e.g. a printer",
+      "marks": 2,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        15
+      ]
+    },
+    {
+      "question_number": "11",
+      "question_text": "The table shows assembly language instructions for a processor that has one register , the\nAccumulator (ACC).\nInstruction\nLabel Opcode Operand Explanation\nLDM #n Load the number n to the ACC\nLoad the contents of the location at the given\nLDD <address>\naddress to ACC\nThe address to be used is at the given address.\nLDI <address> Load the contents of this second address to\nthe ACC.\nAdd the contents of the given address to the\nADD <address>\nACC\nSubtract the contents of the given address\nSUB <address>\nfrom the ACC\nStore the contents of the ACC at the given\nSTO <address>\naddress\nGives a symbolic address <label> to the\n<label>: <data>\nmemory location with the contents <data>\n# denotes a denary number, e.g. #123\n<label> can be used in place of <address>\nThe current contents of memory are:\nAddress Contents\n150 26\n300 86\n420 150\nWrite assembly language code, using only the given instruction set to:\n• store the contents of location 300 as labelled variable A\n• store the contents of location 420 as labelled variable B\n• add the value stored in the address contained in variable B to the value contained in\nvariable A\n• store the result in variable Answer.\nShow the initialisation and values of the variables A, B and Answer in the table provided.\nLabel Content\n[7]",
+      "mark_scheme": "One mark per mark point (Max 7)\nMP1 LDD 300 seen\nMP2 Correct use of STO seen (at least once)\nMP3 Correct use of LDD 420 seen\nMP4 Correct use of LDI B\nMP5 Correct use of ADD A\nOpcode Operand\nLDD 300\nSTO A\nLDD 420\nSTO B\nLDI B\nADD A\nSTO Answer\nMP6 Correct labelling of three addresses A:, B: and Answer:\nMP7 Correct contents in A: and B:\nMP8 Correct value in Answer:\nLabel Contents\nA: 86\nB: 150\nAnswer: 112",
+      "marks": 7,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10,
+        11
+      ],
+      "ms_pages": [
+        16
+      ]
+    },
+    {
+      "question_number": "12(a)(i)",
+      "question_text": "A stack has been implemented using pseudocode to store a maximum of 100 string items\nusing the global variables in the following table:\nInitialisation\nIdentifier Data type Description\nvalue\nBase INTEGER pointer for the bottom of the stack 0\nTop INTEGER pointer for the top of the stack -1\nStackArray STRING 1D array to implement the stack [0:99]\nMax INTEGER maximum number of items in the stack 100\nThe value of Top is incremented each time a data item is added to the stack and decremented\neach time a data item is removed. If the stack is full, an appropriate error message is output.\nComplete the pseudocode for the procedure to add a data item onto the stack.\nPROCEDURE Push()\nIF Top < Max – 1 THEN\nTop ←\n← NewData\nELSE\nOUTPUT\nENDIF\nENDPROCEDURE\n[4]",
+      "mark_scheme": "One mark for each correctly completed line (Max 4)\nPROCEDURE Push(NewData : STRING)\nIF Top < Max – 1 THEN\nTop  Top + 1\nStackArray[Top]  NewData\nELSE\nOUTPUT \"Stack full; new data cannot be added\"\nENDIF\nENDPROCEDURE",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        17
+      ]
+    },
+    {
+      "question_number": "12(a)(ii)",
+      "question_text": "A stack has been implemented using pseudocode to store a maximum of 100 string items\nusing the global variables in the following table:\nInitialisation\nIdentifier Data type Description\nvalue\nBase INTEGER pointer for the bottom of the stack 0\nTop INTEGER pointer for the top of the stack -1\nStackArray STRING 1D array to implement the stack [0:99]\nMax INTEGER maximum number of items in the stack 100\nThe value of Top is incremented each time a data item is added to the stack and decremented\neach time a data item is removed. If the stack is full, an appropriate error message is output.\nWrite pseudocode to input a new data item and add it to the stack using Push().\n[2]",
+      "mark_scheme": "One mark per mark point (Max 2)\nMP1 Input with variable, with or without prompt\nMP2 Procedure call for Push with parameter used matching input variable\nExample answer\nINPUT MyData\nCALL Push(MyData)",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        17
+      ]
+    },
+    {
+      "question_number": "12(b)",
+      "question_text": "Explain the reasons why a stack is used when a recursive algorithm is executed.\n[3]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 Stacks store data in Last In First Out (LIFO) / First In Last Out (FILO) order\nMP2 Each time a recursive algorithm calls itself data is pushed onto the stack\nMP3 When the recursive algorithm reaches its base case / starts to unwind\nMP4 … data is popped from the stack in the reverse order to which it was pushed onto it.",
+      "marks": 3,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "recursive",
+        "base case",
+        "stack"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        17
+      ]
+    }
+  ],
+  "marks": 75
+}

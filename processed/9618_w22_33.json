@@ -1,0 +1,588 @@
+{
+  "paper": "9618_w22_33",
+  "qp": "papers/9618/paper_3/2022/oct_nov/9618_w22_qp_33.pdf",
+  "ms": "papers/9618/paper_3/2022/oct_nov/9618_w22_ms_33.pdf",
+  "sha256": {
+    "qp": "bfdc5678f1a6be071849b9d6122223b1deaec1d629f185e53ed3fa706302ee93",
+    "ms": "d0d84b91ba2646a59f8eae285dbe6a07ed51c4473b62e58c5e423fcba4aae83d"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 8 bits for the mantissa\n• 8 bits for the exponent\n• two’s complement form for both mantissa and exponent.\nWrite the normalised floating-point representation of +202 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "Two marks for working\nOne mark for correct answer\nWorking:\nConversion to binary + 202 = 11001010 // repeated division by 2 // 128 + 64 + 8 + 2\nAppropriate shifting of binary point for + 202 = 0.1100101  28 // exponent = 8\nAnswer:\n= 01100101 00001000 (stored as mantissa and exponent)",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 8 bits for the mantissa\n• 8 bits for the exponent\n• two’s complement form for both mantissa and exponent.\nWrite the normalised floating-point representation of –202 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "Two marks for working\nOne mark for correct answer\nWorking:\n• Appropriate method of conversion e.g.\n= 10011010 (one’s complement of 8-bit mantissa)\n= 10011011 (two’s complement of 8-bit mantissa)\n–256 + 32 + 16 + 4 +2\n• Realisation that the exponent doesn’t change // value of exponent = 8 // appropriate shifting of binary point\nAnswer:\n= 10011011 00001000 (stored as mantissa and exponent)",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(c)(i)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 8 bits for the mantissa\n• 8 bits for the exponent\n• two’s complement form for both mantissa and exponent.\nA binary number is stored in the computer system.\nMantissa Exponent\n0 0 0 1 1 1 1 0 0 0 0 1 1 0 0 0\nState why the number is not normalised.\n[1]",
+      "mark_scheme": "The mantissa does not begin with 01/10 (as its most significant bits)\n// the mantissa begins with 00 // first two digits are the same.",
+      "marks": 1,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2,
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(c)(ii)",
+      "question_text": "Real numbers are stored in a computer system using floating-point representation with:\n• 8 bits for the mantissa\n• 8 bits for the exponent\n• two’s complement form for both mantissa and exponent.\nA binary number is stored in the computer system.\nMantissa Exponent\n0 0 0 1 1 1 1 0 0 0 0 1 1 0 0 0\nWrite the normalised floating-point representation of the number.\nMantissa Exponent\n[2]",
+      "mark_scheme": "One mark for each point:\n• Correct mantissa\n• Correct exponent\nMantissa Exponent\n0 1 1 1 1 0 0 0 0 0 0 1 0 1 1 0",
+      "marks": 2,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2,
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2",
+      "question_text": "Outline the functions of the Transport and Internet layers of the TCP/IP protocol suite.\nTransport layer\nInternet layer\n[5]",
+      "mark_scheme": "One mark for each point (Max 3)\nMP1 The Transport Layer breaks data into manageable packets / performs segmentation\nMP2 It sequences the packets // adds data to the packet header // adds a packet header\nMP3 It sends the packets to the Internet / Network Layer // It receives data from the Application Layer\nMP4 It controls the flow of packets\nMP5 It handles packet loss/corruption // Acknowledges receipt of complete error free packets\nOne mark for each point (Max 3)\nMP6 The Internet Layer identifies the intended network and host\nMP7 It transmits packets to the (Data) Link / Physical Layer\nMP8 It routes the packets independently through the optimum route\nMP9 It addresses packets with their source and destination IP addresses\nMP10 It then uses an IP address and port number to form a socket.",
+      "marks": 5,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "State what is meant by the term enumerated data type.\n[1]",
+      "mark_scheme": "A (user-defined non-composite) data type with an ordered list of possible values.",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "State what is meant by the term pointer data type.\n[1]",
+      "mark_scheme": "A user-defined non-composite data type used to reference a memory location.",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [
+        "composite data type",
+        "non-composite data type"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(c)",
+      "question_text": "The months of the year are: January, February, March, April, May, June, July, August,\nSeptember, October, November and December.\nWrite the pseudocode statement to define the data type , to hold the names of the\nQuarter1\nfirst three months of a year.\n[2]",
+      "mark_scheme": "Marks as shown in the square brackets:\nTYPE Quarter1 = (January, February, March)\nTYPE Quarter1 = [1]\n(January, February, March) [1]",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(d)(i)",
+      "question_text": "The composite data type is used to store data about the various pets of a group of\nPet\nstudents. It uses these fields:\nField name Data type\nPetName String\nAnimalType String\nPetAge Integer\nPetGender Char\nOwnerName String\nWrite the pseudocode statement to set up a variable for one record of the composite\ndata type .\nPet\n[1]",
+      "mark_scheme": "DECLARE Pet1 : Pet",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(d)(ii)",
+      "question_text": "The composite data type is used to store data about the various pets of a group of\nPet\nstudents. It uses these fields:\nField name Data type\nPetName String\nAnimalType String\nPetAge Integer\nPetGender Char\nOwnerName String\nWrite pseudocode to store the details of the following pet, in the variable you set up in\npart (d)(i).\nPetName AnimalType PetAge PetGender OwnerName\nTibbles Cat 8 M Jasmine Smith\n[3]",
+      "mark_scheme": "One mark for each point:\n• Correct assignment of all string data values\n• Correct assignment of char data value\n• Correct assignment of integer data value\nExample answer:\nPet1.PetName  \"Tibbles\"\nPet1.AnimalType  \"Cat\"\nPet1.PetAge  8\nPet1.PetGender  'M'\nPet1.OwnerName  \"Jasmine Smith\"",
+      "marks": 3,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "Draw one line to connect each stage of compilation to its most appropriate description.\nStage of compilation Description\nminimising a program’s execution time and\nmemory requirement\nLexical analysis\nconverting an intermediate representation of\nsource code into an executable form\nSyntax analysis\nconverting a sequence of characters into a\nsequence of tokens\nCode generation\ndirectly executing instructions written in a\nscripting language\nOptimisation\nusing parsing algorithms to interpret the\nmeaning of a sequence of tokens\n[4]",
+      "mark_scheme": "One mark for each correct line connecting one stage of compilation to a description",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "Write the infix expression in Reverse Polish Notation (RPN).\na * b + b - d + 15\n[1]",
+      "mark_scheme": "a b * b + d - 15 +",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(b)(i)",
+      "question_text": "Write the RPN expression in infix form.\na b - c d + * a /\n[1]",
+      "mark_scheme": "(a - b) * (c + d) / a",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "5(b)(ii)",
+      "question_text": "Evaluate your infix expression from part (b)(i) when a = 5, b = 10, c = 27 and d = 12.\n[1]",
+      "mark_scheme": "–39",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "A message is encrypted using a private key and sent to an individual using asymmetric encryption.\nState what is meant by a private key.\n[2]",
+      "mark_scheme": "One mark for each correct point (Max 2)\n• A private key is the unpublished/secret key/never transmitted anywhere.\n• It has a matching public key\n• It is used to decrypt data that was encrypted with its matching public key.",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "A message is encrypted using a private key and sent to an individual using asymmetric encryption.\nDescribe the process of asymmetric encryption.\n[2]",
+      "mark_scheme": "One mark for each correct point (Max 2)\n• The message to be sent is encrypted using the recipient’s public key. // The message to be sent is encrypted using\nthe sender’s private key.\n• The message is decrypted using the recipient’s private key. // The message is decrypted using the sender’s public\nkey.",
+      "marks": 2,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "6(c)",
+      "question_text": "A message is encrypted using a private key and sent to an individual using asymmetric encryption.\nExplain how a digital signature is used to verify a message when it is received.\n[4]",
+      "mark_scheme": "One mark for each correct point (Max 4)\n• The message together with the digital signature is decrypted using the receiver’s private key\n• The digital signature received is decrypted with the sender’s public key to recover the message digest sent\n• The decrypted message received is hashed with the agreed hashing algorithm to reproduce the message digest of the\nmessage received\n• The two message digests are compared\n• … if both digests are the same the message has not been altered // if they are different the message has been\naltered.",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key",
+        "digital signature",
+        "message digest"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "Complete the Karnaugh map (K-map) for the Boolean expression.\nZ = A¯. B. C¯. D¯ + A¯. B. C¯. D + A. B. C¯. D¯ + A. B. C¯. D + A. B¯. C¯. D¯ + A. B¯. C¯. D\nAB\n00 01 11 10\nCD\n[2]",
+      "mark_scheme": "Two marks if no errors present\nOne mark if one error present\nAB\n00 01 11 10\nCD\n00 0 1 1 1\n01 0 1 1 1\n11 0 0 0 0\n10 0 0 0 0",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "Draw loop(s) around appropriate group(s) in the K-map to produce an optimal\nsum-of-products. [2]",
+      "mark_scheme": "One mark for correct loop (Max 2)",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "Write the Boolean expression from your answer to part (b) as a simplified sum-of-products.\nUse Boolean algebra to give your answer in its simplest form.\nSimplified sum-of-products\nZ =\nSimplest form\nZ =\n[3]",
+      "mark_scheme": "One mark for each point\n• Any correct Boolean term\n• Boolean terms and operator correct and no other terms present\n_ _\n(Z =) BC + AC\nOne mark for simplest form\n_\n(Z =) C (A + B)",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "Virtual memory, paging and segmentation are used in memory management.\nExplain what is meant by virtual memory.\n[3]",
+      "mark_scheme": "One mark for each correct point (Max 3)\n• Disk / secondary storage is used to extend the RAM / memory available\n• … so the CPU appears to be able to access more memory space than the available RAM\n• Only the data in use needs to be in main memory so data can be swapped between RAM and virtual memory as\nnecessary\n• Virtual memory is created temporarily.",
+      "marks": 3,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "virtual memory"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "8(b)",
+      "question_text": "Virtual memory, paging and segmentation are used in memory management.\nState one difference between paging and segmentation in the way memory is divided.\n[1]",
+      "mark_scheme": "One mark for a correct statement about the difference between paging and segmentation e.g.\n• Paging allows the memory to be divided into fixed size blocks and\nSegmentation divides the memory into variable sized blocks.\n• The operating system divides the memory into pages, the compiler is responsible for calculating the segment size.\n• Access times for paging is faster than for segmentation.",
+      "marks": 1,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [
+        "paging",
+        "segmentation"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Deep learning is used in Artificial Intelligence (AI).\nDescribe what is meant by deep learning.\n[2]",
+      "mark_scheme": "One mark for each correct point (Max 2)\n• Uses artificial neural network(s)\n• … that contain(s) a high number of hidden layers\n• … modelled on the human brain.\n• Deep learning uses many layers to progressively extract higher level features from the (raw) input.\n• Deep learning is a specialised form of machine learning.",
+      "marks": 2,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Deep learning",
+        "artificial neural network"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Deep learning is used in Artificial Intelligence (AI).\nOutline the reasons for using deep learning.\n[2]",
+      "mark_scheme": "One mark for each correct point (Max 2)\n• Deep learning makes good use of unstructured data.\n• Deep learning outperforms other methods if the data size is large.\n• Deep learning systems enable machines to process data with a nonlinear approach.\n• Deep learning is effective at identifying (hidden) patterns / patterns that humans might not be able to see / patterns that\nare too complex / time consuming for humans to carry out.\n• It can provide a more accurate outcome with higher numbers of hidden layers.",
+      "marks": 2,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Deep learning"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "10(a)",
+      "question_text": "Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.\nTick (3) one box in each row to show if the statement applies to RISC or CISC processors.\nStatement RISC CISC\nuses a smaller instruction set\nuses single-cycle instructions and limited addressing modes\nuses fewer general-purpose registers\nuses both hardwired and micro-coded control unit\nuses a system where cache is split between data and\ninstructions\n[2]",
+      "mark_scheme": "Two marks for all five rows correct\nOne mark for four rows correct\nStatement RISC CISC\nuses a smaller instruction set ✓\nuses single-cycle instructions and limited addressing modes ✓\nuses fewer general-purpose registers ✓\nuses both hardwired and micro coded control unit ✓\nuses a system where cache is split between data and\n✓\ninstructions",
+      "marks": 2,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "RISC",
+        "CISC"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "10(b)",
+      "question_text": "Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are\ntwo types of processor.\nDescribe the process of pipelining during the fetch-execute cycle in RISC processors.\n[4]",
+      "mark_scheme": "One mark for each correct point (Max 4)\n• Instructions are divided into subtasks / 5 stages\n• … Instruction fetch / IF, Instruction decode / ID, operand fetch / OF, opcode/instruction execute IE, result store / write\nback result / WB\n• Each subtask is completed during one clock cycle\n• No two instructions can execute their same stage at the same clock cycle\n• The second instruction begins in the second clock cycle, while the first instruction has moved on to its second subtask.\n• The third instruction begins in the third clock cycle while the first and second instructions move on to their second and\nthird subtasks, respectively, etc.",
+      "marks": 4,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "Define these Object-Oriented Programming (OOP) terms:\nInstance\nInheritance\nPolymorphism\n[3]",
+      "mark_scheme": "One mark for each correct OOP term definition:\n• Instance – an occurrence of an object // a specific object based on the class // an instantiation of a class.\n• Inheritance – the capability of defining a new class of objects that has all the attributes and methods from a parent\nclass.\n• Polymorphism – allows the same method to take on different behaviours depending on which class is instantiated //\nmethods can be redefined for derived classes.",
+      "marks": 3,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Inheritance",
+        "Polymorphism",
+        "Instance"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        12
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "In OOP, a class contains attributes and methods.\nComplete the pseudocode for the class to enable objects to be created. The class needs\nCar\nto include:\n• string attributes to store the make, model, body type and fuel type\n• an integer attribute to store the number of cars of that type built.\nThe attributes must be available only through the methods of the class.\nCLASS\nPRIVATE Make : STRING\nPRIVATE\nPUBLIC PROCEDURE New(CarMake : STRING, ,\n)\n←\nMake\n←\nModel\n←\nBodyType CarBodyType\n←\nFuel \"\"\n←\nNumberBuilt 0\nENDPROCEDURE\nGetFuel()\nGetNumberBuilt()\n[5]",
+      "mark_scheme": "One mark for each point:\n• Car and ENDCLASS\n• Four declarations – must use the identifiers used in the assignments\n• Constructor header – must use CarBodyType\n• Two assignments – must use CarMake\n• Constructor identifier for the car model and the identifier in the Model assignment statement match\nCLASS Car\nPRIVATE Make : STRING\nPRIVATE Model : STRING\nPRIVATE BodyType : STRING\nPRIVATE Fuel : STRING\nPRIVATE NumberBuilt : INTEGER\nPUBLIC PROCEDURE NEW (CarMake : STRING,\nCarModel : STRING, CarBodyType : STRING)\nMake  CarMake\nModel  CarModel\nBodyType  CarBodyType\nFuel  \"\"\nNumberBuilt  0\nENDPROCEDURE\ngetFuel()\ngetNumberBuilt()\nENDCLASS",
+      "marks": 5,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        13
+      ]
+    },
+    {
+      "question_number": "12(a)",
+      "question_text": "The array is in alphabetical order.\nNames[0:99]\nComplete this pseudocode binary search algorithm.\n←\nLower 0\n←\nMid 0\n←\nExit FALSE\nOUTPUT \"Enter the name to be found \"\nINPUT Target\nREPEAT\nTHEN\nOUTPUT Target, \" does not exist\"\n←\nExit TRUE\nENDIF\n←\nMid Lower + (Upper – Lower + 1) DIV 2\nIF Names[Mid] < Target THEN\n←\nLower\nENDIF\nIF Names[Mid] > Target THEN\nENDIF\nTHEN\nOUTPUT Target, \" was found at location \", Mid\n←\nExit TRUE\nENDIF\n[6]",
+      "mark_scheme": "One mark for each point (Max 6)\n• Initialisation of upper bound\n• Test if upper bound is less than lower bound\n• Re-setting of mid value if current value is lower than the target\n• Re-setting of mid value if current value is higher than the target\n• Finding the value\n• Correct termination of loop\nLower  0\nUpper  99\nMid  0\nExit  FALSE\nOUTPUT \"Enter the name to be found \"\nINPUT Target\nREPEAT\nIF Upper < Lower THEN\nOUTPUT Target, \" does not exist\"\nExit  TRUE\nENDIF\nMid  Lower + (Upper – Lower + 1) DIV 2\nIF Names[Mid] < Target THEN\nLower  Mid + 1\nENDIF\nIF Names[Mid] > Target THEN\nUpper  Mid - 1\nENDIF\nIF Names[Mid] = Target THEN\nOUTPUT Target, \" was found at location \", Mid\nExit  TRUE\nENDIF\nUNTIL Exit // UNTIL Exit = TRUE",
+      "marks": 6,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "12(b)(i)",
+      "question_text": "Big O notation is used to classify efficiency of algorithms.\nThe Big O notation for time complexity in a binary search is O(log n).\nState the Big O notation for time complexity of a linear search.\n[1]",
+      "mark_scheme": "O(n)",
+      "marks": 1,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        14
+      ]
+    },
+    {
+      "question_number": "12(b)(ii)",
+      "question_text": "Big O notation is used to classify efficiency of algorithms.\nThe Big O notation for time complexity in a binary search is O(log n).\nDescribe the meaning of O(log n) as it applies to a binary search algorithm.\n[2]",
+      "mark_scheme": "One mark for each point (Max 2)\n• O(log n) is a time complexity that uses logarithmic time.\n• The time taken goes up linearly as the number of items rises exponentially\n• O(log n) is the worst case scenario (time complexity for a binary search).",
+      "marks": 2,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "binary search"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        15
+      ]
+    }
+  ],
+  "marks": 75
+}

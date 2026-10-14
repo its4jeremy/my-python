@@ -1,0 +1,520 @@
+{
+  "paper": "9618_s22_32",
+  "qp": "papers/9618/paper_3/2022/may_jun/9618_s22_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2022/may_jun/9618_s22_ms_32.pdf",
+  "sha256": {
+    "qp": "ddd5b51cf1b262303f6dbb0c6f58dd8c41484ca91a7446e26fc17345105d7071",
+    "ms": "c325c124d69248567c0539d71691997b0d7e92c152c2bcbe69e561c0e96a241e"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nBuildingRecord\nTYPE BuildingRecord\nDECLARE BuildingID : INTEGER\nDECLARE BuildingGroup : STRING\nDECLARE OwnerName : STRING\nDECLARE BuildingAddress : STRING\nDECLARE DateLastSold : DATE\nDECLARE PriceLastSold : REAL\nENDTYPE\nA variable, , is declared in pseudocode as:\nBuildingRegister\nDECLARE BuildingRegister : BuildingRecord\nWrite pseudocode statements to assign:\n• to the of\n1067 BuildingID BuildingRegister\n• to the of\nhouse BuildingGroup BuildingRegister\n[2]",
+      "mark_scheme": "BuildingRegister.BuildingID  1067\nBuildingRegister.BuildingGroup  \"house\"",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)(i)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nBuildingRecord\nTYPE BuildingRecord\nDECLARE BuildingID : INTEGER\nDECLARE BuildingGroup : STRING\nDECLARE OwnerName : STRING\nDECLARE BuildingAddress : STRING\nDECLARE DateLastSold : DATE\nDECLARE PriceLastSold : REAL\nENDTYPE\nA variable, , is declared in pseudocode as:\nBuildingRegister\nDECLARE BuildingRegister : BuildingRecord\nThe type definition for is changed. The data type for is\nBuildingRecord BuildingGroup\nchanged to an enumerated type, , with values of house, bungalow, apartment\nBuildingType\nand farm.\nWrite the type declaration for in pseudocode.\nBuildingType\n[2]",
+      "mark_scheme": "One mark: TYPE BuildingType =\nOne mark: (house, bungalow, apartment, farm)\nTYPE BuildingType = (house, bungalow, apartment, farm)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)(ii)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nBuildingRecord\nTYPE BuildingRecord\nDECLARE BuildingID : INTEGER\nDECLARE BuildingGroup : STRING\nDECLARE OwnerName : STRING\nDECLARE BuildingAddress : STRING\nDECLARE DateLastSold : DATE\nDECLARE PriceLastSold : REAL\nENDTYPE\nA variable, , is declared in pseudocode as:\nBuildingRegister\nDECLARE BuildingRegister : BuildingRecord\nThe type definition for is changed. The data type for is\nBuildingRecord BuildingGroup\nchanged to an enumerated type, , with values of house, bungalow, apartment\nBuildingType\nand farm.\nWrite the new declaration for in pseudocode.\nBuildingGroup\n[1]",
+      "mark_scheme": "DECLARE BuildingGroup : BuildingType",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)(iii)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nBuildingRecord\nTYPE BuildingRecord\nDECLARE BuildingID : INTEGER\nDECLARE BuildingGroup : STRING\nDECLARE OwnerName : STRING\nDECLARE BuildingAddress : STRING\nDECLARE DateLastSold : DATE\nDECLARE PriceLastSold : REAL\nENDTYPE\nA variable, , is declared in pseudocode as:\nBuildingRegister\nDECLARE BuildingRegister : BuildingRecord\nThe type definition for is changed. The data type for is\nBuildingRecord BuildingGroup\nchanged to an enumerated type, , with values of house, bungalow, apartment\nBuildingType\nand farm.\nWrite the new pseudocode statement to assign to of\nhouse BuildingGroup\n.\nBuildingRegister\n[1]",
+      "mark_scheme": "BuildingRegister.BuildingGroup  house",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(c)(i)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nBuildingRecord\nTYPE BuildingRecord\nDECLARE BuildingID : INTEGER\nDECLARE BuildingGroup : STRING\nDECLARE OwnerName : STRING\nDECLARE BuildingAddress : STRING\nDECLARE DateLastSold : DATE\nDECLARE PriceLastSold : REAL\nENDTYPE\nA variable, , is declared in pseudocode as:\nBuildingRegister\nDECLARE BuildingRegister : BuildingRecord\nThe program is to be rewritten using Object-Oriented Programming (OOP). The data type\nis to be changed to a class, .\nBuildingRecord BuildingClass\nThe properties for are , , ,\nBuildingClass BuildingID BuildingGroup OwnerName\n, and .\nBuildingAddress DateLastSold PriceLastSold\nAll the properties are set to , for example:\nPRIVATE\nPRIVATE PriceLastSold : REAL\nWrite the declaration in pseudocode for as .\nOwnerName PRIVATE\n[1]",
+      "mark_scheme": "PRIVATE OwnerName : STRING",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2,
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(c)(ii)",
+      "question_text": "Data types can be defined using pseudocode.\nThe data type, , is defined in pseudocode as:\nBuildingRecord\nTYPE BuildingRecord\nDECLARE BuildingID : INTEGER\nDECLARE BuildingGroup : STRING\nDECLARE OwnerName : STRING\nDECLARE BuildingAddress : STRING\nDECLARE DateLastSold : DATE\nDECLARE PriceLastSold : REAL\nENDTYPE\nA variable, , is declared in pseudocode as:\nBuildingRegister\nDECLARE BuildingRegister : BuildingRecord\nThe program is to be rewritten using Object-Oriented Programming (OOP). The data type\nis to be changed to a class, .\nBuildingRecord BuildingClass\nThe properties for are , , ,\nBuildingClass BuildingID BuildingGroup OwnerName\n, and .\nBuildingAddress DateLastSold PriceLastSold\nAll the properties are set to , for example:\nPRIVATE\nPRIVATE PriceLastSold : REAL\nExplain why the properties have been set to .\nPRIVATE\n[2]",
+      "mark_scheme": "To ensure that attributes can only be accessed by the class’s own methods\nTo enforce encapsulation // ensure they are hidden",
+      "marks": 2,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "encapsulation"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        2,
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "A declarative language is used to represent the following facts about a school.\n01 teaches(alan, mathematics).\n02 teaches(ioana, geography).\n03 teaches(nina, history).\n04 teaches(alan, statistics).\n05\n06 studies(ahmed, history).\n07 studies(freya, history).\n08 studies(kim, history).\n09 studies(freya, geography).\n10 studies(hua, mathematics).\n11 studies(hua, statistics).\n12 studies(hua, geography).\n13\n14 tutors(alan, kim).\n15 tutors(alan, hua).\n16 tutors(alan, freya).\n17 tutors(nina, ahmed).\nThese clauses have the following meaning:\nClause Meaning\nAlan teaches mathematics.\nAhmed studies history.\nAlan is Kim’s tutor.\nMore facts are to be included. Sam studies history and Nina is his tutor.\nWrite the additional clauses to record these facts.\n18\n19\n[2]",
+      "mark_scheme": "studies(sam, history).\ntutors(nina, sam).",
+      "marks": 2,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "A declarative language is used to represent the following facts about a school.\n01 teaches(alan, mathematics).\n02 teaches(ioana, geography).\n03 teaches(nina, history).\n04 teaches(alan, statistics).\n05\n06 studies(ahmed, history).\n07 studies(freya, history).\n08 studies(kim, history).\n09 studies(freya, geography).\n10 studies(hua, mathematics).\n11 studies(hua, statistics).\n12 studies(hua, geography).\n13\n14 tutors(alan, kim).\n15 tutors(alan, hua).\n16 tutors(alan, freya).\n17 tutors(nina, ahmed).\nThese clauses have the following meaning:\nClause Meaning\nAlan teaches mathematics.\nAhmed studies history.\nAlan is Kim’s tutor.\nUsing the variable , the goal:\nStudent\nstudies(Student, history)\nreturns\nStudent = freya, ahmed, kim\nWrite the result returned by the goal:\nstudies(Student, geography)\n[1]\nStudent =",
+      "mark_scheme": "freya, hua // hua, freya",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(c)",
+      "question_text": "A declarative language is used to represent the following facts about a school.\n01 teaches(alan, mathematics).\n02 teaches(ioana, geography).\n03 teaches(nina, history).\n04 teaches(alan, statistics).\n05\n06 studies(ahmed, history).\n07 studies(freya, history).\n08 studies(kim, history).\n09 studies(freya, geography).\n10 studies(hua, mathematics).\n11 studies(hua, statistics).\n12 studies(hua, geography).\n13\n14 tutors(alan, kim).\n15 tutors(alan, hua).\n16 tutors(alan, freya).\n17 tutors(nina, ahmed).\nThese clauses have the following meaning:\nClause Meaning\nAlan teaches mathematics.\nAhmed studies history.\nAlan is Kim’s tutor.\nWrite the goal, using the variable , to find all the students who have a tutor that teaches\nX\nthem. For example, Hua has Alan for a tutor and is also taught mathematics by Alan.\n[4]",
+      "mark_scheme": "one mark for correct use of X\none mark for two other variables in correct positions\none mark for three correct clauses in any order\none mark for correct syntax\nteaches(R, S),\nstudies(X, S),\ntutors(R, X).",
+      "marks": 4,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4,
+        5
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "The TCP/IP protocol suite has four layers. The application layer provides user services.\nIdentify two protocols used by this layer. Describe the use of each protocol.\nProtocol 1\nDescription\nProtocol 2\nDescription\n[4]",
+      "mark_scheme": "Protocol one mark, description one mark, max four\nAny two from\n HTTP(S) (1) for sending and receiving web pages / hypertext documents (1)\n FTP (1) for sending and receiving files over a network / between devices (1)\n SMTP (1) for sending/uploading emails /push protocol (1)\n POP(3) (1) for receiving/downloading emails /pull protocol (1)\n IMAP (1) for receiving/downloading emails /pull protocol (1)",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "Protocol"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "The TCP/IP protocol suite has four layers. The application layer provides user services.\nIdentify two other layers of the TCP/IP protocol suite. Describe the function of each layer.\nLayer 1\nDescription\nLayer 2\nDescription\n[4]",
+      "mark_scheme": "Layer one mark, matching function one mark, max four\nAny two from\n Transport (1) handles packets (1)\n Internet (1) handles transmission of data using\nIP addresses // provides (optimal) route (1)\n Network Access (Interface) // (Data) Link // Physical (1) Handles how data is physically sent (1)",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(a)",
+      "question_text": "The following syntax diagrams show the syntax of:\n• a variable\n• an unsigned integer\n• a letter\n• a digit\n• an operator\n• an assignment statement.\nvariable\nletter unsigned integer\nunsigned integer\ndigit digit\nletter digit\nX 1\nY 2\nZ 3\noperator\n+\n–\n*\nassignment\nstatement\nvariable = variable operator variable\nThe following assignment statements are invalid. State the reason in each case.\nX1 = Y2 – 12\nReason\nZ = Y12 + Z1\nReason\n[2]",
+      "mark_scheme": " An unsigned integer,12, is used instead of the last variable\n// 12 is not a valid variable\n The variable Z is not a valid variable / missing an unsigned integer after the Z",
+      "marks": 2,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(b)",
+      "question_text": "The following syntax diagrams show the syntax of:\n• a variable\n• an unsigned integer\n• a letter\n• a digit\n• an operator\n• an assignment statement.\nvariable\nletter unsigned integer\nunsigned integer\ndigit digit\nletter digit\nX 1\nY 2\nZ 3\noperator\n+\n–\n*\nassignment\nstatement\nvariable = variable operator variable\nComplete the Backus-Naur Form (BNF) for the syntax diagrams shown.\nhas been completed for you.\n<letter>\n<variable> ::=\n<unsigned_integer> ::=\n<letter> ::= X | Y | Z\n<digit> ::=\n<operator> ::=\n<assignment_statement> ::=\n[5]",
+      "mark_scheme": "One mark per bullet point\n <variable> ::= <letter><unsigned_integer>\n <unsigned_integer> ::= <digit>|<digit><digit>\n <digit> ::= 1 | 2 | 3\nand <operator> ::= + | - | *\n <assignment_statement> ::= <variable> =\n <variable><operator><variable>",
+      "marks": 5,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4(c)(i)",
+      "question_text": "The following syntax diagrams show the syntax of:\n• a variable\n• an unsigned integer\n• a letter\n• a digit\n• an operator\n• an assignment statement.\nvariable\nletter unsigned integer\nunsigned integer\ndigit digit\nletter digit\nX 1\nY 2\nZ 3\noperator\n+\n–\n*\nassignment\nstatement\nvariable = variable operator variable\nThe syntax of an assignment statement is changed to allow each of the variables on the\nright-hand side of the ‘ ’ symbol to be either a variable or an unsigned integer.\n=\nDraw a syntax diagram for the new syntax of the assignment statement.\n[3]",
+      "mark_scheme": "One mark adding both boxes… unsigned integer unsigned integer\nOne mark for correct position(s) and connector(s) …\nOne mark … rest correct\n(assignment statement)\nunsigned integer unsigned integer\nvariable = variable operator variable",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "4(c)(ii)",
+      "question_text": "The following syntax diagrams show the syntax of:\n• a variable\n• an unsigned integer\n• a letter\n• a digit\n• an operator\n• an assignment statement.\nvariable\nletter unsigned integer\nunsigned integer\ndigit digit\nletter digit\nX 1\nY 2\nZ 3\noperator\n+\n–\n*\nassignment\nstatement\nvariable = variable operator variable\nThe syntax of an assignment statement is changed to allow each of the variables on the\nright-hand side of the ‘ ’ symbol to be either a variable or an unsigned integer.\n=\nWrite the Backus-Naur Form (BNF) for your syntax diagram.\n[3]",
+      "mark_scheme": "Max three\nOne mark for\n<assignment_statement>::=<variable>=\nOne mark two or three correct options or two marks if all four options correct\n<variable><operator><variable>\n|<variable><operator><unsigned_integer>\n|<unsigned_integer><operator><variable>\n|<unsigned_integer><operator><unsigned_integer>\n<assignment_statement>::=<variable>= <variable><operator><variable>|<variable><operator>\n<unsigned_integer>|<unsigned_integer><operator><variable>\n|<unsigned_integer><operator><unsigned_integer>\nor\nOne mark for each section\n<operand>::=<variable>|<unsigned_integer>\n<assignment_statement>::=<variable>=\n<operand><operator><operand>\n<operand>::=<variable>|<unsigned_integer>\n<assignment_statement>::=<variable>=<operand><operator><operand>",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5",
+      "question_text": "There are four basic categories of computer architecture. Single Instruction Single Data (SISD) is\none architecture.\nIdentify the three other categories of computer architecture.\nDescribe each category that you identify.\nArchitecture 1\nDescription\nArchitecture 2\nDescription\nArchitecture 3\nDescription\n[6]",
+      "mark_scheme": "SIMD (1) many/array processors execute the same instruction using different data sets (1)\nMISD (1) many processors (using different instructions) use the same data set (1)\nMIMD (1) many processors (using different instructions) using different data sets (1)",
+      "marks": 6,
+      "syllabus_section": "15.1",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Processors, Parallel Processing and Virtual Machines",
+      "key_phrases": [
+        "SIMD",
+        "MISD",
+        "MIMD"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        8
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "A logic circuit has two inputs A and B, and two outputs E and F.\nA\nE\nB\nF\nComplete the truth table for this logic circuit.\nINPUT OUTPUT\nA B E F\n0 0\n0 1\n1 0\n1 1\n[2]",
+      "mark_scheme": "1 mark per correct output column\nINPUT OUTPUT\nA B E F\n0 0 0 0\n0 1 1 0\n1 0 1 0\n1 1 0 1",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(b)(i)",
+      "question_text": "A logic circuit has two inputs A and B, and two outputs E and F.\nA\nE\nB\nF\nState the name of this logic circuit.\n[1]",
+      "mark_scheme": "Half adder",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(b)(ii)",
+      "question_text": "A logic circuit has two inputs A and B, and two outputs E and F.\nA\nE\nB\nF\nState the purpose of each output E and F.\nPurpose of E\nPurpose of F\n[2]",
+      "mark_scheme": "Purpose of E: Sum\nPurpose of F: Carry",
+      "marks": 2,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "A digital signature is used to validate the authenticity of an electronic message.\nIn order to produce a digital signature, a digital certificate is required.\nState how a digital certificate is obtained.\n[3]",
+      "mark_scheme": "Any three from\nMP1 enquiry made to Certificate Authority (CA)\nMP2 enquirer’s details checked by CA\nMP3 if enquirer details verified by CA then public key is agreed\nMP4 CA creates/issues certificate that includes the enquirers public key\nMP5 encrypting data sent to/by CA with the CA’s public/private key",
+      "marks": 3,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(b)(i)",
+      "question_text": "A digital signature is used to validate the authenticity of an electronic message.\nIn order to produce a digital signature, a digital certificate is required.\nExplain how a digital signature is produced before the message is sent.\n[3]",
+      "mark_scheme": "MP1 The message is hashed with (the agreed hashing algorithm)…\nMP2 … to produce a message digest\nMP3 The message digest is then encrypted with the sender’s private key to form the digital signature",
+      "marks": 3,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "private key",
+        "digital signature",
+        "message digest"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(b)(ii)",
+      "question_text": "A digital signature is used to validate the authenticity of an electronic message.\nIn order to produce a digital signature, a digital certificate is required.\nExplain how the digital signature can be checked on receipt to ensure that the message\nhas not been altered during transmission.\n[4]",
+      "mark_scheme": "Any four from\nMP1 The message together with the digital signature is decrypted using the receiver’s private key\nMP2 The digital signature received is decrypted with the sender’s public key to recover the message digest sent\nMP3 The decrypted message received is hashed with the agreed hashing algorithm to reproduce the message digest\nof the message received\nMP4 The two message digests are compared\nMP5 … if they are the same the message has not been altered // if they are different the message has been altered",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [
+        "public key",
+        "private key",
+        "digital signature",
+        "message digest"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "8(a)",
+      "question_text": "A binary search or a linear search can be used to look for a specific value in an array.\nComplete this pseudocode algorithm for a linear search.\nDECLARE MyList : ARRAY[0:9] OF INTEGER\nDECLARE MaxIndex : INTEGER\nDECLARE Index : INTEGER\nDECLARE Found : BOOLEAN\nDECLARE ValueToFind :\nINPUT ValueToFind\n←\nFound FALSE\n←\nIndex 0\n←\nMaxIndex\nREPEAT\nIF MyList[Index] = ValueToFind THEN\n←\nFound TRUE\nENDIF\n←\nIndex\nUNTIL Found OR Index > MaxIndex\nIF Found THEN\nOUTPUT \"Value found at position \", Index\nELSE\nOUTPUT\nENDIF\n[4]",
+      "mark_scheme": "INTEGER\n9 // LENGTH(MyList) - 1\nIndex + 1\n\"Value not found\" (or any similar phrase)",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "8(b)(i)",
+      "question_text": "A binary search or a linear search can be used to look for a specific value in an array.\nState the necessary condition for a binary search.\n[1]",
+      "mark_scheme": "The list to be searched must be ordered/sorted",
+      "marks": 1,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "8(b)(ii)",
+      "question_text": "A binary search or a linear search can be used to look for a specific value in an array.\nDescribe how to perform a binary search.\n[4]",
+      "mark_scheme": "Any four from\nMP1 Find the middle item / index\nMP2 Check the value of middle item in the list to be searched\nMP3 If equal item searched for is found\nMP4 If this is not equal/greater/less than the item searched for\nMP5 … discard the half of the list that does not contain the search item\nMP6 Repeat the above steps until the item searched for is found\nMP7 … or there is only one item left in the list and it is not the item searched for // lower bound > / = upper bound",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "8(b)(iii)",
+      "question_text": "A binary search or a linear search can be used to look for a specific value in an array.\nExplain how the performance of a binary search varies according to the number of values\nin the array.\n[1]",
+      "mark_scheme": "As the number of items in the list increases the time to search the list increases",
+      "marks": 1,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        11,
+        12
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "8(c)",
+      "question_text": "A binary search or a linear search can be used to look for a specific value in an array.\nCompare the performance of the algorithms for a binary search and a linear search using\nBig O notation for order of time complexity.\n[3]",
+      "mark_scheme": "MP1 Linear search O(n) and Binary search O(log2n) / O(Log n)\nMP2 time to search increases linearly in relation to the number of items in the list for a linear search and logarithmically\nfor a Binary search\nMP3 time to search increases less rapidly for a binary search and time to search increases more rapidly for a linear\nsearch",
+      "marks": 3,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "Binary search",
+        "Linear search"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11,
+        12
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9",
+      "question_text": "State the reasons for including exception handling routines when writing a program.\nInclude an example of an exception in your answer.\n[4]",
+      "mark_scheme": "To trap (some) runtime errors\nTo prevent a program halting unexpectedly\nTo produce meaningful error messages for these errors\nExample divide by zero // end of file // file not found",
+      "marks": 4,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        9
+      ]
+    }
+  ],
+  "marks": 75
+}

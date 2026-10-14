@@ -1,0 +1,503 @@
+{
+  "paper": "9618_s25_32",
+  "qp": "papers/9618/paper_3/2025/may_jun/9618_s25_qp_32.pdf",
+  "ms": "papers/9618/paper_3/2025/may_jun/9618_s25_ms_32.pdf",
+  "sha256": {
+    "qp": "647369ebfe2214f7b00ee4091d67d8ebe3f00c25dd73338e469d4184842e1be7",
+    "ms": "a5dc986a4997393ac718c0c05f9d3a0bea71fdc1cb2b9e946ae448733f552325"
+  },
+  "extraction": "Local PDF text; original page layouts retained separately",
+  "questions": [
+    {
+      "question_number": "1(a)",
+      "question_text": "Data types can be defined using pseudocode.\nThe composite record data type, Departure, is used to represent flights from Cambridge Airport\nand is defined in pseudocode as:\nTYPE Departure\nDECLARE FlightNumber : STRING\nDECLARE Destination : STRING\nDECLARE FlightDate : DATE\nDECLARE Gate : STRING\nDECLARE Airline : STRING\nENDTYPE\nA variable, Flight1, is declared in pseudocode as:\nDECLARE Flight1 : Departure\nWrite pseudocode to store the following details to Flight1:\nField Data\nFlightNumber SB2789\nDestination Dublin\nFlightDate 30/07/2025\nGate N03\nAirline Cambridge Airways\n[3]",
+      "mark_scheme": "One mark for each mark point\nMP1 Use of correct Flight1 variable with given field names\nMP2 Correct assignments of four string data values\nMP3 Correct assignment of date data value\nExample answer\nFlight1.FlightNumber  \"SB2789\"\nFlight1.Destination  \"Dublin\"\nFlight1.FlightDate  30/07/2025\nFlight1.Gate  \"N03\"\nFlight1.Airline  \"Cambridge Airways\"",
+      "marks": 3,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)(i)",
+      "question_text": "Data types can be defined using pseudocode.\nThe composite record data type, Departure, is used to represent flights from Cambridge Airport\nand is defined in pseudocode as:\nTYPE Departure\nDECLARE FlightNumber : STRING\nDECLARE Destination : STRING\nDECLARE FlightDate : DATE\nDECLARE Gate : STRING\nDECLARE Airline : STRING\nENDTYPE\nA variable, Flight1, is declared in pseudocode as:\nDECLARE Flight1 : Departure\nThe data type for Gate is changed to an enumerated data type, GateID.\nWrite a pseudocode statement to declare GateID to hold the identity codes for the\nairport gates:\nN01, N02, N03, W01, W02, W03, W04\n[2]",
+      "mark_scheme": "One mark per mark point\nMP1 TYPE GateID =\nMP2 (N01, N02, N03, W01, W02, W03, W04)\nExample answer\nTYPE GateID = (N01, N02, N03, W01, W02, W03, W04)",
+      "marks": 2,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "1(b)(ii)",
+      "question_text": "Data types can be defined using pseudocode.\nThe composite record data type, Departure, is used to represent flights from Cambridge Airport\nand is defined in pseudocode as:\nTYPE Departure\nDECLARE FlightNumber : STRING\nDECLARE Destination : STRING\nDECLARE FlightDate : DATE\nDECLARE Gate : STRING\nDECLARE Airline : STRING\nENDTYPE\nA variable, Flight1, is declared in pseudocode as:\nDECLARE Flight1 : Departure\nThe data type for Gate is changed to an enumerated data type, GateID.\nWrite the new pseudocode statement required to replace the declaration of Gate in\nDeparture.\n[1]",
+      "mark_scheme": "DECLARE Gate : GateID",
+      "marks": 1,
+      "syllabus_section": "13.1",
+      "topic": "Data Representation",
+      "subtopic": "User-defined data types",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        2
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(a)",
+      "question_text": "Numbers are stored in a computer using binary floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the normalised binary floating-point representation of +124.4375 in this system.\nShow your working.\nMantissa Exponent\nWorking\n[3]",
+      "mark_scheme": "Two marks for working\n• number converted to binary (0)1111100.0111\n• use of exponent = 7 // Moving binary point the correct number (7) of\nplaces\nOne mark for correct answer\nMantissa Exponent\n0 1 1 1 1 1 0 0 0 1 1 1 0 1 1 1",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "Mantissa",
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        4
+      ]
+    },
+    {
+      "question_number": "2(b)",
+      "question_text": "Numbers are stored in a computer using binary floating-point representation with:\n• 12 bits for the mantissa\n• 4 bits for the exponent\n• two’s complement form for both the mantissa and the exponent.\nCalculate the denary value of the following normalised binary floating-point number.\nShow your working.\nMantissa Exponent\n1 0 1 0 0 0 1 0 1 0 1 1 0 1 1 0\nWorking\nDenary value\n[3]",
+      "mark_scheme": "Two marks for working\n• correct use of exponent seen\n• correct conversion method from binary to denary\nOne mark for correct answer\nWorking:\n1010001.01011 // moving bp 6 places to right\nEvaluation of two’s complement −64 +16 + 1 + 0.25 + 0.0625 + 0.03125 //\n−64 + 16 + 1 + 1/4 + 1/16 + 1/32 // Converting two’s complement back and\nevaluating positive binary number 32 + 8 + 4 + 2 + 0.5 + 0.125 + 0.03125 // 32\n+ 8 + 4 + 2 + 1/2 + 1/8 + 1/32\nFractions methods - award both working marks for either\n(– 2048 + 512 + 32 + 8 + 2 + 1) / 2048 x 26 = -1493 / 32\nOR\n– 1 + 1/4 + 1/64 + 1/ 256 + 1/1024 + 1/2048 x 26 = -1493 / 32\nAnswer:\n−46.65625 // −4621/\n32",
+      "marks": 3,
+      "syllabus_section": "13.3",
+      "topic": "Data Representation",
+      "subtopic": "Floating-point numbers",
+      "key_phrases": [
+        "exponent"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        3
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(a)",
+      "question_text": "Identify two different layers of the TCP/IP protocol suite.\n[1]",
+      "mark_scheme": "Two from\n• Application Layer\n• Transport Layer\n• Internet Layer\n• Link Layer",
+      "marks": 1,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "3(b)",
+      "question_text": "Describe how the TCP/IP protocol suite is applied when a message is sent through the\ninternet from one host to another . Do not describe the function of individual layers of the\nTCP/IP protocol suite.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 The TCP/IP suite can be viewed as layers within a stack\nMP2 Each layer can only accept input from the next higher or the next\nlower layer/adjacent layer\nMP3 The user/sender/computer interfaces with the top layer/application\nlayer to send/receive a message\nMP4 The message when sent passes from the top layer/application layer\nto the bottom layer/link layer\nMP5 The message when received passes from bottom layer/link layer to\nthe top layer/application layer\nMP6 The link layer interfaces directly with the network and sends/receives\nthe message.",
+      "marks": 4,
+      "syllabus_section": "14.1",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Protocols",
+      "key_phrases": [
+        "TCP/IP"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        5
+      ]
+    },
+    {
+      "question_number": "4",
+      "question_text": "Circuit switching may be used as a method of data transmission.\nState two benefits and two drawbacks of circuit switching.\nBenefit 1\nBenefit 2\nDrawback 1\nDrawback 2\n[4]",
+      "mark_scheme": "One mark for each benefit (Max 2)\nMP1 Suitable for long continuous transmission once the connection is\nmade, it is available until the end of the transmission\nMP2 No time lost in resending/rearranging packets as no loss of packets\nor out of order packets\nMP3 Steady/high rate of transmission because the whole of the bandwidth\nis available\nMP4 Data loss unlikely as all data follows the same path\nOne mark for each drawback (Max 2)\nMP5 Delays due to dedicated connection required to be set up/established\nbefore transmission can begin\nMP6 The dedicated connection cannot be used to transmit any other data\nMP7 System resources may be underutilised/inefficient/not very flexible\nbecause the bandwidth can’t be shared/high bandwidth is required //\nBandwidth may be wasted // May send empty frames // the circuit is always\nthere whether or not used\nMP8 There are no alternative routes if there is a failure or fault on the line\nMP9 Reduced security due to use of single path\nMP10 Scalability is difficult",
+      "marks": 4,
+      "syllabus_section": "14.2",
+      "topic": "Communication and internet technologies",
+      "subtopic": "Circuit switching and packet switching",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        4
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(a)",
+      "question_text": "The management and scheduling of processes are tasks carried out by an operating system.\nIdentify three process states.\n1\n2\n3\n[3]",
+      "mark_scheme": "One mark per point\n• Running state\n• Ready state\n• Blocked state",
+      "marks": 3,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "5(b)",
+      "question_text": "The management and scheduling of processes are tasks carried out by an operating system.\nDescribe the function of the shortest job first scheduling routine and give a benefit of this\nroutine.\nFunction\nBenefit\n[4]",
+      "mark_scheme": "One mark per mark point (Max 3)\nMP1 The processes are queued as they arrive\nMP2 The process with the shortest time to complete/burst time is selected\nfirst and executed\nMP3 The process will continue until complete or put in a waiting state once\nexecution has begun // it is non-pre-emptive\nMP4 The scheduler will continue to choose shorter processes over longer\nprocesses if they continue to be added to the queue can cause starvation for\nlonger jobs\nOne mark for a benefit (Max 1)\nMP5 Shorter jobs don’t have to wait for longer jobs to complete before\nprocessing // Significantly reduces the average overall waiting time for\nprocesses // Ensures starvation doesn’t occur for process with shorter burst\ntimes\nMP6 Higher throughput of processes",
+      "marks": 4,
+      "syllabus_section": "16.1",
+      "topic": "System Software",
+      "subtopic": "Purposes of an Operating System",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        6
+      ]
+    },
+    {
+      "question_number": "6(a)",
+      "question_text": "Describe the structure of a graph as used in an Artificial Intelligence (AI) system.\n[2]",
+      "mark_scheme": "One mark per point (Max 2)\nMP1 A graph uses vertices/nodes to identify/represent entities such as\ndestinations, people, etc\nMP2 Edges are used to connect nodes and can represent possible paths\nbetween them // a path is the list of nodes connected by edges between two\ngiven nodes\nMP3 Nodes/edges can be labelled/weighted, and this is a weighting that\ncan be applied and used in the context of the application\nMP4 A cycle is a list of nodes that return to the same node.",
+      "marks": 2,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "6(b)",
+      "question_text": "Explain how supervised learning and unsupervised learning differ from each other.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 Supervised learning uses labelled data // Unsupervised learning\nmakes use of unlabelled data.\nMP2 Labelled data means that known outcomes are applied to specific\ninputs to help the AI predict outcomes.\nMP3 Supervised learning requires initial human input/training //\nUnsupervised learning does not require human input/training.\nMP4 With unlabelled data in unsupervised learning, outcomes are not\nknown\nMP5 … the AI has to search for hidden patterns/structures/clusters\nMP6 … within the data in order to predict outcomes.",
+      "marks": 4,
+      "syllabus_section": "18.1",
+      "topic": "Artificial Intelligence",
+      "subtopic": "Artificial Intelligence",
+      "key_phrases": [
+        "Supervised learning",
+        "Unsupervised learning"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        5
+      ],
+      "ms_pages": [
+        7
+      ]
+    },
+    {
+      "question_number": "7(a)",
+      "question_text": "The diagram shows a logic circuit.\nA\nQ\nB\nS\nP\nC\nZ\nR\nD\nComplete the truth table for the given logic circuit.\nShow your working.\nWorking space\nA B C D P Q R S Z\n0 0 0 0\n0 0 0 1\n0 0 1 0\n0 0 1 1\n0 1 0 0\n0 1 0 1\n0 1 1 0\n0 1 1 1\n1 0 0 0\n1 0 0 1\n1 0 1 0\n1 0 1 1\n1 1 0 0\n1 1 0 1\n1 1 1 0\n1 1 1 1\n[3]",
+      "mark_scheme": "One mark for working, (all four columns P, Q, R and S)\nOne mark for first eight rows of column Z (Shaded)\nOne mark for second eight rows of column Z (Unshaded)\nWorking space\nA B C D P Q R S Z\n0 0 0 0 1 0 0 1 0\n0 0 0 1 1 0 0 1 0\n0 0 1 0 0 1 0 1 0\n0 0 1 1 0 1 0 1 0\n0 1 0 0 1 0 0 1 0\n0 1 0 1 1 0 0 1 0\n0 1 1 0 0 0 0 0 1\n0 1 1 1 0 0 1 0 0\n1 0 0 0 1 0 0 1 0\n1 0 0 1 1 0 0 1 0\n1 0 1 0 0 0 0 0 1\n1 0 1 1 0 0 0 0 1\n1 1 0 0 1 0 0 1 0\n1 1 0 1 1 0 0 1 0\n1 1 1 0 0 0 0 0 1\n1 1 1 1 0 0 1 0 0",
+      "marks": 3,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(b)",
+      "question_text": "The diagram shows a logic circuit.\nA\nQ\nB\nS\nP\nC\nZ\nR\nD\nWrite the Boolean logic expression that corresponds to the given logic circuit as the\nsum-of-products.\nZ =\n[1]",
+      "mark_scheme": "One mark for correct answer (terms may be in any order)\nZ = A.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D",
+      "marks": 1,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        8
+      ]
+    },
+    {
+      "question_number": "7(c)",
+      "question_text": "The diagram shows a logic circuit.\nA\nQ\nB\nS\nP\nC\nZ\nR\nD\nUse Boolean algebra including De Morgan’s laws to simplify the following expression.\nShow all working.\n(A + B) . (A . B + B . C)\nWorking\nSimplified expression\n[4]",
+      "mark_scheme": "One mark for each mark point\n• Correct application of De Morgan’s laws\n• Correct application of Idempotent, Distributive or Absorption laws\n• Correct application of Idempotent, Distributive or Absorption laws\n• Correct final answer\n(A+B).(A.B+B.C)\n(A.B).(A+B+B+C) DeMorgan’s laws\n(A.B).(A+B+C) Idempotent laws\n(A.A+A.B+A.C).(B.A+B.B+B.C) Distributive laws\n(A+A.B+A.C).(A.B+B+B.C) Idempotent laws\n(A+A.C).(B+B.C) Absorption laws\nA.B // A + B Absorption laws / Final Answer",
+      "marks": 4,
+      "syllabus_section": "15.2",
+      "topic": "Hardware and Virtual Machines",
+      "subtopic": "Boolean Algebra and Logic Circuits",
+      "key_phrases": [
+        "De Morgan’s laws"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        6,
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "8",
+      "question_text": "Explain what is meant by lexical analysis during program compilation.\n[4]",
+      "mark_scheme": "One mark per mark point (Max 4)\nMP1 It is the first stage of compilation\nMP2 White space and comments are removed\nMP3 It takes modified source code and breaks it into a series of tokens\nMP4 Each token is categorised and assigned types\nMP5 Identifiers are stored in a symbol table\nMP6 If the lexical analyser finds invalid tokens, it generates an error\nMP7 Acceptable data from the lexical analyser passes to the syntax\nanalyser",
+      "marks": 4,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [
+        "lexical analyser"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        7
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(a)",
+      "question_text": "Several syntax diagrams are shown.\nletter digit\nA 0\nB 1\nC 2\nD 3\nE 4\nF 5\nG 6\nH 7\nJ 8\nK 9\noperator\n+\n–\n*\n/\nletter\nvariable\nletter digit ^\nState why 9K is not a valid variable for the given syntax diagrams.\n[1]",
+      "mark_scheme": "Variables must begin with a letter / not a digit",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(b)",
+      "question_text": "Several syntax diagrams are shown.\nletter digit\nA 0\nB 1\nC 2\nD 3\nE 4\nF 5\nG 6\nH 7\nJ 8\nK 9\noperator\n+\n–\n*\n/\nletter\nvariable\nletter digit ^\nComplete the Backus-Naur Form (BNF) for <operator>.\n<operator> ::=\n[1]",
+      "mark_scheme": "<operator> ::= + | - | * | / | ^",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(c)",
+      "question_text": "Several syntax diagrams are shown.\nletter digit\nA 0\nB 1\nC 2\nD 3\nE 4\nF 5\nG 6\nH 7\nJ 8\nK 9\noperator\n+\n–\n*\n/\nletter\nvariable\nletter digit ^\nAn expression is defined as follows:\n• A variable is assigned to a variable followed by an operator followed by another variable.\n• The operator and final variable stage can be repeated as many times as necessary.\nComplete the syntax diagram for an expression.\nexpression\nvariable =\n[3]",
+      "mark_scheme": "One mark per mark point\nMP1 Two variable boxes added to diagram\nMP2 One operator box added to diagram and all boxes in correct order\nMP3 Connections, arrows and return loop correctly added and no\nadditional boxes or connections\nexpression\nvariable = variable operator variable",
+      "marks": 3,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        9
+      ]
+    },
+    {
+      "question_number": "9(d)",
+      "question_text": "Several syntax diagrams are shown.\nletter digit\nA 0\nB 1\nC 2\nD 3\nE 4\nF 5\nG 6\nH 7\nJ 8\nK 9\noperator\n+\n–\n*\n/\nletter\nvariable\nletter digit ^\nA character can be a letter or a digit.\nAn additional constraint has been applied to the definition of variable. It must comply with the\ngiven syntax diagram, but it will only pass validation if it has at least four characters.\nState one example of a valid variable.\n[1]",
+      "mark_scheme": "Answer must begin with a valid letter. It can then be followed by any number\nof valid digits and/or letters, as long as it is at least four characters in length.\nExample answer\nAC768",
+      "marks": 1,
+      "syllabus_section": "16.2",
+      "topic": "System Software",
+      "subtopic": "Translation Software",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        8,
+        9
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "10",
+      "question_text": "Identify the two main protocols that form Transport Layer Security (TLS) and state the purpose of\neach.\nProtocol 1\nPurpose\nProtocol 2\nPurpose\n[4]",
+      "mark_scheme": "One mark for identifying a protocol and one mark for stating its purpose\nMP1 Handshake protocol\nMP2 To establish a secure and reliable connection between two devices,\nsystems or networks // Permits the web server and client to authenticate each\nother to make use of encryption algorithms\nMP3 Record protocol\nMP4 Provides a secure and reliable way to send and receive data over a\nnetwork // To exchange records between the client and server // Responsible\nfor securing application data end ensuring its integrity and authenticity during\ntransmission // Encrypts and authenticates data exchanged between a client\nand a server // Deals with the format for data transmission.",
+      "marks": 4,
+      "syllabus_section": "17.1",
+      "topic": "Security",
+      "subtopic": "Encryption, Encryption Protocols and Digital Certificates",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        9
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "11(a)",
+      "question_text": "A linked list of nodes is used to store an ordered list of strings. Each node consists of the\ndata, a left pointer and a right pointer.\nLeft pointer Data Right pointer\nPp\nThe linked list will be organised as a binary tree.\n0 is used to represent a null pointer .\nComplete the binary tree, including null pointers, to show how the data will be organised after\nthe following strings have been added:\nAa, Mm, Ss, Xx\nRoot pointer\nPp\nGg Rr\n0 Kk\n[4]",
+      "mark_scheme": "One mark per mark point\nMP1 Any two nodes added correctly with correct data (Aa, Mm, Ss, Xx)\nMP2 Remaining two nodes added with correct data (Aa, Mm, Ss, Xx) and\nall nodes with connecting arrows starting from correct pointer boxes\nMP3 Correct null pointers (0) added throughout\nMP4 … with no entries in other pointer boxes and all nodes correctly\npositioned and connected.\nRoot pointer\nPp\nGg 0 Rr\n0 Aa 0 0 Kk 0 Ss\n0 Mm 0 0 Xx 0",
+      "marks": 4,
+      "syllabus_section": "19.1",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Algorithms",
+      "key_phrases": [
+        "null pointers"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        10
+      ],
+      "ms_pages": [
+        10
+      ]
+    },
+    {
+      "question_number": "11(b)",
+      "question_text": "A binary tree can be used to implement recursion.\nIdentify one feature of an algorithm that makes it beneficial to use recursion.\nGive one example of an application that could use a recursive algorithm.\nFeature\nExample\n[2]",
+      "mark_scheme": "One mark for feature and one mark for example (Max 2)\n• Recursion is beneficial for algorithms when a problem naturally breaks\ndown into smaller versions of itself.\n• … such as calculating a factorial / mathematical series / Fibonacci /\ncompound interest / tree traversal / evaluation of RPN expressions.",
+      "marks": 2,
+      "syllabus_section": "19.2",
+      "topic": "Computational thinking and Problem-solving",
+      "subtopic": "Recursion",
+      "key_phrases": [
+        "Recursion"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        11
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "12(a)",
+      "question_text": "A medical clinic uses objects of the class Patient to assign a priority and a doctor to a\npatient. Some of the attributes required in the class are listed in the table.\nAttribute Data type Description\nPatientID STRING Unique identifier of the patient\nName STRING Patient’s full name, surname first\nDoctorID STRING ID of doctor administering treatment\nT reatment is prioritised with a numeric scale of 1 to 5.\nComplete the class diagram for Patient, to include:\n• attribute and data type for the date of birth\n• attribute and data type for the priority\n• methods to assign the patient ID, priority and doctor ID\n• methods to return the patient ID, patient date of birth and the priority.\nPatient\nPatientID : STRING\nName : STRING\n:\n:\nDoctorID : STRING\nSetName(FullName : STRING)\nSetDateOfBirth(DOB : DATE)\nGetName()\nGetDoctorID()\n[5]",
+      "mark_scheme": "One mark per mark point\nMP1 Two correct attributes (DateOfBirth : Date) and priority with a\nsensible name and integer data type\nMP2 SetPatientID(…) and SetDoctorID(…) seen\nMP3 … and appropriate parameters, with string data types\nMP4 GetPatientID() and GetDateOfBirth() seen\nMP5 Priority setter and getter fully correct with name matching Priority\nattribute, with appropriate parameter and correct data type.\nPatient\nPatientID : STRING\nName : STRING\nDateOfBirth : DATE\nPriority : INTEGER\nDoctorID : STRING\nSetPatientID(PatientNumber : STRING)\nSetName(FullName : STRING)\nSetDateOfBirth(DOB : DATE)\nSetPriority(Urgency : INTEGER)\nSetDoctorID(DocID : STRING)\nGetPatientID()\nGetName()\nGetDateOfBirth()\nGetPriority()\nGetDoctorID()",
+      "marks": 5,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "getter",
+        "setter"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        12
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "12(b)(i)",
+      "question_text": "Identify the object-oriented programming (OOP) term described as ‘an occurrence of an\nobject’.\n[1]",
+      "mark_scheme": "Instance // instantiation",
+      "marks": 1,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Instance"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "12(b)(ii)",
+      "question_text": "Describe what is meant by the OOP term polymorphism.\n[2]",
+      "mark_scheme": "One mark for each mark point\nMP1 Polymorphism is when methods with the same name are redefined /\nbehave differently …\nMP2 … in derived / inherited classes / subclasses",
+      "marks": 2,
+      "syllabus_section": "20.1",
+      "topic": "Further Programming",
+      "subtopic": "Programming Paradigms",
+      "key_phrases": [
+        "Polymorphism"
+      ],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        11
+      ]
+    },
+    {
+      "question_number": "13",
+      "question_text": "The pseudocode algorithm below uses random file access to copy 50 records from a live file\nCurrentResults.dat to a stored file StoredResults.dat one record at a time. It uses the\nuser-defined type StudentResult.\nTYPE StudentResult\nDECLARE LastName : STRING\nDECLARE FirstName : STRING\nDECLARE ExamGrade : STRING\nENDTYPE\nIf any grades are missing in CurrentResults.dat, the text \"Missing grade\" is added to the\nExamGrade field in StoredResults.dat\nComplete this file handling pseudocode algorithm.\nDECLARE Grade : StudentResult\nDECLARE Position : INTEGER\nOPENFILE \"StoredResults.dat\" FOR RANDOM\nSEEK \"CurrentResults.dat\", Position\nGETRECORD \"CurrentResults.dat\", Grade\nIF Grade.ExamGrade = \"\" THEN\nENDIF\nNEXT Position\nCLOSEFILE \"CurrentResults.dat\"\nCLOSEFILE \"StoredResults.dat\"\n[5]",
+      "mark_scheme": "One mark for each correctly completed line\nDECLARE Grade : StudentResult\nDECLARE Position : INTEGER\nOPENFILE \"CurrentResults.dat\" FOR RANDOM\nOPENFILE \"StoredResults.dat\" FOR RANDOM\nFOR Position  1 TO 50\nSEEK \"CurrentResults.dat\", Position\nGETRECORD \"CurrentResults.dat\", Grade\nIF Grade.ExamGrade = \"\" THEN\nGrade.ExamGrade  \"Missing grade\"\nENDIF\nSEEK \"StoredResults.dat\", Position\nPUTRECORD \"StoredResults.dat\", Grade\nNEXT Position\nCLOSEFILE \"CurrentResults.dat\"\nCLOSEFILE \"StoredResults.dat\"",
+      "marks": 5,
+      "syllabus_section": "20.2",
+      "topic": "Further Programming",
+      "subtopic": "File Processing and Exception Handling",
+      "key_phrases": [],
+      "common_mistakes": [],
+      "qp_pages": [
+        13
+      ],
+      "ms_pages": [
+        12
+      ]
+    }
+  ],
+  "marks": 75
+}

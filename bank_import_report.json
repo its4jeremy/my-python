@@ -1,0 +1,199 @@
+{
+  "papers": [
+    {
+      "paper": "9618_s21_31",
+      "questions": 27,
+      "inserted": 27,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s21_32",
+      "questions": 27,
+      "inserted": 27,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s21_33",
+      "questions": 27,
+      "inserted": 27,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s22_31",
+      "questions": 24,
+      "inserted": 24,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s22_32",
+      "questions": 28,
+      "inserted": 28,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s22_33",
+      "questions": 24,
+      "inserted": 24,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s23_31",
+      "questions": 26,
+      "inserted": 26,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s23_32",
+      "questions": 27,
+      "inserted": 27,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s23_33",
+      "questions": 26,
+      "inserted": 26,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s24_31",
+      "questions": 29,
+      "inserted": 29,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s24_32",
+      "questions": 27,
+      "inserted": 27,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s24_33",
+      "questions": 29,
+      "inserted": 29,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s25_31",
+      "questions": 26,
+      "inserted": 26,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s25_32",
+      "questions": 27,
+      "inserted": 27,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s25_33",
+      "questions": 26,
+      "inserted": 26,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s26_31",
+      "questions": 28,
+      "inserted": 28,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s26_32",
+      "questions": 26,
+      "inserted": 26,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_s26_33",
+      "questions": 26,
+      "inserted": 26,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w21_31",
+      "questions": 28,
+      "inserted": 28,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w21_32",
+      "questions": 28,
+      "inserted": 28,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w22_31",
+      "questions": 31,
+      "inserted": 31,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w22_32",
+      "questions": 26,
+      "inserted": 26,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w22_33",
+      "questions": 31,
+      "inserted": 31,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w23_31",
+      "questions": 26,
+      "inserted": 26,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w23_32",
+      "questions": 24,
+      "inserted": 24,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w23_33",
+      "questions": 26,
+      "inserted": 26,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w24_31",
+      "questions": 25,
+      "inserted": 25,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w24_32",
+      "questions": 27,
+      "inserted": 27,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w24_33",
+      "questions": 25,
+      "inserted": 25,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w25_31",
+      "questions": 28,
+      "inserted": 0,
+      "skipped": 28
+    },
+    {
+      "paper": "9618_w25_32",
+      "questions": 30,
+      "inserted": 30,
+      "skipped": 0
+    },
+    {
+      "paper": "9618_w25_33",
+      "questions": 23,
+      "inserted": 23,
+      "skipped": 0
+    }
+  ],
+  "inserted": 830,
+  "skipped": 28,
+  "database_questions": 858
+}

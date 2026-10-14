@@ -1,27 +1,33 @@
 # Pastpaper AI web app
 
-From the project directory in Windows PowerShell:
+For a Windows check before hosting, download the `pastpaper-web` branch from GitHub, extract it, and double-click `START_WEBSITE.bat`. Open http://localhost:5000 and keep the launcher window open while testing. Once hosted, the site runs independently of your computer.
+
+Alternatively, from the project directory in PowerShell:
 
 ```powershell
-# Create the virtual environment only if you do not already have one.
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 python app.py
 ```
 
-Open http://localhost:5000. Stop the server with Ctrl+C. If PowerShell blocks activation, use ` .\venv\Scripts\python.exe -m pip install -r requirements.txt` and ` .\venv\Scripts\python.exe app.py` directly.
+If activation is blocked, use `.\venv\Scripts\python.exe` directly. Flask runs the local server; Gunicorn is installed only on non-Windows systems for hosting. PDF tools are separate optional processing dependencies.
 
-The app reads the existing `pastpapers.db` beside `app.py`, regardless of the shell's working directory. It never imports `database.py`, reruns the AI pipeline, inserts questions, or requires an API key. Paper 3 includes paper numbers `3` and the two-digit variants `30`–`39`; the supplied data is variant `31`. All 15 syllabus sections appear, including empty sections.
+## What is available
 
-Use the topic filter to match section numbers or names and optionally hide empty sections. Topic pages also support keyword search within the section. The Search page searches all Paper 3 question text; `%` and `_` are treated as literal characters. Answers open with native HTML details controls and work without JavaScript. Key phrases are highlighted in the mark scheme and listed separately.
+- All 32 supplied 9618 Paper 3 papers, covering 2021–2026.
+- 858 exam occurrences; 651 distinct cards after conservative grouping. A group requires matching question text, answer text, marks, topic, and original question/answer page images. Diagrams that differ remain separate. All source-paper references are retained.
+- All 15 syllabus sections, year filtering, question-text search, and pages of up to 20 cards.
+- An 87-term glossary: dotted terms in questions and answers explain concepts on hover, keyboard focus, or tap. Escape or clicking elsewhere dismisses an explanation. Entries are topic-aware; definitions are explanatory paraphrases, not extra marking points.
+- Original-page images and PDF links for diagrams, tables, mathematical notation, and pseudocode formatting that plain-text extraction cannot fully represent. Images load when their layout panel opens.
+- A Cambridge reference footer with links to the uploaded syllabus and pseudocode guide.
 
-Only Flask is needed for the web app. `requirements.txt` covers this app; the existing PDF/AI scripts have separate dependencies. The local development server binds to loopback and runs without debug mode.
+The app opens `pastpapers.db` read-only, relative to `app.py`. It never imports `database.py`, calls an AI service, or requires an API key to serve the site. Source PDFs, processed JSON, glossary JSON, source catalogue, and generated shared images must be included in a deployment. The provided repository contains them.
 
-Run web tests without executing the existing API or PDF scripts:
+Run tests:
 
 ```powershell
 python -m unittest discover -s tests -v
 ```
 
-The tests use the supplied 28-question database. To update the question bank, use your existing processing/import workflow separately; note that running `database.py` again inserts rows again rather than replacing them.
+See `PAPER_BANK.md` for the repeatable extraction/import workflow. Hosting remains pending; this update does not create or purchase a Render service.
